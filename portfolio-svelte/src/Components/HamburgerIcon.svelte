@@ -1,3 +1,12 @@
+<script>
+import { onMount } from 'svelte';
+
+    let hamburgerCheck;
+    onMount(()=>{
+        if(window.innerWidth > 640)
+        hamburgerCheck.checked = true
+    })
+</script>
 <style>
 input {
     display: none;
@@ -65,7 +74,7 @@ span.hamburger-lines::after{
 }
 </style>
 
-<input class="hide-for-medium hamburger-check" id="hamburger" name="hamburger" type="checkbox">
+<input class="hide-for-medium hamburger-check" id="hamburger" name="hamburger" type="checkbox" bind:this={hamburgerCheck}>
 <label class="hide-for-medium center-all" for="hamburger">
     <span class="hamburger-lines"/>
 </label>

@@ -65,7 +65,7 @@ ul li {
 span.nav-separator{
     display: inline-block;
     border-bottom: 1px solid #00E2FF;
-    width: 15px;
+    width: 20px;
     margin: .5rem;
     opacity: 0;
 }
@@ -78,6 +78,15 @@ span.nav-separator{
     opacity: 1;
     /* bottom: -10px; */
 }
+
+/* set height for NavItem hover */
+li:hover {
+    height: 150px;
+}
+
+/* li:hover span.nav-separator{
+    height: 50px;
+} */
 
 </style>
 <aside>
