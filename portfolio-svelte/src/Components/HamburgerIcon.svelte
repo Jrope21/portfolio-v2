@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <style>
 input {
     display: none;
@@ -19,7 +15,7 @@ label {
      display: flex;
      align-items: center;
      justify-content: center;
-     transition: all .7s ease;
+     transition: all .9s ease;
 }
 
 .hamburger-check:checked ~ label {
@@ -31,7 +27,7 @@ span.hamburger-lines{
     height: 15px;
     border-right: 1px solid #00E2FF;
     transition: all 1s ease-in-out;
-    -webkit-transition: all .7s ease;
+    -webkit-transition: all 1s ease;
     transform: rotate(0deg);
     /* background: #00E2FF; */
 }
@@ -42,7 +38,7 @@ span.hamburger-lines::before{
     position: absolute;
     height: 15px;
     right: 5px;
-    -webkit-transition: all .7s ease;
+    -webkit-transition: all 1s ease;
 }
 span.hamburger-lines::after{
     content: '';
@@ -50,7 +46,7 @@ span.hamburger-lines::after{
     position: absolute;
     height: 15px;
     left: 6px;
-    -webkit-transition: all .7s ease;
+    -webkit-transition: all 1s ease;
 }
 
 .hamburger-check:checked ~ label span.hamburger-lines{

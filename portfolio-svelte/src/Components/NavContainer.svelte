@@ -14,7 +14,7 @@ let navItems = [
     {
         name: 'contact',
         url: ''
-    },
+    }
 ]
 </script> 
 <style>
@@ -47,12 +47,20 @@ ul {
 }
 
 ul li {
+    position: relative;
     list-style-type: none;
     display: flex;
     align-items: center;
     opacity: 0;
+    bottom: 15px;
     transition: all .7s ease;
 }
+ .hamburger-check:checked ~ ul li:nth-child(3) { transition-delay: .25s }
+ .hamburger-check:checked ~ ul li:nth-child(3) span { transition-delay: .05s }
+ .hamburger-check:checked ~ ul li:nth-child(2) { transition-delay: .5s }
+ .hamburger-check:checked ~ ul li:nth-child(3) span { transition-delay: .3s }
+ .hamburger-check:checked ~ ul li:nth-child(1) { transition-delay: .75s }
+ .hamburger-check:checked ~ ul li:nth-child(1) span { transition-delay: .55s }
 
 span.nav-separator{
     display: inline-block;
@@ -63,58 +71,18 @@ span.nav-separator{
 }
 .hamburger-check:checked ~ ul li {
     opacity: 1;
+    bottom: 0px
 }
-/*
-input {
-    display: none;
+.hamburger-check:checked ~ ul li span{
+    /* position: relative; */
+    opacity: 1;
+    /* bottom: -10px; */
 }
-
-label {
-     position: absolute;
-     left: 10px;
-     bottom: 33px;
-     transform: rotate(45deg);
-     border: 1px solid #00E2FF;
-     border-radius: 2px;
-     height: 25px;
-     width: 25px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-*/
-/* setup hamburger lines 
-span.hamburger{
-    display: block;
-    height: 15px;
-    border-right: 1px solid #00E2FF;
-    /* background: #00E2FF; 
-}
-
-span.hamburger::before{
-    content: '';
-    border-right: 1px solid #00E2FF;
-    position: absolute;
-    height: 15px;
-    right: 18px;
-}
-span.hamburger::after{
-    content: '';
-    border-right: 1px solid #00E2FF;
-    position: absolute;
-    height: 15px;
-    left: 18px;
-}
-*/
 
 </style>
 <aside>
     <nav>
-    <HamburgerIcon />
-      <!-- <input class="hide-for-medium" id="hamburger" name="hamburger" type="checkbox">
-        <label class="hide-for-medium center-all" for="hamburger">
-            <span class="hamburger"/>
-        </label> -->
+        <HamburgerIcon />
         <ul>
             {#each navItems as navItem}
                 <li class="align-center">

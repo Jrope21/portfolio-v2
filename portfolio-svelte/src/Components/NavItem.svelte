@@ -6,6 +6,7 @@
     a {
         color: #00E2FF;
     }
+    
 </style>
  <a href="{url}">
         {name}
