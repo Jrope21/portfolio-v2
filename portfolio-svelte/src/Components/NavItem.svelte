@@ -22,6 +22,23 @@
         top: 20px;
         /* height: 100px; */
     }
+    
+    li > a::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        border-bottom: 1px solid #00E2FF;
+        width: 1px;
+        /* height: 20px; */
+        margin: 8px;
+        opacity: 0;
+        transition: all .7s ease-in-out;
+    }
+
+    li:hover > a::after {
+        opacity: 1;
+        width: 20px;
+    }
 
 </style>
  <a href="{url}">

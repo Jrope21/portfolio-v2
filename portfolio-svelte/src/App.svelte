@@ -1,10 +1,10 @@
 <script>
-	import NavContainer from './Components/NavContainer.svelte';
+	import Home from './PageComponents/Home.svelte';
 //	export let name;
 </script>
 
 <style>
 	
 </style>
-<NavContainer />
+<Home/>
 <!--<h1>Hello {name}!</h1>-->

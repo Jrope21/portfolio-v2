@@ -35,7 +35,7 @@ nav {
     flex-direction: row-reverse;
     /* justify-content: center; */
     align-items: center;
-    margin: 0rem 1.5rem 0rem 0rem;
+    margin: 0rem 24px 0rem 0rem; /*same as 1.5rem*/
 }
 
 ul {
@@ -43,7 +43,7 @@ ul {
     position: absolute;
     display: flex;
 
-    margin-right: 2rem;
+    margin-top: 16px; /*was 2rem*/
 }
 
 ul li {
@@ -66,7 +66,7 @@ span.nav-separator{
     display: inline-block;
     border-bottom: 1px solid #00E2FF;
     width: 20px;
-    margin: .5rem;
+    margin: 8px; /*same as .5rem*/
     opacity: 0;
 }
 .hamburger-check:checked ~ ul li {
@@ -84,6 +84,22 @@ li:hover {
     height: 150px;
 }
 
+/* ul::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        border-bottom: 1px solid #00E2FF;
+        width: 25px;
+        right: -100px;
+
+        margin: 9px;
+        opacity: 1;
+        transition: all 1s ease-in-out;
+}
+
+.hamburger-check:checked ~ ul::after {
+    right: -75px;
+} */
 /* li:hover span.nav-separator{
     height: 50px;
 } */

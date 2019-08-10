@@ -4,7 +4,9 @@ import { onMount } from 'svelte';
     let hamburgerCheck;
     onMount(()=>{
         if(window.innerWidth > 640)
-        hamburgerCheck.checked = true
+       // setTimeout(()=>{
+             hamburgerCheck.checked = true
+    //    }, 500)
     })
 </script>
 <style>
@@ -25,6 +27,7 @@ label {
      align-items: center;
      justify-content: center;
      transition: all .9s ease;
+     cursor: pointer;
 }
 
 .hamburger-check:checked ~ label {
