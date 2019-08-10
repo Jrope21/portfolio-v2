@@ -7,9 +7,6 @@
         color: #00E2FF;
     }
 </style>
-
-<li>
-    <a href="{url}">
+ <a href="{url}">
         {name}
-    </a>
-</li>
+</a>
