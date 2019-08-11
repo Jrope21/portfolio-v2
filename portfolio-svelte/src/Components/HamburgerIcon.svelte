@@ -4,9 +4,9 @@ import { onMount } from 'svelte';
     let hamburgerCheck;
     onMount(()=>{
         if(window.innerWidth > 640)
-       // setTimeout(()=>{
+       setTimeout(()=>{
              hamburgerCheck.checked = true
-    //    }, 500)
+       }, 300)
     })
 </script>
 <style>
@@ -20,6 +20,7 @@ label {
      bottom: 33px;
      transform: rotate(45deg);
      border: 1px solid #00E2FF;
+     /* background: #00E2FF; */
      border-radius: 2px;
      height: 25px;
      width: 25px;
@@ -28,10 +29,12 @@ label {
      justify-content: center;
      transition: all .9s ease;
      cursor: pointer;
+     -webkit-transition: all 1s ease-in-out;
 }
 
 .hamburger-check:checked ~ label {
-     transform: rotate(135deg)
+     transform: rotate(135deg);
+     background: rgb(0, 225, 255);
 }
 
 span.hamburger-lines{
@@ -63,6 +66,7 @@ span.hamburger-lines::after{
 
 .hamburger-check:checked ~ label span.hamburger-lines{
     transform: rotate(45deg);
+    border-right: 1px solid white;
     /* border: none; */
 }
 .hamburger-check:checked ~ label span.hamburger-lines::before {

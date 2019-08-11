@@ -2,7 +2,7 @@
 import { onMount } from 'svelte';
 let stripes;
 onMount(()=>{
-     setTimeout(()=>{stripes.style.left = 0;},100)
+     setTimeout(()=>{stripes.style.left = 0;},200)
 })
 </script>
 
@@ -16,7 +16,7 @@ onMount(()=>{
     transform: rotate(45deg);
     /* height: 20px; */
     margin-top: 10px;
-    transition: left 1s ease-in-out;
+    transition: left 1.5s ease-in-out;
 }
 .stripes::before {
     content: '';
