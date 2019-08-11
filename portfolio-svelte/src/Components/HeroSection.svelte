@@ -1,6 +1,7 @@
 <script>
 import HeroImg from './HeroImg.svelte';
 import HeroLeftText from './HeroLeftText.svelte';
+import HeroRightText from './HeroRightText.svelte';
 </script>
 
 <style>
@@ -13,7 +14,7 @@ import HeroLeftText from './HeroLeftText.svelte';
 div.hero-text {
     width: 80%;
     height: 10%;
-    background: rgba(0, 0, 0, 0.068);
+    /* background: rgba(0, 0, 0, 0.068); */
 }
 </style>
 <div class="hero-container center-all">
@@ -22,6 +23,6 @@ div.hero-text {
     </div>
     <HeroImg />
     <div class="hero-text">
-    
+        <HeroRightText />
     </div>
 </div>
