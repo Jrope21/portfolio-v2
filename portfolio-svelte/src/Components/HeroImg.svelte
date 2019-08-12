@@ -121,7 +121,8 @@
         content: '';
         position: relative;
         display: inline-block;
-        background-image: linear-gradient(to top, rgb(53, 53, 53), #00E2FF);
+        /* background-image: linear-gradient(to top, rgb(53, 53, 53), #00E2FF); */
+        background-image: linear-gradient(to top, rgb(53, 53, 53), gray);
         height: 100%;
         width: 100px;
         top: 100%;
@@ -132,7 +133,8 @@
         content: '';
         position: relative;
         display: inline-block;
-        background-image: linear-gradient(to bottom, rgb(53, 53, 53), #00E2FF);
+        /* background-image: linear-gradient(to bottom, rgb(53, 53, 53), #00E2FF); */
+        background-image: linear-gradient(to top, rgb(53, 53, 53), gray);
         height: 100%;
         width: 100px;
         top: -100%;

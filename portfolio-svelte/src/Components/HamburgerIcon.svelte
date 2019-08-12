@@ -19,7 +19,8 @@ label {
      left: 10px;
      bottom: 33px;
      transform: rotate(45deg);
-     border: 1px solid #00E2FF;
+     /* border: 1px solid #00E2FF; */
+     border: 1px solid gray;
      /* background: #00E2FF; */
      border-radius: 2px;
      height: 25px;
@@ -34,13 +35,15 @@ label {
 
 .hamburger-check:checked ~ label {
      transform: rotate(135deg);
-     background: rgb(0, 225, 255);
+     /* background: rgb(0, 225, 255); */
+     background: gray;
 }
 
 span.hamburger-lines{
     display: absolute;
     height: 15px;
-    border-right: 1px solid #00E2FF;
+    /* border-right: 1px solid #00E2FF; */
+    border-right: 1px solid gray;
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease;
     transform: rotate(0deg);
@@ -49,7 +52,8 @@ span.hamburger-lines{
 
 span.hamburger-lines::before{
     content: '';
-    border-right: 1px solid #00E2FF;
+    /* border-right: 1px solid #00E2FF; */
+    border-right: 1px solid gray;
     position: absolute;
     height: 15px;
     right: 5px;
@@ -57,7 +61,8 @@ span.hamburger-lines::before{
 }
 span.hamburger-lines::after{
     content: '';
-    border-right: 1px solid #00E2FF;
+    /* border-right: 1px solid #00E2FF; */
+    border-right: 1px solid gray;
     position: absolute;
     height: 15px;
     left: 6px;

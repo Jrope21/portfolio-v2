@@ -11,7 +11,8 @@ onMount(()=>{
     position: fixed;
     left: 100px;
     display: inline-block;
-    border-bottom: 1px solid #00E2FF;
+    /* border-bottom: 1px solid #00E2FF; */
+    border-bottom: 1px solid gray;
     width: 200vw;
     transform: rotate(45deg);
     /* height: 20px; */
@@ -22,7 +23,8 @@ onMount(()=>{
     content: '';
     position: absolute;
     display: inline-block;
-    border-bottom: 1px solid #00E2FF;
+    /* border-bottom: 1px solid #00E2FF; */
+    border-bottom: 1px solid gray;
     width: 100%;
     margin-top: 10px;
     /* height: 20px; */
@@ -34,7 +36,8 @@ onMount(()=>{
     content: '';
     position: absolute;
     display: inline-block;
-    border-bottom: 1px solid #00E2FF;
+    /* border-bottom: 1px solid #00E2FF; */
+    border-bottom: 1px solid gray;
     width: 100%;
     /* height: 20px; */
   margin-top: 20px;

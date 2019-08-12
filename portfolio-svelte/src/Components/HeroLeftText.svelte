@@ -41,7 +41,8 @@
 p {
     font-size: 18rem;
     width: 100%;
-    color: #00E2FF;
+    /* color: #00E2FF; */
+    color: gray;
     /* display: flex;
     flex-direction: column;
     align-items: center; */
@@ -69,7 +70,8 @@ p span:nth-child(1)::after {
     width: 15%;
     /* height: 10px; */
     margin: 3px 0px 4px 45px;
-    border-bottom: 1px solid #00E2FF;
+    /* border-bottom: 1px solid #00E2FF; */
+    border-bottom: 1px solid gray;
     /* animation: 8s linear fadeIn; */
     animation: 2.5s ease-in-out extendWidth;
     /* -webkit-transition: opacity 1s ease-in-out; */

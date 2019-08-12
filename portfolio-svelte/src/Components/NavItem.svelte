@@ -6,7 +6,8 @@
     a {
       
         position: relative;
-        color: #00E2FF;
+        /* color: #00E2FF; */
+        color: gray;
         top: 0;
          transform: rotate(0deg);
         transition: all .5s ease-in-out;
@@ -35,7 +36,8 @@
         content: '';
         position: absolute;
         display: inline-block;
-        border-bottom: 1px solid #00E2FF;
+        /* border-bottom: 1px solid #00E2FF; */
+        border-bottom: 1px solid gray;
         width: 1px;
         /* height: 20px; */
         margin: 8px;

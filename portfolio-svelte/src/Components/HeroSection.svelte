@@ -2,6 +2,7 @@
 import HeroImg from './HeroImg.svelte';
 import HeroLeftText from './HeroLeftText.svelte';
 import HeroRightText from './HeroRightText.svelte';
+import HeroArrowDown from './HeroArrowDown.svelte';
 </script>
 
 <style>
@@ -26,3 +27,4 @@ div.hero-text {
         <HeroRightText />
     </div>
 </div>
+<HeroArrowDown />

@@ -64,7 +64,8 @@ ul li {
 
 span.nav-separator{
     display: inline-block;
-    border-bottom: 1px solid #00E2FF;
+    /* border-bottom: 1px solid #00E2FF; */
+    border-bottom: 1px solid gray;
     width: 20px;
     margin: 8px; /*same as .5rem*/
     opacity: 0;

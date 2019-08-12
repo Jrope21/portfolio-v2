@@ -35,7 +35,8 @@ p {
     margin-top: 20px;
     font-size: 10rem;
     width: 85%;
-    color: #00E2FF;
+    /* color: #00E2FF; */
+    color: gray;
     display: flex;
     justify-content: flex-end;
 }
