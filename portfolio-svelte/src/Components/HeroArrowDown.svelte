@@ -1,13 +1,13 @@
 <style>
 /* need to setup loading spinner - arrow appears after */
+/*
 @keyframes spinOut {
     0% {
         transform: rotate(0deg);
          border-radius: 0%;
     }
     98%{
-        /* z-index: 2; */
-    }
+   
     100% {
 
         border-radius: 90%;
@@ -25,7 +25,7 @@
     100% {
         transform: rotate(-359deg);
     }
-}
+}*/
     a {
         position: absolute;
         bottom: 110px;
@@ -69,7 +69,7 @@
         /* transform: rotate(0deg); */
     }
       /* setup spinner */
-    span::before {
+   /* span::before {
         content: '';
         display: block;
         position: absolute;
@@ -78,7 +78,7 @@
         background: gray;
         z-index:-2;
         border-radius: 100%;
-        /* animation: 2.5s ease-in 0s 1 spinOutReverse; */
+        animation: 2.5s ease-in 0s 1 spinOutReverse;
     }
     span::after{
         content: '';
@@ -91,8 +91,8 @@
         background: white;
         z-index: 2;
          animation: 7s ease-in 0s 1 spinOut;
-        /* border-radius: 100%; */
-    }
+
+    }*/
     /* span::before {
         content: '';
         display: block;
