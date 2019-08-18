@@ -969,14 +969,14 @@ var app = (function () {
     			i1 = element("i");
     			t1 = space();
     			i2 = element("i");
-    			attr(i0, "class", "fab fa-github svelte-p90x6c");
-    			add_location(i0, file$8, 17, 4, 198);
-    			attr(i1, "class", "fab fa-linkedin svelte-p90x6c");
-    			add_location(i1, file$8, 18, 4, 232);
-    			attr(i2, "class", "fas fa-envelope svelte-p90x6c");
-    			add_location(i2, file$8, 19, 4, 268);
-    			attr(div, "class", "social-container svelte-p90x6c");
-    			add_location(div, file$8, 16, 0, 163);
+    			attr(i0, "class", "fab fa-github svelte-qsyokf");
+    			add_location(i0, file$8, 40, 4, 824);
+    			attr(i1, "class", "fab fa-linkedin svelte-qsyokf");
+    			add_location(i1, file$8, 41, 4, 858);
+    			attr(i2, "class", "fas fa-envelope svelte-qsyokf");
+    			add_location(i2, file$8, 42, 4, 894);
+    			attr(div, "class", "social-container svelte-qsyokf");
+    			add_location(div, file$8, 39, 0, 789);
     		},
 
     		l: function claim(nodes) {

@@ -32,9 +32,22 @@ html{
 	}
 }
 
+/* animation keyframes */
 
-
-
+@keyframes fadeInBottom {
+  0% {
+      top:  20px;
+      opacity: 0;
+  }
+  65% {
+      top: 20px;
+      opacity: 0;
+  }
+  100% {
+      top: 0px;
+      opacity: 1;
+  }
+}
 
 
 
