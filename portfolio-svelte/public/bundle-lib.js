@@ -919,11 +919,11 @@ var app = (function () {
     		c: function create() {
     			a = element("a");
     			span = element("span");
-    			attr(span, "class", "svelte-7th09u");
-    			add_location(span, file$7, 40, 12, 762);
+    			attr(span, "class", "svelte-u210c2");
+    			add_location(span, file$7, 120, 12, 2521);
     			attr(a, "href", "#");
-    			attr(a, "class", "svelte-7th09u");
-    			add_location(a, file$7, 40, 0, 750);
+    			attr(a, "class", "svelte-u210c2");
+    			add_location(a, file$7, 120, 0, 2509);
     		},
 
     		l: function claim(nodes) {
