@@ -53,12 +53,17 @@
     .letters{
         position: absolute;
         z-index: 2;
-        left: 15px;
-        top: 8px;
+        left: 17px;
+        top: 7px;
         font-size: 12px;
     }
     .letters > span:nth-child(1){
 
+    }
+    .letters > span:nth-child(2){
+        position: relative;
+        left: -6px;
+        top: 4px;
     }
 </style>
 
