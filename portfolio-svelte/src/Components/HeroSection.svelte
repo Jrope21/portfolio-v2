@@ -28,5 +28,5 @@ div.hero-text {
         <HeroRightText />
     </div>
 </div>
-<!-- <HeroArrowDown /> -->
-<HeroSocial />
+<HeroArrowDown />
+<!-- <HeroSocial /> -->

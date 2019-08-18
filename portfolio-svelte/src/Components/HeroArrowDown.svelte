@@ -1,46 +1,33 @@
 <style>
-@keyframes expand {
+@keyframes specialFadeInDoe {
     0%{
-        height: 0px;
+        bottom: 125px;
     }
     100%{
-        height: 15px
+       bottom: 110px;
+       opacity: 1;
     }
 }
-/* need to setup loading spinner - arrow appears after */
-/*
-@keyframes spinOut {
-    0% {
-        transform: rotate(0deg);
-         border-radius: 0%;
+@keyframes bounce {
+    0%{
+        /* opacity: 0; */
+        bottom: 110px;
     }
-    98%{
-   
-    100% {
-
-        border-radius: 90%;
-        transform: rotate(360deg);
-        z-index: -2;
+    50%{
+        /* opacity: 0; */
+        bottom: 115px;
+    }
+    100%{
+       bottom: 110px;
+       opacity: 1;
     }
 }
-@keyframes spinOutReverse {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-
-    }
-    100% {
-        transform: rotate(-359deg);
-    }
-}*/
     a {
         position: absolute;
         bottom: 110px;
         left: 100px;
-         /* animation: 2s ease-in 0s 1 spinOut; */
-          /* transform: rotate(45deg); */
-        /* animation: 2.5s ease-in 0s 1 spinOut; */
+        animation: .5s ease-in-out 5s 1 specialFadeInDoe forwards;
+        opacity: 0;
     }
   
     a:before {
@@ -52,8 +39,7 @@
         top: 07px;
         left: 5px;
         transform: rotate(45deg);
-        animation: 1s ease-in 0s 1 expand;
-        /* animation: 1s ease-in 0s 1 spinOutReverse; */
+        
     }
     a:after {
         content: '';
@@ -64,7 +50,6 @@
         top: 07px;
         right: 5px;
         transform: rotate(-45deg);
-        animation: 1s ease-in 0s 1 expand;     
     }
 
     /*span sets up dashes*/
@@ -74,52 +59,8 @@
         border-right: 1px solid gray;
         height: 20px;
         top: -10px;
-         animation: 1s ease-in 0s 1 expand;
-        /* transform: rotate(0deg); */
+        
     }
-      /* setup spinner */
-   /* span::before {
-        content: '';
-        display: block;
-        position: absolute;
-        right: -20px;
-        padding: 20px;
-        background: gray;
-        z-index:-2;
-        border-radius: 100%;
-        animation: 2.5s ease-in 0s 1 spinOutReverse;
-    }
-    span::after{
-        content: '';
-        display: block;
-        position: absolute;
-        right: -19px;
-        top: 1px;
-        padding: 19px;
-        border-radius: 100%;
-        background: white;
-        z-index: 2;
-         animation: 7s ease-in 0s 1 spinOut;
-
-    }*/
-    /* span::before {
-        content: '';
-        display: block;
-        position: absolute;
-        border-right: 1px solid gray;
-        height: 20px;
-        left: 04.5px;
-        bottom: 04px;
-    } */
-    /* span::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 04px;
-        border-right: 1px solid gray;
-        height: 20px;
-        right: 04.5px;
-    } */
 
 </style>
 
