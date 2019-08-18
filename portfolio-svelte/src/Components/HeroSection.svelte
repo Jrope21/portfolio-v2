@@ -29,4 +29,4 @@ div.hero-text {
     </div>
 </div>
 <HeroArrowDown />
-<!-- <HeroSocial /> -->
+<HeroSocial />

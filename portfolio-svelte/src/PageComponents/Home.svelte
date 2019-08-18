@@ -2,6 +2,7 @@
 	import NavContainer from '../Components/NavContainer.svelte';
     import StripeBackground from '../Components/StripeBackground.svelte';
     import HeroSection from '../Components/HeroSection.svelte';
+    import Logo from '../Components/Logo.svelte';
 //	export let name;
 </script>
 
@@ -12,6 +13,7 @@
         margin: 0rem auto;
     }
 </style>
+<Logo />
 <StripeBackground />
 <NavContainer />
 <section class="one center-all">

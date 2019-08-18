@@ -22,7 +22,7 @@ label {
      /* border: 1px solid #00E2FF; */
      border: 1px solid gray;
      /* background: #00E2FF; */
-     border-radius: 2px;
+     border-radius: 4px;
      height: 25px;
      width: 25px;
      display: flex;

@@ -25,8 +25,9 @@
     a {
         position: absolute;
         bottom: 110px;
-        left: 100px;
-        animation: .5s ease-in-out 5s 1 specialFadeInDoe forwards;
+        /* left: 100px; */
+        left: 25%;
+        animation: .8s ease-in-out 5s 1 specialFadeInDoe forwards;
         opacity: 0;
     }
   
