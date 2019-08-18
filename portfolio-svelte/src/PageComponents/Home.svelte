@@ -15,5 +15,5 @@
 <StripeBackground />
 <NavContainer />
 <section class="one center-all">
-    <HeroSection />
+    <!-- <HeroSection /> -->
 </section>
