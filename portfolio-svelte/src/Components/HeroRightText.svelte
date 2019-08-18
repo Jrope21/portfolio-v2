@@ -32,7 +32,7 @@
 }
 
 p {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 10rem;
     width: 85%;
     /* color: #00E2FF; */

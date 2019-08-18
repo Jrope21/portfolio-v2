@@ -3,6 +3,7 @@ import HeroImg from './HeroImg.svelte';
 import HeroLeftText from './HeroLeftText.svelte';
 import HeroRightText from './HeroRightText.svelte';
 import HeroArrowDown from './HeroArrowDown.svelte';
+import HeroSocial from './HeroSocial.svelte';
 </script>
 
 <style>
@@ -28,3 +29,4 @@ div.hero-text {
     </div>
 </div>
 <HeroArrowDown />
+<HeroSocial />
