@@ -1,4 +1,12 @@
 <style>
+@keyframes expand {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 15px
+    }
+}
 /* need to setup loading spinner - arrow appears after */
 /*
 @keyframes spinOut {
@@ -43,7 +51,8 @@
         height: 15px;
         top: 07px;
         left: 5px;
-        /* transform: rotate(45deg); */
+        transform: rotate(45deg);
+        animation: 1s ease-in 0s 1 expand;
         /* animation: 1s ease-in 0s 1 spinOutReverse; */
     }
     a:after {
@@ -54,9 +63,8 @@
         height: 15px;
         top: 07px;
         right: 5px;
-        /* transform: rotate(-45deg); */
-     
-        
+        transform: rotate(-45deg);
+        animation: 1s ease-in 0s 1 expand;     
     }
 
     /*span sets up dashes*/
@@ -66,6 +74,7 @@
         border-right: 1px solid gray;
         height: 20px;
         top: -10px;
+         animation: 1s ease-in 0s 1 expand;
         /* transform: rotate(0deg); */
     }
       /* setup spinner */
