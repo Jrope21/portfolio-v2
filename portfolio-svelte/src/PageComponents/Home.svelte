@@ -12,8 +12,8 @@
         margin: 0rem auto;
     }
 </style>
-<!-- <StripeBackground />
-<NavContainer /> -->
+<StripeBackground />
+<NavContainer />
 <section class="one center-all">
-    <!-- <HeroSection /> -->
+    <HeroSection />
 </section>
