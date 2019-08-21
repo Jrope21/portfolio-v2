@@ -16,16 +16,6 @@ let navItems = [
         url: ''
     }
 ]
-let navContainer;
-
-onMount(() => {
-    
-    
-    window.addEventListener("scroll", () => {
-        let scrollPos = navContainer.offsetTop;
-console.log(scrollPos);
-    })
-})
 </script> 
 <style>
 aside {
@@ -116,7 +106,7 @@ li:hover {
 } */
 
 </style>
-<aside bind:this={navContainer}>
+<aside>
     <nav>
         <HamburgerIcon />
         <ul>

@@ -35,20 +35,33 @@ onMount(() => {
 
 <style>
     footer {
+        display: flex;
         min-height: 30vh;
+        flex-wrap: wrap;
+        font-size: 10rem;
+    }
+    div{
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div.cta{
+        
     }
 </style>
 
 <footer bind:this={footer}>
     <div class="logo">
+        
+    </div>
+    <div class="cta">
         {#each socialCtas as socialCta}
             <FooterSocial content={socialCta.content} url={socialCta.url}/>
         {/each}
     </div>
-    <div class="cta">
-    
-    </div>
     <div class="breadcrumbs">
-    
+
     </div>
 </footer>

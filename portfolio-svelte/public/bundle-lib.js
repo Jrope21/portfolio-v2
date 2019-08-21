@@ -475,7 +475,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (123:12) {#each navItems as navItem}
+    // (113:12) {#each navItems as navItem}
     function create_each_block(ctx) {
     	var li, t0, span, t1, current;
 
@@ -492,9 +492,9 @@ var app = (function () {
     			span = element("span");
     			t1 = space();
     			attr(span, "class", "nav-separator svelte-ourriz");
-    			add_location(span, file$2, 124, 70, 2710);
+    			add_location(span, file$2, 114, 70, 2512);
     			attr(li, "class", "align-center svelte-ourriz");
-    			add_location(li, file$2, 123, 16, 2614);
+    			add_location(li, file$2, 113, 16, 2416);
     		},
 
     		m: function mount(target, anchor) {
@@ -564,11 +564,11 @@ var app = (function () {
     				each_blocks[i].c();
     			}
     			attr(ul, "class", "svelte-ourriz");
-    			add_location(ul, file$2, 121, 8, 2553);
+    			add_location(ul, file$2, 111, 8, 2355);
     			attr(nav, "class", "svelte-ourriz");
-    			add_location(nav, file$2, 119, 4, 2513);
+    			add_location(nav, file$2, 109, 4, 2315);
     			attr(aside, "class", "svelte-ourriz");
-    			add_location(aside, file$2, 118, 0, 2476);
+    			add_location(aside, file$2, 108, 0, 2303);
     		},
 
     		l: function claim(nodes) {
@@ -586,7 +586,6 @@ var app = (function () {
     				each_blocks[i].m(ul, null);
     			}
 
-    			ctx.aside_binding(aside);
     			current = true;
     		},
 
@@ -640,13 +639,11 @@ var app = (function () {
     			destroy_component(hamburgericon);
 
     			destroy_each(each_blocks, detaching);
-
-    			ctx.aside_binding(null);
     		}
     	};
     }
 
-    function instance$2($$self, $$props, $$invalidate) {
+    function instance$2($$self) {
     	
     let navItems = [
         {
@@ -662,24 +659,8 @@ var app = (function () {
             url: ''
         }
     ];
-    let navContainer;
 
-    onMount(() => {
-        
-        
-        window.addEventListener("scroll", () => {
-            let scrollPos = navContainer.offsetTop;
-    console.log(scrollPos);
-        });
-    });
-
-    	function aside_binding($$value) {
-    		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
-    			$$invalidate('navContainer', navContainer = $$value);
-    		});
-    	}
-
-    	return { navItems, navContainer, aside_binding };
+    	return { navItems };
     }
 
     class NavContainer extends SvelteComponentDev {
@@ -701,7 +682,8 @@ var app = (function () {
     			a = element("a");
     			t = text(ctx.content);
     			attr(a, "href", ctx.url);
-    			add_location(a, file$3, 8, 0, 64);
+    			attr(a, "class", "svelte-1h3urmo");
+    			add_location(a, file$3, 24, 0, 404);
     		},
 
     		l: function claim(nodes) {
@@ -792,7 +774,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (44:8) {#each socialCtas as socialCta}
+    // (60:8) {#each socialCtas as socialCta}
     function create_each_block$1(ctx) {
     	var current;
 
@@ -858,23 +840,23 @@ var app = (function () {
     		c: function create() {
     			footer_1 = element("footer");
     			div0 = element("div");
+    			t0 = space();
+    			div1 = element("div");
 
     			for (var i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t0 = space();
-    			div1 = element("div");
     			t1 = space();
     			div2 = element("div");
-    			attr(div0, "class", "logo");
-    			add_location(div0, file$4, 42, 4, 1110);
-    			attr(div1, "class", "cta");
-    			add_location(div1, file$4, 47, 4, 1276);
-    			attr(div2, "class", "breadcrumbs");
-    			add_location(div2, file$4, 50, 4, 1314);
-    			attr(footer_1, "class", "svelte-4hwlsa");
-    			add_location(footer_1, file$4, 41, 0, 1078);
+    			attr(div0, "class", "logo svelte-v9inq");
+    			add_location(div0, file$4, 55, 4, 1364);
+    			attr(div1, "class", "cta svelte-v9inq");
+    			add_location(div1, file$4, 58, 4, 1407);
+    			attr(div2, "class", "breadcrumbs svelte-v9inq");
+    			add_location(div2, file$4, 63, 4, 1572);
+    			attr(footer_1, "class", "svelte-v9inq");
+    			add_location(footer_1, file$4, 54, 0, 1332);
     		},
 
     		l: function claim(nodes) {
@@ -884,13 +866,13 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert(target, footer_1, anchor);
     			append(footer_1, div0);
-
-    			for (var i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div0, null);
-    			}
-
     			append(footer_1, t0);
     			append(footer_1, div1);
+
+    			for (var i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div1, null);
+    			}
+
     			append(footer_1, t1);
     			append(footer_1, div2);
     			ctx.footer_1_binding(footer_1);
@@ -911,7 +893,7 @@ var app = (function () {
     						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
-    						each_blocks[i].m(div0, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
