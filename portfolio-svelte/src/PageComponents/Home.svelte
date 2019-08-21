@@ -1,5 +1,7 @@
 <script>
+    // global imports
 	import NavContainer from '../Components/NavContainer.svelte';
+    import FooterContainer from '../Components/FooterContainer.svelte';
     import StripeBackground from '../Components/StripeBackground.svelte';
     import Logo from '../Components/Logo.svelte';
 
@@ -63,3 +65,4 @@
 <section class="three center-all">
     <MultiProjectSection />
 </section>
+<FooterContainer />

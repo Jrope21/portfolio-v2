@@ -1,7 +1,7 @@
 <script>
 import NavItem from './NavItem.svelte';
 import HamburgerIcon from './HamburgerIcon.svelte';
-
+import { onMount } from 'svelte';
 let navItems = [
     {
         name: 'about',
@@ -16,6 +16,16 @@ let navItems = [
         url: ''
     }
 ]
+let navContainer;
+
+onMount(() => {
+    
+    
+    window.addEventListener("scroll", () => {
+        let scrollPos = navContainer.offsetTop;
+console.log(scrollPos);
+    })
+})
 </script> 
 <style>
 aside {
@@ -106,7 +116,7 @@ li:hover {
 } */
 
 </style>
-<aside>
+<aside bind:this={navContainer}>
     <nav>
         <HamburgerIcon />
         <ul>
