@@ -1321,7 +1321,7 @@ var app = (function () {
     const file$d = "src/Components/MultiProjectCard.svelte";
 
     function create_fragment$d(ctx) {
-    	var a, div, img, t0, p, t1;
+    	var a, div, img, t0, p, span, t1;
 
     	return {
     		c: function create() {
@@ -1330,17 +1330,20 @@ var app = (function () {
     			img = element("img");
     			t0 = space();
     			p = element("p");
+    			span = element("span");
     			t1 = text(ctx.projectName);
     			attr(img, "src", ctx.imgSrc);
     			attr(img, "alt", "");
-    			attr(img, "class", "svelte-1gcngl1");
-    			add_location(img, file$d, 34, 6, 560);
-    			attr(div, "class", "img-container svelte-1gcngl1");
-    			add_location(div, file$d, 33, 4, 526);
-    			attr(p, "class", "svelte-1gcngl1");
-    			add_location(p, file$d, 36, 4, 603);
-    			attr(a, "class", "svelte-1gcngl1");
-    			add_location(a, file$d, 32, 0, 518);
+    			attr(img, "class", "svelte-3sx4f4");
+    			add_location(img, file$d, 81, 6, 1688);
+    			attr(div, "class", "img-container svelte-3sx4f4");
+    			add_location(div, file$d, 80, 4, 1654);
+    			attr(span, "class", "animateSick");
+    			add_location(span, file$d, 83, 7, 1734);
+    			attr(p, "class", "svelte-3sx4f4");
+    			add_location(p, file$d, 83, 4, 1731);
+    			attr(a, "class", "svelte-3sx4f4");
+    			add_location(a, file$d, 79, 0, 1646);
     		},
 
     		l: function claim(nodes) {
@@ -1353,6 +1356,7 @@ var app = (function () {
     			append(div, img);
     			append(a, t0);
     			append(a, p);
+    			append(p, span);
     			append(p, t1);
     		},
 
@@ -1435,7 +1439,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (39:8) {#each projects as project}
+    // (40:8) {#each projects as project}
     function create_each_block$1(ctx) {
     	var current;
 
@@ -1508,12 +1512,12 @@ var app = (function () {
     			for (var i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
-    			attr(h2, "class", "svelte-16w6m1u");
-    			add_location(h2, file$e, 36, 4, 647);
-    			attr(div0, "class", "card-container center-all svelte-16w6m1u");
-    			add_location(div0, file$e, 37, 4, 673);
-    			attr(div1, "class", "svelte-16w6m1u");
-    			add_location(div1, file$e, 35, 0, 637);
+    			attr(h2, "class", "svelte-mtja37");
+    			add_location(h2, file$e, 37, 4, 679);
+    			attr(div0, "class", "card-container center-all svelte-mtja37");
+    			add_location(div0, file$e, 38, 4, 705);
+    			attr(div1, "class", "svelte-mtja37");
+    			add_location(div1, file$e, 36, 0, 669);
     		},
 
     		l: function claim(nodes) {

@@ -22,7 +22,8 @@ h2 {
     font-size: 12rem;
     text-transform: uppercase;
     width: fit-content;
-    margin: auto;
+    /* margin: auto; */
+    margin-bottom: 20rem;
 }
 div:not(.card-container) {
     width: 100%;
