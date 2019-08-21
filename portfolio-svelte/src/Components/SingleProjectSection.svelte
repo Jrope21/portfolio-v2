@@ -1,5 +1,6 @@
 <script>
 import SingleProjectText from './SingleProjectText.svelte';
+import SingleProjectImage from './SingleProjectImage.svelte';
 </script>
 
 <style>
@@ -8,4 +9,5 @@ import SingleProjectText from './SingleProjectText.svelte';
 
 <div>
     <SingleProjectText />
+    <SingleProjectImage />
 </div>

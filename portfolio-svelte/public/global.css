@@ -64,6 +64,15 @@ html{
   }
 }
 
+@keyframes slightSpin{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(45deg)
+  }
+}
+
 /* additional global styling */
 
 

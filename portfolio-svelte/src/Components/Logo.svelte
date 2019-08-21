@@ -4,19 +4,20 @@
 
 <style>
     a {
-        position: fixed;
-        left: 25px;
+        position: absolute;
+        left: 15px;
         top: 20px;
     }
     /*line coming from top*/
     a::before {
         content: '';
         display:inline-block;
-        position: fixed;
-        top: 0;
+        position: absolute;
+        top: -22px;
         padding: 14px;
         border-radius: 100%;
-        left: 40px;
+        left: 17px;
+        
         height:20px;
         transform: rotate(-2deg);
         border-right: 3px solid gray;
@@ -53,8 +54,8 @@
     .letters{
         position: absolute;
         z-index: 2;
-        left: 17px;
-        top: 7px;
+        left: 15px;
+        top: 8px;
         font-size: 12px;
     }
     .letters > span:nth-child(1){

@@ -21,12 +21,14 @@
         position: absolute;
         top: 0;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         z-index: 2;
     }
     section.two {
-        width: 90vw;
+        width: 65vw;
+        min-height: 800px;
         height: 100vh;
+
         margin: auto;
     }
     
