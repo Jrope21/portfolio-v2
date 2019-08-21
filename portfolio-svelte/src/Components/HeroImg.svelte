@@ -49,7 +49,7 @@
         width: 200px;
         /* padding: rem; */
         height: 300px;
-        background-image: url("images/newYork.jpg");
+        background-image: url("images/homePage/newYork.jpg");
         background-size: 230%;
         background-position: 45% 65%;
         overflow-y: hidden;

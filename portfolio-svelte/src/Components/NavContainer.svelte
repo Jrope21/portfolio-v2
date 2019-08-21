@@ -43,7 +43,7 @@ ul {
     position: absolute;
     display: flex;
 
-    margin-top: 16px; /*was 2rem*/
+    margin-top: 11px; /*was 2rem*/
 }
 
 ul li {
