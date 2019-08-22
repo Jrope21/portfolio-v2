@@ -17,6 +17,12 @@ export let projectName;
         width: 65vw;
         height: 65vw;
     }
+    @media screen and (min-width: 40em){
+        .img-container{
+            width: 19.5vw;
+            height: 19.5vw;
+        }   
+    }
     img {
         object-fit: cover;
         width: 100%;

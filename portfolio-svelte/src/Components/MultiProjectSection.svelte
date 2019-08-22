@@ -32,6 +32,12 @@ div:not(.card-container) {
 .card-container{
     flex-direction: column;
 }
+@media screen and (min-width: 40em){
+    .card-container{
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+    }
+}
 </style>
 
 <div>

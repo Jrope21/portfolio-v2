@@ -1,6 +1,22 @@
 <script>
 import { onMount } from 'svelte';
 import FooterSocial from './FooterSocial.svelte';
+import FooterBreadcrumb from './FooterBreadcrumb.svelte';
+import Logo from './Logo.svelte';
+let breadcrumbs = [
+    {
+        name: 'about',
+        url: ''
+    },
+    {
+        name: 'portfolio',
+        url: ''
+    },
+    {
+        name: 'Contact',
+        url: ''
+    }
+]
 
 let socialCtas = [
     {
@@ -16,14 +32,17 @@ let socialCtas = [
 let footer;
 
 onMount(() => {
-    //nav turns sticky above footer
+    //nav turns sticky above footer - could change state instead
     let nav = document.getElementsByTagName('aside');
-    let footerTopScrollPos = footer.offsetTop - footer.offsetHeight;
-    let footerHeight = footer.offsetHeight;
+    
     window.addEventListener("scroll", () => {
+        let footerTopScrollPos = footer.offsetTop - footer.offsetHeight;
+        let footerHeight = footer.offsetHeight;
         let footerScrollMatch = window.pageYOffset + window.innerHeight - footerHeight;
         let stickyMarginCalc = document.body.offsetHeight - (window.pageYOffset + window.innerHeight + footerHeight);
         let stickyMarginAbs = Math.abs(stickyMarginCalc);
+
+
         if(footerScrollMatch >= footerTopScrollPos){
             nav[0].style.marginBottom = `${stickyMarginAbs}px`;
         } else {
@@ -36,9 +55,11 @@ onMount(() => {
 <style>
     footer {
         display: flex;
+        position: relative;
         min-height: 30vh;
         flex-wrap: wrap;
-        font-size: 10rem;
+        font-size: 8rem;
+        padding: 20rem 0rem;
     }
     div{
         flex: 100%;
@@ -50,18 +71,42 @@ onMount(() => {
     div.cta{
         
     }
+    h2{
+        text-transform: uppercase;
+        font-size: 8rem;
+        margin-bottom: 10rem;
+    }
+    p {
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+    p:nth-child(2){
+        font-size: 5rem;
+        margin-bottom: 0rem;
+    }
 </style>
 
 <footer bind:this={footer}>
     <div class="logo">
-        
+        <h2>Info</h2>
+        {#each breadcrumbs as breadcrumb}
+            <FooterBreadcrumb name={breadcrumb.name} url={breadcrumb.url}/>
+        {/each}
     </div>
     <div class="cta">
+        <h2>Connect</h2>
         {#each socialCtas as socialCta}
             <FooterSocial content={socialCta.content} url={socialCta.url}/>
         {/each}
     </div>
-    <div class="breadcrumbs">
-
+    <!-- <div class="breadcrumbs">
+        <h2>Questions</h2>
+    </div> -->
+    <div class="copyright">
+        <p>@ Joshua Roper 2019</p>
+        <p>Innovative | Bold | Creative</p>
     </div>
+    
 </footer>
