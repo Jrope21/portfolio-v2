@@ -6,26 +6,29 @@ export let url, name;
     a {
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 50%;
+        width: 80%;
         font-weight: 300;
         margin: 4rem 0rem;
         /* text-decoration: underline; */
     }
-    a::before {
+    /* creates underline */
+    /* a::before {
         content: '';
         border-bottom: 1px solid gray;
         position: absolute;
         width: 10%;
         bottom: -2px;
         display: block;
-    }
-    /* a::after {
-        content: '|';
-        font-size: 16rem;
-        display: block;
     } */
+    
+    a::after {
+        content: '|';
+        font-size: 14rem;
+        display: block;
+        color: lightgray;
+    }
 </style>
 
 <a href="{url}">

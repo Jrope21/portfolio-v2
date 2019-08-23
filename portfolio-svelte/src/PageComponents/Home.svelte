@@ -34,6 +34,11 @@
 
         margin: auto;
     }
+    /* @media screen and (min-width: 40em){
+        section.two {
+            min-height: 500px;
+        }
+    } */
     section.three {
         width: 65vw;
         position:relative;
@@ -41,6 +46,12 @@
         min-height: 100vh;
         /* background: rgba(34, 34, 34, 0.082); */
         margin: auto;
+    }
+    @media screen and (min-width: 40em){
+        section.three {
+            min-height: 600px;
+            width: 70vw;
+        }
     }
     section.three::after{
         content: '';

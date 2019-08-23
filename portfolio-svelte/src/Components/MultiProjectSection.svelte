@@ -1,5 +1,7 @@
 <script>
 import MultiProjectCard from './MultiProjectCard.svelte';
+import CircleIcon from './IconComponents/CircleIcon.svelte';
+
 let projects = [
     {
         imgSrc: 'images/homePage/university-park-cta.jpeg',
@@ -25,6 +27,22 @@ h2 {
     /* margin: auto; */
     margin-bottom: 20rem;
 }
+a{
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: 300;
+    width: fit-content;
+    margin-top: 30rem;
+    text-transform: uppercase;
+}
+h2::after{
+    content: '';
+    display:block;
+    width: 20%;
+    margin: 10rem 0rem 20rem 0rem;
+    border-bottom: 1px solid lightgray;
+}
 div:not(.card-container) {
     width: 100%;
     padding: 100rem 0rem;
@@ -35,16 +53,20 @@ div:not(.card-container) {
 @media screen and (min-width: 40em){
     .card-container{
         flex-direction: row;
+        justify-content: space-between;
         /* flex-wrap: wrap; */
     }
 }
 </style>
 
 <div>
-    <h2>Recent Works</h2>
+   <h2>Recent Works </h2>
+   
     <div class="card-container center-all">
+     
         {#each projects as project}
             <MultiProjectCard imgSrc={project.imgSrc} projectName={project.projectName}/>
         {/each}
     </div>
+    <a href=""><CircleIcon /> explore more works</a>
 </div>

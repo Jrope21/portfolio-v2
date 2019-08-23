@@ -3,6 +3,11 @@
 html{ 
 	font-size: 1px;/*for using REM units*/
   }
+  @media screen and (min-height: 40em){
+    html{
+      font-size:1.1px;
+    }
+  }
   body{
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	font-size: 16rem;
@@ -91,9 +96,12 @@ html{
 
 /* additional global styling */
 
+/* IconComponent global styles */
 
-
-
+a:hover .circleIcon{
+  /* animation: .2s ease-in 0s 1 slightSpin forwards; */
+  transform: rotate(90deg);
+}
 
 
 

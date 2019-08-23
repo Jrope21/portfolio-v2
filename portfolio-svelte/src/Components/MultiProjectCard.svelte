@@ -8,19 +8,20 @@ export let projectName;
         max-width: 100%;
     }
     a{
-        margin: 15rem;
+        /* margin: 15rem; */
     }
     .img-container{
         /* position: relative; */
-        /* overflow: hidden; */
+        overflow: hidden;
         /* min-width: 100%; */
         width: 65vw;
         height: 65vw;
     }
     @media screen and (min-width: 40em){
         .img-container{
-            width: 19.5vw;
-            height: 19.5vw;
+            max-width:100%; 
+            width: 20.5vw;
+            height: 20.5vw;
         }   
     }
     img {

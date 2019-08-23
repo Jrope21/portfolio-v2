@@ -56,20 +56,21 @@ onMount(() => {
     footer {
         display: flex;
         position: relative;
-        min-height: 30vh;
+        min-height: 25vh;
         flex-wrap: wrap;
+        align-items: center;    
         font-size: 8rem;
         padding: 20rem 0rem;
     }
     div{
-        flex: 100%;
+        flex: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
     }
-    div.cta{
-        
+    div.cta, div.breadcrumb{
+        min-height: 150px;
     }
     h2{
         text-transform: uppercase;
@@ -89,7 +90,7 @@ onMount(() => {
 </style>
 
 <footer bind:this={footer}>
-    <div class="logo">
+    <div class="breadcrumb">
         <h2>Info</h2>
         {#each breadcrumbs as breadcrumb}
             <FooterBreadcrumb name={breadcrumb.name} url={breadcrumb.url}/>
