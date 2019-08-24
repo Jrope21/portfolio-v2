@@ -26,8 +26,8 @@
     
 @media screen and (min-width: 560px){
     li > a {
-        transform: rotate(-40deg);
-        top: 20px; 
+        /* transform: rotate(-40deg); */
+        /* top: 20px;  */
         height: 100px;
     }
 }

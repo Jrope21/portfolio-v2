@@ -33,11 +33,17 @@ export let projectName;
         position: relative;
         display: flex;
         align-items: center;
-        margin-top: 15rem;
+        margin: 15rem 0;
+        
         font-size: 12rem;
         font-weight: 300;
         text-transform: uppercase;
         transition: all .2s ease-in-out;
+    }
+    @media screen and (min-width: 40em){
+        p {
+            margin-bottom: 0rem;
+        }
     }
     p::before{
         content: '';

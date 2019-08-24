@@ -305,8 +305,8 @@ var app = (function () {
     			a = element("a");
     			t = text(ctx.name);
     			attr(a, "href", ctx.url);
-    			attr(a, "class", "svelte-1khbzr9");
-    			add_location(a, file, 53, 1, 1095);
+    			attr(a, "class", "svelte-v7hffj");
+    			add_location(a, file, 53, 1, 1107);
     		},
 
     		l: function claim(nodes) {
@@ -1104,7 +1104,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (95:8) {#each breadcrumbs as breadcrumb}
+    // (112:12) {#each breadcrumbs as breadcrumb}
     function create_each_block_1(ctx) {
     	var current;
 
@@ -1148,7 +1148,7 @@ var app = (function () {
     	};
     }
 
-    // (101:8) {#each socialCtas as socialCta}
+    // (118:12) {#each socialCtas as socialCta}
     function create_each_block$1(ctx) {
     	var current;
 
@@ -1196,7 +1196,7 @@ var app = (function () {
     }
 
     function create_fragment$6(ctx) {
-    	var footer_1, div0, h20, t1, t2, div1, h21, t4, t5, div2, p0, t7, p1, current;
+    	var footer_1, div2, div0, h20, t1, t2, div1, h21, t4, t5, div3, p0, t7, p1, current;
 
     	var each_value_1 = ctx.breadcrumbs;
 
@@ -1225,6 +1225,7 @@ var app = (function () {
     	return {
     		c: function create() {
     			footer_1 = element("footer");
+    			div2 = element("div");
     			div0 = element("div");
     			h20 = element("h2");
     			h20.textContent = "Info";
@@ -1245,28 +1246,30 @@ var app = (function () {
     			}
 
     			t5 = space();
-    			div2 = element("div");
+    			div3 = element("div");
     			p0 = element("p");
     			p0.textContent = "@ Joshua Roper 2019";
     			t7 = space();
     			p1 = element("p");
     			p1.textContent = "Innovative | Bold | Creative";
-    			attr(h20, "class", "svelte-zieus9");
-    			add_location(h20, file$6, 93, 8, 2157);
-    			attr(div0, "class", "breadcrumb svelte-zieus9");
-    			add_location(div0, file$6, 92, 4, 2124);
-    			attr(h21, "class", "svelte-zieus9");
-    			add_location(h21, file$6, 99, 8, 2346);
-    			attr(div1, "class", "cta svelte-zieus9");
-    			add_location(div1, file$6, 98, 4, 2320);
-    			attr(p0, "class", "svelte-zieus9");
-    			add_location(p0, file$6, 108, 8, 2619);
-    			attr(p1, "class", "svelte-zieus9");
-    			add_location(p1, file$6, 109, 8, 2654);
-    			attr(div2, "class", "copyright svelte-zieus9");
-    			add_location(div2, file$6, 107, 4, 2587);
-    			attr(footer_1, "class", "svelte-zieus9");
-    			add_location(footer_1, file$6, 91, 0, 2092);
+    			attr(h20, "class", "svelte-d9fi3i");
+    			add_location(h20, file$6, 110, 12, 2482);
+    			attr(div0, "class", "breadcrumb svelte-d9fi3i");
+    			add_location(div0, file$6, 109, 8, 2445);
+    			attr(h21, "class", "svelte-d9fi3i");
+    			add_location(h21, file$6, 116, 12, 2695);
+    			attr(div1, "class", "cta svelte-d9fi3i");
+    			add_location(div1, file$6, 115, 8, 2665);
+    			attr(div2, "class", "top-row svelte-d9fi3i");
+    			add_location(div2, file$6, 108, 4, 2415);
+    			attr(p0, "class", "svelte-d9fi3i");
+    			add_location(p0, file$6, 126, 8, 2995);
+    			attr(p1, "class", "svelte-d9fi3i");
+    			add_location(p1, file$6, 127, 8, 3030);
+    			attr(div3, "class", "copyright svelte-d9fi3i");
+    			add_location(div3, file$6, 125, 4, 2963);
+    			attr(footer_1, "class", "svelte-d9fi3i");
+    			add_location(footer_1, file$6, 107, 0, 2383);
     		},
 
     		l: function claim(nodes) {
@@ -1275,7 +1278,8 @@ var app = (function () {
 
     		m: function mount(target, anchor) {
     			insert(target, footer_1, anchor);
-    			append(footer_1, div0);
+    			append(footer_1, div2);
+    			append(div2, div0);
     			append(div0, h20);
     			append(div0, t1);
 
@@ -1283,8 +1287,8 @@ var app = (function () {
     				each_blocks_1[i].m(div0, null);
     			}
 
-    			append(footer_1, t2);
-    			append(footer_1, div1);
+    			append(div2, t2);
+    			append(div2, div1);
     			append(div1, h21);
     			append(div1, t4);
 
@@ -1293,10 +1297,10 @@ var app = (function () {
     			}
 
     			append(footer_1, t5);
-    			append(footer_1, div2);
-    			append(div2, p0);
-    			append(div2, t7);
-    			append(div2, p1);
+    			append(footer_1, div3);
+    			append(div3, p0);
+    			append(div3, t7);
+    			append(div3, p1);
     			ctx.footer_1_binding(footer_1);
     			current = true;
     		},
@@ -2114,16 +2118,16 @@ var app = (function () {
     			t1 = text(ctx.projectName);
     			attr(img, "src", ctx.imgSrc);
     			attr(img, "alt", "");
-    			attr(img, "class", "svelte-mamrxf");
-    			add_location(img, file$h, 88, 6, 1856);
-    			attr(div, "class", "img-container svelte-mamrxf");
-    			add_location(div, file$h, 87, 4, 1822);
+    			attr(img, "class", "svelte-uboa9d");
+    			add_location(img, file$h, 94, 6, 1965);
+    			attr(div, "class", "img-container svelte-uboa9d");
+    			add_location(div, file$h, 93, 4, 1931);
     			attr(span, "class", "animateSick");
-    			add_location(span, file$h, 90, 7, 1902);
-    			attr(p, "class", "svelte-mamrxf");
-    			add_location(p, file$h, 90, 4, 1899);
-    			attr(a, "class", "svelte-mamrxf");
-    			add_location(a, file$h, 86, 0, 1814);
+    			add_location(span, file$h, 96, 7, 2011);
+    			attr(p, "class", "svelte-uboa9d");
+    			add_location(p, file$h, 96, 4, 2008);
+    			attr(a, "class", "svelte-uboa9d");
+    			add_location(a, file$h, 92, 0, 1923);
     		},
 
     		l: function claim(nodes) {

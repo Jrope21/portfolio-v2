@@ -58,17 +58,33 @@ onMount(() => {
         position: relative;
         min-height: 25vh;
         flex-wrap: wrap;
-        align-items: center;    
+        align-items: center;  
+        justify-content: center;  
         font-size: 8rem;
         padding: 20rem 0rem;
     }
-    div{
+    .top-row {
+        display: flex;
+        flex: 100%;
+    }
+    @media screen and (min-width: 40em){
+        .top-row {
+            max-width:75%;
+        }
+    }
+    div:not(.top-row){
         flex: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
     }
+    /* @media screen and (min-width: 40em){
+        div{
+            flex: 30%;
+      
+        }
+    } */
+    .copy
     div.cta, div.breadcrumb{
         min-height: 150px;
     }
@@ -90,17 +106,19 @@ onMount(() => {
 </style>
 
 <footer bind:this={footer}>
-    <div class="breadcrumb">
-        <h2>Info</h2>
-        {#each breadcrumbs as breadcrumb}
-            <FooterBreadcrumb name={breadcrumb.name} url={breadcrumb.url}/>
-        {/each}
-    </div>
-    <div class="cta">
-        <h2>Connect</h2>
-        {#each socialCtas as socialCta}
-            <FooterSocial content={socialCta.content} url={socialCta.url}/>
-        {/each}
+    <div class="top-row">
+        <div class="breadcrumb">
+            <h2>Info</h2>
+            {#each breadcrumbs as breadcrumb}
+                <FooterBreadcrumb name={breadcrumb.name} url={breadcrumb.url}/>
+            {/each}
+        </div>
+        <div class="cta">
+            <h2>Connect</h2>
+            {#each socialCtas as socialCta}
+                <FooterSocial content={socialCta.content} url={socialCta.url}/>
+            {/each}
+        </div>
     </div>
     <!-- <div class="breadcrumbs">
         <h2>Questions</h2>
