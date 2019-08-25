@@ -34,7 +34,7 @@
         border-radius: 100%;
         border: 1px solid gray;
         padding: 8px;
-        
+        z-index: 2;
     }
     a.scrolled {
         opacity: 1 !important;
@@ -42,7 +42,7 @@
 
 </style>
 
-   <a href="" class="scrolled" bind:this={logo}>
+   <a href="." class="scrolled" bind:this={logo}>
         <p>JR</p>
     </a>
 

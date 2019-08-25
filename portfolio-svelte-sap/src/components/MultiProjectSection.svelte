@@ -1,0 +1,73 @@
+<script>
+import MultiProjectCard from './MultiProjectSectionComponents/MultiProjectCard.svelte';
+import CircleIcon from './IconComponents/CircleIcon.svelte';
+import TextUnderline from './IconComponents/TextUnderline.svelte';
+
+let projects = [
+    {
+        imgSrc: 'images/homePage/university-park-cta.jpeg',
+        projectName: 'University Park'
+    },
+    {
+        imgSrc: 'images/homePage/bub.jpeg',
+        projectName: 'Creative Revolt'
+    },
+    {
+        imgSrc: 'images/homePage/WBUH.jpeg',
+        projectName: 'HomeVestors'
+    }
+]
+
+</script>
+
+<style>
+h2 {
+    font-size: 12rem;
+    text-transform: uppercase;
+    width: fit-content;
+    /* margin: auto; */
+    margin-bottom: 20rem;
+}
+a{
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: 300;
+    width: fit-content;
+    margin-top: 30rem;
+    text-transform: uppercase;
+}
+h2::after{
+    content: '';
+    display:block;
+    width: 20%;
+    margin: 10rem 0rem 20rem 0rem;
+    border-bottom: 1px solid lightgray;
+}
+div:not(.card-container) {
+    width: 100%;
+    padding: 100rem 0rem;
+}
+.card-container{
+    flex-direction: column;
+}
+@media screen and (min-width: 40em){
+    .card-container{
+        flex-direction: row;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+}
+</style>
+
+<div>
+   <h2>Recent Works </h2>
+   
+    <div class="card-container center-all">
+     
+        {#each projects as project}
+            <MultiProjectCard imgSrc={project.imgSrc} projectName={project.projectName}/>
+        {/each}
+    </div>
+    <a href=""><CircleIcon /> <TextUnderline text={'explore more works'}/></a>
+</div>
