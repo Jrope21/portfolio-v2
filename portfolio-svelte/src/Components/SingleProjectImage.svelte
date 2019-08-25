@@ -5,6 +5,7 @@
 <style>
 img{
     max-width: 100%;
+    height: 340px;
     max-height: 500px;
     margin-top: 20rem;
     box-shadow: 1px 3px 05px lightgray;

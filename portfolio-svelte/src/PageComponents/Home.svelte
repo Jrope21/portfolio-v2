@@ -68,10 +68,9 @@
 </style>
 <Logo />
 <!-- <StripeBackground /> -->
-<HeroTopText />
+
 <NavContainer />
 <section class="one center-all">
-
     <HeroSection />
 </section>
 <section class="two center-all">

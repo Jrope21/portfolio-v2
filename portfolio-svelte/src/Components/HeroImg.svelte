@@ -1,65 +1,22 @@
 <script>
 import { onMount } from 'svelte';
-
+import ImageGradient from './IconComponents/ImageGradient.svelte';
 let heroImg;
+// onMount(()=>{
 
-onMount(()=>{
+//     window.addEventListener('scroll', ()=>{
 
-    window.addEventListener('scroll', ()=>{
-
-        let scrollHeight = window.pageYOffset;
+//         let scrollHeight = window.pageYOffset;
         
-        heroImg.style.top = `-${scrollHeight / 20}px`
+//         heroImg.style.top = `-${scrollHeight / 20}px`
 
-    })
+//     })
 
-})
+// })
 
 </script>
 
 <style>
-@keyframes slideInFromTop {
-  0% {
-    top: -100%;
-  }
-  50% {
-    top: 0;
-  }
-  100% {
-      top: 100%
-  }
-}
-@keyframes slideInFromBottom {
-  0% {
-    top: 100%;
-  }
-  50% {
-    top: 0;
-  }
-  100% {
-      top: -100%
-  }
-}
-
-@keyframes slideOutBottom {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: 100%;
-    }
-}
-@keyframes slideOutTop {
-    0% {
-        top: 0;
-    }
-      50% {
-        top: 0;
-    }
-    100% {
-        top: -100%;
-    }
-}
     .hero-image{
         width: 250px;
         height: 420px;
@@ -71,17 +28,13 @@ onMount(()=>{
         top: 30px;
         transition: top .01s ease-in;
     }
-    /* .hero-image::before {
+    .hero-image::before {
         content: '';
         display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100px;
-        height: 40px;
-        background: white;
-        z-index: 1;
-    } */
+        width: 100%;
+         height: 100%;
+         background: rgb(24, 24, 24, .2);
+    }
     /* .hero-image::after {
         content: '';
         display: inline-block;
@@ -94,71 +47,18 @@ onMount(()=>{
         z-index: 1;
     } */
     
-    .overlay{
+    /* .overlay{
          width: 100%;
          height: 100%;
          background: rgb(24, 24, 24, .2);
-    }
+    } */
 
-    .boxes::before {
-        content: '';
-        position: relative;
-        display: inline-block;
-        background: white;
-        height: 100%;
-        width: 100px;
-        top: 100%;
-        animation: 3s linear 0s 1 slideOutBottom;
-    }
-
-    .boxes::after {
-        content: '';
-        position: relative;
-        display: inline-block;
-        background: white;
-        height: 100%;
-        width: 100px;
-        top: -100%;
-        
-        animation: 3s linear 0s 1 slideOutTop;
-       
-    }
-
-    .gradient-animate {
-        position: absolute;
-        top: 00px;
-        width: 100%;
-        height: 100%;
-    }
-
-     .gradient-animate::before {
-        content: '';
-        position: relative;
-        display: inline-block;
-        background-image: linear-gradient(to top, rgb(53, 53, 53), gray);
-        height: 100%;
-        width: 100px;
-        top: 100%;
-        animation: 3.2s ease-in-out 0s 1 slideInFromTop;
-    }
-
-    .gradient-animate::after {
-        content: '';
-        position: relative;
-        display: inline-block;
-        background-image: linear-gradient(to top, rgb(53, 53, 53), gray);
-        height: 100%;
-        width: 100px;
-        top: -100%;
-        animation: 3s ease-in-out 0s 1 slideInFromBottom;
-        animation-delay: .4s;
-    }
-
+    
 </style>
 
 <div bind:this={heroImg} class="hero-image">
-    <div class="overlay boxes">
-       
-    </div>
-     <span  class="gradient-animate"></span>
+        <!-- <div class="overlay boxes">
+        
+        </div> -->
+    <ImageGradient />
 </div>

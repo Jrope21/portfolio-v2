@@ -4,10 +4,10 @@
 
 <style>
 div{
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0;
     left: 30px;
-    margin: 45px 28px;
+    margin: 45px 28px; */
 }
 h1, h2{
     margin: 0px;

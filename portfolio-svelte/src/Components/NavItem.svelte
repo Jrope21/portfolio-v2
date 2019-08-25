@@ -11,6 +11,8 @@
         top: 0;
          transform: rotate(0deg);
         transition: all .5s ease-in-out;
+        text-transform: uppercase;
+        font-size: 12rem;
         /* transition: top 2s ease-out; */
     }
    li > a {
