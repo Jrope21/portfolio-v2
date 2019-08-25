@@ -1626,14 +1626,14 @@ var app = (function () {
     			i1 = element("i");
     			t1 = space();
     			i2 = element("i");
-    			attr(i0, "class", "fab fa-github svelte-1mbdc0i");
-    			add_location(i0, file$b, 53, 4, 989);
-    			attr(i1, "class", "fab fa-linkedin svelte-1mbdc0i");
-    			add_location(i1, file$b, 54, 4, 1023);
-    			attr(i2, "class", "fas fa-envelope svelte-1mbdc0i");
-    			add_location(i2, file$b, 55, 4, 1059);
-    			attr(div, "class", "social-container svelte-1mbdc0i");
-    			add_location(div, file$b, 52, 0, 954);
+    			attr(i0, "class", "fab fa-github svelte-1vpl44b");
+    			add_location(i0, file$b, 40, 4, 769);
+    			attr(i1, "class", "fab fa-linkedin svelte-1vpl44b");
+    			add_location(i1, file$b, 41, 4, 803);
+    			attr(i2, "class", "fas fa-envelope svelte-1vpl44b");
+    			add_location(i2, file$b, 42, 4, 839);
+    			attr(div, "class", "social-container svelte-1vpl44b");
+    			add_location(div, file$b, 39, 0, 734);
     		},
 
     		l: function claim(nodes) {

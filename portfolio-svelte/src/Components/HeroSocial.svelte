@@ -3,20 +3,7 @@
 </script>
 
 <style>
-@keyframes fadeInLeft{
-  0% {
-      transform: translateX(-20px);
-      opacity: 0;
-  }
-  65% {
-      transform: translateX(-20px);
-      opacity: 0;
-  }
-  100% {
-      transform: translateX(0px);
-      opacity: 1;
-  }
-}
+
 
  /* animation: 2.8s ease-in 0s 1 fadeInBottom; */
 .social-container {
@@ -42,11 +29,11 @@ i:nth-child(3){
 }
 i:nth-child(2){
     opacity: 0;
-    animation: 3.6s ease-in-out 0s 1 fadeInleft forwards;
+    animation: 3.6s ease-in-out 0s 1 fadeInLeft forwards;
 }
 i:nth-child(1){
     opacity: 0;
-    animation: 2.2s ease-in-out 0s 1 fadeInleft forwards;
+    animation: 2.2s ease-in-out 0s 1 fadeInLeft forwards;
 }
 </style>
 

@@ -109,6 +109,21 @@ html{
   }
 }
 
+@keyframes fadeInLeft{
+  0% {
+      transform: translateX(-20px);
+      opacity: 0;
+  }
+  65% {
+      transform: translateX(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
 /* additional global styling */
 
 /* IconComponent global styles */
