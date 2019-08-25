@@ -4,6 +4,7 @@ import HeroLeftText from './HeroLeftText.svelte';
 import HeroRightText from './HeroRightText.svelte';
 import HeroArrowDown from './HeroArrowDown.svelte';
 import HeroSocial from './HeroSocial.svelte';
+import HeroTopText from './HeroTopText.svelte';
 </script>
 
 <style>
@@ -20,13 +21,13 @@ div.hero-text {
 }
 </style>
 <div class="hero-container center-all">
-    <div class="hero-text">
+    <!-- <div class="hero-text">
         <HeroLeftText />
-    </div>
+    </div> -->
     <HeroImg />
-    <div class="hero-text">
+    <!-- <div class="hero-text">
         <HeroRightText />
-    </div>
+    </div> -->
 </div>
-<HeroArrowDown />
+<!-- <HeroArrowDown /> -->
 <HeroSocial />

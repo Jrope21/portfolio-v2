@@ -7,11 +7,23 @@
 .social-container {
     position: absolute;
     bottom: 0;
-    height: 50px;
-    width: 55%;
+    left: 0;
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* left: 30px; */
+   /* padding-left: 30px; */
+}
+i:first-of-type {
+    
 }
 i {
-    margin-right: 5px;
+    margin: 05px 0;
+    /* margin-right: 5px; */
     color: gray;
     /* top: 0; */
     /* transition: top .05s ease-in-out; */
@@ -25,15 +37,18 @@ i:hover {
 /*must set position: <value> for animation to work*/
 i:nth-child(3){
     position: relative;
-    animation: 3.8s ease-in 0s 1 fadeInBottom;
+    /* 3.8 */
+    animation: 2.8s ease-in-out 0s 1 fadeInBottom;
 }
 i:nth-child(2){
     position: relative;
-    animation: 4.6s ease-in 0s 1 fadeInBottom;
+    /* 4.6 */
+    animation: 3.6s ease-in-out 0s 1 fadeInBottom;
 }
 i:nth-child(1){
     position: relative;
-    animation: 3.2s ease-in 0s 1 fadeInBottom;
+    /* 3.2 */
+    animation: 2.2s ease-in-out 0s 1 fadeInBottom;
 }
 </style>
 

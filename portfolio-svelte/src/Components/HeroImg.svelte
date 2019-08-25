@@ -71,7 +71,7 @@ onMount(()=>{
         transition: top .01s ease-in;
         
     }
-    .hero-image::before {
+    /* .hero-image::before {
         content: '';
         display: inline-block;
         position: absolute;
@@ -81,8 +81,8 @@ onMount(()=>{
         height: 40px;
         background: white;
         z-index: 1;
-    }
-    .hero-image::after {
+    } */
+    /* .hero-image::after {
         content: '';
         display: inline-block;
         position: absolute;
@@ -92,7 +92,7 @@ onMount(()=>{
         height: 40px;
         background: white;
         z-index: 1;
-    }
+    } */
     
     .overlay{
          width: 100%;

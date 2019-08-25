@@ -49,9 +49,6 @@ var app = (function () {
     function space() {
         return text(' ');
     }
-    function empty() {
-        return text('');
-    }
     function attr(node, attribute, value) {
         if (value == null)
             node.removeAttribute(attribute);
@@ -400,16 +397,16 @@ var app = (function () {
     			t = space();
     			label = element("label");
     			span = element("span");
-    			attr(input, "class", "hide-for-medium hamburger-check svelte-1cyzgl");
+    			attr(input, "class", "hide-for-medium hamburger-check svelte-638fxh");
     			attr(input, "id", "hamburger");
     			attr(input, "name", "hamburger");
     			attr(input, "type", "checkbox");
-    			add_location(input, file$1, 89, 0, 1987);
-    			attr(span, "class", "hamburger-lines svelte-1cyzgl");
-    			add_location(span, file$1, 91, 4, 2173);
-    			attr(label, "class", "hide-for-medium center-all svelte-1cyzgl");
+    			add_location(input, file$1, 89, 0, 1999);
+    			attr(span, "class", "hamburger-lines svelte-638fxh");
+    			add_location(span, file$1, 91, 4, 2185);
+    			attr(label, "class", "hide-for-medium center-all svelte-638fxh");
     			attr(label, "for", "hamburger");
-    			add_location(label, file$1, 90, 0, 2110);
+    			add_location(label, file$1, 90, 0, 2122);
     		},
 
     		l: function claim(nodes) {
@@ -976,125 +973,18 @@ var app = (function () {
 
     const file$6 = "src/Components/Logo.svelte";
 
-    // (117:4) {:else}
-    function create_else_block(ctx) {
-    	var a, span0, t0, span3, span1, t2, span2;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			span0 = element("span");
-    			t0 = space();
-    			span3 = element("span");
-    			span1 = element("span");
-    			span1.textContent = "J";
-    			t2 = space();
-    			span2 = element("span");
-    			span2.textContent = "R";
-    			attr(span0, "class", "shape svelte-1hjq0jy");
-    			add_location(span0, file$6, 118, 4, 2661);
-    			attr(span1, "class", "svelte-1hjq0jy");
-    			add_location(span1, file$6, 120, 12, 2750);
-    			attr(span2, "class", "svelte-1hjq0jy");
-    			add_location(span2, file$6, 121, 12, 2777);
-    			attr(span3, "class", "letters svelte-1hjq0jy");
-    			add_location(span3, file$6, 119, 8, 2715);
-    			attr(a, "class", "svelte-1hjq0jy");
-    			add_location(a, file$6, 117, 3, 2636);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, span0);
-    			ctx.span0_binding_1(span0);
-    			append(a, t0);
-    			append(a, span3);
-    			append(span3, span1);
-    			append(span3, t2);
-    			append(span3, span2);
-    			ctx.a_binding_1(a);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-
-    			ctx.span0_binding_1(null);
-    			ctx.a_binding_1(null);
-    		}
-    	};
-    }
-
-    // (108:0) {#if position.scrolled}
-    function create_if_block(ctx) {
-    	var a, span0, t0, span3, span1, t2, span2;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			span0 = element("span");
-    			t0 = space();
-    			span3 = element("span");
-    			span1 = element("span");
-    			span1.textContent = "J";
-    			t2 = space();
-    			span2 = element("span");
-    			span2.textContent = "R";
-    			attr(span0, "class", "shape svelte-1hjq0jy");
-    			add_location(span0, file$6, 109, 4, 2462);
-    			attr(span1, "class", "svelte-1hjq0jy");
-    			add_location(span1, file$6, 111, 12, 2551);
-    			attr(span2, "class", "svelte-1hjq0jy");
-    			add_location(span2, file$6, 112, 12, 2578);
-    			attr(span3, "class", "letters svelte-1hjq0jy");
-    			add_location(span3, file$6, 110, 8, 2516);
-    			attr(a, "class", "scrolled svelte-1hjq0jy");
-    			add_location(a, file$6, 108, 0, 2420);
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, span0);
-    			ctx.span0_binding(span0);
-    			append(a, t0);
-    			append(a, span3);
-    			append(span3, span1);
-    			append(span3, t2);
-    			append(span3, span2);
-    			ctx.a_binding(a);
-    		},
-
-    		p: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-
-    			ctx.span0_binding(null);
-    			ctx.a_binding(null);
-    		}
-    	};
-    }
-
     function create_fragment$6(ctx) {
-    	var if_block_anchor;
-
-    	function select_block_type(ctx) {
-    		if (ctx.position.scrolled) return create_if_block;
-    		return create_else_block;
-    	}
-
-    	var current_block_type = select_block_type(ctx);
-    	var if_block = current_block_type(ctx);
+    	var a, p;
 
     	return {
     		c: function create() {
-    			if_block.c();
-    			if_block_anchor = empty();
+    			a = element("a");
+    			p = element("p");
+    			p.textContent = "JR";
+    			add_location(p, file$6, 132, 8, 3172);
+    			attr(a, "href", "");
+    			attr(a, "class", "scrolled svelte-268tkm");
+    			add_location(a, file$6, 126, 3, 2948);
     		},
 
     		l: function claim(nodes) {
@@ -1102,52 +992,39 @@ var app = (function () {
     		},
 
     		m: function mount(target, anchor) {
-    			if_block.m(target, anchor);
-    			insert(target, if_block_anchor, anchor);
+    			insert(target, a, anchor);
+    			append(a, p);
+    			ctx.a_binding(a);
     		},
 
-    		p: function update(changed, ctx) {
-    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
-    				if_block.p(changed, ctx);
-    			} else {
-    				if_block.d(1);
-    				if_block = current_block_type(ctx);
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			}
-    		},
-
+    		p: noop,
     		i: noop,
     		o: noop,
 
     		d: function destroy(detaching) {
-    			if_block.d(detaching);
-
     			if (detaching) {
-    				detach(if_block_anchor);
+    				detach(a);
     			}
+
+    			ctx.a_binding(null);
     		}
     	};
     }
 
     function instance$6($$self, $$props, $$invalidate) {
     	let logo;
-        let shape;
-
-        let position = { scrolled: false };
         // onMount(() => {
         //nav turns sticky above footer - could change state instead
         
         
         onMount(() => {
+            logo.classList.remove('scrolled');
             let scrolledCheck = () => {
                 let scroll = window.pageYOffset;
-                if(scroll > 20){
-                    position.scrolled = true; $$invalidate('position', position);
+                if(scroll > 130){
+                    logo.classList.add('scrolled');
                 } else {
-                    position.scrolled = false; $$invalidate('position', position);
+                    logo.classList.remove('scrolled');
                 }
                 // shape.style.transform = `rotate(-.${scroll}deg)`
                 // console.log(shape)
@@ -1157,39 +1034,13 @@ var app = (function () {
         });
     // })
 
-    	function span0_binding($$value) {
-    		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
-    			$$invalidate('shape', shape = $$value);
-    		});
-    	}
-
     	function a_binding($$value) {
     		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
     			$$invalidate('logo', logo = $$value);
     		});
     	}
 
-    	function span0_binding_1($$value) {
-    		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
-    			$$invalidate('shape', shape = $$value);
-    		});
-    	}
-
-    	function a_binding_1($$value) {
-    		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
-    			$$invalidate('logo', logo = $$value);
-    		});
-    	}
-
-    	return {
-    		logo,
-    		shape,
-    		position,
-    		span0_binding,
-    		a_binding,
-    		span0_binding_1,
-    		a_binding_1
-    	};
+    	return { logo, a_binding };
     }
 
     class Logo extends SvelteComponentDev {
@@ -1566,11 +1417,64 @@ var app = (function () {
     	}
     }
 
-    /* src/Components/HeroImg.svelte generated by Svelte v3.7.1 */
+    /* src/Components/HeroTopText.svelte generated by Svelte v3.7.1 */
 
-    const file$8 = "src/Components/HeroImg.svelte";
+    const file$8 = "src/Components/HeroTopText.svelte";
 
     function create_fragment$8(ctx) {
+    	var div, h1, t_1, h2;
+
+    	return {
+    		c: function create() {
+    			div = element("div");
+    			h1 = element("h1");
+    			h1.textContent = "Joshua Roper";
+    			t_1 = space();
+    			h2 = element("h2");
+    			h2.textContent = "Front End Developer";
+    			attr(h1, "class", "svelte-889jd5");
+    			add_location(h1, file$8, 24, 4, 266);
+    			attr(h2, "class", "svelte-889jd5");
+    			add_location(h2, file$8, 25, 4, 292);
+    			attr(div, "class", "svelte-889jd5");
+    			add_location(div, file$8, 23, 0, 256);
+    		},
+
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, div, anchor);
+    			append(div, h1);
+    			append(div, t_1);
+    			append(div, h2);
+    		},
+
+    		p: noop,
+    		i: noop,
+    		o: noop,
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(div);
+    			}
+    		}
+    	};
+    }
+
+    class HeroTopText extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, null, create_fragment$8, safe_not_equal, []);
+    	}
+    }
+
+    /* src/Components/HeroImg.svelte generated by Svelte v3.7.1 */
+
+    const file$9 = "src/Components/HeroImg.svelte";
+
+    function create_fragment$9(ctx) {
     	var div1, div0, t, span;
 
     	return {
@@ -1579,12 +1483,12 @@ var app = (function () {
     			div0 = element("div");
     			t = space();
     			span = element("span");
-    			attr(div0, "class", "overlay boxes svelte-1dd7oip");
-    			add_location(div0, file$8, 159, 4, 2948);
-    			attr(span, "class", "gradient-animate svelte-1dd7oip");
-    			add_location(span, file$8, 162, 5, 3000);
-    			attr(div1, "class", "hero-image svelte-1dd7oip");
-    			add_location(div1, file$8, 158, 0, 2899);
+    			attr(div0, "class", "overlay boxes svelte-1q6kpn3");
+    			add_location(div0, file$9, 159, 4, 2960);
+    			attr(span, "class", "gradient-animate svelte-1q6kpn3");
+    			add_location(span, file$9, 162, 5, 3012);
+    			attr(div1, "class", "hero-image svelte-1q6kpn3");
+    			add_location(div1, file$9, 158, 0, 2911);
     		},
 
     		l: function claim(nodes) {
@@ -1640,213 +1544,15 @@ var app = (function () {
     class HeroImg extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$8, create_fragment$8, safe_not_equal, []);
-    	}
-    }
-
-    /* src/Components/HeroLeftText.svelte generated by Svelte v3.7.1 */
-
-    const file$9 = "src/Components/HeroLeftText.svelte";
-
-    function create_fragment$9(ctx) {
-    	var p, span0, t_1, span1;
-
-    	return {
-    		c: function create() {
-    			p = element("p");
-    			span0 = element("span");
-    			span0.textContent = "Developer";
-    			t_1 = space();
-    			span1 = element("span");
-    			span1.textContent = "Designer";
-    			attr(span0, "class", "svelte-3npmah");
-    			add_location(span0, file$9, 102, 0, 1775);
-    			attr(span1, "class", "svelte-3npmah");
-    			add_location(span1, file$9, 103, 0, 1798);
-    			attr(p, "class", "svelte-3npmah");
-    			add_location(p, file$9, 101, 0, 1771);
-    		},
-
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, p, anchor);
-    			append(p, span0);
-    			append(p, t_1);
-    			append(p, span1);
-    		},
-
-    		p: noop,
-    		i: noop,
-    		o: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(p);
-    			}
-    		}
-    	};
-    }
-
-    class HeroLeftText extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, null, create_fragment$9, safe_not_equal, []);
-    	}
-    }
-
-    /* src/Components/HeroRightText.svelte generated by Svelte v3.7.1 */
-
-    const file$a = "src/Components/HeroRightText.svelte";
-
-    function create_fragment$a(ctx) {
-    	var p, span0, t1, span1, t3, span2, t5, span3, t7, span4;
-
-    	return {
-    		c: function create() {
-    			p = element("p");
-    			span0 = element("span");
-    			span0.textContent = "Innovative";
-    			t1 = space();
-    			span1 = element("span");
-    			span1.textContent = "|";
-    			t3 = space();
-    			span2 = element("span");
-    			span2.textContent = "Bold";
-    			t5 = space();
-    			span3 = element("span");
-    			span3.textContent = "|";
-    			t7 = space();
-    			span4 = element("span");
-    			span4.textContent = "Creative";
-    			attr(span0, "class", "text svelte-8nctdd");
-    			add_location(span0, file$a, 73, 4, 1063);
-    			attr(span1, "class", "seperator svelte-8nctdd");
-    			add_location(span1, file$a, 73, 41, 1100);
-    			attr(span2, "class", "text svelte-8nctdd");
-    			add_location(span2, file$a, 74, 4, 1137);
-    			attr(span3, "class", "seperator svelte-8nctdd");
-    			add_location(span3, file$a, 74, 35, 1168);
-    			attr(span4, "class", "text svelte-8nctdd");
-    			add_location(span4, file$a, 75, 4, 1205);
-    			attr(p, "class", "svelte-8nctdd");
-    			add_location(p, file$a, 72, 0, 1055);
-    		},
-
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, p, anchor);
-    			append(p, span0);
-    			append(p, t1);
-    			append(p, span1);
-    			append(p, t3);
-    			append(p, span2);
-    			append(p, t5);
-    			append(p, span3);
-    			append(p, t7);
-    			append(p, span4);
-    		},
-
-    		p: noop,
-    		i: noop,
-    		o: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(p);
-    			}
-    		}
-    	};
-    }
-
-    class HeroRightText extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, null, create_fragment$a, safe_not_equal, []);
-    	}
-    }
-
-    /* src/Components/HeroArrowDown.svelte generated by Svelte v3.7.1 */
-
-    const file$b = "src/Components/HeroArrowDown.svelte";
-
-    function create_fragment$b(ctx) {
-    	var a, span;
-
-    	return {
-    		c: function create() {
-    			a = element("a");
-    			span = element("span");
-    			attr(span, "class", "svelte-is3d6e");
-    			add_location(span, file$b, 85, 30, 1575);
-    			attr(a, "href", "#");
-    			attr(a, "class", "svelte-is3d6e");
-    			add_location(a, file$b, 85, 0, 1545);
-    		},
-
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-
-    		m: function mount(target, anchor) {
-    			insert(target, a, anchor);
-    			append(a, span);
-    			ctx.a_binding(a);
-    		},
-
-    		p: noop,
-    		i: noop,
-    		o: noop,
-
-    		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach(a);
-    			}
-
-    			ctx.a_binding(null);
-    		}
-    	};
-    }
-
-    function instance$9($$self, $$props, $$invalidate) {
-    	let arrow;
-
-    onMount(()=>{
-
-        window.addEventListener('scroll', ()=>{
-            let scrollHeight = window.pageYOffset;
-            
-            arrow.style.marginBottom = `-${scrollHeight / 40}px`; $$invalidate('arrow', arrow);
-        });
-
-    });
-
-    	function a_binding($$value) {
-    		binding_callbacks[$$value ? 'unshift' : 'push'](() => {
-    			$$invalidate('arrow', arrow = $$value);
-    		});
-    	}
-
-    	return { arrow, a_binding };
-    }
-
-    class HeroArrowDown extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$9, create_fragment$b, safe_not_equal, []);
+    		init(this, options, instance$8, create_fragment$9, safe_not_equal, []);
     	}
     }
 
     /* src/Components/HeroSocial.svelte generated by Svelte v3.7.1 */
 
-    const file$c = "src/Components/HeroSocial.svelte";
+    const file$a = "src/Components/HeroSocial.svelte";
 
-    function create_fragment$c(ctx) {
+    function create_fragment$a(ctx) {
     	var div, i0, t0, i1, t1, i2;
 
     	return {
@@ -1857,14 +1563,14 @@ var app = (function () {
     			i1 = element("i");
     			t1 = space();
     			i2 = element("i");
-    			attr(i0, "class", "fab fa-github svelte-qsyokf");
-    			add_location(i0, file$c, 40, 4, 824);
-    			attr(i1, "class", "fab fa-linkedin svelte-qsyokf");
-    			add_location(i1, file$c, 41, 4, 858);
-    			attr(i2, "class", "fas fa-envelope svelte-qsyokf");
-    			add_location(i2, file$c, 42, 4, 894);
-    			attr(div, "class", "social-container svelte-qsyokf");
-    			add_location(div, file$c, 39, 0, 789);
+    			attr(i0, "class", "fab fa-github svelte-1kad0mi");
+    			add_location(i0, file$a, 55, 4, 1126);
+    			attr(i1, "class", "fab fa-linkedin svelte-1kad0mi");
+    			add_location(i1, file$a, 56, 4, 1160);
+    			attr(i2, "class", "fas fa-envelope svelte-1kad0mi");
+    			add_location(i2, file$a, 57, 4, 1196);
+    			attr(div, "class", "social-container svelte-1kad0mi");
+    			add_location(div, file$a, 54, 0, 1091);
     		},
 
     		l: function claim(nodes) {
@@ -1895,47 +1601,29 @@ var app = (function () {
     class HeroSocial extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$c, safe_not_equal, []);
+    		init(this, options, null, create_fragment$a, safe_not_equal, []);
     	}
     }
 
     /* src/Components/HeroSection.svelte generated by Svelte v3.7.1 */
 
-    const file$d = "src/Components/HeroSection.svelte";
+    const file$b = "src/Components/HeroSection.svelte";
 
-    function create_fragment$d(ctx) {
-    	var div2, div0, t0, t1, div1, t2, t3, current;
-
-    	var herolefttext = new HeroLeftText({ $$inline: true });
+    function create_fragment$b(ctx) {
+    	var div, t, current;
 
     	var heroimg = new HeroImg({ $$inline: true });
-
-    	var herorighttext = new HeroRightText({ $$inline: true });
-
-    	var heroarrowdown = new HeroArrowDown({ $$inline: true });
 
     	var herosocial = new HeroSocial({ $$inline: true });
 
     	return {
     		c: function create() {
-    			div2 = element("div");
-    			div0 = element("div");
-    			herolefttext.$$.fragment.c();
-    			t0 = space();
+    			div = element("div");
     			heroimg.$$.fragment.c();
-    			t1 = space();
-    			div1 = element("div");
-    			herorighttext.$$.fragment.c();
-    			t2 = space();
-    			heroarrowdown.$$.fragment.c();
-    			t3 = space();
+    			t = space();
     			herosocial.$$.fragment.c();
-    			attr(div0, "class", "hero-text svelte-9k9vqb");
-    			add_location(div0, file$d, 22, 4, 517);
-    			attr(div1, "class", "hero-text svelte-9k9vqb");
-    			add_location(div1, file$d, 26, 4, 597);
-    			attr(div2, "class", "hero-container center-all svelte-9k9vqb");
-    			add_location(div2, file$d, 21, 0, 473);
+    			attr(div, "class", "hero-container center-all svelte-9k9vqb");
+    			add_location(div, file$b, 22, 0, 521);
     		},
 
     		l: function claim(nodes) {
@@ -1943,17 +1631,9 @@ var app = (function () {
     		},
 
     		m: function mount(target, anchor) {
-    			insert(target, div2, anchor);
-    			append(div2, div0);
-    			mount_component(herolefttext, div0, null);
-    			append(div2, t0);
-    			mount_component(heroimg, div2, null);
-    			append(div2, t1);
-    			append(div2, div1);
-    			mount_component(herorighttext, div1, null);
-    			insert(target, t2, anchor);
-    			mount_component(heroarrowdown, target, anchor);
-    			insert(target, t3, anchor);
+    			insert(target, div, anchor);
+    			mount_component(heroimg, div, null);
+    			insert(target, t, anchor);
     			mount_component(herosocial, target, anchor);
     			current = true;
     		},
@@ -1962,13 +1642,7 @@ var app = (function () {
 
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(herolefttext.$$.fragment, local);
-
     			transition_in(heroimg.$$.fragment, local);
-
-    			transition_in(herorighttext.$$.fragment, local);
-
-    			transition_in(heroarrowdown.$$.fragment, local);
 
     			transition_in(herosocial.$$.fragment, local);
 
@@ -1976,33 +1650,20 @@ var app = (function () {
     		},
 
     		o: function outro(local) {
-    			transition_out(herolefttext.$$.fragment, local);
     			transition_out(heroimg.$$.fragment, local);
-    			transition_out(herorighttext.$$.fragment, local);
-    			transition_out(heroarrowdown.$$.fragment, local);
     			transition_out(herosocial.$$.fragment, local);
     			current = false;
     		},
 
     		d: function destroy(detaching) {
     			if (detaching) {
-    				detach(div2);
+    				detach(div);
     			}
-
-    			destroy_component(herolefttext);
 
     			destroy_component(heroimg);
 
-    			destroy_component(herorighttext);
-
     			if (detaching) {
-    				detach(t2);
-    			}
-
-    			destroy_component(heroarrowdown, detaching);
-
-    			if (detaching) {
-    				detach(t3);
+    				detach(t);
     			}
 
     			destroy_component(herosocial, detaching);
@@ -2013,22 +1674,22 @@ var app = (function () {
     class HeroSection extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$d, safe_not_equal, []);
+    		init(this, options, null, create_fragment$b, safe_not_equal, []);
     	}
     }
 
     /* src/Components/IconComponents/CircleIcon.svelte generated by Svelte v3.7.1 */
 
-    const file$e = "src/Components/IconComponents/CircleIcon.svelte";
+    const file$c = "src/Components/IconComponents/CircleIcon.svelte";
 
-    function create_fragment$e(ctx) {
+    function create_fragment$c(ctx) {
     	var span;
 
     	return {
     		c: function create() {
     			span = element("span");
     			attr(span, "class", "circleIcon svelte-1lt09bf");
-    			add_location(span, file$e, 38, 0, 711);
+    			add_location(span, file$c, 38, 0, 711);
     		},
 
     		l: function claim(nodes) {
@@ -2054,15 +1715,15 @@ var app = (function () {
     class CircleIcon extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$e, safe_not_equal, []);
+    		init(this, options, null, create_fragment$c, safe_not_equal, []);
     	}
     }
 
     /* src/Components/SingleProjectText.svelte generated by Svelte v3.7.1 */
 
-    const file$f = "src/Components/SingleProjectText.svelte";
+    const file$d = "src/Components/SingleProjectText.svelte";
 
-    function create_fragment$f(ctx) {
+    function create_fragment$d(ctx) {
     	var div, h2, t1, h3, t3, p, t5, a, current;
 
     	var circleicon = new CircleIcon({ $$inline: true });
@@ -2088,15 +1749,15 @@ var app = (function () {
     			circleicon.$$.fragment.c();
     			textunderline.$$.fragment.c();
     			attr(h2, "class", "svelte-9rdgtd");
-    			add_location(h2, file$f, 37, 4, 613);
+    			add_location(h2, file$d, 37, 4, 613);
     			attr(h3, "class", "svelte-9rdgtd");
-    			add_location(h3, file$f, 38, 4, 638);
+    			add_location(h3, file$d, 38, 4, 638);
     			attr(p, "class", "svelte-9rdgtd");
-    			add_location(p, file$f, 39, 4, 680);
+    			add_location(p, file$d, 39, 4, 680);
     			attr(a, "href", "");
     			attr(a, "class", "svelte-9rdgtd");
-    			add_location(a, file$f, 44, 4, 907);
-    			add_location(div, file$f, 36, 0, 603);
+    			add_location(a, file$d, 44, 4, 907);
+    			add_location(div, file$d, 36, 0, 603);
     		},
 
     		l: function claim(nodes) {
@@ -2149,15 +1810,15 @@ var app = (function () {
     class SingleProjectText extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$f, safe_not_equal, []);
+    		init(this, options, null, create_fragment$d, safe_not_equal, []);
     	}
     }
 
     /* src/Components/SingleProjectImage.svelte generated by Svelte v3.7.1 */
 
-    const file$g = "src/Components/SingleProjectImage.svelte";
+    const file$e = "src/Components/SingleProjectImage.svelte";
 
-    function create_fragment$g(ctx) {
+    function create_fragment$e(ctx) {
     	var img;
 
     	return {
@@ -2166,7 +1827,7 @@ var app = (function () {
     			attr(img, "src", "images/homePage/creativeShiz.png");
     			attr(img, "alt", "");
     			attr(img, "class", "svelte-1cpau3e");
-    			add_location(img, file$g, 18, 0, 235);
+    			add_location(img, file$e, 18, 0, 235);
     		},
 
     		l: function claim(nodes) {
@@ -2192,15 +1853,15 @@ var app = (function () {
     class SingleProjectImage extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$g, safe_not_equal, []);
+    		init(this, options, null, create_fragment$e, safe_not_equal, []);
     	}
     }
 
     /* src/Components/SingleProjectSection.svelte generated by Svelte v3.7.1 */
 
-    const file$h = "src/Components/SingleProjectSection.svelte";
+    const file$f = "src/Components/SingleProjectSection.svelte";
 
-    function create_fragment$h(ctx) {
+    function create_fragment$f(ctx) {
     	var div2, div0, t, div1, current;
 
     	var singleprojecttext = new SingleProjectText({ $$inline: true });
@@ -2216,11 +1877,11 @@ var app = (function () {
     			div1 = element("div");
     			singleprojectimage.$$.fragment.c();
     			attr(div0, "class", "project-text svelte-1qgam1a");
-    			add_location(div0, file$h, 22, 4, 468);
+    			add_location(div0, file$f, 22, 4, 468);
     			attr(div1, "class", "project-image svelte-1qgam1a");
-    			add_location(div1, file$h, 25, 4, 540);
+    			add_location(div1, file$f, 25, 4, 540);
     			attr(div2, "class", "container svelte-1qgam1a");
-    			add_location(div2, file$h, 21, 0, 439);
+    			add_location(div2, file$f, 21, 0, 439);
     		},
 
     		l: function claim(nodes) {
@@ -2269,15 +1930,15 @@ var app = (function () {
     class SingleProjectSection extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$h, safe_not_equal, []);
+    		init(this, options, null, create_fragment$f, safe_not_equal, []);
     	}
     }
 
     /* src/Components/MultiProjectCard.svelte generated by Svelte v3.7.1 */
 
-    const file$i = "src/Components/MultiProjectCard.svelte";
+    const file$g = "src/Components/MultiProjectCard.svelte";
 
-    function create_fragment$i(ctx) {
+    function create_fragment$g(ctx) {
     	var a, div, img, t0, p, span, t1;
 
     	return {
@@ -2292,15 +1953,15 @@ var app = (function () {
     			attr(img, "src", ctx.imgSrc);
     			attr(img, "alt", "");
     			attr(img, "class", "svelte-1l0e3r7");
-    			add_location(img, file$i, 69, 6, 1372);
+    			add_location(img, file$g, 69, 6, 1372);
     			attr(div, "class", "img-container svelte-1l0e3r7");
-    			add_location(div, file$i, 68, 4, 1338);
+    			add_location(div, file$g, 68, 4, 1338);
     			attr(span, "class", "animateSick");
-    			add_location(span, file$i, 71, 7, 1418);
+    			add_location(span, file$g, 71, 7, 1418);
     			attr(p, "class", "svelte-1l0e3r7");
-    			add_location(p, file$i, 71, 4, 1415);
+    			add_location(p, file$g, 71, 4, 1415);
     			attr(a, "class", "svelte-1l0e3r7");
-    			add_location(a, file$i, 67, 0, 1330);
+    			add_location(a, file$g, 67, 0, 1330);
     		},
 
     		l: function claim(nodes) {
@@ -2338,7 +1999,7 @@ var app = (function () {
     	};
     }
 
-    function instance$a($$self, $$props, $$invalidate) {
+    function instance$9($$self, $$props, $$invalidate) {
     	let { imgSrc, projectName } = $$props;
 
     	const writable_props = ['imgSrc', 'projectName'];
@@ -2357,7 +2018,7 @@ var app = (function () {
     class MultiProjectCard extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$a, create_fragment$i, safe_not_equal, ["imgSrc", "projectName"]);
+    		init(this, options, instance$9, create_fragment$g, safe_not_equal, ["imgSrc", "projectName"]);
 
     		const { ctx } = this.$$;
     		const props = options.props || {};
@@ -2388,7 +2049,7 @@ var app = (function () {
 
     /* src/Components/MultiProjectSection.svelte generated by Svelte v3.7.1 */
 
-    const file$j = "src/Components/MultiProjectSection.svelte";
+    const file$h = "src/Components/MultiProjectSection.svelte";
 
     function get_each_context$2(ctx, list, i) {
     	const child_ctx = Object.create(ctx);
@@ -2443,7 +2104,7 @@ var app = (function () {
     	};
     }
 
-    function create_fragment$j(ctx) {
+    function create_fragment$h(ctx) {
     	var div1, h2, t1, div0, t2, a, t3, current;
 
     	var each_value = ctx.projects;
@@ -2483,14 +2144,14 @@ var app = (function () {
     			t3 = space();
     			textunderline.$$.fragment.c();
     			attr(h2, "class", "svelte-1k5cxrh");
-    			add_location(h2, file$j, 63, 3, 1283);
+    			add_location(h2, file$h, 63, 3, 1283);
     			attr(div0, "class", "card-container center-all svelte-1k5cxrh");
-    			add_location(div0, file$j, 65, 4, 1314);
+    			add_location(div0, file$h, 65, 4, 1314);
     			attr(a, "href", "");
     			attr(a, "class", "svelte-1k5cxrh");
-    			add_location(a, file$j, 71, 4, 1517);
+    			add_location(a, file$h, 71, 4, 1517);
     			attr(div1, "class", "svelte-1k5cxrh");
-    			add_location(div1, file$j, 62, 0, 1274);
+    			add_location(div1, file$h, 62, 0, 1274);
     		},
 
     		l: function claim(nodes) {
@@ -2573,7 +2234,7 @@ var app = (function () {
     	};
     }
 
-    function instance$b($$self) {
+    function instance$a($$self) {
     	
 
     let projects = [
@@ -2597,18 +2258,20 @@ var app = (function () {
     class MultiProjectSection extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$b, create_fragment$j, safe_not_equal, []);
+    		init(this, options, instance$a, create_fragment$h, safe_not_equal, []);
     	}
     }
 
     /* src/PageComponents/Home.svelte generated by Svelte v3.7.1 */
 
-    const file$k = "src/PageComponents/Home.svelte";
+    const file$i = "src/PageComponents/Home.svelte";
 
-    function create_fragment$k(ctx) {
-    	var t0, t1, section0, t2, section1, t3, section2, t4, current;
+    function create_fragment$i(ctx) {
+    	var t0, t1, t2, section0, t3, section1, t4, section2, t5, current;
 
     	var logo = new Logo({ $$inline: true });
+
+    	var herotoptext = new HeroTopText({ $$inline: true });
 
     	var navcontainer = new NavContainer({ $$inline: true });
 
@@ -2624,24 +2287,26 @@ var app = (function () {
     		c: function create() {
     			logo.$$.fragment.c();
     			t0 = space();
-    			navcontainer.$$.fragment.c();
+    			herotoptext.$$.fragment.c();
     			t1 = space();
+    			navcontainer.$$.fragment.c();
+    			t2 = space();
     			section0 = element("section");
     			herosection.$$.fragment.c();
-    			t2 = space();
+    			t3 = space();
     			section1 = element("section");
     			singleprojectsection.$$.fragment.c();
-    			t3 = space();
+    			t4 = space();
     			section2 = element("section");
     			multiprojectsection.$$.fragment.c();
-    			t4 = space();
+    			t5 = space();
     			footercontainer.$$.fragment.c();
-    			attr(section0, "class", "one center-all svelte-qyqbwn");
-    			add_location(section0, file$k, 70, 0, 1774);
-    			attr(section1, "class", "two center-all svelte-qyqbwn");
-    			add_location(section1, file$k, 73, 0, 1838);
-    			attr(section2, "class", "three center-all svelte-qyqbwn");
-    			add_location(section2, file$k, 76, 0, 1911);
+    			attr(section0, "class", "one center-all svelte-creegf");
+    			add_location(section0, file$i, 72, 0, 1841);
+    			attr(section1, "class", "two center-all svelte-creegf");
+    			add_location(section1, file$i, 76, 0, 1906);
+    			attr(section2, "class", "three center-all svelte-creegf");
+    			add_location(section2, file$i, 79, 0, 1979);
     		},
 
     		l: function claim(nodes) {
@@ -2651,17 +2316,19 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			mount_component(logo, target, anchor);
     			insert(target, t0, anchor);
-    			mount_component(navcontainer, target, anchor);
+    			mount_component(herotoptext, target, anchor);
     			insert(target, t1, anchor);
+    			mount_component(navcontainer, target, anchor);
+    			insert(target, t2, anchor);
     			insert(target, section0, anchor);
     			mount_component(herosection, section0, null);
-    			insert(target, t2, anchor);
+    			insert(target, t3, anchor);
     			insert(target, section1, anchor);
     			mount_component(singleprojectsection, section1, null);
-    			insert(target, t3, anchor);
+    			insert(target, t4, anchor);
     			insert(target, section2, anchor);
     			mount_component(multiprojectsection, section2, null);
-    			insert(target, t4, anchor);
+    			insert(target, t5, anchor);
     			mount_component(footercontainer, target, anchor);
     			current = true;
     		},
@@ -2671,6 +2338,8 @@ var app = (function () {
     		i: function intro(local) {
     			if (current) return;
     			transition_in(logo.$$.fragment, local);
+
+    			transition_in(herotoptext.$$.fragment, local);
 
     			transition_in(navcontainer.$$.fragment, local);
 
@@ -2687,6 +2356,7 @@ var app = (function () {
 
     		o: function outro(local) {
     			transition_out(logo.$$.fragment, local);
+    			transition_out(herotoptext.$$.fragment, local);
     			transition_out(navcontainer.$$.fragment, local);
     			transition_out(herosection.$$.fragment, local);
     			transition_out(singleprojectsection.$$.fragment, local);
@@ -2702,31 +2372,37 @@ var app = (function () {
     				detach(t0);
     			}
 
-    			destroy_component(navcontainer, detaching);
+    			destroy_component(herotoptext, detaching);
 
     			if (detaching) {
     				detach(t1);
+    			}
+
+    			destroy_component(navcontainer, detaching);
+
+    			if (detaching) {
+    				detach(t2);
     				detach(section0);
     			}
 
     			destroy_component(herosection);
 
     			if (detaching) {
-    				detach(t2);
+    				detach(t3);
     				detach(section1);
     			}
 
     			destroy_component(singleprojectsection);
 
     			if (detaching) {
-    				detach(t3);
+    				detach(t4);
     				detach(section2);
     			}
 
     			destroy_component(multiprojectsection);
 
     			if (detaching) {
-    				detach(t4);
+    				detach(t5);
     			}
 
     			destroy_component(footercontainer, detaching);
@@ -2737,13 +2413,13 @@ var app = (function () {
     class Home extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$k, safe_not_equal, []);
+    		init(this, options, null, create_fragment$i, safe_not_equal, []);
     	}
     }
 
     /* src/App.svelte generated by Svelte v3.7.1 */
 
-    function create_fragment$l(ctx) {
+    function create_fragment$j(ctx) {
     	var current;
 
     	var home = new Home({ $$inline: true });
@@ -2785,7 +2461,7 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, null, create_fragment$l, safe_not_equal, []);
+    		init(this, options, null, create_fragment$j, safe_not_equal, []);
     	}
     }
 

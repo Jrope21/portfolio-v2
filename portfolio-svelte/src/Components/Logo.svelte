@@ -9,12 +9,13 @@
     
     
     onMount(() => {
+        logo.classList.remove('scrolled')
         let scrolledCheck = () => {
             let scroll = window.pageYOffset;
-            if(scroll > 20){
-                position.scrolled = true;
+            if(scroll > 130){
+                logo.classList.add('scrolled')
             } else {
-                position.scrolled = false;
+                logo.classList.remove('scrolled')
             }
             // shape.style.transform = `rotate(-.${scroll}deg)`
             // console.log(shape)
@@ -28,15 +29,23 @@
 <style>
     a {
         position: fixed;
-        left: 15px;
-        top: 20px;
-        opacity: 1;
+        font-size: 8rem;
+        left: 25px;
+        top: 25px;
+        opacity: 0;
+        color: gray;
+        transition: all .25s ease-in-out;
+        border-radius: 100%;
+        border: 1px solid gray;
+        padding: 8px;
         /* transform: rotate(60deg); */
-        /* animation: 1s ease-in-out 0s 1 fadeInTop forwards; */
+        /* animation: .5s ease-in-out 0s 1 fadeOutTop; */
         
     }
     a.scrolled {
-        /* animation: .5s ease-in-out 0s 1 fadeOutTop forwards; */
+        /* transition: all 1s ease-in-out; */
+        opacity: 1 !important;
+        /* animation: .5s ease-in-out 0s 1 fadeInTop forwards; */
     }
     /*line coming from top*/
     /* a::before {
@@ -105,8 +114,8 @@
         top: 4px;
     }
 </style>
-{#if position.scrolled}
-<a bind:this={logo} class="scrolled">
+<!-- {#if position.scrolled}
+<a bind:this={logo} href="" class="scrolled">
     <span bind:this={shape} class="shape"></span>
         <span class="letters">
             <span>J</span>
@@ -114,15 +123,16 @@
         </span> 
     </a>
  
-    {:else}
-   <a bind:this={logo}>
-    <span bind:this={shape} class="shape"></span>
-        <span class="letters">
+    {:else} -->
+   <a href="" class="scrolled" bind:this={logo}>
+    <!-- <span bind:this={shape} class="shape"></span> -->
+        <!-- <span class="letters">
             <span>J</span>
             <span>R</span>
-        </span> 
+        </span>  -->
+        <p>JR</p>
     </a>
-    {/if}
+    <!-- {/if} -->
 
         
 

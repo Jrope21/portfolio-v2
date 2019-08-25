@@ -4,6 +4,7 @@
     import FooterContainer from '../Components/FooterContainer.svelte';
     import StripeBackground from '../Components/StripeBackground.svelte';
     import Logo from '../Components/Logo.svelte';
+    import HeroTopText from '../Components/HeroTopText.svelte';
 
     // section imports
     import HeroSection from '../Components/HeroSection.svelte';
@@ -18,15 +19,15 @@
         height: 100vh;
         margin: 0rem auto;
     }
-    section.one::before {
+    /* section.one::before {
         content: '';
         background: rgba(34, 34, 34, 0.082);
         position: absolute;
         top: 0;
         width: 100vw;
         min-height: 100vh;
-        /* z-index: 0; */
-    }
+      
+    } */
     section.two {
         width: 65vw;
         min-height: 900px;
@@ -67,8 +68,10 @@
 </style>
 <Logo />
 <!-- <StripeBackground /> -->
+<HeroTopText />
 <NavContainer />
 <section class="one center-all">
+
     <HeroSection />
 </section>
 <section class="two center-all">
