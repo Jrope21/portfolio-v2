@@ -17,4 +17,4 @@ img{
 }
 </style>
 
-<img src="images/homePage/creativeShiz.png" alt="">
+<img src="images/creativeShiz.png" alt="">

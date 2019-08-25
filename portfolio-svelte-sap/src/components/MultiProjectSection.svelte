@@ -5,15 +5,15 @@ import TextUnderline from './IconComponents/TextUnderline.svelte';
 
 let projects = [
     {
-        imgSrc: 'images/homePage/university-park-cta.jpeg',
+        imgSrc: 'images/university-park-cta.jpeg',
         projectName: 'University Park'
     },
     {
-        imgSrc: 'images/homePage/bub.jpeg',
+        imgSrc: 'images/bub.jpeg',
         projectName: 'Creative Revolt'
     },
     {
-        imgSrc: 'images/homePage/WBUH.jpeg',
+        imgSrc: 'images/WBUH.jpeg',
         projectName: 'HomeVestors'
     }
 ]

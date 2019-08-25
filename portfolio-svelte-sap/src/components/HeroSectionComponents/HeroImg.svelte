@@ -8,7 +8,7 @@ let heroImg;
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("images/homePage/newYork.jpg");
+        background-image: url("../images/newYork.jpg");
         background-size: 230%;
         background-position: 45% 65%;
         overflow-y: hidden;
@@ -23,8 +23,11 @@ let heroImg;
          height: 100%;
          background: rgb(24, 24, 24, .2);
     }
+    img {
+        display: none;
+    }
 </style>
-
+<img src="images/newYork.jpg" alt="">
 <div bind:this={heroImg} class="hero-image">
     <ImageGradient />
 </div>
