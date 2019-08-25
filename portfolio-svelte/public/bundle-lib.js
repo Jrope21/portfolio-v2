@@ -1422,22 +1422,27 @@ var app = (function () {
     const file$8 = "src/Components/HeroTopText.svelte";
 
     function create_fragment$8(ctx) {
-    	var div, h1, t_1, h2;
+    	var div, h1, t1, h2, t3, h3;
 
     	return {
     		c: function create() {
     			div = element("div");
     			h1 = element("h1");
     			h1.textContent = "Joshua Roper";
-    			t_1 = space();
+    			t1 = space();
     			h2 = element("h2");
     			h2.textContent = "Front End Developer";
-    			attr(h1, "class", "svelte-889jd5");
-    			add_location(h1, file$8, 24, 4, 266);
-    			attr(h2, "class", "svelte-889jd5");
-    			add_location(h2, file$8, 25, 4, 292);
-    			attr(div, "class", "svelte-889jd5");
-    			add_location(div, file$8, 23, 0, 256);
+    			t3 = space();
+    			h3 = element("h3");
+    			h3.textContent = "& Designer";
+    			attr(h1, "class", "svelte-lsmhxj");
+    			add_location(h1, file$8, 31, 4, 382);
+    			attr(h2, "class", "svelte-lsmhxj");
+    			add_location(h2, file$8, 32, 4, 408);
+    			attr(h3, "class", "svelte-lsmhxj");
+    			add_location(h3, file$8, 33, 4, 441);
+    			attr(div, "class", "svelte-lsmhxj");
+    			add_location(div, file$8, 30, 0, 372);
     		},
 
     		l: function claim(nodes) {
@@ -1447,8 +1452,10 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert(target, div, anchor);
     			append(div, h1);
-    			append(div, t_1);
+    			append(div, t1);
     			append(div, h2);
+    			append(div, t3);
+    			append(div, h3);
     		},
 
     		p: noop,
@@ -1483,12 +1490,12 @@ var app = (function () {
     			div0 = element("div");
     			t = space();
     			span = element("span");
-    			attr(div0, "class", "overlay boxes svelte-1q6kpn3");
-    			add_location(div0, file$9, 159, 4, 2960);
-    			attr(span, "class", "gradient-animate svelte-1q6kpn3");
-    			add_location(span, file$9, 162, 5, 3012);
-    			attr(div1, "class", "hero-image svelte-1q6kpn3");
-    			add_location(div1, file$9, 158, 0, 2911);
+    			attr(div0, "class", "overlay boxes svelte-1seghlu");
+    			add_location(div0, file$9, 159, 4, 2970);
+    			attr(span, "class", "gradient-animate svelte-1seghlu");
+    			add_location(span, file$9, 162, 5, 3022);
+    			attr(div1, "class", "hero-image svelte-1seghlu");
+    			add_location(div1, file$9, 158, 0, 2921);
     		},
 
     		l: function claim(nodes) {
@@ -1563,14 +1570,14 @@ var app = (function () {
     			i1 = element("i");
     			t1 = space();
     			i2 = element("i");
-    			attr(i0, "class", "fab fa-github svelte-1kad0mi");
-    			add_location(i0, file$a, 55, 4, 1126);
-    			attr(i1, "class", "fab fa-linkedin svelte-1kad0mi");
-    			add_location(i1, file$a, 56, 4, 1160);
-    			attr(i2, "class", "fas fa-envelope svelte-1kad0mi");
-    			add_location(i2, file$a, 57, 4, 1196);
-    			attr(div, "class", "social-container svelte-1kad0mi");
-    			add_location(div, file$a, 54, 0, 1091);
+    			attr(i0, "class", "fab fa-github svelte-s2bkde");
+    			add_location(i0, file$a, 56, 4, 1152);
+    			attr(i1, "class", "fab fa-linkedin svelte-s2bkde");
+    			add_location(i1, file$a, 57, 4, 1186);
+    			attr(i2, "class", "fas fa-envelope svelte-s2bkde");
+    			add_location(i2, file$a, 58, 4, 1222);
+    			attr(div, "class", "social-container svelte-s2bkde");
+    			add_location(div, file$a, 55, 0, 1117);
     		},
 
     		l: function claim(nodes) {

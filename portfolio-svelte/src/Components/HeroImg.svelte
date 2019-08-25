@@ -61,15 +61,15 @@ onMount(()=>{
     }
 }
     .hero-image{
-        width: 200px;
-        height: 300px;
+        width: 250px;
+        height: 420px;
         background-image: url("images/homePage/newYork.jpg");
         background-size: 230%;
         background-position: 45% 65%;
         overflow-y: hidden;
         position: relative;
+        top: 30px;
         transition: top .01s ease-in;
-        
     }
     /* .hero-image::before {
         content: '';

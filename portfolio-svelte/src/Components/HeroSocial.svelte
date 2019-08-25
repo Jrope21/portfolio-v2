@@ -11,10 +11,10 @@
     height: 100vh;
     /* width: 100vw; */
     display: flex;
-    margin-left: 30px;
+    margin-left: 28px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     /* left: 30px; */
    /* padding-left: 30px; */
 }
@@ -47,6 +47,7 @@ i:nth-child(2){
 }
 i:nth-child(1){
     position: relative;
+    margin-top: 50px;
     /* 3.2 */
     animation: 2.2s ease-in-out 0s 1 fadeInBottom;
 }
