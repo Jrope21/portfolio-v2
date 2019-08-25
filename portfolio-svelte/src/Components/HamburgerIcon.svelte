@@ -31,6 +31,7 @@ label {
      transition: all .9s ease;
      cursor: pointer;
      -webkit-transition: all 1s ease-in-out;
+     z-index: 2;
 }
 
 .hamburger-check:checked ~ label {

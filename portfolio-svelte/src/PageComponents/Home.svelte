@@ -25,12 +25,12 @@
         top: 0;
         width: 100vw;
         min-height: 100vh;
-        z-index: 2;
+        /* z-index: 0; */
     }
     section.two {
         width: 65vw;
-        min-height: 800px;
-        height: 100vh;
+        min-height: 900px;
+        height: 80vh;
 
         margin: auto;
     }
@@ -50,6 +50,7 @@
     @media screen and (min-width: 40em){
         section.three {
             min-height: 600px;
+            height: 55vh;
             width: 70vw;
         }
     }

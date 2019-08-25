@@ -24,7 +24,8 @@ aside {
     right: 0;
     height: 100vh;
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    z-index: 2;
 }
 
 nav {

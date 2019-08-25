@@ -1,4 +1,5 @@
 <script>
+import TextUnderline from './IconComponents/TextUnderline.svelte';
 export let url, name;
 </script>
 
@@ -32,5 +33,5 @@ export let url, name;
 </style>
 
 <a href="{url}">
-    {name}
+    <TextUnderline text={name} />
 </a>

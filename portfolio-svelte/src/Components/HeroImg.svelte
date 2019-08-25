@@ -1,4 +1,19 @@
 <script>
+import { onMount } from 'svelte';
+
+let heroImg;
+
+onMount(()=>{
+
+    window.addEventListener('scroll', ()=>{
+
+        let scrollHeight = window.pageYOffset;
+        
+        heroImg.style.top = `-${scrollHeight / 20}px`
+
+    })
+
+})
 
 </script>
 
@@ -47,13 +62,14 @@
 }
     .hero-image{
         width: 200px;
-        /* padding: rem; */
         height: 300px;
         background-image: url("images/homePage/newYork.jpg");
         background-size: 230%;
         background-position: 45% 65%;
         overflow-y: hidden;
         position: relative;
+        transition: top .01s ease-in;
+        
     }
     .hero-image::before {
         content: '';
@@ -88,7 +104,6 @@
         content: '';
         position: relative;
         display: inline-block;
-        /* background-image: linear-gradient(to top, rgb(53, 53, 53), #00E2FF); */
         background: white;
         height: 100%;
         width: 100px;
@@ -100,7 +115,6 @@
         content: '';
         position: relative;
         display: inline-block;
-        /* background-image: linear-gradient(to bottom, rgb(53, 53, 53), #00E2FF); */
         background: white;
         height: 100%;
         width: 100px;
@@ -112,7 +126,7 @@
 
     .gradient-animate {
         position: absolute;
-        top: 0;
+        top: 00px;
         width: 100%;
         height: 100%;
     }
@@ -121,7 +135,6 @@
         content: '';
         position: relative;
         display: inline-block;
-        /* background-image: linear-gradient(to top, rgb(53, 53, 53), #00E2FF); */
         background-image: linear-gradient(to top, rgb(53, 53, 53), gray);
         height: 100%;
         width: 100px;
@@ -133,7 +146,6 @@
         content: '';
         position: relative;
         display: inline-block;
-        /* background-image: linear-gradient(to bottom, rgb(53, 53, 53), #00E2FF); */
         background-image: linear-gradient(to top, rgb(53, 53, 53), gray);
         height: 100%;
         width: 100px;
@@ -143,10 +155,10 @@
     }
 
 </style>
-<!-- <img src="..Images/newYork.JPG" alt=""> -->
-<div class="hero-image">
+
+<div bind:this={heroImg} class="hero-image">
     <div class="overlay boxes">
        
     </div>
-     <span class="gradient-animate"></span>
+     <span  class="gradient-animate"></span>
 </div>

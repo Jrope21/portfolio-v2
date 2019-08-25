@@ -1,3 +1,19 @@
+<script>
+import { onMount } from 'svelte';
+
+let arrow;
+
+onMount(()=>{
+
+    window.addEventListener('scroll', ()=>{
+        let scrollHeight = window.pageYOffset;
+        
+        arrow.style.marginBottom = `-${scrollHeight / 40}px`
+    })
+
+})
+</script>
+
 <style>
 @keyframes specialFadeInDoe {
     0%{
@@ -27,8 +43,10 @@
         bottom: 110px;
         /* left: 100px; */
         left: 25%;
+        transition: margin-bottom .01s ease-in;
         animation: .8s ease-in-out 5s 1 specialFadeInDoe forwards;
         opacity: 0;
+        box-shadow: 1px 1px 1px lightgray;
     }
   
     a:before {
@@ -65,8 +83,4 @@
 
 </style>
 
-<script>
-
-</script>
-
-<a href="#"><span></span></a>
+<a href="#" bind:this={arrow}><span></span></a>

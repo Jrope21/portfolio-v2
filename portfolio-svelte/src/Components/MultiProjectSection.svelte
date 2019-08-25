@@ -1,6 +1,7 @@
 <script>
 import MultiProjectCard from './MultiProjectCard.svelte';
 import CircleIcon from './IconComponents/CircleIcon.svelte';
+import TextUnderline from './IconComponents/TextUnderline.svelte';
 
 let projects = [
     {
@@ -68,5 +69,5 @@ div:not(.card-container) {
             <MultiProjectCard imgSrc={project.imgSrc} projectName={project.projectName}/>
         {/each}
     </div>
-    <a href=""><CircleIcon /> explore more works</a>
+    <a href=""><CircleIcon /> <TextUnderline text={'explore more works'}/></a>
 </div>

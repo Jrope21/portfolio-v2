@@ -13,7 +13,7 @@ let breadcrumbs = [
         url: ''
     },
     {
-        name: 'Contact',
+        name: 'contact',
         url: ''
     }
 ]

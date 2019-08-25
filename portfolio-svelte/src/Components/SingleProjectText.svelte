@@ -1,5 +1,6 @@
 <script>
 import CircleIcon from './IconComponents/CircleIcon.svelte';
+import TextUnderline from './IconComponents/TextUnderline.svelte';
 </script>
 
 <style>
@@ -23,16 +24,13 @@ a{
     display: flex;
     align-items: center;
     font-weight: 300;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-transform: uppercase;
     font-size: 12rem;
     width: fit-content;
     margin-top: 10rem;
 }
-a:hover .circleIcon{
-    /* animation: .2s ease-in 0s 1 slightSpin forwards; */
-    transform: rotate(90deg);
-}
+
 
 </style>
 
@@ -44,5 +42,5 @@ a:hover .circleIcon{
         Possimus, totam quos pariatur accusamus quisquam veniam! Dolor ullam quae praesentium suscipit molestiae 
         cumque temporibus eum
     </p>
-    <a href=""><CircleIcon />Projects</a>
+    <a href=""><CircleIcon /><TextUnderline text={'Projects'} /></a>
 </div>

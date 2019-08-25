@@ -26,8 +26,13 @@ export let projectName;
     }
     img {
         object-fit: cover;
+        transition: all .3s ease-in-out;
         width: 100%;
         height: 100%;
+    }
+    a:hover img {
+        width: 105%;
+        height: 105%;
     }
     p {
         position: relative;
@@ -50,43 +55,13 @@ export let projectName;
         display: inline-block;
         width: 0px;
         border-bottom: 2px solid gray;
-         transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
          
     }
-    /* p::before {
-        content: '';
-        display: inline-block;
-        transform: rotate(45deg);
-        border-radius: 2px;
-     
-        left: 0;
-        border: 1px solid gray;
-        height: 15px;
-        width: 15px;
-        transition: all .6s ease-in-out;
-    }
-    p::after {
-        content: '';
-        display: inline-block;
-        transform: rotate(90deg);
-        border-radius: 2px;
-        position: absolute;
-        left: 8px;
-        border-right: 1px solid gray;
-        height: 12px;
-        transition: all .6s ease-in-out;
-    }
-    a:hover p::before {
-        transform: rotate(-45deg);
-    }
-    a:hover p::after {
-        transform: rotate(180deg);
-    } */
     a:hover p::before {
         content: '';
-       margin-right: 20rem;
+        margin-right: 20rem;
         width: 30px;
-       
     }
 </style>
 
