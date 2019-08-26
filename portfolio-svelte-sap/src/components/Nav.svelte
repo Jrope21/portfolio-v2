@@ -15,7 +15,7 @@ let navItems = [
     },
     {
         name: 'contact',
-        url: 'blog'
+        url: 'contact'
     }
 ]
 </script> 

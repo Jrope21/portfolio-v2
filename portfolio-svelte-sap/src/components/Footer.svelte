@@ -6,15 +6,15 @@ import Logo from './Logo.svelte';
 let breadcrumbs = [
     {
         name: 'about',
-        url: ''
+        url: 'about'
     },
     {
         name: 'portfolio',
-        url: ''
+        url: 'portfolio'
     },
     {
         name: 'contact',
-        url: ''
+        url: 'contact'
     }
 ]
 

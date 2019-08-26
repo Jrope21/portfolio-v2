@@ -6,13 +6,16 @@
 </script>
 
 <style>
+	.transition-wrapper{
+		width: 100%;
+		height: 100%;
+	}
 </style>
 
 <Logo />
+
 <Nav {segment}/>
 
- <!-- <main> -->
-	<slot></slot>
-<!-- </main> -->
+<slot></slot>
 
 <Footer />

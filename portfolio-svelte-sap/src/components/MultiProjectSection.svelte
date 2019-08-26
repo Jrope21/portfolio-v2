@@ -54,8 +54,7 @@ div:not(.card-container) {
 @media screen and (min-width: 40em){
     .card-container{
         flex-direction: row;
-        justify-content: space-between;
-        /* flex-wrap: wrap; */
+        justify-content: space-between; 
     }
 }
 </style>
@@ -69,5 +68,5 @@ div:not(.card-container) {
             <MultiProjectCard imgSrc={project.imgSrc} projectName={project.projectName}/>
         {/each}
     </div>
-    <a href=""><CircleIcon /> <TextUnderline text={'explore more works'}/></a>
+    <a href="portfolio"><CircleIcon /> <TextUnderline text={'explore more works'}/></a>
 </div>

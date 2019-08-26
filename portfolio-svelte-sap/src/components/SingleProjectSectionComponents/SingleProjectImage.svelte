@@ -15,6 +15,12 @@ img{
         max-height: 700px;
     }
 }
+@media screen and (min-width: 64em){
+    img {
+        width: 300px;
+        height: 450px;
+    }
+}
 </style>
 
 <img src="images/creativeShiz.png" alt="">

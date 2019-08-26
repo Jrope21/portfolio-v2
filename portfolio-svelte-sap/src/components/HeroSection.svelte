@@ -17,13 +17,17 @@ div.hero-text {
     height: 10%;
 }
 .hero-cta {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
+    
     top: 0;
     display: flex;
     width:250px;
-    margin-top: 45px;
+    /* margin-top: 45px; */
+    margin-top: -15%;
 }
 </style>
+
 <div class="hero-container center-all">
     <div class="hero-cta">
         <HeroSocial />

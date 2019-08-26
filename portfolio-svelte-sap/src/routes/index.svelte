@@ -1,9 +1,18 @@
 <script>
  	// global imports
-    // section imports
+	// section imports
+	import { fadeIn, fadeOut } from "../components/pageFade";
+	import { onMount } from 'svelte';
     import HeroSection from '../components/HeroSection.svelte';
     import SingleProjectSection from '../components/SingleProjectSection.svelte';
-    import MultiProjectSection from '../components/MultiProjectSection.svelte';
+	import MultiProjectSection from '../components/MultiProjectSection.svelte';
+	let heroSection;
+	
+	// onMount(()=>{
+	// 	//ios fix
+	// 	let windowHeight = window.innerHeight;
+	// 	heroSection.style.height = `${windowHeight}px`
+	// })
 </script>
 
 <style>
@@ -55,12 +64,14 @@
 	<title>Badass Portfolio Business</title>
 </svelte:head>
 
-<section class="one center-all">
-    <HeroSection />
-</section>
-<section class="two center-all">
-    <SingleProjectSection />
-</section>
-<section class="three center-all">
-    <MultiProjectSection />
-</section>
+<div in:fadeIn>
+	<section bind:this={heroSection} class="one center-all">
+		<HeroSection />
+	</section>
+	<section class="two center-all">
+		<SingleProjectSection />
+	</section>
+	<section class="three center-all">
+		<MultiProjectSection />
+	</section>
+</div>

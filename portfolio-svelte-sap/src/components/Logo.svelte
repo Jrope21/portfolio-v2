@@ -6,7 +6,7 @@
     let position = { scrolled: false };
     
     onMount(() => {
-        logo.classList.remove('scrolled')
+        //  logo.classList.remove('scrolled')
         let scrolledCheck = () => {
             let scroll = window.pageYOffset;
             if(scroll > 130){
@@ -42,7 +42,7 @@
 
 </style>
 
-   <a href="." class="scrolled" bind:this={logo}>
+   <a href="." class="" bind:this={logo}>
         <p>JR</p>
     </a>
 

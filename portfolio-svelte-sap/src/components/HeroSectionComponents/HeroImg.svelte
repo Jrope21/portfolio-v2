@@ -27,7 +27,7 @@ let heroImg;
         display: none;
     }
 </style>
-<img src="images/newYork.jpg" alt="">
+<img width="1px" height="1px" src="images/newYork.jpg" alt="">
 <div bind:this={heroImg} class="hero-image">
     <ImageGradient />
 </div>

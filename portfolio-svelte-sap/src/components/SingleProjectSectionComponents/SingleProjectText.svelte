@@ -42,5 +42,5 @@ a{
         Possimus, totam quos pariatur accusamus quisquam veniam! Dolor ullam quae praesentium suscipit molestiae 
         cumque temporibus eum
     </p>
-    <a href=""><CircleIcon /><TextUnderline text={'Projects'} /></a>
+    <a href="portfolio"><CircleIcon /><TextUnderline text={'Projects'} /></a>
 </div>
