@@ -3,6 +3,7 @@ import MultiProjectCard from './MultiProjectSectionComponents/MultiProjectCard.s
 import CircleIcon from './IconComponents/CircleIcon.svelte';
 import TextUnderline from './IconComponents/TextUnderline.svelte';
 
+
 let projects = [
     {
         imgSrc: 'images/university-park-cta.jpeg',
@@ -63,7 +64,7 @@ div:not(.card-container) {
    <h2>Recent Works </h2>
    
     <div class="card-container center-all">
-     
+
         {#each projects as project}
             <MultiProjectCard imgSrc={project.imgSrc} projectName={project.projectName}/>
         {/each}

@@ -34,7 +34,7 @@ let footer;
 onMount(() => {
     //nav turns sticky above footer - could change state instead
     let nav = document.getElementsByTagName('aside');
-    
+   
     window.addEventListener("scroll", () => {
         let footerTopScrollPos = footer.offsetTop - footer.offsetHeight;
         let footerHeight = footer.offsetHeight;
@@ -49,6 +49,7 @@ onMount(() => {
             nav[0].style.marginBottom = '0px';
         }
     })
+  
 })
 </script>
 

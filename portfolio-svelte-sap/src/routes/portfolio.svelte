@@ -1,5 +1,6 @@
 <script>
     import ImageCard from '../components/PortfolioPageComponents/ImageCard.svelte';
+    import ImageText from '../components/PortfolioPageComponents/ImageText.svelte';
     import { fadeIn, fadeOut } from "../components/pageFade";
     import { onMount } from 'svelte';
     let x = .3;
@@ -84,6 +85,7 @@
     {#each portfolioCards as card, index}
         <div bind:this={cards[index]} {index}>
             <ImageCard imgSrc={card.imgSrc} projectName={card.projectName} />
+            <!-- <ImageText /> -->
         </div>
     {/each}
 </section>

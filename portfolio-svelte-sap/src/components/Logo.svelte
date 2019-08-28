@@ -6,18 +6,19 @@
     let position = { scrolled: false };
     
     onMount(() => {
-        //  logo.classList.remove('scrolled')
-        let scrolledCheck = () => {
-            let scroll = window.pageYOffset;
-            if(scroll > 130){
-                logo.classList.add('scrolled')
-            } else {
-                logo.classList.remove('scrolled')
-            }
-
-        }
-        window.addEventListener("scroll", scrolledCheck);
         
+        let scrolledCheck = () => {
+                let scroll = window.pageYOffset;
+                if(scroll > 130){
+                    logo.classList.add('scrolled')
+                } else {
+                    logo.classList.remove('scrolled')
+                }
+            } 
+        
+        window.addEventListener("scroll", scrolledCheck);
+
+        //  links.addEventListener("click", scrolledCheck)
     })
 
 </script>
@@ -41,7 +42,7 @@
     }
 
 </style>
-
+  
    <a href="." class="" bind:this={logo}>
         <p>JR</p>
     </a>

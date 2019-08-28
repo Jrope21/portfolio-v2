@@ -3,6 +3,7 @@
 	import Footer from '../components/Footer.svelte';
 	import Logo from '../components/Logo.svelte';
 	export let segment;
+	console.log(segment)
 </script>
 
 <style>
