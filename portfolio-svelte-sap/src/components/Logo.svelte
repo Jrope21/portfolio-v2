@@ -36,7 +36,7 @@
         padding: 8px;
         z-index: 2;
     }
-    a.scrolled {
+    :global(a.scrolled) {
         opacity: 1 !important;
     }
 

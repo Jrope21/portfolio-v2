@@ -8,8 +8,9 @@ let heroImg;
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("../images/newYork.jpg");
-        background-size: 230%;
+        background-image: url("../images/drawing.jpg");
+        /* background-size: 230%; */
+        background-size: 130%;
         background-position: 45% 65%;
         overflow-y: hidden;
         position: relative;
@@ -21,13 +22,13 @@ let heroImg;
         display: inline-block;
         width: 100%;
          height: 100%;
-         background: rgb(24, 24, 24, .2);
+         /* background: rgb(24, 24, 24, .2); */
     }
     img {
         display: none;
     }
 </style>
-<img width="1px" height="1px" src="images/newYork.jpg" alt="">
+<img width="1px" height="1px" src="images/drawing.jpg" alt="">
 <div bind:this={heroImg} class="hero-image">
     <ImageGradient />
 </div>
