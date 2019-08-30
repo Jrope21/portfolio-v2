@@ -19,6 +19,9 @@ export let projectName;
         height: 65vw;
     }
     @media screen and (min-width: 40em){
+        /* a {
+            margin-top: 10%;
+        } */
         .img-container{
             max-width:100%; 
             width: 25vw;
@@ -37,7 +40,7 @@ export let projectName;
         width: 105%;
         height: 105%;
     }
-    p {
+    /* p {
         position: relative;
         display: flex;
         align-items: center;
@@ -47,8 +50,8 @@ export let projectName;
         font-weight: 300;
         text-transform: uppercase;
         transition: all .2s ease-in-out;
-    }
-    @media screen and (min-width: 40em){
+    } */
+    /* @media screen and (min-width: 40em){
         p {
             margin-bottom: 0rem;
         }
@@ -65,7 +68,7 @@ export let projectName;
         content: '';
         margin-right: 20rem;
         width: 30px;
-    }
+    } */
    
 </style>
 
@@ -73,5 +76,5 @@ export let projectName;
     <div class="img-container">
       <img src="{imgSrc}" alt="">
     </div>
-    <p><span class="animateSick"></span>{projectName}</p>
+    <!-- <p><span class="animateSick"></span>{projectName}</p> -->
 </a>

@@ -64,16 +64,29 @@
         background: rgba(34, 34, 34, 0.082);
         z-index: -1;
     }
-    div {
+    div.card-container {
         display: flex;
         justify-content: flex-start;
+        flex-direction: column;
         width: 65%;
         max-width: 800px;
         margin-bottom: 05%;
         opacity: 0;
     }
-    div:nth-of-type(2n){
-        justify-content: flex-end;
+    div.card-container:nth-of-type(2n){
+        /* justify-content: flex-end; */
+    }
+    @media screen and (min-width: 40em){
+        div.card-container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        div.card-container:nth-of-type(2n){
+           flex-direction: row-reverse;
+         }
+        div.text-container {
+            width: 50%;
+        }
     }
 </style>
 
@@ -83,9 +96,13 @@
 
 <section in:fadeIn>
     {#each portfolioCards as card, index}
-        <div bind:this={cards[index]} {index}>
-            <ImageCard imgSrc={card.imgSrc} projectName={card.projectName} />
-            <!-- <ImageText /> -->
+        <div class="card-container" bind:this={cards[index]} {index}>
+            
+                <ImageCard imgSrc={card.imgSrc}  />
+          
+            <div class="text-container">
+                <ImageText projectName={card.projectName}/>
+            </div>
         </div>
     {/each}
 </section>
