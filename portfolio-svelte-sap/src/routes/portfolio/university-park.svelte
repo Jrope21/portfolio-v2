@@ -5,12 +5,18 @@ import HeroText from '../../components/PortfolioNestedPageComponents/HeroText.sv
 import Button from '../../components/IconComponents/Button.svelte';
 import TextUnderline from '../../components/IconComponents/TextUnderline.svelte';
 import HeroImage from '../../components/PortfolioNestedPageComponents/HeroImage.svelte';
+import TextInfo from '../../components/PortfolioNestedPageComponents/TextInfo.svelte';
 let textHero = `
 A beautiful website built for the City of University Park. 
 With over 100 pages it includes a dynamic content slider, form verification, multiple third party integrations, and much more.
 
 `
-
+let headerCta = `
+Working with a high traffic website.
+`
+let textCta = `
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quas maxime explicabo pariatur praesentium molestiae?
+`
 let skills = [
     {
         name: 'HTML5'
@@ -65,7 +71,6 @@ let skills = [
         display: flex;
         align-items: center;
         font-weight: 300;
-        /* text-decoration: underline; */
         text-transform: uppercase;
         font-size: 12rem;
         width: fit-content;
@@ -78,10 +83,10 @@ let skills = [
     <PageHeader sidePage={'side-page'} title={'University Park'} />
     <div class="container">
         <HeroText text={textHero}/>
-        <!-- <Button text={'Website'} /> -->
         <a href=""><TextUnderline text={'View Website'} /></a>
         <HeroImage src={'/images/uptexas/desktop.png'} />
-        <!-- <img src="" alt=""> -->
+        <TextInfo header={headerCta} text={textCta} />
+        <HeroImage src={'/images/uptexas/sidenav.png'} />
         <h3>Skills</h3>
         <div class="skills">
             {#each skills as skill}
