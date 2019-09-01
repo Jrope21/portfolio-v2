@@ -1,9 +1,10 @@
 <script>
     import ImageCard from '../components/PortfolioPageComponents/ImageCard.svelte';
     import ImageText from '../components/PortfolioPageComponents/ImageText.svelte';
+    import PageHeader from '../components/IconComponents/PageHeader.svelte';
     import { fadeIn, fadeOut } from "../components/pageFade";
     import { onMount } from 'svelte';
-    let x = .3;
+    let x = .35;
     let cards = [];
 
     onMount(()=>{
@@ -21,26 +22,32 @@
 
     let portfolioCards = [
         {
+            url: 'portfolio/university-park',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'University Park'
         },
         {
+            url: '',
             imgSrc: 'images/bub.jpeg',
             projectName: 'Creative Revolt'
         },
         {
+            url: '',
             imgSrc: 'images/WBUH.jpeg',
             projectName: 'HomeVestors'
         },
         {
+            url: '',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'ANBTX'
         },
         {
+            url: '',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'Advancial Credit Union'
         },
         {
+            url: '',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'Service Experts'
         },
@@ -52,7 +59,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10% 0;
+        padding: 10% 0 10% 0;
         position: relative;
     }
     section::before {
@@ -81,12 +88,13 @@
         div.card-container {
             flex-direction: row;
             justify-content: space-around;
+            /* width: 80%; */
         }
         div.card-container:nth-of-type(2n){
            flex-direction: row-reverse;
          }
         div.text-container {
-            width: 50%;
+            width: 40%;
         }
         div.image-container {
             width: 50%;
@@ -95,10 +103,10 @@
         div.card-container:nth-of-type(2n) div.image-container{
             justify-content: flex-end;
         }
-        div.image-container {
-            width: 50%;
+        /* div.image-container {
+            width: 60%;
             padding: 10% auto;
-        }
+        } */
         
     }
 </style>
@@ -108,13 +116,14 @@
 </svelte:head>
 
 <section in:fadeIn>
+    <PageHeader title={'Portfolio'} />
     {#each portfolioCards as card, index}
         <div class="card-container" bind:this={cards[index]} {index}>
             <div class="image-container">
-                <ImageCard imgSrc={card.imgSrc}  />
+                <ImageCard imgSrc={card.imgSrc} url={card.url} />
             </div>
             <div class="text-container">
-                <ImageText projectName={card.projectName}/>
+                <ImageText projectName={card.projectName} url={card.url} />
             </div>
         </div>
     {/each}

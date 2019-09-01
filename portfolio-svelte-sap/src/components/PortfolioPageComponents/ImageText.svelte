@@ -1,7 +1,7 @@
 <script>
 import CircleIcon from '../IconComponents/CircleIcon.svelte';
 import TextUnderline from '../IconComponents/TextUnderline.svelte';
-export let projectName;
+export let projectName, url;
 </script>
 
 <style>
@@ -31,7 +31,7 @@ h2 {
     <p>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus similique eligendi, enim eum, suscipit facilis at et doloribus quidem necessitatibus repudiandae, nulla distinctio earum facere!
     </p>
-    <a href="">
+    <a href="{url}">
         <CircleIcon /> <TextUnderline text={'View More'} />
     </a>
 </div>

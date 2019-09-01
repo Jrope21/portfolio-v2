@@ -1,7 +1,7 @@
 <script>
 export let imgSrc;
 export let projectName;
-
+export let url;
 
 </script>
 
@@ -72,7 +72,7 @@ export let projectName;
    
 </style>
 
-<a>
+<a href="{url}">
     <div class="img-container">
       <img src="{imgSrc}" alt="">
     </div>
