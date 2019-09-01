@@ -31,6 +31,7 @@ export let title, sidePage;
         }
     }
     h1 {
+        width: 100%;
         top: 0;
         right: 0px;
         display: flex;
