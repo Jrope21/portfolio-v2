@@ -6,11 +6,21 @@ import Button from '../../components/IconComponents/Button.svelte';
 import TextUnderline from '../../components/IconComponents/TextUnderline.svelte';
 import HeroImage from '../../components/PortfolioNestedPageComponents/HeroImage.svelte';
 import TextInfo from '../../components/PortfolioNestedPageComponents/TextInfo.svelte';
+import ResponsiveIageDisplay from '../../components/PortfolioNestedPageComponents/ResponsiveImageDisplay.svelte';
+
 let textHero = `
 A beautiful website built for the City of University Park. 
 With over 100 pages it includes a dynamic content slider, form verification, multiple third party integrations, and much more.
 
 `
+let responsiveImg = [
+    {
+        mobileSrc: '',
+        tabletSrc: '',
+        desktopSrc: ''
+    }
+]
+
 let headerCta = `
 Working with a high traffic website.
 `
@@ -87,6 +97,7 @@ let skills = [
         <HeroImage src={'/images/uptexas/desktop.png'} />
         <TextInfo header={headerCta} text={textCta} />
         <HeroImage src={'/images/uptexas/sidenav.png'} />
+        <ResponsiveIageDisplay mobileSrc={responsiveImg.mobileSrc} tabletSrc={responsiveImg.tabletSrc} desktopSrc={responsiveImg.desktopSrc} />
         <h3>Skills</h3>
         <div class="skills">
             {#each skills as skill}
