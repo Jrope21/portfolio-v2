@@ -1,49 +1,11 @@
 <script>
 import PageHeader from '../../components/IconComponents/PageHeader.svelte';
-import Skills from '../../components/PortfolioNestedPageComponents/Skills.svelte';
-import HeroText from '../../components/PortfolioNestedPageComponents/HeroText.svelte';
-import Button from '../../components/IconComponents/Button.svelte';
-import TextUnderline from '../../components/IconComponents/TextUnderline.svelte';
-import HeroImage from '../../components/PortfolioNestedPageComponents/HeroImage.svelte';
-import TextInfo from '../../components/PortfolioNestedPageComponents/TextInfo.svelte';
-import ResponsiveIageDisplay from '../../components/PortfolioNestedPageComponents/ResponsiveImageDisplay.svelte';
 
-let textHero = `
-A beautiful website built for the City of University Park. 
-With over 100 pages it includes a dynamic content slider, form verification, multiple third party integrations, and much more.
+import SidePageHeroSection from '../../components/SidePageHeroSection.svelte';
+import SidePageTextLgImageSection from "../../components/SidePageTextLgImageSection.svelte";
+import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImgSection.svelte';
 
-`
-let responsiveImg = [
-    {
-        mobileSrc: '',
-        tabletSrc: '',
-        desktopSrc: ''
-    }
-]
 
-let headerCta = `
-Working with a high traffic website.
-`
-let textCta = `
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quas maxime explicabo pariatur praesentium molestiae?
-`
-let skills = [
-    {
-        name: 'HTML5'
-    },
-    {
-        name: 'CSS3'
-    },
-    {
-        name: 'JavaScript'
-    },
-    {
-        name: 'jQuery'
-    },
-    {
-        name: 'Kentico CMS'
-    },
-]
 </script>
 
 <style>
@@ -66,16 +28,7 @@ let skills = [
     }
     .container {
         width: 65%;
-    }
-    h3 {
-        font-size: 12rem;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-    .skills {
-        display: flex;
-        flex-wrap: wrap;  
+        margin-bottom: 20rem;
     }
     a {
         display: flex;
@@ -92,17 +45,12 @@ let skills = [
 <section>
     <PageHeader sidePage={'side-page'} title={'University Park'} />
     <div class="container">
-        <HeroText text={textHero}/>
-        <a href=""><TextUnderline text={'View Website'} /></a>
-        <HeroImage src={'/images/uptexas/desktop.png'} />
-        <TextInfo header={headerCta} text={textCta} />
-        <HeroImage src={'/images/uptexas/sidenav.png'} />
-        <ResponsiveIageDisplay mobileSrc={responsiveImg.mobileSrc} tabletSrc={responsiveImg.tabletSrc} desktopSrc={responsiveImg.desktopSrc} />
-        <h3>Skills</h3>
-        <div class="skills">
-            {#each skills as skill}
-                <Skills skill={skill.name} />
-            {/each}
-        </div>
+        <SidePageHeroSection />
+    </div>
+    <div class="container">
+        <SidePageTextLgImageSection />
+    </div>
+    <div class="container">
+        <SidePageResponsiveImgSection />
     </div>
 </section>

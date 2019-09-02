@@ -3,7 +3,9 @@
 </script>
 
 <style>
-
+    p {
+        margin-bottom: 20rem;
+    }
 </style>
 
 <p>
