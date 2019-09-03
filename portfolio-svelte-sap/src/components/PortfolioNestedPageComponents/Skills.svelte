@@ -5,10 +5,11 @@ export let skill;
 <style>
     p {
         color: gray;
-        width: 33%;
-        text-align: center;
-        margin: 5px auto;
-        font-size: 8rem;
+        /* width: 33%; */
+        /* text-align: center; */
+        margin: 0 15px 8px 15px;
+        /* margin: 5px auto; */
+        font-size: 10rem;
     }
 </style>
 

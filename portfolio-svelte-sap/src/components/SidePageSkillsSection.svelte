@@ -21,16 +21,17 @@
 
 <style>
     .skills-section {
-        margin-top: 20rem;
+        /* margin-top: 40rem; */
     }
     .skills {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
     h3 {
         font-size: 12rem;
         text-transform: uppercase;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         text-align: center;
     }
 </style>

@@ -6,7 +6,7 @@ export let title, sidePage;
 <style>
     @keyframes slideInRight {
         0% {
-            transform: translateX(100%);
+            transform: translateX(-100%);
         }
         100% {
             transform: translateX(0%);
@@ -28,6 +28,7 @@ export let title, sidePage;
     @media screen and (min-width: 40em){
         div {
             font-size: 28rem;
+            width: 75%;
         }
     }
     h1 {

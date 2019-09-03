@@ -3,8 +3,7 @@
     import HeroImage from './PortfolioNestedPageComponents/HeroImage.svelte';
     import HeroText from './PortfolioNestedPageComponents/HeroText.svelte';
     let textHero = `
-        A beautiful website built for the City of University Park. 
-        With over 100 pages it includes a dynamic content slider, form verification, multiple third party integrations, and much more.
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo vel quae veritatis doloribus voluptatibus iure expedita accusantium ipsa, veniam ad. Aliquid, tempora nostrum. Laboriosam, praesentium!
     `
 </script>
 
@@ -17,9 +16,16 @@
         font-size: 12rem;
         width: fit-content;
         margin-top: 10rem;
+        margin-bottom: 20rem;
+    }
+
+    @media screen and (min-width: 40em){
+        a {
+            margin-bottom: 30rem;
+        }
     }
 </style>
 
 <HeroText text={textHero}/>
 <a href=""><TextUnderline text={'View Website'} /></a>
-<HeroImage src={'/images/uptexas/desktop.png'} />
+<HeroImage src={'/images/uptexas/hero.png'} />

@@ -4,7 +4,7 @@ import PageHeader from '../../components/IconComponents/PageHeader.svelte';
 import SidePageHeroSection from '../../components/SidePageHeroSection.svelte';
 import SidePageTextLgImageSection from "../../components/SidePageTextLgImageSection.svelte";
 import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImgSection.svelte';
-
+import SidePageSkillsSection from '../../components/SidePageSkillsSection.svelte';
 
 </script>
 
@@ -13,7 +13,7 @@ import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImg
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10% 0 10% 0;
+        padding: 10% 0 0% 0;
         position: relative;
         color: gray;
     }
@@ -28,7 +28,13 @@ import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImg
     }
     .container {
         width: 65%;
-        margin-bottom: 20rem;
+        margin-bottom: 40rem;
+    }
+    @media screen and (min-width: 40em){
+        .container {
+            width: 75%;
+            margin-bottom: 100rem;
+        }
     }
     a {
         display: flex;
@@ -52,5 +58,8 @@ import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImg
     </div>
     <div class="container">
         <SidePageResponsiveImgSection />
+    </div>
+    <div class="container">
+        <SidePageSkillsSection />
     </div>
 </section>

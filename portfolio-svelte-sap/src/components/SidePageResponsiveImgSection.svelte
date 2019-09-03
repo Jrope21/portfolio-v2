@@ -14,4 +14,3 @@
 </style>
 
 <ResponsiveImageDisplay mobileSrc={responsiveImg.mobileSrc} tabletSrc={responsiveImg.tabletSrc} desktopSrc={responsiveImg.desktopSrc} />
-<SidePageSkillsSection />  

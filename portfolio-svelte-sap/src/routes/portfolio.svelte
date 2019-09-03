@@ -4,7 +4,7 @@
     import PageHeader from '../components/IconComponents/PageHeader.svelte';
     import { fadeIn, fadeOut } from "../components/pageFade";
     import { onMount } from 'svelte';
-    let x = .35;
+    let x = .25;
     let cards = [];
 
     onMount(()=>{
@@ -88,7 +88,8 @@
         div.card-container {
             flex-direction: row;
             justify-content: space-around;
-            /* width: 80%; */
+            width: 75%;
+            margin-bottom: 8%;
         }
         div.card-container:nth-of-type(2n){
            flex-direction: row-reverse;

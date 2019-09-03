@@ -4,8 +4,11 @@ export let src;
 
 <style>
     img {
+        /* margin-top: 20rem; */
         max-width: 100%;
     }
 </style>
 
-<img src="{src}" alt="">
+<div>
+    <img src="{src}" alt="">
+</div>

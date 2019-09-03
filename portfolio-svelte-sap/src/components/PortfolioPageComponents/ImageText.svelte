@@ -25,11 +25,17 @@ h2 {
         text-transform: uppercase;
         transition: all .2s ease-in-out;
     }
+
+    @media screen and (min-width: 40em) {
+        h2 {
+            margin-top: 0rem;
+        }
+    }
 </style>
 <div>
     <h2>{projectName}</h2>
     <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus similique eligendi, enim eum, suscipit facilis at et doloribus quidem necessitatibus repudiandae, nulla distinctio earum facere!
+    Temporibus similique eligendi, enim eum, suscipit facilis at et doloribus quidem necessitatibus repudiandae, nulla distinctio earum facere!
     </p>
     <a href="{url}">
         <CircleIcon /> <TextUnderline text={'View More'} />
