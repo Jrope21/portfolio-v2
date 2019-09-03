@@ -13,6 +13,11 @@
         margin-bottom: 10rem;
         font-size: 12rem;
     }
+    @media screen and (min-width: 40em) {
+        p {
+            width: 75%;
+        }
+    }
 </style>
 <h3>wassup sexy little girl</h3>
 <p>
