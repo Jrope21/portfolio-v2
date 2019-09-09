@@ -23,20 +23,23 @@ let projects = [
 
 <style>
 h2 {
-    font-size: 12rem;
+    font-size: 13px;
     text-transform: uppercase;
     width: fit-content;
     /* margin: auto; */
     margin-bottom: 20rem;
+    font-weight: 600
 }
 a{
     display: flex;
     align-items: center;
-    font-size: 8rem;
-    font-weight: 300;
+    font-size: 10px;
+    color: #989898;
     width: fit-content;
     margin-top: 30rem;
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 h2::after{
     content: '';

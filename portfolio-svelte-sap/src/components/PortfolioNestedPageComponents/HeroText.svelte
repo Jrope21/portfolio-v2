@@ -19,7 +19,7 @@
         }
     }
 </style>
-<h3>wassup sexy little girl</h3>
+<h3>wassup little girl</h3>
 <p>
     {text}
 </p>

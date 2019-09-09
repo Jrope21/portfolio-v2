@@ -34,11 +34,16 @@ export let projectName;
         display: flex;
         align-items: center;
         margin: 15rem 0;
-        
-        font-size: 12rem;
-        font-weight: 300;
+   
         text-transform: uppercase;
         transition: all .2s ease-in-out;
+
+        /* font-size: 12px;
+        font-weight: 600; */
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        color: #58595b;
     }
     @media screen and (min-width: 40em){
         p {

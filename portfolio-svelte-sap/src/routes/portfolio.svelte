@@ -2,6 +2,7 @@
     import ImageCard from '../components/PortfolioPageComponents/ImageCard.svelte';
     import ImageText from '../components/PortfolioPageComponents/ImageText.svelte';
     import PageHeader from '../components/IconComponents/PageHeader.svelte';
+    import LeadForm from '../components/IconComponents/LeadForm.svelte';
     import { fadeIn, fadeOut } from "../components/pageFade";
     import { onMount } from 'svelte';
     let x = .25;
@@ -58,17 +59,25 @@
     section {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
         padding: 10% 0 10% 0;
         position: relative;
     }
+    
+    @media screen and (min-width: 64em){
+        section {
+            flex-direction: row;
+        }
+    }
+
     section::before {
         content: '';
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
-        background: rgba(34, 34, 34, 0.082);
+        /* background: rgba(34, 34, 34, 0.082); */
+        background: rgba(34, 34, 34, 0.022);
         z-index: -1;
     }
     div.card-container {
@@ -76,7 +85,7 @@
         justify-content: flex-start;
         flex-direction: column;
         width: 65%;
-        max-width: 800px;
+        max-width: 900px;
         margin-bottom: 05%;
         opacity: 0;
     }
@@ -95,7 +104,7 @@
            flex-direction: row-reverse;
          }
         div.text-container {
-            width: 40%;
+            width: 35%;
         }
         div.image-container {
             width: 50%;
@@ -110,22 +119,61 @@
         } */
         
     }
+
+    div.projects-container {
+        width: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* div.lead-form-container {
+        
+        position: relative;
+        width: 100vw;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    } */
+
+    @media screen and (min-width: 40em){
+        
+        
+    }
+
+    /* @media screen and (min-width: 64em) {
+        div.projects-container {
+            width: 55%;
+        }
+        div.lead-form-container {
+            position: unset;
+            width: 45%;
+            display: flex;
+        }
+    } */
+
 </style>
 
 <svelte:head>
 	<title>Badass Portfolio Business</title>
 </svelte:head>
 
-<section in:fadeIn>
+<!-- <div class="page-header"> -->
     <PageHeader title={'Portfolio'} />
-    {#each portfolioCards as card, index}
-        <div class="card-container" bind:this={cards[index]} {index}>
-            <div class="image-container">
-                <ImageCard imgSrc={card.imgSrc} url={card.url} />
+<!-- </div> -->
+<section in:fadeIn>
+    <div class="projects-container">
+        {#each portfolioCards as card, index}
+            <div class="card-container" bind:this={cards[index]} {index}>
+                <div class="image-container">
+                    <ImageCard imgSrc={card.imgSrc} url={card.url} />
+                </div>
+                <div class="text-container">
+                    <ImageText projectName={card.projectName} url={card.url} />
+                </div>
             </div>
-            <div class="text-container">
-                <ImageText projectName={card.projectName} url={card.url} />
-            </div>
-        </div>
-    {/each}
+        {/each}
+    </div>
+    <!-- <div class="lead-form-container">
+        <LeadForm />
+    </div> -->
 </section>

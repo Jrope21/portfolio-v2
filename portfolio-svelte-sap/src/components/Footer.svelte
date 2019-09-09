@@ -58,28 +58,52 @@ onMount(() => {
         display: flex;
         position: relative;
         min-height: 25vh;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
         align-items: center;  
         justify-content: center;  
         font-size: 8rem;
-        padding: 20rem 0rem;
+        padding: 30rem 0rem 20rem 0rem;
     }
+
+    @media screen and (min-width: 40em){
+        footer {
+            padding: 40rem 0rem 30rem 0rem;
+        }
+    }
+
     .top-row {
         display: flex;
         flex: 100%;
+        width: 95%;
+        max-width: 700px;
+        justify-content: space-between;  
     }
+
     @media screen and (min-width: 40em){
         .top-row {
-            max-width:75%;
+            width: 85%;
         }
     }
+
+    .top-row > div {
+        max-width: 312px;
+    }
+
+    @media screen and (min-width: 40em){
+        .top-row > div {
+            margin: 30rem;
+        }
+    }
+
+
     div:not(.top-row){
         flex: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .copy
+ 
     div.cta, div.breadcrumb{
         min-height: 150px;
     }
@@ -88,6 +112,13 @@ onMount(() => {
         font-size: 8rem;
         margin-bottom: 10rem;
     }
+
+    @media screen and (min-width: 40em) {
+        h2 {
+            font-size: 9rem;
+        }
+    }
+
     p {
         text-transform: uppercase;
         font-size: 6rem;

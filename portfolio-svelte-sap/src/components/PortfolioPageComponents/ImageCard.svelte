@@ -25,9 +25,13 @@ export let url;
         .img-container{
             max-width:100%; 
             width: 25vw;
-            height: 35vw;
-            max-width: 280px;
-            max-height: 400px;
+            height: 25vw;
+            max-width: 350px;
+            max-height: 350px;
+            /* max-width: 80%; */
+             /* height: 35vw; */
+            /* max-width: 280px;
+            max-height: 400px; */
         }   
     }
     img {
