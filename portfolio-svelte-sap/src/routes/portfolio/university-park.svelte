@@ -3,6 +3,7 @@ import PageHeader from '../../components/IconComponents/PageHeader.svelte';
 import { fadeIn, fadeOut } from '../../components/PageFade';
 import { onMount } from 'svelte';
 
+import LeadForm from '../../components/IconComponents/LeadForm.svelte';
 import SidePageHeroSection from '../../components/SidePageHeroSection.svelte';
 import SidePageTextLgImageSection from "../../components/SidePageTextLgImageSection.svelte";
 import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImgSection.svelte';
@@ -30,6 +31,7 @@ import SidePageSkillsSection from '../../components/SidePageSkillsSection.svelte
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* justify-content: center; */
         padding: 10% 0 0% 0;
         position: relative;
         color: gray;
@@ -65,21 +67,58 @@ import SidePageSkillsSection from '../../components/SidePageSkillsSection.svelte
         width: fit-content;
         margin-top: 10rem;
     }
+
+
+    div.projects-container {
+        width: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    div.lead-form-container {
+        
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 40em){
+        
+        
+    }
+
+    @media screen and (min-width: 64em) {
+        div.projects-container {
+            width: 60%;
+        }
+        div.lead-form-container {
+            position: unset;
+            width: 40%;
+            display: flex;
+        }
+    }
 </style>
 
 <PageHeader sidePage={'side-page'} title={'University Park'} />
 <section in:fadeIn>
-    
-    <div bind:this={sections[0]} class="container">
-        <SidePageHeroSection />
-    </div>
-    <div bind:this={sections[1]} class="container">
-        <SidePageTextLgImageSection />
-    </div>
-    <div bind:this={sections[2]} class="container">
-        <SidePageResponsiveImgSection />
-    </div>
-    <div bind:this={sections[3]} class="container">
-        <SidePageSkillsSection />
-    </div>
+    <!-- <div class="projects-container"> -->
+        <div bind:this={sections[0]} class="container">
+            <SidePageHeroSection />
+        </div>
+        <div bind:this={sections[1]} class="container">
+            <SidePageTextLgImageSection />
+        </div>
+        <div bind:this={sections[2]} class="container">
+            <SidePageResponsiveImgSection />
+        </div>
+        <div bind:this={sections[3]} class="container">
+            <SidePageSkillsSection />
+        </div>
+    <!-- </div> -->
+    <!-- <div class="lead-form-container">
+        <LeadForm />
+    </div> -->
 </section>

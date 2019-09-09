@@ -34,9 +34,18 @@
         width: 65vw;
         min-height: 900px;
         height: 80vh;
-
+        position: relative;
         margin: auto;
     }
+    /* section.two::before {
+        content: '';
+        background: rgba(34, 34, 34, 0.022);
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+      
+    }  */
     section.three {
         width: 65vw;
         position:relative;
@@ -50,6 +59,13 @@
             width: 70vw;
         }
     }
+    @media screen and (min-width: 64em){
+        section.three {
+            min-height: 600px;
+            height: 100%;
+            width: 70vw;
+        }
+    }
     section.three::after{
         content: '';
         background: rgba(34, 34, 34, 0.082);
@@ -58,6 +74,19 @@
         height: 100%;
         z-index: -2;
     }
+    section.test{
+        height: 20vh;
+        position: relative;
+    }
+    section.test::before {
+        content: '';
+        background: rgba(34, 34, 34, 0.082);
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+      
+    } 
 </style>
 
 <svelte:head>
@@ -68,10 +97,15 @@
 	<section bind:this={heroSection} class="one center-all">
 		<HeroSection />
 	</section>
+    
 	<section class="two center-all">
 		<SingleProjectSection />
 	</section>
+    
 	<section class="three center-all">
 		<MultiProjectSection />
 	</section>
+    <!-- <section class="test">
+    
+    </section> -->
 </div>
