@@ -3,7 +3,7 @@
 </script>
 
 <style>
-    div.form-container::before {
+    /* div.form-container::before {
         content: '';
         position:absolute;
         top: 0;
@@ -11,7 +11,7 @@
         width: 100%;
         background: rgba(34, 34, 34, .1);
         z-index: -1;
-    }
+    } */
     h2, p {
         /* text-align: center; */
     }

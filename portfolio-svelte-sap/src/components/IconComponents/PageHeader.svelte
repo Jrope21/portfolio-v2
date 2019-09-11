@@ -25,6 +25,7 @@ export let title, sidePage;
     }
 
 
+
     /* testing white background on header */
     /* div::before{
         content: '';
@@ -38,6 +39,8 @@ export let title, sidePage;
 
     div.side-page {
         font-size: 12rem;
+        /* width: 85%; */
+        max-width: 1705px;
     }
     @media screen and (min-width: 40em){
         div.title-container:not(.side-page){
@@ -53,6 +56,7 @@ export let title, sidePage;
         }
         div.side-page {
             font-size: 24rem;
+            width: 85%
         }
     }
     h1 {

@@ -25,6 +25,7 @@ h2 {
 h3{
     font-size: 13rem;
     /* margin-top: -3px; */
+    font-weight: 400;
     color: lightgray;
 }
 </style>

@@ -1,7 +1,9 @@
 <script>
     import TextUnderline from './IconComponents/TextUnderline.svelte';
+    import CircleIcon from './IconComponents/CircleIcon.svelte';
     import HeroImage from './PortfolioNestedPageComponents/HeroImage.svelte';
     import HeroText from './PortfolioNestedPageComponents/HeroText.svelte';
+
     let textHero = `
        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo vel quae veritatis doloribus voluptatibus iure expedita accusantium ipsa, veniam ad. Aliquid, tempora nostrum. Laboriosam, praesentium!
     `
@@ -13,10 +15,12 @@
         align-items: center;
         font-weight: 300;
         text-transform: uppercase;
-        font-size: 12rem;
+        font-size: 12px;
         width: fit-content;
         margin-top: 10rem;
         margin-bottom: 20rem;
+        color: #989898;
+        font-family: 'Open Sans', sans-serif;
     }
 
     @media screen and (min-width: 40em){
@@ -27,5 +31,8 @@
 </style>
 
 <HeroText text={textHero}/>
-<a href=""><TextUnderline text={'View Website'} /></a>
+<a href="">
+    <CircleIcon />
+    <TextUnderline text={'View Website'} />
+</a>
 <HeroImage src={'/images/uptexas/hero.png'} />

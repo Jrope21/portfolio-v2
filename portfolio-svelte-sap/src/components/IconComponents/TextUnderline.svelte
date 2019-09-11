@@ -37,8 +37,15 @@ a:hover > span::before {
     transform: translate(100%);
     /* left: 0; */
 }
+
+a:hover > span::before {
+    /* content:''; */
+    transform: translate(100%);
+    /* left: 0; */
+}
+
 </style>
 
-<span>
+<span class="text-underline">
     {text}
 </span>

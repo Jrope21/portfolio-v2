@@ -3,12 +3,12 @@
 </script>
 
 <style>
-    h3 {
+    /* h3 {
         font-weight: 500;
         font-size: 12rem;
         margin-bottom: 10rem;
         text-transform: uppercase;
-    }
+    } */
     p {
         font-size: 12rem;
     }
@@ -23,6 +23,15 @@
             flex-direction: column;
         }
     } */
+    p{
+        line-height: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        color: #58595b;
+        text-indent: 10px;
+        max-width: 350px;
+    }
 </style>
 
 <div>
