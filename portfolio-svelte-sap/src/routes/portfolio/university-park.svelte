@@ -73,6 +73,7 @@ import Button from '../../components/IconComponents/Button.svelte';
             flex-direction: row;
             justify-content: center;
             align-items: unset;
+            flex: 1;
         }
     }
 
@@ -119,7 +120,7 @@ import Button from '../../components/IconComponents/Button.svelte';
         
         position: relative;
         width: 100vw;
-        height: 100%;
+        /* height: 100%; */
         display:flex;
         align-items: center;
         flex-direction: column;
@@ -150,6 +151,7 @@ import Button from '../../components/IconComponents/Button.svelte';
     @media screen and (min-width: 64em) {
         div.projects-container {
             width: 65%;
+            flex: 1;
         }
         div.lead-form-container {
             position: unset;
@@ -158,6 +160,7 @@ import Button from '../../components/IconComponents/Button.svelte';
         }
         div.lead-form-container::before{
             width: 35%;
+            flex: 1;
         }
         h3 {
             margin-top: 0rem;
