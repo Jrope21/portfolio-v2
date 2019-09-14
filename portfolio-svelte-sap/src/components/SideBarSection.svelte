@@ -1,5 +1,7 @@
 <script>
 import SideProjectCard from './IconComponents/SideProjectCard.svelte';
+import SideBarSocial from './PortfolioNestedPageComponents/SideBarSocial.svelte';
+
 import Button from './IconComponents/Button.svelte';
 
 let projects = [
@@ -22,10 +24,13 @@ let projects = [
 </script>
 
 <style>
-div.side-bar-contiainer{
+/* div.side-bar-contiainer{
     width: 17vw;
     height: 100%;
     min-height: fit-content;
+} */
+div.container {
+    margin-bottom: 40rem;
 }
 
 h3::after {
@@ -45,9 +50,15 @@ h3::after {
 </style>
 
 <div class="side-bar-container">
-    <h3>Projects</h3>
-    {#each projects as project}
-        <SideProjectCard imgSrc={project.imgSrc} projectName={project.projectName} />
-    {/each}
-    <Button text={'Explore More Works'} />
+    <div class="container">
+        <h3>Projects</h3>
+        {#each projects as project}
+            <SideProjectCard imgSrc={project.imgSrc} projectName={project.projectName} />
+        {/each}
+        <Button text={'Explore More Works'} />
+    </div>
+    <div class="container">
+        <h3>Get In Touch</h3>
+        <SideBarSocial />
+    </div>
 </div>
