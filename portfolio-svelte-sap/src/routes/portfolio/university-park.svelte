@@ -7,11 +7,8 @@ import SidePageHeroSection from '../../components/SidePageHeroSection.svelte';
 import SidePageTextLgImageSection from "../../components/SidePageTextLgImageSection.svelte";
 import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImgSection.svelte';
 import SidePageSkillsSection from '../../components/SidePageSkillsSection.svelte';
+import SideBarSection from '../../components/SideBarSection.svelte';
 
-//side bar imports
-import SideProjectCard from '../../components/IconComponents/SideProjectCard.svelte';
-import LeadForm from '../../components/IconComponents/LeadForm.svelte';
-import Button from '../../components/IconComponents/Button.svelte';
 
     let x = .25;
     let sections = [];
@@ -27,35 +24,6 @@ import Button from '../../components/IconComponents/Button.svelte';
             fadeInOrder();
         }
     })
-
-
-    let projects = [
-        {
-            url: '',
-            imgSrc: 'images/bub.jpeg',
-            projectName: 'Creative Revolt'
-        },
-        {
-            url: '',
-            imgSrc: 'images/WBUH.jpeg',
-            projectName: 'HomeVestors'
-        },
-        {
-            url: '',
-            imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'ANBTX'
-        },
-        // {
-        //     url: '',
-        //     imgSrc: 'images/university-park-cta.jpeg',
-        //     projectName: 'Advancial Credit Union'
-        // },
-        // {
-        //     url: '',
-        //     imgSrc: 'images/university-park-cta.jpeg',
-        //     projectName: 'Service Experts'
-        // },
-    ]
 </script>
 
 <style>
@@ -139,14 +107,6 @@ import Button from '../../components/IconComponents/Button.svelte';
     
     }
 
-    h3 {
-        margin-top: 40rem;
-    }
-
-    @media screen and (min-width: 40em){
-    
-        
-    }
 
     @media screen and (min-width: 64em) {
         div.projects-container {
@@ -162,25 +122,8 @@ import Button from '../../components/IconComponents/Button.svelte';
             width: 35%;
             flex: 1;
         }
-        h3 {
-            margin-top: 0rem;
-        }
     }
 
-    div.side-bar-contiainer{
-        width: 17vw;
-        height: 100%;
-        min-height: fit-content;
-    }
-
-    h3::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 7px;
-        margin: 5px 0px 18px 0px;
-        background: lightgray;
-    }
 </style>
 
 <PageHeader sidePage={'side-page'} title={'University Park'} />
@@ -200,13 +143,6 @@ import Button from '../../components/IconComponents/Button.svelte';
         </div>
     </div>
     <div class="lead-form-container">
-        <!-- <LeadForm /> -->
-        <div class="side-bar-container">
-            <h3>Projects</h3>
-            {#each projects as project}
-                <SideProjectCard imgSrc={project.imgSrc} projectName={project.projectName} />
-            {/each}
-            <Button text={'Explore More Works'} />
-        </div>
+       <SideBarSection />
     </div>
 </section>
