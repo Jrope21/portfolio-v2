@@ -11,7 +11,7 @@ h2, h3{
 }
 h2{
     /* font-size: 12rem; */
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     font-size: 13rem;
     font-weight: 600;
 }

@@ -77,9 +77,9 @@
                 <input type="text">
             </label>
         </div>
-        <label> <span>Phone Number</span>
+        <!-- <label> <span>Phone Number</span>
             <input type="text">
-        </label>
+        </label> -->
         <label> <span>Email</span>
             <input type="text">
         </label>

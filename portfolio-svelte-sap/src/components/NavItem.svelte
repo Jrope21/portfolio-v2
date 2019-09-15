@@ -1,8 +1,16 @@
 <script>
+    // import ContactModal from './ContactModel.svelte';
+	import { createEventDispatcher } from 'svelte';
+
     export let name;
     export let url;
     export let rel;
     export let segment;
+    export let modal;
+    export let showPop;
+    const dispatch = createEventDispatcher();
+
+
 </script>
 <style>
     a {
@@ -44,6 +52,14 @@
     }
 
 </style>
- <a {rel} rel="" href="{url}" class='{segment === "blog" ? "selected" : ""}'>
+{#if modal}
+ <a  on:click {rel} href="{url}" class='{segment === "blog" ? "selected" : ""}'>
         {name}
 </a>
+<!-- <ContactModal showModal={showModal} /> -->
+{:else}
+<a {rel} href="{url}" class='{segment === "blog" ? "selected" : ""}'>
+        {name}
+</a>
+{/if}
+

@@ -19,7 +19,7 @@ export let projectName;
             height: 20.5vw;
         }   
     }
-    @media screen and (min-width: 84em){
+    @media screen and (min-width: 94em){
         .img-container {
             width: 19.5vw;
             height: 19.5vw;

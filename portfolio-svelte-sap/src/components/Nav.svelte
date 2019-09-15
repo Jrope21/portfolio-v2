@@ -1,8 +1,12 @@
 <script>
 import NavItem from './NavItem.svelte';
 import HamburgerIcon from './NavComponents/HamburgerIcon.svelte';
+import ContactModal from './ContactModel.svelte';
 import { onMount } from 'svelte';
 export let segment;
+let showPop;
+let showModal;
+//let showModal;
 let navItems = [
     {
         name: 'about',
@@ -15,7 +19,8 @@ let navItems = [
     },
     {
         name: 'contact',
-        url: 'contact'
+        // url: 'contact',
+        modal: true,
     }
 ]
 </script> 
@@ -86,11 +91,21 @@ li:hover {
         <HamburgerIcon />
         <ul>
             {#each navItems as navItem}
-                <li class="align-center">
-                     <NavItem {segment} rel={navItem.rel} name={navItem.name} url={navItem.url}/> <span class="nav-separator"/>
+                <li class="align-center" >
+                     <NavItem 
+                        on:click={() => {showModal = true}}
+                        {segment} 
+                        modal={navItem.modal} 
+                        rel={navItem.rel}
+                        name={navItem.name}
+                        url={navItem.url}
+                    />
+                        <span class="nav-separator"/>
                 </li>
             {/each}
         </ul>
       
     </nav>
 </aside>
+
+<ContactModal on:click='{() => showModal = false}' showModal={showModal}/>

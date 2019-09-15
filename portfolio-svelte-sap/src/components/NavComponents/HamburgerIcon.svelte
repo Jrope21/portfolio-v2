@@ -18,10 +18,6 @@ label {
      position: absolute;
      left: 10px;
      bottom: 38px;
-     /* transform: rotate(45deg); */
-     /* border: 1px solid #00E2FF; */
-     /* border: 1px solid gray; */
-     /* background: #00E2FF; */
      border-radius: 4px;
      height: 25px;
      width: 25px;
