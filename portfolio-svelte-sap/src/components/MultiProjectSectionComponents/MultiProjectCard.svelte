@@ -19,6 +19,12 @@ export let projectName;
             height: 20.5vw;
         }   
     }
+    @media screen and (min-width: 84em){
+        .img-container {
+            width: 19.5vw;
+            height: 19.5vw;
+        }
+    }
     img {
         object-fit: cover;
         transition: all .3s ease-in-out;
@@ -26,8 +32,8 @@ export let projectName;
         height: 100%;
     }
     a:hover img {
-        width: 105%;
-        height: 105%;
+        width: 102%;
+        height: 102%;
     }
     p {
         position: relative;
@@ -42,12 +48,13 @@ export let projectName;
         font-weight: 600; */
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 13px;
+        font-size: 13rem;
         color: #58595b;
     }
     @media screen and (min-width: 40em){
         p {
             margin-bottom: 0rem;
+            /* font-size: 12rem; */
         }
     }
     p::before{

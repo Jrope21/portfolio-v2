@@ -15,7 +15,7 @@
         align-items: center;
         font-weight: 300;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 12rem;
         width: fit-content;
         margin-top: 10rem;
         margin-bottom: 20rem;

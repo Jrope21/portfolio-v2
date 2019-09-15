@@ -16,7 +16,7 @@
         line-height: 16px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 13px;
+        font-size: 13rem;
         color: #58595b;
         text-indent: 10px;
     }

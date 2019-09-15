@@ -9,7 +9,7 @@ export let text, url;
     a{
         display: flex;
         align-items: center;
-        font-size: 10px;
+        font-size: 12rem;
         color: #989898;
         width: fit-content;
         margin-top: 30rem;

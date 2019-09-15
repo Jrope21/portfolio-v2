@@ -23,7 +23,7 @@ let projects = [
 
 <style>
 h2 {
-    font-size: 13px;
+    font-size: 13rem;
     text-transform: uppercase;
     width: fit-content;
     /* margin: auto; */
@@ -33,7 +33,7 @@ h2 {
 a{
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 12rem;
     color: #989898;
     width: fit-content;
     margin-top: 30rem;

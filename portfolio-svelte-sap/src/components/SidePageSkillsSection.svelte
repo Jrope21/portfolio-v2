@@ -1,11 +1,19 @@
 <script>
     import Skills from './PortfolioNestedPageComponents/Skills.svelte';
+    
+
     let skills = [
     {
         name: 'HTML5'
     },
     {
         name: 'CSS3'
+    },
+    {
+        name: 'SASS'
+    },
+    {
+        name: 'Foundation'
     },
     {
         name: 'JavaScript'
@@ -29,15 +37,16 @@
         justify-content: center; 
     }
     h3 {
-        font-size: 12rem;
-        text-transform: uppercase;
-        margin-bottom: 10px;
+        font-size: 13rem;
+        /* text-transform: uppercase; */
+        margin-bottom: 10rem;
         text-align: center;
+         /* margin-top: 40rem; */
     }
 </style>
 
 <div class="skills-section">
-    <h3>Skills</h3>
+    <h3>The Stack</h3>
     <div class="skills">
         {#each skills as skill}
             <Skills skill={skill.name} />

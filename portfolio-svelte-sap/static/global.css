@@ -3,17 +3,22 @@
 html{ 
 	font-size: 1px;/*for using REM units*/
   }
-  @media screen and (min-width: 40em){
+  /* @media screen and (min-width: 40em){
     html{
       font-size: 1.1px;
     }
-  }
+  }*/
+  @media screen and (min-width: 64em){
+    html {
+      font-size: 1.15px;
+    }
+  } 
   body{
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-	font-size: 16rem;
-	font-weight: 400;
-	line-height: 1.3;
-	color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #222;
   }
 
 
@@ -513,8 +518,8 @@ a:hover .circleIcon{
   /* font classes */
 
   h3 {
-    margin-bottom: 5px;
-    font-size: 13px;
+    margin-bottom: 5rem;
+    font-size: 13rem;
     font-weight: 900;
     color: #414042;
   }
@@ -524,3 +529,9 @@ a:hover .circleIcon{
     transform: translate(100%);
     /* left: 0; */
 }
+
+/* @media screen and (min-width: 64em){
+  h3 {
+    font-size:
+  }
+} */

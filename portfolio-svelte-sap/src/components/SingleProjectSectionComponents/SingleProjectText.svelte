@@ -11,13 +11,13 @@ h2, h3{
 }
 h2{
     /* font-size: 12rem; */
-    margin-bottom: 5px;
-    font-size: 13px;
+    margin-bottom: 5rem;
+    font-size: 13rem;
     font-weight: 600;
 }
 h3{
-    margin-bottom: 5px;
-    font-size: 13px;
+    margin-bottom: 5rem;
+    font-size: 13rem;
     font-weight: 600;
 }
 p{
@@ -27,7 +27,7 @@ p{
     line-height: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 13rem;
     color: #58595b;
 }
 
@@ -37,7 +37,7 @@ a{
     font-weight: 300;
     /* text-decoration: underline; */
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 12rem;
     width: fit-content;
     margin-top: 10rem;
         color: #989898;

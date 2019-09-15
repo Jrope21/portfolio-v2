@@ -15,16 +15,16 @@
         justify-content: flex-start;
 }
 i {
-    margin: 05px 0;
+    margin: 05rem 0;
     color: gray;
     display: flex;
     align-items: center;
 }
 i > span {
-    margin-left: 5px;
+    margin-left: 5rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13rem;
     color: #58595b;
 }
 i:hover {

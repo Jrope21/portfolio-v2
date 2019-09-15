@@ -10,7 +10,7 @@ a{
     align-items: center;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 12rem;
     width: fit-content;
     margin-top: 10rem;
     color: #989898;
@@ -22,7 +22,7 @@ h2 {
         display: flex;
         align-items: center;
         margin: 15rem 0rem 5rem 0rem;
-        font-size: 13px;
+        font-size: 13rem;
         font-weight: 900;
         text-transform: capitalize;
         transition: all .2s ease-in-out;
@@ -33,7 +33,7 @@ h2 {
         line-height: 16px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 13px;
+        font-size: 13rem;
         color: #58595b;
         text-indent: 10px;
     }
