@@ -22,6 +22,20 @@ import TextUnderline from './TextUnderline.svelte';
             height: 17vw;
         }   
     }
+    @media screen and (min-width: 64em){
+        .img-container{
+            max-width:100%; 
+            width: 23vw;
+            height: 23vw;
+        }   
+    }
+    @media screen and (min-width: 84em){
+        .img-container{
+            max-width:100%; 
+            width: 17vw;
+            height: 17vw;
+        }   
+    }
     a:first-of-type img {
         opacity: 1;
     }

@@ -81,6 +81,15 @@ span.hamburger-lines::after{
     height: 0px;
  /* left: 0px; */
 }
+
+@media screen and (min-width: 40em){
+    input {
+        display: none;
+    }
+    label{
+        display: none;
+    }
+}
 </style>
 
 <input class="hide-for-medium hamburger-check" id="hamburger" name="hamburger" type="checkbox" bind:this={hamburgerCheck}>

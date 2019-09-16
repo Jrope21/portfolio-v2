@@ -11,6 +11,7 @@
         width: 65%;
         max-width: 350px;
     }
+
     form{
         display: flex;
         flex-direction: column;

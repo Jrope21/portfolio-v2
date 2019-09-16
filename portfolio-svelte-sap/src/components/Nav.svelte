@@ -44,6 +44,18 @@ nav {
     margin: 0rem 24px 0rem 0rem; 
 }
 
+@media screen and (min-width: 40em) {
+    aside {
+        position: absolute;
+        top: 0;
+        bottom: unset;
+        height: 100px;
+    }
+    nav {
+        transform: rotate(0deg);
+    }
+}
+
 ul {
     position: absolute;
     display: flex;
@@ -66,7 +78,7 @@ ul li {
  .hamburger-check:checked ~ ul li:nth-child(1) { transition-delay: .75s }
  .hamburger-check:checked ~ ul li:nth-child(1) span { transition-delay: .55s }
 
-span.nav-separator{
+span.nav-seperator{
     display: inline-block;
     border-bottom: 1px solid gray;
     width: 20px;
@@ -85,6 +97,11 @@ li:hover {
     height: 150px;
 }
 
+@media screen and (min-width: 40em){
+        span.nav-seperator {
+            border: none;
+        }
+    }
 </style>
 <aside>
     <nav>
@@ -100,7 +117,7 @@ li:hover {
                         name={navItem.name}
                         url={navItem.url}
                     />
-                        <span class="nav-separator"/>
+                        <span class="nav-seperator"/>
                 </li>
             {/each}
         </ul>

@@ -20,11 +20,18 @@
     h2::after{
         content: '';
         display: block;
-        width: 250px;
+        /* width: 250px; */
         height: 7px;
         margin: 5rem 0px 18rem 0px;
         background: lightgray;
     }
+
+    @media screen and (min-width: 40em){
+        h2::after {
+            width: 250px;
+        }
+    }
+
     p{
         margin: 6rem 0rem 10rem 0rem;
         font-family: 'Open Sans', sans-serif;
@@ -38,18 +45,33 @@
         width: 100%;
         /* max-width: 350px; */
         border-radius: 4px;
-        padding: 30rem 20rem 40rem 20rem;
+        padding: 15rem 20rem 40rem 20rem;
         border: 1px solid gray;
         box-shadow: 5px 5px 5px lightgray;
         /* display: flex; */
     }
+    @media screen and (min-width: 40em){
+        div.form-container {
+            padding: 30rem 20rem 40rem 20rem;
+        }
+    }
     div.flex-container{
         display: flex;
+        flex-direction: column;
+    } 
+    @media screen and (min-width: 40em){
+        div.flex-container {
+            flex-direction: row;
+        }
     }
     div.text-container {
         position: relative;
-        top: -20px;
-        padding-right: 30rem;
+    }
+    @media screen and (min-width: 40em){
+        div.text-container {
+            top: -20px;
+            padding-right: 30rem;
+        }
     }
     div{
         flex: 55%;
@@ -81,12 +103,19 @@
     }
 
     input[type="submit"]{
-        width: 35%;
+        width: 50%;
         margin-top: 12rem;
         padding: 6rem;
         box-shadow: .5px 1px 1px gray;
         color: #d3d3d3;
         background: #58595b;
+        min-width: fit-content;
+    }
+
+    @media screen and (min-width: 40em){
+        input[type="submit"]{
+            width: 35%;
+        }
     }
 
     div.contact-row{
