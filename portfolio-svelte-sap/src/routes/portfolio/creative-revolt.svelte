@@ -186,7 +186,7 @@
 
 </style>
 
-<PageHeader sidePage={'side-page'} title={'University Park'} />
+<PageHeader sidePage={'side-page'} title={'Creative Revolt'} />
 <section in:fadeIn>
     <div class="projects-container">
         <div bind:this={sections[0]} class="container">
