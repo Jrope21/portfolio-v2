@@ -34,6 +34,7 @@
         width: 65vw;
         min-height: 900px;
         height: 80vh;
+        /* top: -40px; */
         position: relative;
         margin: auto;
     }
