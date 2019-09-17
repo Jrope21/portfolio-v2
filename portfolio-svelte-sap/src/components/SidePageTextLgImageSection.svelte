@@ -1,14 +1,8 @@
 <script>
     import HeroImage from './PortfolioNestedPageComponents/HeroImage.svelte';
     import TextInfo from './PortfolioNestedPageComponents/TextInfo.svelte';
+    export let headerCta, textCta, lgImg;
 
-let headerCta = `
-    Working with a high traffic website.
-`
-let textCta = `
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quas maxime explicabo pariatur praesentium molestiae?
-`
 </script>
 
 <style>
@@ -39,6 +33,6 @@ div.text-container {
         <TextInfo header={headerCta} text={textCta} />
     </div>
     <div>
-        <HeroImage src={'/images/uptexas/lgImg.png'} />
+        <HeroImage src={lgImg} />
     </div>
 </div>

@@ -3,10 +3,10 @@
     import CircleIcon from './IconComponents/CircleIcon.svelte';
     import HeroImage from './PortfolioNestedPageComponents/HeroImage.svelte';
     import HeroText from './PortfolioNestedPageComponents/HeroText.svelte';
-
-    let textHero = `
-       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo vel quae veritatis doloribus voluptatibus iure expedita accusantium ipsa, veniam ad. Aliquid, tempora nostrum. Laboriosam, praesentium!
-    `
+    export let textHero, heroSrc;
+    // let textHero = `
+    //    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo vel quae veritatis doloribus voluptatibus iure expedita accusantium ipsa, veniam ad. Aliquid, tempora nostrum. Laboriosam, praesentium!
+    // `
 </script>
 
 <style>
@@ -35,4 +35,4 @@
     <CircleIcon />
     <TextUnderline text={'View Website'} />
 </a>
-<HeroImage src={'/images/uptexas/hero.png'} />
+<HeroImage src={heroSrc} />

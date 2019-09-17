@@ -5,23 +5,9 @@ import SideProjectSkills from './IconComponents/SideProjectSkills.svelte';
 
 import Button from './IconComponents/Button.svelte';
 
-let projects = [
-        {
-            url: '',
-            imgSrc: 'images/bub.jpeg',
-            projectName: 'Creative Revolt'
-        },
-        {
-            url: '',
-            imgSrc: 'images/WBUH.jpeg',
-            projectName: 'HomeVestors'
-        },
-        {
-            url: '',
-            imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'ANBTX'
-        },
-    ]
+export let projects;
+
+
 </script>
 
 <style>

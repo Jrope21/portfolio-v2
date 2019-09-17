@@ -28,27 +28,27 @@
             projectName: 'University Park'
         },
         {
-            url: '',
+            url: 'portfolio/creative-revolt',
             imgSrc: 'images/bub.jpeg',
             projectName: 'Creative Revolt'
         },
         {
-            url: '',
+            url: 'portfolio/webuyuglyhouses',
             imgSrc: 'images/WBUH.jpeg',
             projectName: 'HomeVestors'
         },
         {
-            url: '',
+            url: 'anbtx',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'ANBTX'
         },
         {
-            url: '',
+            url: 'advancial',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'Advancial Credit Union'
         },
         {
-            url: '',
+            url: 'service experts',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'Service Experts'
         },

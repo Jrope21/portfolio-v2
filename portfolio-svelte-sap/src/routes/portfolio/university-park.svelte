@@ -1,14 +1,74 @@
 <script>
-import PageHeader from '../../components/IconComponents/PageHeader.svelte';
-import { fadeIn, fadeOut } from '../../components/PageFade';
-import { onMount } from 'svelte';
+    import PageHeader from '../../components/IconComponents/PageHeader.svelte';
+    import { fadeIn, fadeOut } from '../../components/PageFade';
+    import { onMount } from 'svelte';
 
-import SidePageHeroSection from '../../components/SidePageHeroSection.svelte';
-import SidePageTextLgImageSection from "../../components/SidePageTextLgImageSection.svelte";
-import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImgSection.svelte';
-import SidePageSkillsSection from '../../components/SidePageSkillsSection.svelte';
-import SideBarSection from '../../components/SideBarSection.svelte';
+    import SidePageHeroSection from '../../components/SidePageHeroSection.svelte';
+    import SidePageTextLgImageSection from "../../components/SidePageTextLgImageSection.svelte";
+    import SidePageResponsiveImgSection from '../../components/SidePageResponsiveImgSection.svelte';
+    import SidePageSkillsSection from '../../components/SidePageSkillsSection.svelte';
+    import SideBarSection from '../../components/SideBarSection.svelte';
 
+
+    let textHero = `
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo vel quae veritatis doloribus voluptatibus iure expedita accusantium ipsa, veniam ad. Aliquid, tempora nostrum. Laboriosam, praesentium!
+        `
+    let headerCta = `
+        Working with a high traffic website.
+    `
+    let textCta = `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quas maxime explicabo pariatur praesentium molestiae?
+    `
+
+    let responsiveImg = {
+        mobileSrc: '/images/uptexas/www.uptexas.org_(iPhone X).png',
+        tabletSrc: '/images/uptexas/www.uptexas.org_(iPad).png',
+        desktopSrc: '/images/uptexas/www.uptexas.org_(iPad Pro).png'
+    }
+
+
+    let skills = [
+        {
+            name: 'HTML5'
+        },
+        {
+            name: 'CSS3'
+        },
+        {
+            name: 'SASS'
+        },
+        {
+            name: 'Foundation'
+        },
+        {
+            name: 'JavaScript'
+        },
+        {
+            name: 'jQuery'
+        },
+        {
+            name: 'Kentico CMS'
+        },
+    ]
+
+    let projects = [
+        {
+            url: '',
+            imgSrc: 'images/bub.jpeg',
+            projectName: 'Creative Revolt'
+        },
+        {
+            url: '',
+            imgSrc: 'images/WBUH.jpeg',
+            projectName: 'HomeVestors'
+        },
+        {
+            url: '',
+            imgSrc: 'images/university-park-cta.jpeg',
+            projectName: 'ANBTX'
+        },
+    ]
 
     let x = .25;
     let sections = [];
@@ -130,19 +190,19 @@ import SideBarSection from '../../components/SideBarSection.svelte';
 <section in:fadeIn>
     <div class="projects-container">
         <div bind:this={sections[0]} class="container">
-            <SidePageHeroSection />
+            <SidePageHeroSection heroSrc={'/images/uptexas/hero.png'} textHero={textHero} header={headerCta} text={textCta} />
         </div>
         <div bind:this={sections[1]} class="container">
-            <SidePageTextLgImageSection />
+            <SidePageTextLgImageSection textCta={textCta} headerCta={headerCta} lgImg={'/images/uptexas/lgImg.png'}  />
         </div>
         <div bind:this={sections[2]} class="container">
-            <SidePageResponsiveImgSection />
+            <SidePageResponsiveImgSection mobileSrc={responsiveImg.mobileSrc} tabletSrc={responsiveImg.tabletSrc} desktopSrc={responsiveImg.desktopSrc} />
         </div>
         <div bind:this={sections[3]} class="container">
-            <SidePageSkillsSection />
+            <SidePageSkillsSection skills={skills}/>
         </div>
     </div>
     <div class="lead-form-container">
-       <SideBarSection />
+       <SideBarSection projects={projects} />
     </div>
 </section>
