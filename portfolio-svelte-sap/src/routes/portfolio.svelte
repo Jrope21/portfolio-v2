@@ -38,17 +38,17 @@
             projectName: 'HomeVestors'
         },
         {
-            url: 'anbtx',
+            url: 'portfolio/anbtx',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'ANBTX'
         },
         {
-            url: 'advancial',
+            url: 'portfolio/advancial',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'Advancial Credit Union'
         },
         {
-            url: 'service experts',
+            url: 'portfolio/service-experts',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'Service Experts'
         },
