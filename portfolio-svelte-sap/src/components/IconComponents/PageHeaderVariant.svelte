@@ -12,6 +12,15 @@ export let title, sidePage;
             transform: translateX(100%);
         }
     }
+
+    @keyframes badSlideInRight {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 0;
+        }
+    }
     div:not(.page-header) {
         display: flex;
         justify-content: flex-end;
@@ -19,8 +28,9 @@ export let title, sidePage;
         margin: -05px 0px 20px 0;
         font-size: 16rem;
         text-transform: uppercase;
-        color: gray;
-        overflow: hidden;
+        /* color: gray; */
+        color: #58595b;
+        /* overflow-x: hidden; */
         max-width: 900px;
     }
 
@@ -31,6 +41,8 @@ export let title, sidePage;
     @media screen and (min-width: 40em){
         div.title-container:not(.side-page){
             margin-bottom: 20px;
+            position: relative;
+            animation: .7s ease-out 0s 1 fadeIn forwards;
         }
         div:not(.page-header) {
             font-size: 28rem;
@@ -50,12 +62,12 @@ export let title, sidePage;
         display: flex;
         align-items: center;
         margin: 0px;
-        animation: 1s ease-out 0s 1 slideInRight forwards;
+        animation: .8s ease-out 0s 1 slideInRight forwards;
     }
     div.page-header{
         position: relative;
         width: 100vw;
-        background: rgba(34, 34, 34, .092);
+        /* background: rgba(34, 34, 34, .092); */
         height: 125px;
         display: flex;
         justify-content: center;
@@ -74,9 +86,23 @@ export let title, sidePage;
         }
     }
 
+
+    span{
+        position: absolute;
+        transform: scaleX(-1);
+        transform: scaleX(-1) rotate(180deg) skew(-10deg, 0deg);
+        opacity: .03;
+        bottom: -55px;
+        /* left: -50%; */
+        left: 5px;
+        font-size: 2em;
+         animation: .8s ease-out 0s 1 badSlideInRight;
+    }
+
 </style>
 <div class="page-header">
     <div class='title-container {sidePage}'>
         <h1>{title}</h1>
+        <span>{title}</span>
     </div>
 </div>
