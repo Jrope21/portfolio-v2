@@ -2,9 +2,18 @@
 	import Nav from '../components/Nav.svelte';
 	import Footer from '../components/Footer.svelte';
 	import Logo from '../components/Logo.svelte';
-	
+	import { onMount } from 'svelte'
 	export let segment;
-	console.log(segment)
+
+	let notHome;
+
+	onMount(()=>{
+		if(window.location.pathname === '/'){
+			notHome = false;
+		} else {
+			notHome = true;
+		}
+	})
 </script>
 
 <style>
@@ -14,7 +23,7 @@
 	}
 </style>
 
-<Logo />
+<Logo notHome={notHome} />
 
 <Nav {segment}/>
 

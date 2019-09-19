@@ -1,5 +1,7 @@
 <script>
     import { onMount } from 'svelte';
+    export let notHome;
+
     let logo;
     let shape;
 
@@ -43,7 +45,7 @@
 
 </style>
   
-   <a href="." class="" bind:this={logo}>
+   <a href="." class="{notHome ? 'notHome' : ''}" bind:this={logo}>
         <p>JR</p>
     </a>
 

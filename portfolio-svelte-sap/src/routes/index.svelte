@@ -6,6 +6,8 @@
     import HeroSection from '../components/HeroSection.svelte';
     import SingleProjectSection from '../components/SingleProjectSection.svelte';
 	import MultiProjectSection from '../components/MultiProjectSection.svelte';
+    export let notHome = false;
+
 	let heroSection;
 	
 	// onMount(()=>{

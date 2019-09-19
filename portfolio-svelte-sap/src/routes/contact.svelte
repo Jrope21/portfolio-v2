@@ -1,6 +1,7 @@
 <script>
     import ContactSection from '../components/ContactSection.svelte';
     import { fadeIn, fadeOut } from "../components/pageFade";
+
 </script>
 
 <style>

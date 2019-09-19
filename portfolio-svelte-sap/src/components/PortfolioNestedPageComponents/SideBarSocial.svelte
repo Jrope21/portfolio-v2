@@ -27,23 +27,6 @@ i > span {
     font-size: 13rem;
     color: #58595b;
 }
-i:hover {
-    padding-bottom: 3px;  /*increase hover radius on transition*/
-    /* top: -3px; */
-    transition: top .05s ease-in-out;
-}
-i:nth-child(3){
-    opacity: 0;
-    animation: 2.8s ease-in-out 0s 1 fadeInLeft forwards;
-}
-i:nth-child(2){
-    opacity: 0;
-    animation: 3.6s ease-in-out 0s 1 fadeInLeft forwards;
-}
-i:nth-child(1){
-    opacity: 0;
-    animation: 2.2s ease-in-out 0s 1 fadeInLeft forwards;
-}
 </style>
 
 <svelte:head>

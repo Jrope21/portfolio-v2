@@ -59,6 +59,8 @@ onMount(() => {
         position: relative;
         min-height: 25vh;
         /* flex-wrap: wrap; */
+        /* background: rgba(34, 34, 34, 0.882);
+        color: white; */
         flex-direction: column;
         align-items: center;  
         justify-content: center;  

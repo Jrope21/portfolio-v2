@@ -31,6 +31,7 @@ export let title, sidePage;
         /* color: gray; */
         color: #58595b;
         /* overflow-x: hidden; */
+        
         max-width: 900px;
     }
 
@@ -42,7 +43,7 @@ export let title, sidePage;
         div.title-container:not(.side-page){
             margin-bottom: 20px;
             position: relative;
-            animation: .7s ease-out 0s 1 fadeIn forwards;
+            animation: .9s ease-out 0s 1 fadeIn forwards;
         }
         div:not(.page-header) {
             font-size: 28rem;
@@ -62,12 +63,13 @@ export let title, sidePage;
         display: flex;
         align-items: center;
         margin: 0px;
-        animation: .8s ease-out 0s 1 slideInRight forwards;
+        animation: 1s ease-out 0s 1 slideInRight forwards;
     }
     div.page-header{
         position: relative;
         width: 100vw;
         /* background: rgba(34, 34, 34, .092); */
+         /* background: rgba(34, 34, 34, 0.022); */
         height: 125px;
         display: flex;
         justify-content: center;
@@ -96,7 +98,7 @@ export let title, sidePage;
         /* left: -50%; */
         left: 5px;
         font-size: 2em;
-         animation: .8s ease-out 0s 1 badSlideInRight;
+         animation: 1s ease-out 0s 1 badSlideInRight;
     }
 
 </style>
