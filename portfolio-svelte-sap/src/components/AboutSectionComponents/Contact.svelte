@@ -6,11 +6,24 @@
 
     div {
         display: flex;
-
+        flex-direction: column;
+    }
+    @media screen and (min-width: 40em){
+        div{
+            flex-direction: row;
+        }
     }
 
-    p:nth-child(1){
-        width: 20%;
+    h3{
+        width: fit-content;
+        margin-bottom: 15rem;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    @media screen and (min-width: 40em){
+        h3 {
+            width: 15%;
+        }
     }
     /* p:nth-child(2){
         width: 50%;
@@ -69,9 +82,9 @@ i:nth-child(1){
 </svelte:head>
 
 <div>
-    <p>
+    <h3>
         Contact
-    </p>
+    </h3>
     <div class="social-container">
         <i class="fab fa-github"><span>www.github.com/Jrope21</span></i>
         <i class="fab fa-linkedin"><span>Joshua.Micah.Roper@gmail.com</span></i>

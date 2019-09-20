@@ -30,17 +30,46 @@
 
     div {
         display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 40em){
+        div{
+            flex-direction: row;
+        }
     }
 
-    p:nth-child(1){
-        width: 20%;
+    h3 {
+        width: fit-content;
+        margin-bottom: 15rem;
+        width: 100%;
+        text-transform: uppercase;
+        
+    }
+    @media screen and (min-width: 40em){
+        h3 {
+            width: 15%;
+        }
     }
     ul.skills{
-        width: 60%;
+        position: relative;
+        top: 10rem;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        /* margin-left: -15rem; */
     }
-
+    @media screen and (min-width: 40em){
+        ul.skills{
+            width: 60%;
+        }
+    }
+    ul.skills::before {
+        content: '';
+        height: 100%;
+        position: absolute;
+        border-left: 3px solid #e6e7e8;
+        opacity: .4;
+    }
     p {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
@@ -48,20 +77,54 @@
         color: #58595b;
     }
     li {
-        width: 23%;
+        width: 100%;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
-        margin: 0rem 0rem 20rem 0rem;
-        padding: 0rem 0rem 15rem 0rem
+        margin: 0rem 0rem 25rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        display: flex;
+        align-items: center;
+        margin-left: -2px;
+        height: 0;
+        z-index: 2;
+    }
+    span {
+        color: #414042;
+        font-weight: 500;
+    }
+    ul li:last-child {
+        margin-bottom: 0rem;
+    }
+    li::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        background: #58595b;
+        margin-right: 10rem;
+        /* position: absolute; */
+        /* left: 0; */
+        border-radius: 100%
+    }
+    @media screen and (min-width: 40em){
+        li {
+            /* width: 32%; */
+            /* margin: 0rem 0rem 20rem -2px;
+            padding: 0rem 0rem 15rem 0rem; */
+        }
+    }
+    @media screen and (min-width: 64em){
+        li{
+            /* width: 23% */
+        }
     }
 </style>
 
 <div>
-    <p>
+    <h3>
         Skills
-    </p>
+    </h3>
     <!-- <div class="skills"> -->
         <ul class="skills">
             <li>HTML (WCAG 2.1)</li>

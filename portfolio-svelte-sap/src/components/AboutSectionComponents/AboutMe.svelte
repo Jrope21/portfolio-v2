@@ -6,16 +6,42 @@
 
     div {
         display: flex;
-
+        flex-direction: column;
     }
-
+    @media screen and (min-width: 40em){
+        div{
+            flex-direction: row;
+        }
+    }
     p:nth-child(1){
-        width: 20%;
+        width: fit-content;
+        margin-bottom: 15rem;
+        width: 100%
+    }
+    @media screen and (min-width: 40em){
+        p:nth-child(1) {
+            width: 20%;
+        }
+    }
+    h3{
+        width: fit-content;
+        margin-bottom: 15rem;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    @media screen and (min-width: 40em){
+       h3 {
+            width: 15%;
+        }
     }
     p:nth-child(2){
-        width: 50%;
+        width: 100%;
     }
-
+    @media screen and (min-width: 40em){
+        p:nth-child(2) {
+            width: 50%;
+        }
+    }
     p {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
@@ -26,9 +52,9 @@
 </style>
 
 <div>
-    <p>
+    <h3>
         About Me
-    </p>
+    </h3>
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
          Ex molestias aut vero rerum fuga fugiat veritatis quibusdam,

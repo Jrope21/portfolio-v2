@@ -20,7 +20,7 @@ let breadcrumbs = [
 
 let socialCtas = [
     {
-        content: 'Connect with me on LinkedIn',
+        content: 'Connect on LinkedIn',
         url: ''
     },
     {
@@ -67,7 +67,14 @@ onMount(() => {
         font-size: 8rem;
         padding: 30rem 0rem 20rem 0rem;
     }
-
+    footer::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #e6e7e8;
+        opacity: .4;
+    }
     @media screen and (min-width: 40em){
         footer {
             padding: 40rem 0rem 30rem 0rem;
@@ -111,13 +118,13 @@ onMount(() => {
     }
     h2{
         text-transform: uppercase;
-        font-size: 8rem;
+        font-size: 10rem;
         margin-bottom: 10rem;
     }
 
     @media screen and (min-width: 40em) {
         h2 {
-            font-size: 9rem;
+            font-size: 10rem;
         }
     }
 
@@ -142,7 +149,7 @@ onMount(() => {
             {/each}
         </div>
         <div class="cta">
-            <h2>Connect</h2>
+            <h2>Social</h2>
             {#each socialCtas as socialCta}
                 <FooterSocial content={socialCta.content} url={socialCta.url}/>
             {/each}

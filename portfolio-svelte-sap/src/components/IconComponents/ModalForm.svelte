@@ -123,7 +123,7 @@
         justify-content: space-between;
     }
     input, textarea{
-        border: 1px solid gray;
+        border: 1px solid lightgray;
         border-radius: 2px;
         font-size: 10rem;
         padding: 3rem;

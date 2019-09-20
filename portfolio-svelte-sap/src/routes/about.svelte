@@ -30,7 +30,7 @@ import Contact from '../components/AboutSectionComponents/Contact.svelte';
         align-items: center;
         /* justify-content: center; */
         /* padding: 8% 0 0% 0; */
-		padding: 8% 0 0% 0;
+		padding: 5% 0 0% 0;
         position: relative;
         color: gray;
     }
@@ -64,15 +64,15 @@ import Contact from '../components/AboutSectionComponents/Contact.svelte';
     } */
 	.container {
         width: 65%;
-        margin-bottom: 40rem;
-		margin-left: 100rem;
+        margin-bottom: 40rem;		
         opacity: 0;
         max-width: 900px;
     }
     @media screen and (min-width: 40em){
         .container {
             width: 75%;
-            margin-bottom: 100rem;
+            margin-bottom: 50rem;
+            margin-left: 100rem;
         }
     }
 </style>

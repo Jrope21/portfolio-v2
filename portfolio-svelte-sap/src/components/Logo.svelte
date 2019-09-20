@@ -35,7 +35,8 @@
         color: gray;
         transition: all .25s ease-in-out;
         border-radius: 100%;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
+        box-shadow: 2px 2px 2px lightgrey;
         padding: 8px;
         z-index: 2;
     }
