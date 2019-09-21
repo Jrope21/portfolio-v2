@@ -25,6 +25,15 @@
     }
     /* section.one::before {
         content: '';
+        background: rgba(34, 34, 34, 0.022);
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        min-height: 100vh;
+      
+    }
+    section.one::after {
+        content: '';
         background: rgba(34, 34, 34, 0.082);
         position: absolute;
         top: 0;
@@ -40,15 +49,15 @@
         position: relative;
         margin: auto;
     }
-    /* section.two::before {
+    section.two::before {
         content: '';
-        background: rgba(34, 34, 34, 0.022);
+        /* background: rgba(34, 34, 34, 0.022); */
         position: absolute;
         top: 0;
         width: 100vw;
         height: 100%;
       
-    }  */
+    } 
     section.three {
         width: 65vw;
         position:relative;

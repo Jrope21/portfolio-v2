@@ -18,6 +18,14 @@ i {
     margin: 05px 0;
     color: gray;
 }
+
+@media screen and (min-width: 64em){
+    .social-container {
+        display: none;
+        position: unset;
+        flex-direction: row;
+    }
+}
 i:hover {
     padding-bottom: 3px;  /*increase hover radius on transition*/
     top: -3px;

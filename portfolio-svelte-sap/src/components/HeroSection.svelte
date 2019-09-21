@@ -12,6 +12,13 @@ import HeroTopText from './HeroSectionComponents/HeroTopText.svelte';
     width: 100%;
     height: 100%;
 }
+@media screen and (min-width: 64em){
+    .hero-container {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 75%
+    }
+}
 div.hero-text {
     width: 80%;
     height: 10%;
@@ -25,6 +32,14 @@ div.hero-text {
     width:250px;
     /* margin-top: 45px; */
     margin-top: -15%;
+}
+@media screen and (min-width: 64em){
+    .hero-cta {
+        flex-direction: column-reverse;
+        width: fit-content;
+        margin-left: 100px;
+    }
+
 }
 </style>
 

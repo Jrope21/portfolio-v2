@@ -28,6 +28,19 @@ h3{
     font-weight: 400;
     color: lightgray;
 }
+@media screen and (min-width: 64em){
+    h1{
+        font-size: 75.2px;
+    }
+    h2{
+        font-size: 49px;
+        margin-top: -20px;
+    }
+    h3 {
+        font-size: 40px;
+        margin-top: -14px;
+    }
+}
 </style>
 <div>
     <h1>Joshua Roper</h1>

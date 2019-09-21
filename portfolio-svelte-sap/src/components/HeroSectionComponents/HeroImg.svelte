@@ -17,6 +17,13 @@ let heroImg;
         top: 30px;
         transition: top .01s ease-in;
     }
+    @media screen and (min-width: 64em){
+        .hero-image {
+            width: 400px;
+            height: 520px;
+            background-size: 100%;
+        }
+    }
     .hero-image::before {
         content: '';
         display: inline-block;
