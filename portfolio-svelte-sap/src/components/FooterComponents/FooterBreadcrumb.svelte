@@ -9,6 +9,7 @@ export let url, name;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: #58595b;
         width: 80%;
         font-weight: 300;
         margin: 4rem 0rem;

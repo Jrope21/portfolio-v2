@@ -28,7 +28,7 @@
 <style>
     a {
         position: fixed;
-        font-size: 8rem;
+        font-size: 12rem;
         left: 25px;
         top: 25px;
         opacity: 0;
@@ -36,14 +36,14 @@
         transition: all .25s ease-in-out;
         border-radius: 100%;
         /* border: 1px solid gray; */
-        box-shadow: 2px 2px 2px lightgrey;
-        padding: 8px;
+        box-shadow: 5px 5px 5px lightgrey;
+        padding: 10rem;
         z-index: 2;
     }
     :global(a.scrolled) {
         opacity: 1 !important;
     }
-
+ 
 </style>
   
    <a href="." class="{notHome ? 'notHome' : ''}" bind:this={logo}>

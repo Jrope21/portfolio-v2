@@ -55,9 +55,38 @@ onMount(() => {
 
 <style>
     footer {
-        display: flex;
+        /* display: flex; */
         position: relative;
         min-height: 25vh;
+        /* flex-wrap: wrap; */
+        /* background: rgba(34, 34, 34, 0.882);
+        color: white; */
+        /* flex-direction: column;
+        align-items: center;  
+        justify-content: center;  
+        font-size: 8rem;
+        padding: 30rem 0rem 20rem 0rem; */
+    }
+    footer::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* top: -50%; */
+        background: #e6e7e8;
+        opacity: .4;
+        z-index: -1;
+    }
+    @media screen and (min-width: 40em){
+        /* footer {
+            padding: 40rem 0rem 30rem 0rem;
+        } */
+    }
+    div.container {
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 100%;
         /* flex-wrap: wrap; */
         /* background: rgba(34, 34, 34, 0.882);
         color: white; */
@@ -67,16 +96,8 @@ onMount(() => {
         font-size: 8rem;
         padding: 30rem 0rem 20rem 0rem;
     }
-    footer::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #e6e7e8;
-        opacity: .4;
-    }
     @media screen and (min-width: 40em){
-        footer {
+        div.container {
             padding: 40rem 0rem 30rem 0rem;
         }
     }
@@ -116,14 +137,15 @@ onMount(() => {
     div.cta, div.breadcrumb{
         min-height: 150px;
     }
-    h2{
+    h3{
         text-transform: uppercase;
         font-size: 10rem;
         margin-bottom: 10rem;
+        color: #414042;
     }
 
     @media screen and (min-width: 40em) {
-        h2 {
+        h3 {
             font-size: 10rem;
         }
     }
@@ -141,23 +163,24 @@ onMount(() => {
 </style>
 
 <footer bind:this={footer}>
-    <div class="top-row">
-        <div class="breadcrumb">
-            <h2>Info</h2>
-            {#each breadcrumbs as breadcrumb}
-                <FooterBreadcrumb name={breadcrumb.name} url={breadcrumb.url}/>
-            {/each}
+    <div class="container">
+        <div class="top-row">
+            <div class="breadcrumb">
+                <h3>Info</h3>
+                {#each breadcrumbs as breadcrumb}
+                    <FooterBreadcrumb name={breadcrumb.name} url={breadcrumb.url}/>
+                {/each}
+            </div>
+            <div class="cta">
+                <h3>Social</h3>
+                {#each socialCtas as socialCta}
+                    <FooterSocial content={socialCta.content} url={socialCta.url}/>
+                {/each}
+            </div>
         </div>
-        <div class="cta">
-            <h2>Social</h2>
-            {#each socialCtas as socialCta}
-                <FooterSocial content={socialCta.content} url={socialCta.url}/>
-            {/each}
+        <div class="copyright">
+            <p>@ Joshua Roper 2019</p>
+            <p>Innovative | Bold | Creative</p>
         </div>
     </div>
-    <div class="copyright">
-        <p>@ Joshua Roper 2019</p>
-        <p>Innovative | Bold | Creative</p>
-    </div>
-    
 </footer>

@@ -18,7 +18,7 @@ export let title, sidePage;
             left: -100%;
         }
         100% {
-            left: 0;
+            left: 5px;
         }
     }
     div:not(.page-header) {
@@ -39,11 +39,13 @@ export let title, sidePage;
         font-size: 12rem;
         max-width: 1705px;
     }
+    div.title-container:not(.side-page){
+            position: relative;
+            animation: .9s ease-out 0s 1 fadeIn forwards;
+        }
     @media screen and (min-width: 40em){
         div.title-container:not(.side-page){
             margin-bottom: 20px;
-            position: relative;
-            animation: .9s ease-out 0s 1 fadeIn forwards;
         }
         div:not(.page-header) {
             font-size: 28rem;
@@ -94,13 +96,17 @@ export let title, sidePage;
         transform: scaleX(-1);
         transform: scaleX(-1) rotate(180deg) skew(-10deg, 0deg);
         opacity: .03;
-        bottom: -55px;
+        bottom: -30px;
         /* left: -50%; */
         left: 5px;
         font-size: 2em;
          animation: 1s ease-out 0s 1 badSlideInRight;
     }
-
+    @media screen and (min-width: 40em){
+        span {
+            bottom: -55px;
+        }
+    }
 </style>
 <div class="page-header">
     <div class='title-container {sidePage}'>

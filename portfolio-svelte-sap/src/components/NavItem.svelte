@@ -24,7 +24,7 @@
     }
    li > a {
         height: 100%;
-        width: 100%;
+        width: fit-content;
         display: flex;
         align-items: center;
     }
@@ -41,14 +41,14 @@
         display: inline-block;
         border-bottom: 1px solid gray;
         width: 1px;
-        margin: 8px;
+        margin: 8px 0px;
         opacity: 0;
-        transition: all .7s ease-in-out;
+        transition: all .6s ease-in-out;
     }
 
     li:hover > a::after {
         opacity: 1;
-        width: 20px;
+        width: 100%;
     }
 
 </style>

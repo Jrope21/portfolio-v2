@@ -13,6 +13,7 @@ export let url, content;
         font-weight: 300;
         margin: 4rem 0rem;
         font-size: 10rem;
+        color: #58595b;
     }
     a::before {
         content: '|';
