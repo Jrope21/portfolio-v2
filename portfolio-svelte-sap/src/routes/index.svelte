@@ -43,7 +43,7 @@
     } */
     section.two {
         width: 65vw;
-        min-height: 900px;
+        min-height: 820px;
         height: 80vh;
         /* top: -40px; */
         position: relative;

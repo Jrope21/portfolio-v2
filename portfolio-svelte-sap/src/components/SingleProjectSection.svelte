@@ -12,7 +12,8 @@ import SingleProjectImage from './SingleProjectSectionComponents/SingleProjectIm
             flex: 30%;
         }
         .project-image{
-            padding-top: 20%;
+            /* padding-top: 20%; */
+            padding-top: 50px;
             padding-left: 10%;
             flex: 30%;
         }
