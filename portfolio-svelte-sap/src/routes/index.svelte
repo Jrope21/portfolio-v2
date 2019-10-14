@@ -117,7 +117,4 @@
 	<section class="three center-all">
 		<MultiProjectSection />
 	</section>
-    <!-- <section class="test">
-    
-    </section> -->
 </div>
