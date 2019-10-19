@@ -3,7 +3,9 @@ import Hamburger from './Hamburger.svelte';
 </script>
 
 <style>
-
+nav {
+    
+}
 </style>
 
 <nav>
