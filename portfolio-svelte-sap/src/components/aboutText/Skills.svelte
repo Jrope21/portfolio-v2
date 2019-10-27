@@ -1,0 +1,143 @@
+<script>
+    import Skills from './Skills.svelte';
+
+    let skills = [
+        {
+            name: 'HTML5'
+        },
+        {
+            name: 'CSS3'
+        },
+        {
+            name: 'SASS'
+        },
+        {
+            name: 'Foundation'
+        },
+        {
+            name: 'JavaScript'
+        },
+        {
+            name: 'jQuery'
+        },
+        {
+            name: 'Kentico CMS'
+        },
+    ]
+</script>
+
+<style>
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media screen and (min-width: 40em){
+        div{
+            flex-direction: row;
+        }
+    }
+
+    h3 {
+        width: fit-content;
+        margin-bottom: 15rem;
+        width: 100%;
+        text-transform: uppercase;
+        
+    }
+
+    @media screen and (min-width: 40em){
+        h3 {
+            width: 15%;
+        }
+    }
+
+    ul.skills{
+        position: relative;
+        top: 10rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: -15rem; */
+    }
+
+    @media screen and (min-width: 40em){
+        ul.skills{
+            width: 60%;
+        }
+    }
+
+    ul.skills::before {
+        content: '';
+        height: 100%;
+        position: absolute;
+        border-left: 3px solid #e6e7e8;
+        opacity: .4;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 13rem;
+        color: #58595b;
+    }
+
+    li {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 13rem;
+        color: #58595b;
+        margin: 0rem 0rem 25rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        display: flex;
+        align-items: center;
+        margin-left: -2px;
+        height: 0;
+        z-index: 2;
+    }
+
+    span {
+        color: #414042;
+        font-weight: 500;
+    }
+
+    ul li:last-child {
+        margin-bottom: 0rem;
+    }
+
+    li::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        background: #58595b;
+        margin-right: 10rem;
+        border-radius: 100%
+    }
+
+</style>
+
+<div>
+    <h3>
+        Skills
+    </h3>
+        <ul class="skills">
+            <li>HTML (WCAG 2.1)</li>
+            <li>HTML Emails</li>
+            <li>CSS (SASS / SCSS)</li>
+            <li>Foundation</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Svelte 3</li>
+            <li>Sapper</li>
+            <li>Gulp</li>
+            <li>Git (Version Control)</li>
+            <li>GitHub / BitBucket</li>
+            <li>WordPress / Kentico</li>
+            <li>Adobe Suite</li>
+            <li>SEO</li>
+            <li>Usability Testing</li>
+        </ul>
+</div>
