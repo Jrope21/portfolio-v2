@@ -44,8 +44,8 @@ export let projectName, url;
         position: absolute;
         font-weight: 900;
         /* was .6 opacity */
-        opacity: .7;
-        z-index: -1;
+        opacity: .5;
+        /* z-index: -1; */
         left: -60px;
         top: 30px;
         transform: rotate(-90deg);
