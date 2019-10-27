@@ -10,7 +10,9 @@ nav {
 
 <nav>
     <div class="logo">
-    
+        <p>
+            &lt;&gt;
+        </p>
     </div>
     <Hamburger />
     <ul class="navigation">
