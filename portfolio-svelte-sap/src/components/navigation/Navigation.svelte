@@ -1,7 +1,21 @@
 <script>
 import Hamburger from './Hamburger.svelte';
+import { onMount } from 'svelte';
 
-let close;
+
+let toggle;
+
+function togglerOff(){
+    toggle = true;
+    console.log(toggle)
+}
+
+onMount(()=>{
+    
+    
+    // ;
+    
+})
 
 </script>
 
@@ -102,9 +116,9 @@ a {
                 <span class="code">&lt;h1&gt;</span> <span class="code">&lt;/h1&gt;</span>
             </p>
         </div>
-        <Hamburger />
+        <Hamburger toggle={toggle} />
         <ul class="navigation">
-            <li class="close-container" bind:this={close} ><span class="close"></span></li>
+            <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>

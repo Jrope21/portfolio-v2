@@ -1,4 +1,23 @@
 <script>
+import { onMount } from 'svelte';
+
+export let toggle = false;
+let hamburger;
+
+onMount(()=>{
+
+  
+})
+
+function hideMenu(){
+  if(toggle = true){
+    console.log(hamburger)
+    hamburger ? hamburger.click() : null;
+    toggle = false;
+  }
+}
+
+$: hideMenu();
 
 
 
@@ -26,7 +45,7 @@
   display: block;
   border-bottom: 2px solid black;
   width: 18px;
-  transition: width .45s cubic-bezier(0.85, 0.08, 0.08, 0.99)
+  transition: width .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 .hamburger::after {
@@ -78,7 +97,7 @@
 
 <input id="toggle" type="checkbox" class="hide subnav-toggle hide-for-xlg">
 <div class="background"></div>
-<label id="nav-label" for="toggle" class="hide-for-xlg">
+<label id="nav-label" bind:this={hamburger} for="toggle" class="hide-for-xlg">
     <span class="show-for-sr">Navigation</span>
     <span class="hamburger" title="Navigation"> </span>
 </label>
