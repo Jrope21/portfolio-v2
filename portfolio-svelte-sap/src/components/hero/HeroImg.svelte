@@ -5,6 +5,7 @@ let heroImg;
 </script>
 
 <style>
+
     .hero-image{
         width: 250px;
         height: 420px;
@@ -17,6 +18,7 @@ let heroImg;
         top: 30px;
         transition: top .01s ease-in;
     }
+
     @media screen and (min-width: 64em){
         .hero-image {
             width: 400px;
@@ -24,16 +26,18 @@ let heroImg;
             background-size: 100%;
         }
     }
+
     .hero-image::before {
         content: '';
         display: inline-block;
         width: 100%;
-         height: 100%;
-         /* background: rgb(24, 24, 24, .2); */
+        height: 100%;
     }
+
     img {
         display: none;
     }
+
 </style>
 <img width="1px" height="1px" src="images/drawing.jpg" alt="">
 <div bind:this={heroImg} class="hero-image">

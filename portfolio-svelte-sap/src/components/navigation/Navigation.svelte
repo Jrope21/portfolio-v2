@@ -10,13 +10,9 @@ nav {
 
 <nav>
     <div class="logo">
-<<<<<<< HEAD
         <p>
             &lt;&gt;
         </p>
-=======
-    
->>>>>>> master
     </div>
     <Hamburger />
     <ul class="navigation">
