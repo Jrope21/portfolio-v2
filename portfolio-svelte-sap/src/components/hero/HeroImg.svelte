@@ -1,6 +1,6 @@
 <script>
 import { onMount } from 'svelte';
-import ImageGradient from '../IconComponents/ImageGradient.svelte';
+
 let heroImg;
 </script>
 
@@ -10,7 +10,6 @@ let heroImg;
         width: 250px;
         height: 420px;
         background-image: url("../images/drawing.jpg");
-        /* background-size: 230%; */
         background-size: 130%;
         background-position: 45% 65%;
         overflow-y: hidden;
@@ -39,7 +38,5 @@ let heroImg;
     }
 
 </style>
+
 <img width="1px" height="1px" src="images/drawing.jpg" alt="">
-<div bind:this={heroImg} class="hero-image">
-    <ImageGradient />
-</div>

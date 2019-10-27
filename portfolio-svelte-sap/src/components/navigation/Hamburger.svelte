@@ -1,29 +1,34 @@
 <script>
-import { onMount } from 'svelte';
+import { onMount, afterUpdate, tick  } from 'svelte';
 
-export let toggle = false;
-let hamburger;
+export let toggle;
+export let hamburger;
 
-onMount(()=>{
-
+// afterUpdate(async ()=>{
+//   function hideMenu(){
+//     if(toggle = true){
+//       console.log('hamburger')
+//       hamburger.click()
+//     }
+//   }
+//   hideMenu();
   
-})
+// })
 
-function hideMenu(){
-  if(toggle = true){
-    console.log(hamburger)
-    hamburger ? hamburger.click() : null;
-    toggle = false;
-  }
-}
 
-$: hideMenu();
+
 
 
 
 </script>
 
 <style>
+
+@keyframes leaveScreen {
+  100%{
+    transform: translateX(9999px)
+  }
+}
 
 #toggle {
   display: none;
@@ -61,10 +66,12 @@ $: hideMenu();
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: -100;
+  /* z-index: -100; */
   bottom: 0;
   left: 0;
+  z-index: 1;
   transition: opacity .35s ease-in;
+  animation: .01s ease-in .35s 1 leaveScreen forwards;
 }
 
 #toggle:checked + .background + label > .hamburger {
@@ -78,6 +85,13 @@ $: hideMenu();
 #toggle:checked + .background {
   opacity: 1;
   z-index: 1;
+  animation: unset;
+}
+
+@media screen and (min-width: 64em){
+  label {
+    display: none;
+  }
 }
 
 .show-for-sr {

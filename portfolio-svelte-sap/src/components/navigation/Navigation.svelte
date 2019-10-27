@@ -2,20 +2,12 @@
 import Hamburger from './Hamburger.svelte';
 import { onMount } from 'svelte';
 
-
-let toggle;
+let hamburger;
+let toggle = false;
 
 function togglerOff(){
-    toggle = true;
-    console.log(toggle)
+    hamburger ? hamburger.$$.ctx.hamburger.click() : null;
 }
-
-onMount(()=>{
-    
-    
-    // ;
-    
-})
 
 </script>
 
@@ -32,7 +24,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20rem 20rem;
+    padding: 40rem 20rem;
+    background: white;
+}
+
+@media screen and (min-width: 40em) {
+    nav {
+        padding: 40rem 40rem;
+    }
 }
 
 ul.navigation {
@@ -41,6 +40,8 @@ ul.navigation {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     position: fixed;
     z-index: 2;
     width: 250px;
@@ -57,25 +58,72 @@ ul.navigation {
     transform: translateX(0);
 }
 
-@media screen and (min-width: 75em) {
-    ul.navigation{
-        display: flex;
+@media screen and (min-width: 40em) {
+    ul.navigation {
+        padding: 0rem 40rem;
     }
 }
 
-li{
+@media screen and (min-width: 64em) {
+    ul.navigation{
+        transform: unset;   
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: unset;
+        padding: 0;
+    }
+}
+
+li {
+    position: relative;
     text-align: right;
     padding: 5rem 0rem;
+    width: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 64em){
+    li {
+        margin: 0rem 15rem;
+    }
+}
+
+li:not(.close-container)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateX(100%);
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid black;
+    transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+}
+
+li:not(.close-container):hover::after {
+    transform: translateX(0);
 }
 
 .close-container {
     position: absolute;
     top: 50rem;
     right: 50rem;
+    overflow: unset;
+}
+
+@media screen and (min-width: 40em){
+    .close-container {
+        right: 70rem;
+    }
+}
+
+@media screen and (min-width: 64em){
+    .close-container {
+        display: none;
+    }
 }
 
 .close {
-    /* display: flex; */
     width:32px;
     height:32px;
     position: relative;
@@ -113,10 +161,10 @@ a {
     <nav class="container">
         <div class="logo">
             <p>
-                <span class="code">&lt;h1&gt;</span> <span class="code">&lt;/h1&gt;</span>
+                <span class="code">&lt;h1&gt;</span>Hi There!<span class="code">&lt;/h1&gt;</span>
             </p>
         </div>
-        <Hamburger toggle={toggle} />
+        <Hamburger toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
             <li><a href="">Home</a></li>
