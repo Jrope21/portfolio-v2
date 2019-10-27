@@ -1,11 +1,11 @@
 <script>
 import { onMount } from 'svelte'
 
-import PageHeaderVariant from '../components/IconComponents/PageHeaderVariant.svelte';
+import PageTitle from '../components/about/PageTitle.svelte';
 
-import AboutMe from '../components/AboutSectionText/AboutMe.svelte';
-import SkillsSection from '../components/AboutSectionText/SkillsSection.svelte';
-import Contact from '../components/AboutSectionText/Contact.svelte';
+import AboutMe from '../components/about/AboutMe.svelte';
+import SkillsSection from '../components/about/Skills.svelte';
+import Contact from '../components/about/Contact.svelte';
 
     let x = .25;
     let sections = [];
@@ -70,7 +70,7 @@ import Contact from '../components/AboutSectionText/Contact.svelte';
 	<title>About</title>
 </svelte:head>
 
-<PageHeaderVariant title={'Joshua Roper'} />
+<PageTitle title={'Joshua Roper'} />
 
 <section>
 	<div bind:this={sections[0]} class="container">

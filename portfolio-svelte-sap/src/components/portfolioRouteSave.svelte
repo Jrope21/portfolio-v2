@@ -1,62 +1,62 @@
 <script>
-    import ImageCard from '../components/PortfolioPageComponents/ImageCard.svelte';
-    import ImageText from '../components/PortfolioPageComponents/ImageText.svelte';
-    import PageHeader from '../components/IconComponents/PageHeader.svelte';
-    import LeadForm from '../components/IconComponents/LeadForm.svelte';
-    import { fadeIn, fadeOut } from "../components/pageFade";
-    import { onMount } from 'svelte';
-    let x = .25;
-    let cards = [];
+    // import ImageCard from '../components/PortfolioPageComponents/ImageCard.svelte';
+    // import ImageText from '../components/PortfolioPageComponents/ImageText.svelte';
+    // import PageHeader from '../components/IconComponents/PageHeader.svelte';
+    // import LeadForm from '../components/IconComponents/LeadForm.svelte';
+    // import { fadeIn, fadeOut } from "../components/pageFade";
+    // import { onMount } from 'svelte';
+    // let x = .25;
+    // let cards = [];
 
-    onMount(()=>{
-        for(let i = 0; i < cards.length; i++){
-            let fadeInOrder = () => {
+    // onMount(()=>{
+    //     for(let i = 0; i < cards.length; i++){
+    //         let fadeInOrder = () => {
                 
-                cards[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
-                x += .35;
+    //             cards[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
+    //             x += .35;
 
-            }
-            fadeInOrder();
-        }
-    })
+    //         }
+    //         fadeInOrder();
+    //     }
+    // })
     
 
-    let portfolioCards = [
-        {
-            url: 'portfolio/university-park',
-            imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'University Park'
-        },
-        {
-            url: 'portfolio/creative-revolt',
-            imgSrc: 'images/bub.jpeg',
-            projectName: 'Creative Revolt'
-        },
-        {
-            url: 'portfolio/webuyuglyhouses',
-            imgSrc: 'images/WBUH.jpeg',
-            projectName: 'HomeVestors'
-        },
-        {
-            url: 'portfolio/anbtx',
-            imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'ANBTX'
-        },
-        {
-            url: 'portfolio/advancial',
-            imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'Advancial Credit Union'
-        },
-        {
-            url: 'portfolio/service-experts',
-            imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'Service Experts'
-        },
-    ]
+    // let portfolioCards = [
+    //     {
+    //         url: 'portfolio/university-park',
+    //         imgSrc: 'images/university-park-cta.jpeg',
+    //         projectName: 'University Park'
+    //     },
+    //     {
+    //         url: 'portfolio/creative-revolt',
+    //         imgSrc: 'images/bub.jpeg',
+    //         projectName: 'Creative Revolt'
+    //     },
+    //     {
+    //         url: 'portfolio/webuyuglyhouses',
+    //         imgSrc: 'images/WBUH.jpeg',
+    //         projectName: 'HomeVestors'
+    //     },
+    //     {
+    //         url: 'portfolio/anbtx',
+    //         imgSrc: 'images/university-park-cta.jpeg',
+    //         projectName: 'ANBTX'
+    //     },
+    //     {
+    //         url: 'portfolio/advancial',
+    //         imgSrc: 'images/university-park-cta.jpeg',
+    //         projectName: 'Advancial Credit Union'
+    //     },
+    //     {
+    //         url: 'portfolio/service-experts',
+    //         imgSrc: 'images/university-park-cta.jpeg',
+    //         projectName: 'Service Experts'
+    //     },
+    // ]
 </script>
 
 <style>
-    section {
+    /* section {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,7 +76,6 @@
         height: 100%;
         position: absolute;
         top: 0;
-        /* background: rgba(34, 34, 34, 0.082); */
         background: rgba(34, 34, 34, 0.022);
         z-index: -1;
     }
@@ -113,10 +112,7 @@
         div.card-container:nth-of-type(2n) div.image-container{
             justify-content: flex-end;
         }
-        /* div.image-container {
-            width: 60%;
-            padding: 10% auto;
-        } */
+
         
     }
 
@@ -126,40 +122,20 @@
         align-items: center;
         flex-direction: column;
     }
-    /* div.lead-form-container {
-        
-        position: relative;
-        width: 100vw;
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-    } */
+
 
     @media screen and (min-width: 40em){
         
         
-    }
-
-    /* @media screen and (min-width: 64em) {
-        div.projects-container {
-            width: 55%;
-        }
-        div.lead-form-container {
-            position: unset;
-            width: 45%;
-            display: flex;
-        }
     } */
 
 </style>
 
-<svelte:head>
+<!-- <svelte:head>
 	<title>Badass Portfolio Business</title>
 </svelte:head>
 
-<!-- <div class="page-header"> -->
     <PageHeader title={'Portfolio'} />
-<!-- </div> -->
 <section in:fadeIn>
     <div class="projects-container">
         {#each portfolioCards as card, index}
@@ -173,7 +149,4 @@
             </div>
         {/each}
     </div>
-    <!-- <div class="lead-form-container">
-        <LeadForm />
-    </div> -->
-</section>
+</section> -->

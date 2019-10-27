@@ -6,10 +6,14 @@
 
 <style>
 
+	.background {
+		
+	}
+
 </style>
 
 <Navigation />
-
+<div class="background"></div>
 <slot></slot>
 
 <Footer />
