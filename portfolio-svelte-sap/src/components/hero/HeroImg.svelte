@@ -14,7 +14,6 @@ let heroImg;
         background-position: 45% 65%;
         overflow-y: hidden;
         position: relative;
-        top: 30px;
         transition: top .01s ease-in;
     }
 
@@ -40,3 +39,4 @@ let heroImg;
 </style>
 
 <img width="1px" height="1px" src="images/drawing.jpg" alt="">
+<div class="hero-image"></div>

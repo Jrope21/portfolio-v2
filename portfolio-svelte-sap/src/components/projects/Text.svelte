@@ -1,6 +1,4 @@
 <script>
-import CircleIcon from '../IconComponents/CircleIcon.svelte';
-import TextUnderline from '../IconComponents/TextUnderline.svelte';
 export let projectName, url;
 </script>
 
@@ -17,6 +15,7 @@ export let projectName, url;
         color: #989898;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
+        font-style: italic;
     }
     h2 {
         position: relative;
@@ -69,6 +68,6 @@ export let projectName, url;
      Temporibus similique eligendi, enim eum, suscipit facilis at et doloribus quidem necessitatibus repudiandae, nulla distinctio earum facere!
     </p>
     <a href="{url}">
-        <CircleIcon /> <TextUnderline text={'View More'} />
+        View Website
     </a>
 </div>
