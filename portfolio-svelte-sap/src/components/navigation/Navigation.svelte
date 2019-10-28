@@ -2,12 +2,28 @@
 import Hamburger from './Hamburger.svelte';
 import { onMount } from 'svelte';
 
+let windowY;
 let hamburger;
 let toggle = false;
 
+let reduceNavSize = false;
+
+$: headerClass = navSize(windowY);
+
+function navSize(y){
+    if(y > 75){
+        reduceNavSize = true;
+    } else {
+        reduceNavSize = false;
+    }
+}
+
 function togglerOff(){
     hamburger ? hamburger.$$.ctx.hamburger.click() : null;
+    console.log(windowY)
 }
+
+
 
 </script>
 
@@ -27,11 +43,19 @@ nav {
     align-items: center;
     padding: 40rem 20rem;
     background: white;
+    transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+}
+
+nav.scrolled {
+    padding: 20rem 20rem;
 }
 
 @media screen and (min-width: 40em) {
     nav {
-        padding: 40rem 40rem;
+        padding: 35rem 40rem;
+    }
+    nav.scrolled {
+        padding: 20rem 40rem;
     }
 }
 
@@ -51,7 +75,7 @@ ul.navigation {
     bottom: 0;
     height: 100%;
     padding: 0rem 20rem;
-    transition: transform 1s cubic-bezier(0.85, 0.08, 0.08, 0.99)
+    transition: transform 1s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 #toggle:checked ~ ul.navigation{
@@ -82,6 +106,7 @@ li {
     padding: 5rem 0rem;
     width: auto;
     overflow-x: hidden;
+    font-size: 12rem;
 }
 
 @media screen and (min-width: 64em){
@@ -97,7 +122,8 @@ li:not(.close-container)::after {
     transform: translateX(100%);
     bottom: 0;
     width: 100%;
-    border-bottom: 3px solid black;
+    opacity: 1;
+    border-bottom: 2px solid #3B3B3B;
     transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
@@ -168,8 +194,10 @@ p{
 
 </style>
 
-<header>
-    <nav class="container">
+<svelte:window bind:scrollY={windowY}/>
+<!-- class={reduceNavSize ? 'scrolled' : ''} -->
+<header >
+    <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
         <div class="logo">
             <p>
                 <span class="code">&lt;h1&gt;</span>Hi There!<span class="code">&lt;/h1&gt;</span>
@@ -178,8 +206,8 @@ p{
         <Hamburger toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="">Contact</a></li>
         </ul>
     </nav>

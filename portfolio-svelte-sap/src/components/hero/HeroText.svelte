@@ -19,10 +19,10 @@ h2 {
 
 @media screen and (min-width: 40em){
     h1 {
-        font-size: 55px;
+        font-size: 28px;
     }
     h2 {
-        font-size: 44px;
+        font-size: 22px;
     }
 }
 

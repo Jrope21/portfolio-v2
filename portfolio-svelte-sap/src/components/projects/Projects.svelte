@@ -44,10 +44,10 @@
         padding: 10% 0 10% 0;
         position: relative;
     }
-    
-    @media screen and (min-width: 64em){
+
+    @media screen and (min-width: 40em){
         section {
-            flex-direction: row;
+            padding: 15% 0 10% 0;
         }
     }
 

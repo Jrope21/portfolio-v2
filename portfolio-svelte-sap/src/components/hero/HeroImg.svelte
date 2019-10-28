@@ -17,11 +17,22 @@ let heroImg;
         transition: top .01s ease-in;
     }
 
+    @media screen and (min-width: 40em){
+        .hero-image {
+            width: 220px;
+            background-position: 45% 25%;
+            height: 320px;
+            box-shadow: 3px 3px 3px lightgrey;
+        }
+    }
+
     @media screen and (min-width: 64em){
         .hero-image {
-            width: 400px;
+            width: 250px;
+            height: 420px;
+            /* width: 400px;
             height: 520px;
-            background-size: 100%;
+            background-size: 100%; */
         }
     }
 

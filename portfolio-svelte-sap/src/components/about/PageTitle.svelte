@@ -64,12 +64,26 @@ export let title, sidePage;
         left: -100%;
         right: 0px;
         display: flex;
+        font-size: 32px;
         align-items: center;
         margin: 0px;
         animation: 1s ease-out 0s 1 slideInRight forwards;
     }
 
+    @media screen and (min-width: 40em){
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+    @media screen and (min-width: 64em){
+        h1 {
+            font-size: 64px;
+        }
+    }
+
     div.page-header{
+        margin-top: 90px;
         position: relative;
         width: 100vw;
         height: 125px;
@@ -95,14 +109,23 @@ export let title, sidePage;
         transform: scaleX(-1);
         transform: scaleX(-1) rotate(180deg) skew(-10deg, 0deg);
         opacity: .03;
-        left: 5px;
-        font-size: 2em;
+        left: 3px;
+        bottom: -25px;
+        font-size: 32px;
          animation: 1s ease-out 0s 1 badSlideInRight;
     }
 
     @media screen and (min-width: 40em){
         span {
+            left: 5px;
             bottom: -55px;
+            font-size: 55px;
+        }
+    }
+
+    @media screen and (min-width: 64em){
+        span {
+            font-size: 64px;
         }
     }
     

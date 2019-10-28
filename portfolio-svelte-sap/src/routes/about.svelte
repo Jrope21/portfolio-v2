@@ -32,6 +32,7 @@ import Contact from '../components/about/Contact.svelte';
 		padding: 5% 0 0% 0;
         position: relative;
         color: gray;
+        margin-bottom: 50px;
     }
 
 	section::before {
@@ -41,6 +42,12 @@ import Contact from '../components/about/Contact.svelte';
         position: absolute;
         top: 0;
         z-index: -1;
+    }
+
+    @media screen and (min-width: 40em){
+        section{
+            margin-bottom: 80px;
+        }
     }
 
     @media screen and (min-width: 64em) {
