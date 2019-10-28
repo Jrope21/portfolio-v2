@@ -15,8 +15,30 @@ footer {
     flex-direction: column;
 }
 
+@media screen and (min-width: 40em){
+    .footer-container {
+        flex-direction: row;
+    }
+}
+
 .left, .right {
     margin-bottom: 40rem;
+}
+
+@media screen and (min-width: 40em){
+    .left{
+        padding-right: 80rem;
+        width:60%;
+    }
+    .right {
+        padding-top: 20rem;
+    }
+}
+
+@media screen and (min-width: 64em){
+    .left {
+        width: 50%;
+    }
 }
 
 .text-cta:first-of-type {
@@ -28,6 +50,7 @@ footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     line-height: 45px;
     font-weight: 700;
+    max-width: 400px;
 }
 
 .title {
