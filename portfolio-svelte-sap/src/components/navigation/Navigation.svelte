@@ -35,6 +35,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1;
+    background: white;
 }
 
 nav {
@@ -42,7 +43,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 40rem 20rem;
-    background: white;
     transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 

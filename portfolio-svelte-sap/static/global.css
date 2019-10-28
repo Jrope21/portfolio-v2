@@ -26,12 +26,42 @@ html{
 
 .container {
   padding: 20rem 20rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 40em){
   .container {
     padding: 20rem 40rem;
   }
 }
+@media (min-width: 576px){
+  .container {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px){
+  .container {
+      max-width: 720px;
+  }
+}
+@media (min-width: 1023px){
+  .container {
+      max-width: 980px;
+  }
+}
+@media (min-width: 1366px){
+  .container {
+      max-width: 1300px;
+  }
+}
+
+
+
+
+
+
+
 /*helper classes*/
 .justify-center{
 	display: flex;

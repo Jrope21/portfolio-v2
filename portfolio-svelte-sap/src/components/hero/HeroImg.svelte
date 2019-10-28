@@ -30,9 +30,6 @@ let heroImg;
         .hero-image {
             width: 250px;
             height: 420px;
-            /* width: 400px;
-            height: 520px;
-            background-size: 100%; */
         }
     }
 

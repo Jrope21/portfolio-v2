@@ -18,6 +18,7 @@ export let url;
         overflow: hidden;
         width: 65vw;
         height: 65vw;
+        box-shadow: 5px 5px 5px lightgrey;
     }
 
     @media screen and (min-width: 40em){

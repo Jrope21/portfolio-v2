@@ -26,14 +26,14 @@ import Contact from '../components/about/Contact.svelte';
 <style>
 
  section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-		padding: 5% 0 0% 0;
-        position: relative;
-        color: gray;
-        margin-bottom: 50px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0 0% 0;
+    position: relative;
+    color: gray;
+    margin-bottom: 50px;
+}
 
 	section::before {
         content: '';
@@ -56,7 +56,7 @@ import Contact from '../components/about/Contact.svelte';
         }
     }
 
-	.container {
+	.content-container {
         width: 65%;
         margin-bottom: 40rem;		
         opacity: 0;
@@ -64,7 +64,7 @@ import Contact from '../components/about/Contact.svelte';
     }
 
     @media screen and (min-width: 40em){
-        .container {
+        .content-container {
             width: 75%;
             margin-bottom: 50rem;
             margin-left: 100rem;
@@ -80,13 +80,15 @@ import Contact from '../components/about/Contact.svelte';
 <PageTitle title={'Joshua Roper'} />
 
 <section>
-	<div bind:this={sections[0]} class="container">
-		<AboutMe />
-	</div>
-	<div bind:this={sections[1]} class="container">
-		<SkillsSection />
-	</div>
-	<div bind:this={sections[2]} class="container">
-		<Contact />
-	</div>
+    <div class="container">
+        <div bind:this={sections[0]} class="content-container">
+            <AboutMe />
+        </div>
+        <div bind:this={sections[1]} class="content-container">
+            <SkillsSection />
+        </div>
+        <div bind:this={sections[2]} class="content-container">
+            <Contact />
+        </div>
+    </div>
 </section>

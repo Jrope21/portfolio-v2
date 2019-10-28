@@ -53,6 +53,10 @@ footer {
     max-width: 400px;
 }
 
+.headline a {
+    color: #58595b;
+}
+
 .title {
     font-weight: 100;
     font-size: 12rem;
