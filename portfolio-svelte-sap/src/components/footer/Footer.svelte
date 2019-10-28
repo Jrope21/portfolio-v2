@@ -6,6 +6,7 @@
 footer {
     border-top: 1px solid #d6d6d6;
     background: white;
+    color: #3B3B3B;
 }
 
 .footer-container {
@@ -14,19 +15,45 @@ footer {
     flex-direction: column;
 }
 
+.left, .right {
+    margin-bottom: 40rem;
+}
+
+.text-cta:first-of-type {
+    margin-bottom: 20rem;
+}
+
+.headline {
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 12rem;
+}
+
+.text-cta a {
+    font-size: 14rem;
+}
+
+.copyright {
+    font-size: 12rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
 </style>
 
 <footer>
     <div class="container footer-container">
         <div class="left">
             <p class="headline">
-                “Lorem Impsum adsklm dak aaofd kladf dfakl fkla 
-                flka flk l dakla alfa lofas lk aflkaflk afl afdkla fik 
-                afklfa”
+                Feel free to shoot me an <a>email</a> & connect on <a>social</a>
             </p>
-            <p class="copyright">
-                @ 2019 Joshua Roper Development
-            </p>
+            
         </div>
         <div class="right">
             <div class="text-cta">
@@ -47,4 +74,7 @@ footer {
             </div>
         </div>
     </div>
+    <p class="copyright container">
+        @ 2019 Joshua Roper Development
+    </p>
 </footer>

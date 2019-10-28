@@ -52,7 +52,7 @@ ul.navigation {
     height: 100%;
     padding: 0rem 20rem;
     transition: transform 1s cubic-bezier(0.85, 0.08, 0.08, 0.99)
-}
+}fadssafd
 
 #toggle:checked ~ ul.navigation{
     display: flex;

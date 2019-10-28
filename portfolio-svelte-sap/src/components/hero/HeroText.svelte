@@ -4,11 +4,15 @@
 
 <style>
 h1 {
+    color:#3B3B3B;
+    font-weight: 800;
     font-size: 55px;
     font-size: 20px;
     margin-bottom: 10px;
 }
 h2 {
+    color:#3B3B3B;
+    font-weight: 800;
     font-size: 44px;
     font-size: 40px;
 }

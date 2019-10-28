@@ -102,6 +102,8 @@
         text-transform: uppercase;
         width: fit-content;
         margin-bottom: 10%;
+        color: #3B3B3B;
+        font-weight: 800;
     }
 
     h2::after {
