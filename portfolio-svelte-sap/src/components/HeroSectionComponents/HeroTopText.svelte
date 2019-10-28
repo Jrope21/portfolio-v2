@@ -32,6 +32,7 @@ h3{
     h1{
         font-size: 75.2px;
     }
+    
     h2{
         font-size: 49px;
         margin-top: -20px;
