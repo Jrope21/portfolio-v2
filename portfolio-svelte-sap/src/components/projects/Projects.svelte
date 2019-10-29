@@ -56,7 +56,7 @@
         justify-content: flex-start;
         flex-direction: column;
         width: 250px;
-        max-width: 900px;
+        /* max-width: 900px; */
         margin-bottom: 05%;
         opacity: 1;
     }
@@ -69,7 +69,7 @@
         div.card-container {
             flex-direction: row;
             justify-content: space-around;
-            width: 75%;
+            width: 90%;
             margin-bottom: 8%;
         }
         div.card-container:nth-of-type(2n){
@@ -87,6 +87,12 @@
         }
 
         
+    }
+
+    @media screen and (min-width: 64em){
+        div.card-container{
+            width: 80%;
+        }
     }
 
     div.projects-container {

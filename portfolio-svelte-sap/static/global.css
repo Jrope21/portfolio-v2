@@ -26,7 +26,7 @@ html{
 
 .container {
   padding: 20rem 20rem;
-  width: 100%;
+  /* width: 100%; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,9 +35,14 @@ html{
     padding: 20rem 40rem;
   }
 }
+@media screen and (min-width: 64em) {
+  .container {
+    padding: 60rem 40rem;
+  }
+}
 @media (min-width: 576px){
   .container {
-      max-width: 540px;
+      max-width: 640px;
   }
 }
 @media (min-width: 768px){
@@ -47,7 +52,8 @@ html{
 }
 @media (min-width: 1023px){
   .container {
-      max-width: 980px;
+      /* max-width: 980px; */
+      max-width: 1005px;
   }
 }
 @media (min-width: 1366px){

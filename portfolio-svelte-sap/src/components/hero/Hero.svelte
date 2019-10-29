@@ -41,6 +41,24 @@ import HeroText from './HeroText.svelte';
     width: 100%;
 }
 
+@media screen and (min-width: 40em) {
+    .text {
+        padding-left: 10rem;
+    }
+}
+
+@media screen and (min-width: 64em){
+    .text {
+        padding-left: 40rem;
+    }   
+}
+
+@media screen and (min-width: 75em){
+    .text {
+        padding-left: 70rem;
+    }
+}
+
 </style>
 
 <div class="hero-container">
