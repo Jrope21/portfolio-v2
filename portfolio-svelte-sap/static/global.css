@@ -48,7 +48,9 @@ html{
 /* animation keyframes */
  
 
-@keyframes fadeInBottom {
+
+@keyframes
+ fadeInBottom {
   0% {
       top:  20px;
       opacity: 0;
