@@ -49,7 +49,14 @@
 
     @media screen and (min-width: 40em){
         h3 {
-            width: 15%;
+            width: 18%;
+        }
+    }
+
+    @media screen and (min-width: 64em){
+        h3 {
+            font-size: 23rem;
+            width: 20%;
         }
     }
 
@@ -77,15 +84,16 @@
     }
 
     p {
-        font-family: 'Open Sans', sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
     }
 
+    
     li {
         width: 100%;
-        font-family: 'Open Sans', sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
@@ -96,6 +104,13 @@
         margin-left: -2px;
         height: 0;
         z-index: 2;
+    }
+
+
+    @media screen and (min-width: 64em){
+        li {
+            font-size: 18rem;
+        }
     }
 
     span {

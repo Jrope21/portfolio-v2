@@ -58,6 +58,7 @@ export let title, sidePage;
     }
 
     h1 {
+        color: #3B3B3B;
         position: relative;
         width: 100%;
         top: 0;

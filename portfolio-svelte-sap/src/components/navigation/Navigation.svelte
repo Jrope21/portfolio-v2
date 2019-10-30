@@ -42,7 +42,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40rem 20rem;
+    padding: 30rem 20rem;
+    /* was 40rem 20rem */
     transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
@@ -106,12 +107,16 @@ li {
     padding: 5rem 0rem;
     width: auto;
     overflow-x: hidden;
-    font-size: 12rem;
+    font-size: 14rem;
 }
 
 @media screen and (min-width: 64em){
     li {
+        font-size: 16rem;
         margin: 0rem 15rem;
+    }
+    p{
+        font-size: 18rem;
     }
 }
 

@@ -24,7 +24,14 @@
 
     @media screen and (min-width: 40em){
         h3 {
-            width: 15%;
+            width: 18%;
+        }
+    }
+
+    @media screen and (min-width: 64em){
+        h3 {
+            font-size: 23rem;
+            width: 20%;
         }
     }
 
@@ -33,12 +40,14 @@
         display: block;
     }
     p {
-        font-family: 'Open Sans', sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
     }
 
+
+    
     .social-container {
         width: 50%;
         display: flex;
@@ -59,6 +68,13 @@
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
+    }
+
+    @media screen and (min-width: 64em){
+        i > span{
+            font-size: 18rem;
+
+        }
     }
 
 </style>

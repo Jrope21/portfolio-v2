@@ -7,6 +7,7 @@ import HeroText from './HeroText.svelte';
  .hero-container{
      width: 100%;
      display: flex;
+     
      flex-direction: column-reverse;
      align-items: center;
      position: relative
@@ -15,17 +16,31 @@ import HeroText from './HeroText.svelte';
 @media screen and (min-width: 40em) {
     .hero-container {
         flex-direction: row;
-        margin-top: 50px
+        /* margin-top: 50px */
     }
 }
 
  .hero {
-     width: 100%;
+     width: auto;
      display: flex;
-     justify-content: center;
+    align-items: center;
+    width: auto;
+    justify-content: flex-start;
  }
 
- @media screen and (min-width: 40em){
+@media screen and (min-width: 40em) {
+    .hero {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1094px){
+    .hero {
+        /* justify-content: center; */
+    }
+}
+
+ /* @media screen and (min-width: 40em){
      .hero::before {
          content: '';
          position: absolute;
@@ -35,7 +50,7 @@ import HeroText from './HeroText.svelte';
          height: 120%;
          background: rgba(0, 0, 0, 0.1);
      }
- }
+ } */
 
 .text {
     width: 100%;

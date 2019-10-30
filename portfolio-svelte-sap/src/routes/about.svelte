@@ -70,6 +70,11 @@ import Contact from '../components/about/Contact.svelte';
             margin-left: 100rem;
         }
     }
+    @media screen and (min-width: 64em) {
+        .content-container {
+            width: 100%;
+        }
+    }
     
 </style>
 

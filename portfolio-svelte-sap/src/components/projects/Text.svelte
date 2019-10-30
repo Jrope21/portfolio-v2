@@ -61,6 +61,19 @@ export let projectName, url;
         }
     }
 
+@media screen and (min-width: 64em){
+    h2 {
+        font-size: 23rem;
+    }
+    p{
+        font-size: 18rem;
+        line-height: 21px;
+    }
+    a{
+        font-size: 14rem;
+    }
+}
+
 </style>
 <div>
     <h2>{projectName}</h2>

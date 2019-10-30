@@ -47,7 +47,7 @@
 
     @media screen and (min-width: 40em){
         section {
-            padding: 15% 0 10% 0;
+            padding: 10% 0 10% 0;
         }
     }
 
@@ -91,10 +91,15 @@
 
     @media screen and (min-width: 64em){
         div.card-container{
-            width: 80%;
+            width: 85%;
         }
     }
 
+    @media screen and (min-width: 1363px){
+        div.card-container{
+            width: 80%;
+        }
+    }
     div.projects-container {
         width: 100%;
         display:flex;
@@ -120,6 +125,12 @@
         border-bottom: 3px solid black;
     }
 
+
+    @media screen and (min-width: 64em){
+        h2 {
+            font-size: 23rem;
+        }
+    }
 </style>
 
 <svelte:head>

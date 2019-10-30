@@ -72,6 +72,21 @@ footer {
     font-weight: 300;
 }
 
+@media screen and (min-width: 64em){
+    .title{
+        font-size: 16rem
+    }
+    .text-cta a {
+        font-size: 18rem;
+    }
+    .copyright {
+        font-size: 14rem;
+    }
+    .headline {
+        font-size: 45px;
+    }
+}
+
 </style>
 
 <footer>
