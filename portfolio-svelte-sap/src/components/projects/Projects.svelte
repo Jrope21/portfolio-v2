@@ -19,7 +19,7 @@
         },
         {
             url: 'portfolio/webuyuglyhouses',
-            imgSrc: 'images/WBUH.jpeg',
+            imgSrc: 'images/halcyon-5.jpg',
             projectName: 'Halcyon',
             projectYear: '2019',
             projectText: ``
