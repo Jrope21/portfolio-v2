@@ -77,11 +77,10 @@
         About Me
     </h3>
     <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-         Ex molestias aut vero rerum fuga fugiat veritatis quibusdam,
-          cupiditate laborum? Velit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-           a nemo perferendis sit nulla optio recusandae earum laudantium 
-           commodi architecto!
+        Hi There! I’m Josh, a Dallas-based Front End Developer with a knack for programing and design.
+         My passion comes from being a part of a solution that brings each aspect of the customer journey 
+         together across both development and design processes.
+        I focus on creating production ready applications with my knowledge of the user experience, 
+        and writing scalable clean code
     </p>
 </div>

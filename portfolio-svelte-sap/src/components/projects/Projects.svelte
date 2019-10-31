@@ -6,17 +6,23 @@
         {
             url: 'portfolio/university-park',
             imgSrc: 'images/university-park-cta.jpeg',
-            projectName: 'University Park'
+            projectName: 'University Park',
+            projectYear: '2019',
+            projectText: `I was tasked with being the sole developer on a complete website Front-End redesign. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, form verification, and several third party integrations / reworks.`,
         },
         {
             url: 'portfolio/creative-revolt',
             imgSrc: 'images/bub.jpeg',
-            projectName: 'Creative Revolt'
+            projectName: 'Creative Revolt',
+            projectYear: '2018',
+            projectText: `This was a freelance project to rework the layout and tailor the feel of the website to her personal writing style. I revamped the color palette to better match her personality, adjusted her website for SEO, and created the landing page as well as multiple pages across the platform.`,
         },
         {
             url: 'portfolio/webuyuglyhouses',
             imgSrc: 'images/WBUH.jpeg',
-            projectName: 'HomeVestors'
+            projectName: 'Halcyon',
+            projectYear: '2019',
+            projectText: ``
         },
         // {
         //     url: 'portfolio/anbtx',
@@ -147,7 +153,7 @@
                     <Image imgSrc={card.imgSrc} url={card.url} />
                 </div>
                 <div class="text-container">
-                    <Text projectName={card.projectName} url={card.url} />
+                    <Text projectName={card.projectName} url={card.url} projectText={card.projectText} projectYear={card.projectYear} />
                 </div>
             </div>
         {/each}

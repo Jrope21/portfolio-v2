@@ -1,5 +1,5 @@
 <script>
-export let projectName, url;
+export let projectName, url, projectText, projectYear;
 </script>
 
 <style>
@@ -39,7 +39,7 @@ export let projectName, url;
         text-indent: 10px;
     }
 
-    p::before{
+    .year{
         
         content: '2019';
         position: absolute;
@@ -78,8 +78,8 @@ export let projectName, url;
 <div>
     <h2>{projectName}</h2>
     <p>
-        Temporibus similique eligendi, enim eum, suscipit facilis at et doloribus quidem necessitatibus repudiandae, nulla distinctio earum facere!
-     Temporibus similique eligendi, enim eum, suscipit facilis at et doloribus quidem necessitatibus repudiandae, nulla distinctio earum facere!
+        <span class='year'>{projectYear}</span>
+        {projectText}
     </p>
     <a href="{url}">
         View Website
