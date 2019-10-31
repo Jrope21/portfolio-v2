@@ -16,6 +16,8 @@ export let projects;
     height: 100%;
     min-height: fit-content;
 } */
+
+
 div.side-bar-container {
     /* position: sticky; */
     /* top: 0%; */
