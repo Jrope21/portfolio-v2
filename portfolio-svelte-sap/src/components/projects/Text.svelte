@@ -1,4 +1,6 @@
 <script>
+import TextAnimation from '../helperComponents/TextAnimation.svelte';
+
 export let projectName, url, projectText, projectYear;
 </script>
 
@@ -82,6 +84,6 @@ export let projectName, url, projectText, projectYear;
         {projectText}
     </p>
     <a href="{url}">
-        View Website
+        <TextAnimation text={`View Website`} />
     </a>
 </div>
