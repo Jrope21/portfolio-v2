@@ -1,4 +1,5 @@
 <script>
+import TextAnimation from '../helperComponents/TextAnimation.svelte';
 
 </script>
 
@@ -55,6 +56,11 @@ footer {
 
 .headline a {
     color: #58595b;
+    transition: all .45s ease-in-out;
+}
+
+.headline a:hover {
+    color: black;
 }
 
 .title {
@@ -93,7 +99,7 @@ footer {
     <div class="container footer-container">
         <div class="left">
             <p class="headline">
-                Feel free to shoot me an <a>email</a> & connect on <a>social</a>
+                Feel free to shoot me an <a href="mailto:joshua.micah.toper@gmail.com">email</a> & connect on <a href="www.linkedin.com/in/jr-dev">social</a>
             </p>
             
         </div>
@@ -102,16 +108,16 @@ footer {
                 <p class="title">
                     Get In Touch!
                 </p>
-                <a>
-                    Joshua.micah.roper@gmail.com
+                <a href="mailto:joshua.micah.toper@gmail.com">
+                    <TextAnimation text={`Joshua.micah.roper@gmail.com`} />
                 </a>
             </div>
             <div class="text-cta">
                 <p class="title">
                     View Resume
                 </p>
-                <a>
-                    Download PDF
+                <a href="./images/resume-in.pdf" download>
+                    <TextAnimation text={`Download PDF`} />
                 </a>
             </div>
         </div>

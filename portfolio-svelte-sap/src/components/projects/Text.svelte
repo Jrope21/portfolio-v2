@@ -29,6 +29,7 @@ export let projectName, url, projectText, projectYear;
         text-transform: capitalize;
         transition: all .2s ease-in-out;
         color: #3B3B3B;
+        z-index: 2;
     }
 
     p{
@@ -37,6 +38,7 @@ export let projectName, url, projectText, projectYear;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 13rem;
+        z-index: 1;
         color: #58595b;
         text-indent: 10px;
     }
@@ -48,6 +50,7 @@ export let projectName, url, projectText, projectYear;
         font-weight: 900;
         /* was .6 opacity */
         opacity: .5;
+        z-index: -5;
         /* z-index: -1; */
         left: -60px;
         top: 30px;

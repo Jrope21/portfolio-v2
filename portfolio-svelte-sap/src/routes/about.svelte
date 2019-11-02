@@ -57,7 +57,7 @@ import Contact from '../components/about/Contact.svelte';
     }
 
 	.content-container {
-        width: 65%;
+        width: 90%;
         margin-bottom: 40rem;		
         opacity: 0;
         max-width: 900px;

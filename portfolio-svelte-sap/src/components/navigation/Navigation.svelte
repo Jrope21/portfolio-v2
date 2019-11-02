@@ -19,8 +19,9 @@ function navSize(y){
 }
 
 function togglerOff(){
-    hamburger ? hamburger.$$.ctx.hamburger.click() : null;
-    console.log(windowY)
+    if(window.innerWidth < 820){
+        hamburger ? hamburger.$$.ctx.hamburger.click() : null;
+    }
 }
 
 
@@ -34,7 +35,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 50;
     background: white;
 }
 
@@ -197,6 +198,15 @@ p{
     opacity: .3;
 }
 
+.logo-hover {
+    transition: all .3s ease-in;
+}
+
+.logo:hover .logo-hover {
+    color: black;
+    
+}
+
 </style>
 
 <svelte:window bind:scrollY={windowY}/>
@@ -205,15 +215,15 @@ p{
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
         <a href='/' class="logo">
             <p>
-                <span class="code">&lt;h1&gt;</span>Hi There!<span class="code">&lt;/h1&gt;</span>
+                <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
             </p>
         </a>
         <Hamburger toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a on:click={togglerOff} href="/">Home</a></li>
+            <li><a on:click={togglerOff} href="/about">About</a></li>
+            <li><a on:click={togglerOff} href="mailto:joshua.micah.toper@gmail.com">Contact</a></li>
         </ul>
     </nav>
 </header>

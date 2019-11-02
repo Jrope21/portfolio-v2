@@ -74,7 +74,15 @@ export let hamburger;
   animation: .01s ease-in .35s 1 leaveScreen forwards;
 }
 
+#toggle:hover + .background + label > .hamburger {
+  width: 32px;
+}
+
 #toggle:checked + .background + label > .hamburger {
+  width: 32px;
+}
+
+#toggle:hover + .background + label > .hamburger::before {
   width: 32px;
 }
 

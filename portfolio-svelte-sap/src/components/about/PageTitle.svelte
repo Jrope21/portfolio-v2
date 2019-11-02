@@ -39,11 +39,13 @@ export let title, sidePage;
     div.title-container:not(.side-page){
         position: relative;
         animation: .9s ease-out 0s 1 fadeIn forwards;
+        width: 100%;
     }
 
     @media screen and (min-width: 40em){
         div.title-container:not(.side-page){
             margin-bottom: 20px;
+            width: 75%;
         }
 
         div:not(.page-header) {
@@ -91,10 +93,14 @@ export let title, sidePage;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        box-sizing: border-box;
+        padding-left:20rem;
     }
 
     @media screen and (min-width: 40em){
         div.page-header {
+            padding: 0;
+            box-sizing: content-box;
             height: 220px;
         }
     }
