@@ -1,6 +1,10 @@
 <script>
+import { onMount } from 'svelte'
+
 import HeroImg from './HeroImg.svelte';
 import HeroText from './HeroText.svelte';
+
+    
 </script>
 
 <style>

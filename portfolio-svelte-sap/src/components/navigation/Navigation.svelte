@@ -181,7 +181,7 @@ li:not(.close-container):hover::after {
   transform: rotate(-45deg);
 }
 
-a {
+a:not(.logo) {
     display: block;
     padding: 5rem 0rem;
     text-transform: uppercase;
@@ -203,11 +203,11 @@ p{
 <!-- class={reduceNavSize ? 'scrolled' : ''} -->
 <header >
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
-        <div class="logo">
+        <a href='/' class="logo">
             <p>
                 <span class="code">&lt;h1&gt;</span>Hi There!<span class="code">&lt;/h1&gt;</span>
             </p>
-        </div>
+        </a>
         <Hamburger toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>

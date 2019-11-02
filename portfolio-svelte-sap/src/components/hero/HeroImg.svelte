@@ -1,6 +1,20 @@
 <script>
 import { onMount } from 'svelte';
 
+    // let x = .25;
+    // let sections = [];
+
+    // onMount(()=>{
+    //     for(let i = 0; i < sections.length; i++){
+    //         let fadeInOrder = () => {
+                
+    //             sections[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
+    //             x += .35;
+
+    //         }
+    //         fadeInOrder();
+    //     }
+    // })
 let heroImg;
 </script>
 
@@ -13,6 +27,7 @@ let heroImg;
         background-size: 130%;
         background-position: 45% 65%;
         /* overflow-y: hidden; */
+        /* opacity: 0; */
         position: relative;
         transition: top .01s ease-in;
     }
@@ -82,7 +97,7 @@ let heroImg;
 
 </style>
 
-<img width="1px" height="1px" src="images/drawing.jpg" alt="">
+<img width="1px" height="1px" src="images/drawing.jpg" alt="" >
 <div class="box">
-    <div class="hero-image"></div>
+    <div class="hero-image" ></div>
 </div>

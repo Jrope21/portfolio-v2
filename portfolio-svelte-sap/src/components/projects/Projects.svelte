@@ -1,6 +1,23 @@
 <script>
+    import { onMount } from 'svelte';  
+
     import Image from './Image.svelte';
-    import Text from './Text.svelte';    
+    import Text from './Text.svelte';  
+
+    // let x = .55;
+    // let sections = [];
+
+    // onMount(()=>{
+    //     for(let i = 0; i < sections.length; i++){
+    //         let fadeInOrder = () => {
+                
+    //             sections[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
+    //             x += .35;
+
+    //         }
+    //         fadeInOrder();
+    //     }
+    // })
 
     let portfolioCards = [
         {
@@ -22,7 +39,7 @@
             imgSrc: 'images/halcyon-5.jpg',
             projectName: 'Halcyon',
             projectYear: '2019',
-            projectText: ``
+            projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with multiple API’s, React Static, and developed clean code for other advanced React components.`
         },
         // {
         //     url: 'portfolio/anbtx',
@@ -64,7 +81,7 @@
         width: 250px;
         /* max-width: 900px; */
         margin-bottom: 05%;
-        opacity: 1;
+        /* opacity: 0; */
     }
 
     div.image-container {
