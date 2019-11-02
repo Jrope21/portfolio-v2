@@ -20,6 +20,8 @@ import SingleProjectImage from './SingleProjectSectionComponents/SingleProjectIm
     }
 </style>
 
+
+
 <div class="container"> 
     <div class="project-text">
         <SingleProjectText />
