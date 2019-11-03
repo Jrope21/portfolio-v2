@@ -23,7 +23,7 @@ let heroImg;
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("../images/drawing.jpg");
+        background-image: url("../images/hero-doe.png");
         background-size: 130%;
         background-position: 45% 65%;
         /* overflow-y: hidden; */
