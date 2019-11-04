@@ -21,6 +21,13 @@
 
     let portfolioCards = [
         {
+            url: 'portfolio/webuyuglyhouses',
+            imgSrc: 'images/halcyon-5.jpg',
+            projectName: 'Halcyon',
+            projectYear: '2019',
+            projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with multiple API’s, React Static, and developed clean code for other advanced React components.`
+        },
+        {
             url: 'portfolio/university-park',
             imgSrc: 'images/university-park-cta.jpeg',
             projectName: 'University Park',
@@ -34,13 +41,7 @@
             projectYear: '2018',
             projectText: `This was a freelance project to rework the layout and tailor the feel of the website to her personal writing style. I revamped the color palette to better match her personality, adjusted her website for SEO, and created the landing page as well as multiple pages across the platform.`,
         },
-        {
-            url: 'portfolio/webuyuglyhouses',
-            imgSrc: 'images/halcyon-5.jpg',
-            projectName: 'Halcyon',
-            projectYear: '2019',
-            projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with multiple API’s, React Static, and developed clean code for other advanced React components.`
-        },
+        
         // {
         //     url: 'portfolio/anbtx',
         //     imgSrc: 'images/university-park-cta.jpeg',
