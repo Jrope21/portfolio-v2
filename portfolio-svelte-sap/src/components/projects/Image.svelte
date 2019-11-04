@@ -14,6 +14,8 @@ export let url;
         opacity: 1;
     }
 
+    
+
     .img-container{
         overflow: hidden;
         width: 65vw;
