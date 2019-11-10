@@ -19,6 +19,8 @@ i {
     color: gray;
 }
 
+
+
 @media screen and (min-width: 64em){
     .social-container {
         display: none;
