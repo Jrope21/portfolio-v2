@@ -4,21 +4,6 @@
     import Image from './Image.svelte';
     import Text from './Text.svelte';  
 
-    // let x = .55;
-    // let sections = [];
-
-    // onMount(()=>{
-    //     for(let i = 0; i < sections.length; i++){
-    //         let fadeInOrder = () => {
-                
-    //             sections[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
-    //             x += .35;
-
-    //         }
-    //         fadeInOrder();
-    //     }
-    // })
-
     let portfolioCards = [
         {
             url: 'https://www.visithalcyon.com/cmx-cinebistro',
@@ -36,27 +21,11 @@
         },
         {
             url: 'https://www.creativerevolt.com',
-            imgSrc: 'images/bub.jpeg',
+            imgSrc: 'images/Jorden-Background-Gray.jpg',
             projectName: 'Creative Revolt',
             projectYear: '2018',
             projectText: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
         },
-        
-        // {
-        //     url: 'portfolio/anbtx',
-        //     imgSrc: 'images/university-park-cta.jpeg',
-        //     projectName: 'ANBTX'
-        // },
-        // {
-        //     url: 'portfolio/advancial',
-        //     imgSrc: 'images/university-park-cta.jpeg',
-        //     projectName: 'Advancial Credit Union'
-        // },
-        // {
-        //     url: 'portfolio/service-experts',
-        //     imgSrc: 'images/university-park-cta.jpeg',
-        //     projectName: 'Service Experts'
-        // },
     ]
 </script>
 
