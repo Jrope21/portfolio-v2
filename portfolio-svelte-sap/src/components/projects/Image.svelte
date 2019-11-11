@@ -53,9 +53,6 @@ export let url;
         z-index: 2;
     }
 
-    /* a:hover .overlay {
-        opacity: 1;
-    } */
 
     img {
         object-fit: cover;
@@ -63,10 +60,6 @@ export let url;
         width: 100%;
         height: 100%;
     }
-    
-    /* a:hover img {
-        
-    } */
    
 </style>
 

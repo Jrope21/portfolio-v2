@@ -57,7 +57,6 @@
     }
 
     p {
-        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;

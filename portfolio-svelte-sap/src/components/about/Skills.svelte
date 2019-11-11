@@ -1,6 +1,4 @@
 <script>
-    import Skills from './Skills.svelte';
-
     let skills = [
         {
             name: 'HTML5'
@@ -66,7 +64,6 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        /* margin-left: -15rem; */
     }
 
     @media screen and (min-width: 40em){
@@ -84,7 +81,6 @@
     }
 
     p {
-        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
@@ -93,7 +89,6 @@
     
     li {
         width: 100%;
-        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
