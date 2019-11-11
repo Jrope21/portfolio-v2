@@ -14,7 +14,7 @@
         },
         {
             url: 'https://www.uptexas.org',
-            imgSrc: 'images/university-park-cta.jpeg',
+            imgSrc: 'images/uptexas-home3.jpg',
             projectName: 'University Park',
             projectYear: '2019',
             projectText: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
