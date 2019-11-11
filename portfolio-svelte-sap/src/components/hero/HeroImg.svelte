@@ -24,8 +24,9 @@ let heroImg;
         width: 250px;
         height: 420px;
         background-image: url("../images/hero-doe.png");
-        background-size: 130%;
+        background-size: cover;
         background-position: 45% 65%;
+        box-shadow: 3px 3px 3px lightgrey;
         /* overflow-y: hidden; */
         /* opacity: 0; */
         position: relative;
@@ -38,7 +39,6 @@ let heroImg;
             width: 220px;
             background-position: 45% 25%;
             height: 320px;
-            box-shadow: 3px 3px 3px lightgrey;
         }
     }
 

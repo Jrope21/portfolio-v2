@@ -138,21 +138,23 @@
         Skills
     </h3>
         <ul class="skills">
-            <li>HTML (WCAG 2.1)</li>
-            <li>HTML Emails</li>
-            <li>CSS (SASS / SCSS)</li>
-            <li>Foundation</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
+            <li>React</li>
             <li>Svelte 3</li>
             <li>Sapper</li>
-            <li>Gulp</li>
+            <li>JavaScript (ES6+)</li>
+            <li>WebPack</li>
             <li>Git (Version Control)</li>
+            <li>jQuery</li> 
+            <li>SASS / SCSS</li>
+            <li>CSS</li>
+            <li>Foundation</li>
+            <li>Bootstrap</li>
+            <li>HTML (WCAG 2.1)</li>
+            <li>HTML Emails</li>
             <li>GitHub / BitBucket</li>
             <li>WordPress / Kentico</li>
             <li>Adobe Suite</li>
             <li>SEO</li>
-            <li>Usability Testing</li>
+            <li>Usability Testing</li> 
         </ul>
 </div>

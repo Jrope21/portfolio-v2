@@ -187,6 +187,10 @@ html{
   }
 }
 
+strong {
+  font-weight: 700 !important;
+}
+
 /* additional global styling */
 
 /* IconComponent global styles */

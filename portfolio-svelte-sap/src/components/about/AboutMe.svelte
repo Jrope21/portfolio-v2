@@ -77,10 +77,10 @@
         About Me
     </h3>
     <p>
-        Hi There! I’m Josh, a Dallas-based Front End Developer with a knack for programing and design.
-         My passion comes from being a part of a solution that brings each aspect of the customer journey 
-         together across both development and design processes.
-        I focus on creating production ready applications with my knowledge of the user experience, 
-        and writing scalable clean code
+        Hi There! I’m Josh, a Dallas-based <strong>Front End Developer</strong> with a knack for programing and design.
+         My <strong>passion</strong> comes from being a part of a solution that brings each aspect of the customer journey 
+         together across both <strong>development and design</strong> processes.
+        I focus on creating <strong>production ready applications</strong> with my knowledge of the user experience, 
+        and writing scalable <strong>clean code</strong>.
     </p>
 </div>

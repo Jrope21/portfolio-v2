@@ -20,7 +20,7 @@ export let url;
         width: 65vw;
         height: 65vw;
         max-height: 250px;
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 3px 3px 3px lightgrey;
         transition: all .3s ease-in;
     }
 
@@ -37,7 +37,7 @@ export let url;
     a:hover .img-container {
         position: relative;
         transform: translateY(-3px);
-        box-shadow: 8px 8px 8px lightgrey;
+        box-shadow: 5px 5px 5px lightgrey;
     }
 
     .overlay {
@@ -70,7 +70,7 @@ export let url;
    
 </style>
 
-<a href="{url}">
+<a target="blank" href="{url}">
     <div class="img-container">
         <div class="overlay"><span>View Website</span></div>
       <img src="{imgSrc}" alt="">
