@@ -57,6 +57,7 @@ footer {
 .headline a {
     color: #58595b;
     transition: all .45s ease-in-out;
+    opacity: .75;
 }
 
 .headline a:hover {
@@ -116,7 +117,7 @@ footer {
                 <p class="title">
                     View Resume
                 </p>
-                <a href="./images/resume-in.pdf" download>
+                <a href="./images/resume-v2Design2.pdf" download>
                     <TextAnimation text={`Download PDF`} />
                 </a>
             </div>

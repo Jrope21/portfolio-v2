@@ -49,7 +49,7 @@
 
     
     .social-container {
-        width: 50%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -60,6 +60,7 @@
         color: gray;
         display: flex;
         align-items: center;
+        transition: all .45s ease-in-out;
     }
 
     i > span {
@@ -77,6 +78,11 @@
         }
     }
 
+    a:hover i {
+        color: #3B3B3B;
+    }
+
+
 </style>
 
 <svelte:head>
@@ -88,8 +94,8 @@
         Contact
     </h3>
     <div class="social-container">
-        <i class="fab fa-github"><span>www.github.com/Jrope21</span></i>
-        <i class="fab fa-linkedin"><span>Joshua.Micah.Roper@gmail.com</span></i>
-        <i class="fas fa-envelope"><span>www.linkedin.com/in/JR-dev</span></i>
+        <a href="https://www.github.com/Jrope21" target="blank" ><i class="fab fa-github"><span>www.github.com/Jrope21</span></i></a>
+        <a href="mailto:joshua.micah.toper@gmail.com" target="blank" ><i class="fab fa-linkedin"><span>Joshua.Micah.Roper@gmail.com</span></i></a>
+        <a href="https://www.linkedin.com/in/JR-dev" target="blank" ><i class="fas fa-envelope"><span>www.linkedin.com/in/JR-dev</span></i></a>
     </div>
 </div>
