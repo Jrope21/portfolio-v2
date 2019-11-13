@@ -10,9 +10,13 @@ let heroImg;
         height: 420px;
         background-image: url("../images/hero-doe.png");
         background-size: cover;
+         -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
         background-position: 45% 65%;
         box-shadow: 3px 3px 3px lightgrey;
         position: relative;
+        z-index: 2;
         transition: top .01s ease-in;
     }
 
