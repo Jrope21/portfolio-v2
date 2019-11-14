@@ -2,6 +2,14 @@
 import Hamburger from './Hamburger.svelte';
 import { onMount } from 'svelte';
 
+let links = []
+
+onMount(()=>{
+    links.forEach((link)=>{
+        console.log(link)
+    })
+})
+
 let windowY;
 let hamburger;
 let toggle = false;
@@ -121,7 +129,7 @@ li {
     }
 }
 
-li:not(.close-container)::after {
+li:not(.close-container)::after, .active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -133,7 +141,7 @@ li:not(.close-container)::after {
     transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
-li:not(.close-container):hover::after {
+li:not(.close-container):hover::after, .active::after {
     transform: translateX(0);
 }
 
@@ -221,8 +229,8 @@ p{
         <Hamburger toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li><a on:click={togglerOff} href="/">Home</a></li>
-            <li><a on:click={togglerOff} href="/about">About</a></li>
+            <li><a class="" on:click={togglerOff} bind:this={links[0]} href="/">Home</a></li>
+            <li><a on:click={togglerOff} bind:this={links[1]} href="/about">About</a></li>
             <li><a on:click={togglerOff} href="mailto:joshua.micah.toper@gmail.com">Contact</a></li>
         </ul>
     </nav>
