@@ -1,9 +1,24 @@
 <script>
+	import ModalTemplate from './ModalTemplate.svelte';
 
+	export let showModal;
 </script>
 
 <style>
 
+    /* .container {
+        display: flex;
+
+    }
+    h2{
+        font-size: 30rem;
+        color: #808080;
+    }
+    p{
+        font-size: 12rem;
+        margin: 6rem 0rem 10rem 0rem;
+        color: lightgray;
+    } */
    h2{
         font-size: 30rem;
         color: #808080;
@@ -126,26 +141,29 @@
     }
 </style>
 
-<div class="form-container">
-    
-    <div class="flex-container">
-        <div class="text-container">
-        <h2>Get In Touch</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
-         Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
+{#if showModal}
+	<ModalTemplate on:click>
+        <div class="form-container">
+            <div class="flex-container">
+                <div class="text-container">
+                    <h2>Get In Touch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
+                    Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
+                </div>
+                <form action="mailto:joshua.micah.roper@gmail.com" method="post">
+                        <label> <span>Name</span>
+                            <input type="text">
+                        </label>
+                    <label> <span>Email</span>
+                        <input type="text">
+                    </label>
+                    <label> <span>Message</span>
+                        <textarea rows="6" type="textarea"> </textarea>
+                    </label>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
         </div>
-        <form action="mailto:joshua.micah.roper@gmail.com" method="post">
-                <label> <span>Name</span>
-                    <input type="text">
-                </label>
-            <label> <span>Email</span>
-                <input type="text">
-            </label>
-            <label> <span>Message</span>
-                <textarea rows="6" type="textarea"> </textarea>
-            </label>
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
-</div>
+	</ModalTemplate>
+{/if}
