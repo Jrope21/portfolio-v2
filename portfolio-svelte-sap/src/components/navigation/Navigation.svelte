@@ -1,7 +1,10 @@
 <script>
 import Hamburger from './Hamburger.svelte';
+import ContactModal from '../modals/ContactModal.svelte';
+
 import { onMount } from 'svelte';
 
+let showModal;
 let links = []
 
 onMount(()=>{
@@ -32,7 +35,9 @@ function togglerOff(){
     }
 }
 
-
+function openModal(){
+    showModal = true;
+}
 
 </script>
 
@@ -52,7 +57,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 30rem 20rem;
-    /* was 40rem 20rem */
     transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
@@ -231,7 +235,9 @@ p{
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
             <li><a class="" on:click={togglerOff} bind:this={links[0]} href="/">Home</a></li>
             <li><a on:click={togglerOff} bind:this={links[1]} href="/about">About</a></li>
-            <li><a on:click={togglerOff} href="mailto:joshua.micah.toper@gmail.com">Contact</a></li>
+            <li><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>
 </header>
+
+<ContactModal on:click='{() => showModal = false}' showModal={showModal}/>

@@ -1,12 +1,23 @@
 <script>
-	import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher } from 'svelte';
+    import { fade, fly } from 'svelte/transition';
 
+    export let showModal
+    
     const dispatch = createEventDispatcher();
     
 </script>
 
 <style>
 
+    .modal-container{
+        position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+        height: 100%;
+        z-index: 50;
+    }
 	.modal-background {
 		position: fixed;
 		top: 0;
@@ -14,8 +25,6 @@
 		width: 100%;
 		height: 100%;
         background: rgba(0,0,0,0.3);
-		z-index: 50;
-		animation: .5s ease-in 0s 1 fadeIn forwards;
 	}
 
 	.container{
@@ -24,17 +33,14 @@
 	}
 
 	.modal {
-		position: fixed;
         width: calc(100vw - 4em);
         width: 80%;
 		max-width: 650px;
 		max-height: 90vh;
 		overflow: auto;
-		transform: translate(-50%,-50%);
 		border-radius: 10rem;
         background: white;
         z-index: 50;
-		animation: .7s ease-in 0s 1 fadeInTop forwards; 
     }
     
 	@media screen and (min-width: 40em){
@@ -46,11 +52,11 @@
     
 	button {
 		display: block;
-    }
-    
+    }   
 </style>
-<div class='modal-background center-all' on:click>
-	<div class='modal'>
+<div class='center-all modal-container {showModal ? 'show-modal' : ''}' in:fade out:fade >
+    <div class="modal-background" on:click></div>
+	<div class='modal' in:fly="{{ y: -20, duration: 450, delay: 200, }}" out:fly="{{ y: -20, duration: 450 }}">
 		<slot name='header'></slot>
 		<slot></slot>
 	</div>

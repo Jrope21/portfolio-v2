@@ -142,7 +142,7 @@
 </style>
 
 {#if showModal}
-	<ModalTemplate on:click>
+	<ModalTemplate showModal={showModal} on:click>
         <div class="form-container">
             <div class="flex-container">
                 <div class="text-container">
@@ -151,15 +151,15 @@
                     Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
                     Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
                 </div>
-                <form action="mailto:joshua.micah.roper@gmail.com" method="post">
+                <form class="gform" action="https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec" method="post" data-email="joshua.micah.roper@gmail.com" >
                         <label> <span>Name</span>
-                            <input type="text">
+                            <input name="name" type="text">
                         </label>
                     <label> <span>Email</span>
-                        <input type="text">
+                        <input name="email" type="text">
                     </label>
                     <label> <span>Message</span>
-                        <textarea rows="6" type="textarea"> </textarea>
+                        <textarea name="message" rows="6" type="textarea"> </textarea>
                     </label>
                     <input type="submit" value="Send Message">
                 </form>
