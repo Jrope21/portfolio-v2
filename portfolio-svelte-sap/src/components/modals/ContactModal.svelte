@@ -1,24 +1,30 @@
 <script>
+
 	import ModalTemplate from './ModalTemplate.svelte';
 
-	export let showModal;
+    export let showModal;
+    
+    async function handleSubmit(e){
+        const formFieldNames = ['email', 'name', 'message'];
+        const formSubmissionTextObj = buildFormSubmissionObj(e.target, formFieldNames);
+    
+        console.log(formTextObj);
+    }
+
+    function buildFormSubmissionObj(formEventTarget, formFieldNames){
+        let formObj = {};
+       
+        formFieldNames.forEach(fieldName => {
+            formObj[fieldName] = formEventTarget[fieldName].value;
+        })
+        
+        return formObj
+    }
+
 </script>
 
 <style>
 
-    /* .container {
-        display: flex;
-
-    }
-    h2{
-        font-size: 30rem;
-        color: #808080;
-    }
-    p{
-        font-size: 12rem;
-        margin: 6rem 0rem 10rem 0rem;
-        color: lightgray;
-    } */
    h2{
         font-size: 30rem;
         color: #808080;
@@ -151,7 +157,7 @@
                     Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
                     Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
                 </div>
-                <form class="gform" action="https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec" method="post" data-email="joshua.micah.roper@gmail.com" >
+                <form class="gform" on:submit|preventDefault={handleSubmit} action="https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec" method="post" data-email="joshua.micah.roper@gmail.com" >
                         <label> <span>Name</span>
                             <input name="name" type="text">
                         </label>
