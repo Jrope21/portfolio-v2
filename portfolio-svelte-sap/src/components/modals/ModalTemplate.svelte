@@ -53,7 +53,9 @@
 	button {
 		display: block;
     }   
+    
 </style>
+
 <div class='center-all modal-container {showModal ? 'show-modal' : ''}' in:fade out:fade >
     <div class="modal-background" on:click></div>
 	<div class='modal' in:fly="{{ y: -20, duration: 450, delay: 200, }}" out:fly="{{ y: -20, duration: 450 }}">

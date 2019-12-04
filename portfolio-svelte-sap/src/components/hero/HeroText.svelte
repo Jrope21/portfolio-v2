@@ -13,8 +13,6 @@ h1 {
 h2 {
     color:#3B3B3B;
     font-weight: 800;
-    /* font-size: 44px; */
-    /* font-size: 40px; */
     font-size: 18px;
 }
 
@@ -28,7 +26,6 @@ h3 {
 h3::before {
     content: '';
     display: block;
-    /* margin-left: 10px; */
     width: 30px;
     border-bottom: 3px solid black;
     margin-right: 10px;

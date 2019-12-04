@@ -20,7 +20,6 @@ import HeroText from './HeroText.svelte';
 @media screen and (min-width: 40em) {
     .hero-container {
         flex-direction: row;
-        /* margin-top: 50px */
     }
 }
 
@@ -37,24 +36,6 @@ import HeroText from './HeroText.svelte';
         width: 100%;
     }
 }
-
-@media screen and (min-width: 1094px){
-    .hero {
-        /* justify-content: center; */
-    }
-}
-
- /* @media screen and (min-width: 40em){
-     .hero::before {
-         content: '';
-         position: absolute;
-         top:-10%;
-         left: -20%;
-         width: 67%;
-         height: 120%;
-         background: rgba(0, 0, 0, 0.1);
-     }
- } */
 
 .text {
     width: 100%;
