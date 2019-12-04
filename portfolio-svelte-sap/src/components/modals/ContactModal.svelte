@@ -5,20 +5,31 @@
     export let showModal;
     
     async function handleSubmit(e){
-        const formFieldNames = ['email', 'name', 'message'];
-        const formSubmissionTextObj = buildFormSubmissionObj(e.target, formFieldNames);
-    
-        console.log(formTextObj);
+        const formFieldNames = ['name', 'email', 'message']; // TODO - generate field names based on inputs
+        const formTextObj = buildFormSubmissionTextObj(e.target, formFieldNames);
+
+        const API_URL = `https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec`;
+        const settings = { 
+            method: 'POST',
+            body: formTextObj,
+        }
+
+        try {
+            const response = await fetch(API_URL, settings);
+            const data = await response.json();
+        } catch (e) {
+            console.log('error in subission', e)
+        }
     }
 
-    function buildFormSubmissionObj(formEventTarget, formFieldNames){
-        let formObj = {};
+    function buildFormSubmissionTextObj(formEventTarget, formFieldNames){
+       let formData = new FormData();
        
         formFieldNames.forEach(fieldName => {
-            formObj[fieldName] = formEventTarget[fieldName].value;
+           formData.append(`${fieldName}`, `${formEventTarget[fieldName].value}`);
         })
-        
-        return formObj
+
+        return formData
     }
 
 </script>
@@ -157,7 +168,7 @@
                     Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
                     Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
                 </div>
-                <form class="gform" on:submit|preventDefault={handleSubmit} action="https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec" method="post" data-email="joshua.micah.roper@gmail.com" >
+                <form class="gform" on:submit|preventDefault={handleSubmit}>
                         <label> <span>Name</span>
                             <input name="name" type="text">
                         </label>
