@@ -1,25 +1,51 @@
 <script>
+    import { fade, fly } from 'svelte/transition';
 
 	import ModalTemplate from './ModalTemplate.svelte';
+    import BoxLoader from '../loaders/BoxLoader.svelte';
 
     export let showModal;
+    let hideModal = false;
+
+    let formState = {
+        submittingForm: false,
+        formSuccess: null,
+    }
     
     async function handleSubmit(e){
+        formState.submittingForm = true;
+        formState.formSuccess = false;
         const formFieldNames = ['name', 'email', 'message']; // TODO - generate field names based on inputs
         const formTextObj = buildFormSubmissionTextObj(e.target, formFieldNames);
 
-        const API_URL = `https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec`;
+       const API_URL = `https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec`;
         const settings = { 
             method: 'POST',
             body: formTextObj,
         }
 
+        // setTimeout(() => { // using this block for testing animations
+        //     formState.formSuccess = true;
+        //     formState.submittingForm = false;
+        //     // setTimeout(() => {
+        //     //     hideModal = true;  
+                   
+        //     // }, 800)
+        // }, 1000)
         try {
-            const response = await fetch(API_URL, settings);
+           const response = await fetch(API_URL, settings);
             const data = await response.json();
+            formState.submittingForm = false;
+            formState.formSuccess = true;
         } catch (e) {
+            formState.submittingForm = false;
+            formState.formSuccess = false
             console.log('error in subission', e)
         }
+
+        setTimeout(() => { // TODO - set this to trigger only after modal dissapears
+            formState.formSuccess = false;
+        }, 1500)
     }
 
     function buildFormSubmissionTextObj(formEventTarget, formFieldNames){
@@ -36,12 +62,12 @@
 
 <style>
 
-   h2{
+   .text-container h2{
         font-size: 30rem;
         color: #808080;
         
     }
-    h2::after{
+    .text-container h2::after{
         content: '';
         display: block;
         height: 7px;
@@ -156,30 +182,60 @@
         box-shadow: .3px .3px .3px gray;
        
     }
+
+    .success-message {
+        font-size: 50rem;
+        /* color: darkolivegreen; */
+        color: #58595b;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
+    .gform, .text-container, .success-message {
+        transition: .3s opacity ease;
+    }
+    .hide-content{
+        opacity: 0;
+    }
 </style>
 
-{#if showModal}
+{#if showModal && hideModal === false}
 	<ModalTemplate showModal={showModal} on:click>
         <div class="form-container">
             <div class="flex-container">
-                <div class="text-container">
-                    <h2>Get In Touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
-                    Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
-                </div>
-                <form class="gform" on:submit|preventDefault={handleSubmit}>
-                        <label> <span>Name</span>
-                            <input name="name" type="text">
+                    <div class="text-container {formState.submittingForm ? 'hide-content' : ''} {formState.formSuccess ? 'hide-content' : ''}">
+                        <h2>Get In Touch</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Necessitatibus suscipit quibusdam eligendi alias a, cum sit autem quas.
+                        Quibusdam minima architecto quam voluptatem. Necessitatibus, quisquam?</p>
+                    </div>
+                    <form class="gform {formState.submittingForm ? 'hide-content' : ''} {formState.formSuccess ? 'hide-content' : ''}" on:submit|preventDefault={handleSubmit}>
+                            <label> <span>Name</span>
+                                <input name="name" type="text">
+                            </label>
+                        <label> <span>Email</span>
+                            <input name="email" type="text">
                         </label>
-                    <label> <span>Email</span>
-                        <input name="email" type="text">
-                    </label>
-                    <label> <span>Message</span>
-                        <textarea name="message" rows="6" type="textarea"> </textarea>
-                    </label>
-                    <input type="submit" value="Send Message">
-                </form>
+                        <label> <span>Message</span>
+                            <textarea name="message" rows="6" type="textarea"> </textarea>
+                        </label>
+                        <input type="submit" value="Send Message">
+                    </form>
+                    <!-- <BoxLoader /> -->
+                {#if formState.submittingForm}
+                    <BoxLoader />
+                {/if}
+                {#if formState.formSuccess}
+                    <h2 class="success-message" 
+                        in:fly="{{ y: 20, duration: 500, delay: 200, }}"
+                        on:outroend="{() => console.log('outro ended')}"
+                    >
+                        SUCCESS
+                    </h2>
+                {/if}
             </div>
         </div>
 	</ModalTemplate>
