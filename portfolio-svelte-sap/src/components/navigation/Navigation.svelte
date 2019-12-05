@@ -154,6 +154,7 @@ li:not(.close-container):hover::after, .active::after {
     top: 50rem;
     right: 50rem;
     overflow: unset;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 40em){

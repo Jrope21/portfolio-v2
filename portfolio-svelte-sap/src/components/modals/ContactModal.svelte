@@ -214,7 +214,7 @@
         input[type="submit"]{
             font-size: 13rem;
             max-width: unset;
-            padding: 6rem 12rem 6rem 12rem;
+            padding: 7rem 12rem 7rem 12rem;
             box-shadow: 1;
             width: fit-content;
         }
@@ -256,7 +256,6 @@
             <div class="flex-container">
                     <div class="text-container {formState.hideFields ? 'hide-content' : ''} {formState.hideFields ? 'hide-content' : ''}">
                         <h2>Get In Touch</h2>
-                        <!-- a Dallas-based Front End Developer with a knack for programing and design. -->
                         <p>
                             Hi There! I’m Josh, 
                             I bring projects to life by innovating across every aspect of the customer journey. 
