@@ -234,8 +234,8 @@ p{
         <Hamburger toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li><a class="" on:click={togglerOff} bind:this={links[0]} href="/">Home</a></li>
-            <li><a on:click={togglerOff} bind:this={links[1]} href="/about">About</a></li>
+            <li><a class="" on:click={togglerOff} bind:this={links[0]} rel=prefetch href="/">Home</a></li>
+            <li><a on:click={togglerOff} bind:this={links[1]} rel=prefetch href="/about">About</a></li>
             <li><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>

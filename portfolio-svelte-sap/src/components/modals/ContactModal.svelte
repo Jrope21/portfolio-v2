@@ -77,7 +77,6 @@
    .text-container h2{
         font-size: 30rem;
         color: #808080;
-        /* color: #3B3B3B; */
     }
 
     @media screen and (min-width: 64em){
@@ -91,7 +90,6 @@
         height: 7px;
         margin: 5rem 0px 18rem 0px;
         background: lightgray;
-        /* background: #58595b; */
     }
 
     @media screen and (min-width: 40em){
@@ -196,6 +194,7 @@
         color: #58595B;
         font-weight: 700;
         transition: all .3s ease-in;
+        cursor: pointer;
     }
 
     input[type="submit"]:hover {
