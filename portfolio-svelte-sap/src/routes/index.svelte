@@ -13,6 +13,10 @@ import Projects from '../components/projects/Projects.svelte'
 
 </style>
 
+<svelte:head>
+	<title>Home | Front End Developer - Joshua Roper</title>
+</svelte:head>
+
 <div class="container">
     <Hero />
     <Projects />

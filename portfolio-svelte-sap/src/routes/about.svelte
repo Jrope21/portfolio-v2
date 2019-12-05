@@ -79,7 +79,7 @@ import Contact from '../components/about/Contact.svelte';
 </style>
 
 <svelte:head>
-	<title>About</title>
+	<title>About | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
 <PageTitle title={'Joshua Roper'} />
