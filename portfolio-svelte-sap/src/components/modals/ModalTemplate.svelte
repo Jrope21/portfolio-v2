@@ -46,7 +46,15 @@
 	@media screen and (min-width: 40em){
 		.modal {
 			max-height: 450px;
+			max-width: 550px;
+			width: 85%;
+		}
+    }
+
+	@media screen and (min-width: 64em){
+		.modal {
 			width: 70%;
+			max-width: 650px;
 		}
     }
     
