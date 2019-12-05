@@ -100,7 +100,7 @@ footer {
     <div class="container footer-container">
         <div class="left">
             <p class="headline">
-                Feel free to shoot me an <a href="mailto:joshua.micah.toper@gmail.com">email</a> & connect on <a href="https://www.linkedin.com/in/jr-dev" target="blank">social</a>
+                Feel free to shoot me an <a href="mailto:joshua.micah.roper@gmail.com">email</a> & connect on <a href="https://www.linkedin.com/in/jr-dev" target="blank">social</a>
             </p>
             
         </div>
@@ -109,7 +109,7 @@ footer {
                 <p class="title">
                     Get In Touch!
                 </p>
-                <a href="mailto:joshua.micah.toper@gmail.com">
+                <a href="mailto:joshua.micah.roper@gmail.com">
                     <TextAnimation text={`Joshua.micah.roper@gmail.com`} />
                 </a>
             </div>

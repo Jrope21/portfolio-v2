@@ -79,6 +79,12 @@
         color: #808080;
         /* color: #3B3B3B; */
     }
+
+    @media screen and (min-width: 64em){
+        .text-container h2{
+            font-size: 36rem;   
+        }
+    }
     .text-container h2::after{
         content: '';
         display: block;
@@ -100,6 +106,12 @@
         font-weight: 300;
         font-size: 13rem;
         color: #58595b
+    }
+
+    @media screen and (min-width: 64em){
+        p {
+            font-size: 16rem
+        }
     }
 
     div.form-container{
@@ -167,22 +179,44 @@
         font-weight: 500;
     }
 
+    @media screen and (min-width: 64em){
+        span {
+            font-size: 14rem;
+        }
+    }
+
     input[type="submit"]{
         width: 50%;
         min-width: 96px;
         margin-top: 12rem;
         padding: 6rem;
-        box-shadow: 1px 1px 3px grey;
+        box-shadow: 1px 1px 3px lightgrey;
         font-style: italic;
-        background: transparent;
+        background: rgba(88, 89, 91, 0.1);
         color: #58595B;
-        font-weight: 500;
-        border: 1px solid;
+        font-weight: 700;
+        transition: all .3s ease-in;
+    }
+
+    input[type="submit"]:hover {
+        position: relative;
+        transform: translateY(-1px);
+        box-shadow: 2px 2px 3px lightgrey;
     }
 
     @media screen and (min-width: 40em){
         input[type="submit"]{
             width: 35%;
+        }
+    }
+
+    @media screen and (min-width: 64em){
+        input[type="submit"]{
+            font-size: 13rem;
+            max-width: unset;
+            padding: 6rem 12rem 6rem 12rem;
+            box-shadow: 1;
+            width: fit-content;
         }
     }
 
