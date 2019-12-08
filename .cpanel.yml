@@ -1,5 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/joshucb0/public_html
-    - /bin cp /__sapper__/export/* $DEPLOYPATH
+    - /home2/joshucb0/repositories/portfolio-svelte/__sapper__/export /home2/joshucb0/public_html
