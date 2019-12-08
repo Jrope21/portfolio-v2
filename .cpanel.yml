@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/joshucb0/public_html
-    - cp /sapper/export/index.html $DEPLOYPATH 
+    - /bin cp /__sapper__/export/* $DEPLOYPATH
