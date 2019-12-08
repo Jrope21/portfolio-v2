@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -R /home2/joshucb0/repositories/portfolio-svelte/__sapper__/export /home2/joshucb0/public_html
+    - /bin/cp -R /home2/joshucb0/repositories/portfolio-svelte/__sapper__/export/* /home2/joshucb0/public_html
