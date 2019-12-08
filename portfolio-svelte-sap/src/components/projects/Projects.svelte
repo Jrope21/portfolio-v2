@@ -49,9 +49,7 @@
         justify-content: flex-start;
         flex-direction: column;
         width: 250px;
-        /* max-width: 900px; */
         margin-bottom: 05%;
-        /* opacity: 0; */
     }
 
     div.image-container {
