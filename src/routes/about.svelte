@@ -83,7 +83,11 @@ import Contact from '../components/about/Contact.svelte';
 	<title>About | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
-<PageTitle title={'Joshua Roper'} />
+<div 
+    in:fly="{{ x: -80, duration: 500, delay: 200, }}"
+>
+    <PageTitle title={'Joshua Roper'} />
+</div>
 
 <section>
     <div class="container">

@@ -5,13 +5,6 @@ import ContactModal from '../modals/ContactModal.svelte';
 import { onMount } from 'svelte';
 
 let showModal;
-let links = []
-
-onMount(()=>{
-    links.forEach((link)=>{
-        console.log(link)
-    })
-})
 
 let windowY;
 let hamburger;
@@ -223,22 +216,22 @@ p{
 </style>
 
 <svelte:window bind:scrollY={windowY}/>
-<!-- class={reduceNavSize ? 'scrolled' : ''} -->
-<header >
+
+<header>
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
         <a href='/' class="logo">
             <p>
                 <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
             </p>
         </a>
-        <Hamburger toggle={toggle} bind:this={hamburger} />
+        <Hamburger on:click={togglerOff} toggle={toggle} bind:this={hamburger} />
         <ul class="navigation">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li><a class="" on:click={togglerOff} bind:this={links[0]} rel=prefetch href="/">Home</a></li>
-            <li><a on:click={togglerOff} bind:this={links[1]} rel=prefetch href="/about">About</a></li>
+            <li><a class="" on:click={togglerOff} rel=prefetch href="/">Home</a></li>
+            <li><a on:click={togglerOff} rel=prefetch href="/about">About</a></li>
             <li><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<ContactModal on:click='{() => showModal = false}' showModal={showModal}/>
+<ContactModal on:click={() => showModal = false} showModal={showModal}/>

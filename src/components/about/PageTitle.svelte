@@ -38,7 +38,7 @@ export let title, sidePage;
 
     div.title-container:not(.side-page){
         position: relative;
-        animation: .9s ease-out 0s 1 fadeIn forwards;
+        /* animation: .9s ease-out 0s 1 fadeIn forwards; */
         width: 100%;
     }
 
@@ -64,7 +64,7 @@ export let title, sidePage;
         position: relative;
         width: 100%;
         top: 0;
-        left: -100%;
+        /* left: -100%; */
         right: 0px;
         display: flex;
         font-size: 32px;

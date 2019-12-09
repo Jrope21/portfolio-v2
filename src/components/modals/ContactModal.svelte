@@ -172,7 +172,7 @@
         margin: 4rem 0px;
     }
     span{
-        font-size: 11rem;
+        font-size: 13rem;
         margin-bottom: 5rem;
         font-weight: 500;
     }
@@ -188,6 +188,7 @@
         min-width: 96px;
         margin-top: 12rem;
         padding: 6rem;
+        font-size: 13rem;
         box-shadow: 1px 1px 3px lightgrey;
         font-style: italic;
         background: rgba(88, 89, 91, 0.1);
@@ -226,7 +227,7 @@
     input, textarea{
         border: 1px solid lightgray;
         border-radius: 2px;
-        font-size: 10rem;
+        font-size: 16rem;
         padding: 3rem;
         box-shadow: .3px .3px .3px gray;
     }
@@ -266,9 +267,9 @@
                         {formState.formSuccess ? 'hide-content' : ''}"
                         on:submit|preventDefault={handleSubmit}  
                     >
-                            <label> <span>Name</span>
-                                <input bind:this={fieldInputs[0]} name="name" type="text">
-                            </label>
+                        <label> <span>Name</span>
+                            <input bind:this={fieldInputs[0]} name="name" type="text">
+                        </label>
                         <label> <span>Email</span>
                             <input bind:this={fieldInputs[1]} required name="email" type="email">
                         </label>

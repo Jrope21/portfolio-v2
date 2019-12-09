@@ -119,7 +119,7 @@ export let hamburger;
 </style>
 
 <input id="toggle" type="checkbox" class="hide subnav-toggle hide-for-xlg">
-<div class="background"></div>
+<div class="background" on:click></div>
 <label id="nav-label" bind:this={hamburger} for="toggle" class="hide-for-xlg">
     <span class="show-for-sr">Navigation</span>
     <span class="hamburger" title="Navigation"> </span>
