@@ -39,7 +39,7 @@ export let hamburger;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
-  border-bottom: 3px solid black;
+  border-bottom: 2.2px solid black;
   cursor: pointer;
   width: 24px;
   height: 22px;
@@ -49,7 +49,7 @@ export let hamburger;
 .hamburger::before {
   content: '';
   display: block;
-  border-bottom: 3px solid black;
+  border-bottom: 2.5px solid black;
   width: 18px;
   transition: width .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
@@ -57,7 +57,7 @@ export let hamburger;
 .hamburger::after {
   content: '';
   display: block;
-  border-bottom: 3px solid black;
+  border-bottom: 2.2px solid black;
   width: 32px;
 }
 

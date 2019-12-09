@@ -1,5 +1,6 @@
 <script>
 import { onMount } from 'svelte'
+import { fade, fly } from 'svelte/transition';
 
 import PageTitle from '../components/about/PageTitle.svelte';
 
@@ -7,20 +8,20 @@ import AboutMe from '../components/about/AboutMe.svelte';
 import SkillsSection from '../components/about/Skills.svelte';
 import Contact from '../components/about/Contact.svelte';
 
-    let x = .25;
-    let sections = [];
+    // let x = .25;
+    // let sections = [];
 
-    onMount(()=>{
-        for(let i = 0; i < sections.length; i++){
-            let fadeInOrder = () => {
+    // onMount(()=>{
+    //     for(let i = 0; i < sections.length; i++){
+    //         let fadeInOrder = () => {
                 
-                sections[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
-                x += .35;
+    //             sections[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
+    //             x += .35;
 
-            }
-            fadeInOrder();
-        }
-    })
+    //         }
+    //         fadeInOrder();
+    //     }
+    // })
 </script>
 
 <style>
@@ -59,7 +60,7 @@ import Contact from '../components/about/Contact.svelte';
 	.content-container {
         width: 90%;
         margin-bottom: 40rem;		
-        opacity: 0;
+        /* opacity: 0; */
         max-width: 900px;
     }
 
@@ -86,13 +87,22 @@ import Contact from '../components/about/Contact.svelte';
 
 <section>
     <div class="container">
-        <div bind:this={sections[0]} class="content-container">
+        <div 
+            in:fly="{{ x: -40, duration: 500, delay: 450, }}"
+            class="content-container"
+         >
             <AboutMe />
-        </div>
-        <div bind:this={sections[1]} class="content-container">
+        </div> 
+        <div 
+            in:fly="{{ x: -40, duration: 500, delay: 650, }}"
+            class="content-container"
+        >
             <SkillsSection />
         </div>
-        <div bind:this={sections[2]} class="content-container">
+        <div 
+            in:fly="{{ x: -40, duration: 500, delay: 900, }}"
+            class="content-container"
+        >
             <Contact />
         </div>
     </div>

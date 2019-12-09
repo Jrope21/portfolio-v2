@@ -213,7 +213,7 @@
         input[type="submit"]{
             font-size: 13rem;
             max-width: unset;
-            padding: 7rem 12rem 7rem 12rem;
+            padding: 7rem 15rem 7rem 15rem;
             box-shadow: 1;
             width: fit-content;
         }

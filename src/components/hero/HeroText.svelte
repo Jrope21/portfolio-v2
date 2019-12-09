@@ -6,14 +6,17 @@
 h1 {
     color:#3B3B3B;
     font-weight: 800;
-    margin-bottom: 5px;
-    margin-top: -3px;
+    /* margin-bottom: 5px; */
+    /* margin-top: -3px; */
     font-size: 23px;
 }
 h2 {
     color:#3B3B3B;
     font-weight: 800;
     font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: -3px;
+    opacity: .85;
 }
 
 h3 {
@@ -21,6 +24,8 @@ h3 {
     align-items: center;
     font-size: 14px;
     font-weight: 400;
+    opacity: .8;
+    margin-bottom: 15px;
 }
 
 h3::before {
@@ -29,6 +34,7 @@ h3::before {
     width: 30px;
     border-bottom: 3px solid black;
     margin-right: 10px;
+    opacity: .8;
 }
 
 @media screen and (min-width: 40em){
@@ -37,6 +43,10 @@ h3::before {
     }
     h2 {
         font-size: 22px;
+        margin-bottom: 7px;
+    }
+    h3 {
+        margin-bottom: 0;
     }
 }
 
@@ -46,6 +56,8 @@ h3::before {
     }
     h2 {
         font-size: 28px;
+        margin-bottom: 9px;
+        margin-top: -5px;
     }
     h3 {
         font-size: 18px;
@@ -65,6 +77,6 @@ h3::before {
  }
 </style>
 
-<h2>I am a</h2>
 <h1>Front End Developer</h1>
+<h2>React, Svelte, ES6</h2>
 <h3>Joshua Roper</h3>

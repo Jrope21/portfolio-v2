@@ -70,7 +70,7 @@ export let title, sidePage;
         font-size: 32px;
         align-items: center;
         margin: 0px;
-        animation: 1s ease-out 0s 1 slideInRight forwards;
+        /* animation: 1s ease-out 0s 1 slideInRight forwards; */
     }
 
     @media screen and (min-width: 40em){
@@ -119,7 +119,7 @@ export let title, sidePage;
         left: 3px;
         bottom: -25px;
         font-size: 32px;
-         animation: 1s ease-out 0s 1 badSlideInRight;
+         /* animation: 1s ease-out 0s 1 badSlideInRight; */
     }
 
     @media screen and (min-width: 40em){
