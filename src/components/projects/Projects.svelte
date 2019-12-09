@@ -138,7 +138,7 @@
         {#each portfolioCards as card, index}
             <div class="card-container" {index}>
                 <div class="image-container">
-                    <Image imgSrc={card.imgSrc} url={card.url} />
+                    <Image imgSrc={card.imgSrc} url={card.url} alt={card.alt} />
                 </div>
                 <div class="text-container">
                     <Text projectName={card.projectName} url={card.url} projectText={card.projectText} projectYear={card.projectYear} />
