@@ -207,14 +207,14 @@
     @media screen and (min-width: 40em){
         input[type="submit"]{
             width: 35%;
+            max-width: unset;
+            padding: 7rem 15rem 7rem 15rem;
         }
     }
 
     @media screen and (min-width: 64em){
         input[type="submit"]{
             font-size: 13rem;
-            max-width: unset;
-            padding: 7rem 15rem 7rem 15rem;
             box-shadow: 1;
             width: fit-content;
         }
