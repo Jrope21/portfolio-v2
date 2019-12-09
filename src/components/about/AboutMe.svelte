@@ -52,6 +52,12 @@
 
     @media screen and (min-width: 40em){
         p:nth-child(2) {
+            width: 65%;
+        }
+    }
+
+    @media screen and (min-width: 64em){
+        p:nth-child(2) {
             width: 50%;
         }
     }

@@ -15,7 +15,6 @@ export let projectName, url, projectText, projectYear;
         width: fit-content;
         margin-top: 10rem;
         color: #989898;
-        font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-style: italic;
     }
@@ -35,7 +34,6 @@ export let projectName, url, projectText, projectYear;
     p{
         position: relative;
         line-height: 16px;
-        font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 13rem;
         z-index: 1;
