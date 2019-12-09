@@ -94,8 +94,8 @@
         Contact
     </h3>
     <div class="social-container">
-        <a href="https://www.github.com/Jrope21" target="blank" ><i class="fab fa-github"><span>www.github.com/Jrope21</span></i></a>
-        <a href="https://www.linkedin.com/in/JR-dev" target="blank" ><i class="fab fa-linkedin"><span>www.linkedin.com/in/JR-dev</span></i></a>
-        <a href="mailto:joshua.micah.roper@gmail.com" target="blank" ><i class="fas fa-envelope"><span>Joshua.Micah.Roper@gmail.com</span></i></a>
+        <a href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="blank" ><i class="fab fa-github"><span>www.github.com/Jrope21</span></i></a>
+        <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="blank" ><i class="fab fa-linkedin"><span>www.linkedin.com/in/JR-dev</span></i></a>
+        <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="blank" ><i class="fas fa-envelope"><span>Joshua.Micah.Roper@gmail.com</span></i></a>
     </div>
 </div>
