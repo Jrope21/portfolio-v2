@@ -15,7 +15,7 @@
         },
         {
             url: 'https://www.uptexas.org',
-            imgSrc: 'images/uptexas-home3.jpg',
+            imgSrc: 'images/uptexas-thumb.jpg',
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'University Park',
             projectYear: '2019',
