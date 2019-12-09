@@ -11,7 +11,7 @@ import HeroText from './HeroText.svelte';
  .hero-container{
      width: 100%;
      display: flex;
-     
+     z-index: 1;
      flex-direction: column-reverse;
      align-items: center;
      position: relative
