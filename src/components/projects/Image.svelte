@@ -1,5 +1,5 @@
 <script>
-export let imgSrc;
+export let imgSrc, alt;
 export let projectName;
 export let url;
 
@@ -66,6 +66,6 @@ export let url;
 <a target="blank" href="{url}">
     <div class="img-container">
         <div class="overlay"><span>View Website</span></div>
-      <img src="{imgSrc}" alt="">
+      <img src="{imgSrc}" alt="{alt}">
     </div>
 </a>

@@ -79,7 +79,7 @@ let heroImg;
 
 </style>
 
-<img width="1px" height="1px" src="images/drawing.jpg" alt="" >
+<img width="1px" height="1px" src="images/drawing.jpg" alt="A picture of Joshua Roper leaning against a wall." >
 <div class="box">
     <div class="hero-image" ></div>
 </div>
