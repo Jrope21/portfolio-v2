@@ -117,7 +117,7 @@ footer {
                 <p class="title">
                     View Resume
                 </p>
-                <a href="./images/resume-v2Design2.pdf" download>
+                <a href="./images/resume-joshua-roper.pdf" download>
                     <TextAnimation text={`Download PDF`} />
                 </a>
             </div>
