@@ -1,5 +1,5 @@
 <script>
-import TextAnimation from '../helperComponents/TextAnimation.svelte';
+import TextAnimation from '../helper-components/TextAnimation.svelte';
 
 export let projectName, url, projectText, projectYear;
 </script>

@@ -3,23 +3,6 @@ import { onMount, afterUpdate, tick  } from 'svelte';
 
 export let toggle;
 export let hamburger;
-
-// afterUpdate(async ()=>{
-//   function hideMenu(){
-//     if(toggle = true){
-//       console.log('hamburger')
-//       hamburger.click()
-//     }
-//   }
-//   hideMenu();
-  
-// })
-
-
-
-
-
-
 </script>
 
 <style>
@@ -67,7 +50,6 @@ export let hamburger;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  /* z-index: -100; */
   bottom: 0;
   left: 0;
   z-index: 1;
