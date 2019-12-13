@@ -2,10 +2,10 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.144fedd8.js"
+    "main": "client.a89c5873.js"
   },
   "css": {
-    "main": "main.3059648914.css",
+    "main": "main.4116089257.css",
     "chunks": {
       "index.svelte": [
         "index.4c976226.css",
@@ -13,7 +13,7 @@
         "Image.dbbadb76.css"
       ],
       "projects/creative-revolt.svelte": [
-        "creative-revolt.916ee0b8.css",
+        "creative-revolt.f9f24319.css",
         "Image.dbbadb76.css",
         "PageTitle.1f1dea8c.css"
       ],

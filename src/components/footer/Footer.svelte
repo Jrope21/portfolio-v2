@@ -1,6 +1,6 @@
 <script>
 import TextAnimation from '../helper-components/TextAnimation.svelte';
-
+import InlineLink from '../helper-components/InlineLink.svelte';
 </script>
 
 <style>
@@ -54,16 +54,6 @@ footer {
     max-width: 400px;
 }
 
-.headline a {
-    color: #58595b;
-    transition: all .45s ease-in-out;
-    opacity: .75;
-}
-
-.headline a:hover {
-    color: black;
-}
-
 .title {
     font-weight: 100;
     font-size: 12rem;
@@ -100,7 +90,7 @@ footer {
     <div class="container footer-container">
         <div class="left">
             <p class="headline">
-                Feel free to shoot me an <a href="mailto:joshua.micah.roper@gmail.com">email</a> & connect on <a href="https://www.linkedin.com/in/jr-dev" target="blank">social</a>
+                Feel free to shoot me an <InlineLink url={'mailto:joshua.micah.roper@gmail.com'} text={'email'} /> & connect on <InlineLink url={'mailto:joshua.micah.roper@gmail.com'} text={'social'} target={'blank'} />
             </p>
             
         </div>

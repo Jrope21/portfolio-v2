@@ -8,6 +8,7 @@ import Image from '../projects/Image.svelte';
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    padding-top: 8%;
 }
 
 @media screen and (min-width: 40em){
