@@ -2,7 +2,7 @@
 export let imgSrc, alt;
 export let projectName;
 export let url;
-
+export let width;
 </script>
 
 <style>
@@ -31,7 +31,24 @@ export let url;
             height: 25vw;
             max-width: 350px;
             max-height: 350px;
-        }   
+        } 
+
+        .large .img-container {
+            width: 30vw;
+            height: 30vw;
+            max-width: 450px;
+            max-height: 450px;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        .full-width .img-container { 
+            width: calc(50% - 30vw + 60vw);
+            margin: 0 auto;
+            max-width: 1039px;
+        }
     }
 
     a:hover .img-container {
@@ -39,20 +56,6 @@ export let url;
         transform: translateY(-3px);
         box-shadow: 5px 5px 5px lightgrey;
     }
-
-    .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        background: rgba(218, 218, 218, 0.173);
-        transition: all .3s ease-in;
-        z-index: 2;
-    }
-
 
     img {
         object-fit: cover;
@@ -63,9 +66,8 @@ export let url;
    
 </style>
 
-<a target="blank" href="{url}">
+<a target="blank" class="{width}" href="{url}">
     <div class="img-container">
-        <div class="overlay"><span>View Website</span></div>
       <img src="{imgSrc}" alt="{alt}">
     </div>
 </a>

@@ -1,5 +1,6 @@
 <script>
 import PageTitle from '../../components/about/PageTitle.svelte';
+import ImageGrid from '../../components/project-detail/ImageGrid.svelte'
 </script>
 
 <style>
@@ -7,7 +8,7 @@ import PageTitle from '../../components/about/PageTitle.svelte';
 </style>
 
 <svelte:head>
-	<title>About | Front End Developer - Joshua Roper</title>
+	<title>Creative Revolt | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
 <div 
@@ -15,3 +16,7 @@ import PageTitle from '../../components/about/PageTitle.svelte';
 >
     <PageTitle title={'Creative Revolt'} />
 </div>
+
+<section class="container">
+    <ImageGrid />
+</section>
