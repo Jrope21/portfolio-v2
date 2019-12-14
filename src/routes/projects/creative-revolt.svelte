@@ -1,5 +1,5 @@
 <script>
-import PageTitle from '../../components/about/PageTitle.svelte';
+import PageTitle from '../../components/project-detail/PageTitle.svelte';
 import ImageGrid from '../../components/project-detail/ImageGrid.svelte';
 import Description from '../../components/project-detail/Description.svelte'
 </script>
@@ -19,6 +19,8 @@ import Description from '../../components/project-detail/Description.svelte'
 </div>
 
 <section class="container">
-    <Description />
+   <!-- <div class="container">
+        <Description />
+   </div>  -->
     <ImageGrid />
 </section>

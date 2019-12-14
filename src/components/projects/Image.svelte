@@ -48,6 +48,7 @@ export let width;
             width: calc(50% - 30vw + 60vw);
             height: 30vw;
             margin: 0 auto;
+            /* margin-left: auto; */
             max-width: 1039px;
             max-height: 450px;
         }
