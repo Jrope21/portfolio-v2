@@ -14,6 +14,14 @@ html{
     overflow-x: hidden;
   }
 
+.grid-x {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridx-50 {
+  width: 50%;
+}
 
 .container {
   padding: 20rem 20rem;

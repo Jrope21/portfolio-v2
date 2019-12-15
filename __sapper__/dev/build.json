@@ -2,19 +2,18 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.17322ead.js"
+    "main": "client.6269238b.js"
   },
   "css": {
-    "main": "main.3912455920.css",
+    "main": "main.4116089257.css",
     "chunks": {
       "index.svelte": [
-        "index.4d060ff2.css",
-        "TextAnimation.0dd8326f.css",
-        "Image.68df158e.css"
+        "index.cb0da56c.css",
+        "TextAnimation.0dd8326f.css"
       ],
       "projects/creative-revolt.svelte": [
-        "creative-revolt.4bbed5c1.css",
-        "Image.68df158e.css"
+        "creative-revolt.8e7bd7cd.css",
+        "TextAnimation.0dd8326f.css"
       ],
       "projects/university-park.svelte": [],
       "projects/halcyon.svelte": [],
