@@ -230,6 +230,7 @@ p{
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
             <li><a class="" on:click={togglerOff} rel=prefetch href="/">Home</a></li>
             <li><a on:click={togglerOff} rel=prefetch href="/about">About</a></li>
+            <li><a on:click={togglerOff} href="/experience">Experience</a></li>
             <li><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>
