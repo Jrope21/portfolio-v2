@@ -119,7 +119,7 @@ li {
 @media screen and (min-width: 64em){
     li {
         font-size: 16rem;
-        margin: 0rem 15rem;
+        margin: 0rem 20rem;
         padding: 2.5rem 0;
     }
     p{
