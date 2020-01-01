@@ -40,14 +40,11 @@
         display: block;
     }
     p {
-        /* font-family: 'Open Sans', sans-serif; */
         font-weight: 300;
         font-size: 13rem;
         color: #58595b;
     }
 
-
-    
     .social-container {
         width: 70%;
         display: flex;
@@ -60,7 +57,7 @@
         color: gray;
         display: flex;
         align-items: center;
-        transition: all .45s ease-in-out;
+        transition: all .3s ease;
     }
 
     i > span {
@@ -74,7 +71,6 @@
     @media screen and (min-width: 64em){
         i > span{
             font-size: 18rem;
-
         }
     }
 
@@ -85,9 +81,9 @@
 
 </style>
 
-<svelte:head>
+<!-- <svelte:head>
     <script src="https://kit.fontawesome.com/1309990c29.js"></script>
-</svelte:head>
+</svelte:head> this script is being added via the footer -->
 
 <div>
     <h3>

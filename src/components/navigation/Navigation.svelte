@@ -23,7 +23,7 @@ function navSize(y){
 }
 
 function togglerOff(){
-    if(window.innerWidth < 820){
+    if(window.innerWidth < 1023){
         hamburger ? hamburger.$$.ctx.hamburger.click() : null;
     }
 }
@@ -119,7 +119,8 @@ li {
 @media screen and (min-width: 64em){
     li {
         font-size: 16rem;
-        margin: 0rem 15rem;
+        margin: 0rem 20rem;
+        padding: 2.5rem 0;
     }
     p{
         font-size: 18rem;
