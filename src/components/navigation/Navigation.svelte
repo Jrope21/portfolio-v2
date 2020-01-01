@@ -23,7 +23,6 @@ function navSize(y){
 }
 
 function togglerOff(){
-    console.log(window.innerWidth)
     if(window.innerWidth < 1023){
         hamburger ? hamburger.$$.ctx.hamburger.click() : null;
     }
