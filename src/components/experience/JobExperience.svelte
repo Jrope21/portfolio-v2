@@ -10,7 +10,7 @@
     <h2 class="headline">Experience</h2>
     <div class="job-listing">
         <p class="date-location">Dallas, Texas (2019 - current)</p>
-        <h3 class="job-title">Front End Developer at Imaginuity</h3>
+        <h3 class="job-title detail-title">Front End Developer at Imaginuity</h3>
         <ul class="job-details">
             <li class="detail">
                 Developed the entire Front End for a high traffic, 99% up time website
@@ -36,8 +36,8 @@
         </ul>
     </div>
     <div class="job-listing">
-        <p class="date-location">Carrollton, Texas (2017 - 2018)</p>
-        <h3 class="job-title">Freelance Web Development and Marketing at Creative Revolt</h3>
+        <p class="date-location detail-preface">Carrollton, Texas (2017 - 2018)</p>
+        <h3 class="job-title detail-title">Freelance Web Development and Marketing at Creative Revolt</h3>
         <div class="detail-web-link">creativerevolt.com</div>
         <ul class="job-details">
             <li class="detail">

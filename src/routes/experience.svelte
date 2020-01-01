@@ -1,6 +1,6 @@
 <script>
 import SideBar from '../components/experience/SideBar.svelte';
-
+import ResumeContent from '../components/experience/ResumeContent.svelte';
 </script>
 
 <style>
@@ -35,5 +35,6 @@ import SideBar from '../components/experience/SideBar.svelte';
         <SideBar />
     </div>
     <div class="right">
+        <ResumeContent />
     </div>
 </div>
