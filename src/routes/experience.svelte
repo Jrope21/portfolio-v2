@@ -3,7 +3,8 @@ import SideBar from '../components/experience/SideBar.svelte';
 import ResumeContent from '../components/experience/ResumeContent.svelte';
 </script>
 
-<style>
+<style type="text/scss">
+    @import '../components/experience/GlobalExperienceFonts.styles.scss';
 
     .container {
         position: relative;

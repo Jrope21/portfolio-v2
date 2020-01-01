@@ -1,0 +1,26 @@
+:global(.experience) {
+
+    .headline {
+        font-size: 18px;
+        text-transform: uppercase;
+        display: block;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 1px;
+            border-bottom: 4px solid lightgray;
+        }
+    }
+
+    .detail-web-links {
+        text-transform: uppercase;
+        font-size: 12rem;
+        width: fit-content;
+        margin-top: 10rem;
+        color: #989898;
+        font-weight: 300;
+        font-style: italic;
+    }
+} 

@@ -2,8 +2,32 @@
 
 </script>
 
-<style>
+<style type="text/scss">
+ul {
+    margin-left: 20rem;
+    font-size: 12rem;
 
+    li {
+        display: flex;
+        align-items: center;
+        margin: 5rem 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            background: gray;
+            margin-right: 15rem;
+        }
+    }
+}
+h3 {
+    font-size: 12rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 </style>
 
 <section class="skills">
