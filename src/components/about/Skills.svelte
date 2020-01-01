@@ -1,27 +1,5 @@
 <script>
-    let skills = [
-        {
-            name: 'HTML5'
-        },
-        {
-            name: 'CSS3'
-        },
-        {
-            name: 'SASS'
-        },
-        {
-            name: 'Foundation'
-        },
-        {
-            name: 'JavaScript'
-        },
-        {
-            name: 'jQuery'
-        },
-        {
-            name: 'Kentico CMS'
-        },
-    ]
+
 </script>
 
 <style>
