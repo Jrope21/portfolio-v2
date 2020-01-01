@@ -1,6 +1,6 @@
 <script>
-import TextAnimation from '../helper-components/TextAnimation.svelte';
-import InlineLink from '../helper-components/InlineLink.svelte';
+import TextAnimation from '../helperComponents/TextAnimation.svelte';
+
 </script>
 
 <style>
@@ -62,6 +62,16 @@ footer {
     line-height: 45px;
     font-weight: 700;
     max-width: 420px;
+}
+
+.headline a {
+    color: #58595b;
+    transition: all .45s ease-in-out;
+    opacity: .75;
+}
+
+.headline a:hover {
+    color: black;
 }
 
 .title {
