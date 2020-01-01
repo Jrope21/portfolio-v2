@@ -33,7 +33,6 @@ footer {
     }
     .bottom-row {
         display: flex;
-        /* flex-direction: row-reverse; */
     }
     .left, .copyright{
         padding-right: 80rem;
@@ -98,7 +97,6 @@ footer {
     color: #58595b;
     font-size: 18px;
     font-weight: 900;
-    font-style: italic;
     margin-top: 25rem;
 }
 
@@ -148,8 +146,11 @@ a:hover > i {
         max-width: 440px;
     }
     .left p:last-child {
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 70rem;
+    }
+    i {
+        font-size: 20px;
     }
 }
 
