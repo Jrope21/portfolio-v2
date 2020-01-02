@@ -6,6 +6,13 @@ export let addClass;
 section.titles {
     margin-bottom: 20rem;
 }
+
+@media screen and (min-width: 40em) {
+    section.titles {
+        margin-bottom: 60rem;
+    }
+}
+
 h1 {
     color:#3B3B3B;
     font-weight: 800;
@@ -38,7 +45,7 @@ h3::before {
     opacity: .8;
 }
 
-@media screen and (min-width: 40em){
+/* @media screen and (min-width: 40em){
     h1 {
         font-size: 28px;
     }
@@ -63,9 +70,9 @@ h3::before {
     h3 {
         font-size: 18px;
     }
-}
+} */
 
- @media screen and (min-width: 1366px){
+ /* @media screen and (min-width: 1366px){
     h1 {
         font-size: 45px;
     }
@@ -75,7 +82,7 @@ h3::before {
     h3 {
         font-size: 23px;
     }
- }
+ } */
 </style>
 
 <section class="titles {addClass}">

@@ -16,8 +16,21 @@ import ResumeContent from '../components/experience/ResumeContent.svelte';
         flex-direction: column-reverse;
     }
 
+    @media screen and (min-width: 40em) {
+        .experience {
+            padding-top: 50px;
+            flex-direction: row;
+        }
+    }
+
     .left {
         width: 100%;
+    }
+
+    @media screen and (min-width: 40em) {
+        .left {
+            width: 60%;
+        }
     }
 
     .right {
