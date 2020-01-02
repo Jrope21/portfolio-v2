@@ -29,6 +29,7 @@ export default {
 				hydratable: true,
 				emitCss: true,
 				preprocess: autoPreprocess()
+				
 			}),
 			resolve({
 				browser: true,
@@ -71,7 +72,7 @@ export default {
 			}),
 			svelte({
 				generate: 'ssr',
-				dev
+				dev,
 			}),
 			resolve({
 				dedupe

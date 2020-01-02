@@ -4,12 +4,27 @@
 
 <style>
 
+div.job-listing {
+    margin-bottom: 10rem;
+}
+li {
+    margin: 5rem 0;
+}
+li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: gray;
+    margin-right: 15rem;
+}
 </style>
 
 <section>
     <h2 class="headline">Experience</h2>
     <div class="job-listing">
-        <p class="date-location">Dallas, Texas (2019 - current)</p>
+        <p class="date-location detail-preface">Dallas, Texas (2019 - current)</p>
         <h3 class="job-title detail-title">Front End Developer at Imaginuity</h3>
         <ul class="job-details">
             <li class="detail">
