@@ -4,16 +4,15 @@
 
 <style lang="scss">
  ul {
-    margin-left: 20rem;
-    font-size: 12rem;
-
-    
+    margin-left: 10rem;
+    font-size: 12rem;    
 }
 
 li {
     display: flex;
     align-items: center;
     margin: 5rem 0;
+    font-size: 14rem;
 }
 
 li::before {
@@ -26,14 +25,22 @@ li::before {
     margin-right: 15rem;
 }
 h3 {
-    font-size: 12rem;
+    font-size: 16rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
+    margin-bottom: 8rem;
 } 
+
+.design-section h3 {
+    margin-top: 12rem;
+}
+
+
+
 </style>
 
 <section class="skills">
-    <h2 class="headline">Skills</h2>
+    <h2 class="headline alt">Skills</h2>
     <div class="development-section">
         <h3>Development</h3>
         <ul class="skills-list">

@@ -4,6 +4,16 @@
 
 <style>
 
+.project-listing {
+    margin-bottom: 20rem;
+}
+.detail-title {
+    margin: 0;
+}
+
+.detail-web-links {
+    margin: 3rem 0;
+}
 </style>
 
 <section>

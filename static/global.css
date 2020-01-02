@@ -25,7 +25,6 @@ html{
 
 .container {
   padding: 20rem 20rem;
-  /* width: 100%; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -181,7 +180,21 @@ a:hover .circleIcon{
   transform: rotate(90deg);
 }
 
+@media screen and (min-width: 40em){
+  .hide-for-small {
+    display: none !important;
+  }
+}
 
+.show-for-small {
+  display: none !important;
+}
+
+@media screen and (min-width: 40em){
+  .show-for-small {
+    display: block !important;
+  }
+}
 
 
 

@@ -4,7 +4,7 @@ import ResumeContent from '../components/experience/ResumeContent.svelte';
 </script>
 
 <style type="text/scss">
-    @import '../components/experience/GlobalExperienceFonts.styles.scss';
+    @import '../components/experience/experience-fonts.styles.scss';
 
     .container {
         position: relative;
@@ -13,7 +13,7 @@ import ResumeContent from '../components/experience/ResumeContent.svelte';
 
     .experience {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .left {

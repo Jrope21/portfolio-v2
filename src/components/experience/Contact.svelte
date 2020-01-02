@@ -3,9 +3,17 @@
 </script>
 
 <style>
-
+    a {
+        display: block;
+        font-size: 14rem;
+        margin: 3rem 0;
+        color: #58595b;
+        text-transform: lowercase;
+    }
 </style>
 
 <section class="contact">
-    <h2 class="headline">Contact</h2>
+    <h2 class="headline alt">Contact</h2>
+        <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="blank" >linkedin.com/in/JR-dev</a>
+        <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="blank" >Joshua.Micah.Roper@gmail.com</a>
 </section>

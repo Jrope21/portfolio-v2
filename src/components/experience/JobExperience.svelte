@@ -5,19 +5,30 @@
 <style>
 
 div.job-listing {
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
 }
 li {
     margin: 5rem 0;
 }
 li::before {
     content: '';
+    position: absolute;
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     border-radius: 100%;
     background: gray;
-    margin-right: 15rem;
+    top: 7px;
+    left: -10px;
+}
+
+li.detail {
+    position: relative;
+    margin-left: 15rem;
+}
+
+.detail-title {
+    margin-bottom: 0px;
 }
 </style>
 
@@ -53,10 +64,10 @@ li::before {
     <div class="job-listing">
         <p class="date-location detail-preface">Carrollton, Texas (2017 - 2018)</p>
         <h3 class="job-title detail-title">Freelance Web Development and Marketing at Creative Revolt</h3>
-        <div class="detail-web-link">creativerevolt.com</div>
+        <div class="detail-web-links">creativerevolt.com</div>
         <ul class="job-details">
             <li class="detail">
-                Revamped the design with a bolder color palette / layout>
+                Revamped the design with a bolder color palette / layout
             </li>
             <li class="detail">
                 Created the landing page and multiple sections utilizing WordPress (DiviBuilder)
