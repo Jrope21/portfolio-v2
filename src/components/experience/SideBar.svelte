@@ -5,6 +5,10 @@ import Contact from './Contact.svelte';
 </script>
 
 <style>
+aside {
+    height: 78%;
+}
+
 @media screen and (min-width: 40em) {
     aside {
         padding-top: 165px;
@@ -14,6 +18,7 @@ import Contact from './Contact.svelte';
 @media (min-width: 64em) {
     aside {
         padding-top: 165px;
+        height: 80%;
     }
 }
 
@@ -26,6 +31,6 @@ import Contact from './Contact.svelte';
 
 <aside>
     <LogoText addClass="show-for-small" />
-    <Skills />
-    <Contact />
+    <!-- <Skills />
+    <Contact /> -->
 </aside>
