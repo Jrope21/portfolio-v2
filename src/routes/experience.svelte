@@ -23,6 +23,12 @@ import ResumeContent from '../components/experience/ResumeContent.svelte';
         }
     }
 
+    @media (min-width: 64em) {
+        .experience {
+            padding-top: 80px;
+        }
+    }
+
     .left {
         width: 100%;
     }

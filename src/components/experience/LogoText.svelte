@@ -4,7 +4,7 @@ export let addClass;
 
 <style>
 section.titles {
-    margin-bottom: 20rem;
+    margin-bottom: 40rem;
     top: 230px;
 }
 

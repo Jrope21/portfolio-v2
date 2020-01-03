@@ -2,7 +2,7 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.1aa0eca1.js"
+    "main": "client.b1c548d3.js"
   },
   "css": {
     "main": "main.2395527405.css",
@@ -12,7 +12,7 @@
         "TextAnimation.1c14e923.css"
       ],
       "experience.svelte": [
-        "experience.d7ff302a.css"
+        "experience.e7a3ca96.css"
       ],
       "about.svelte": [
         "about.d8b681d6.css"
