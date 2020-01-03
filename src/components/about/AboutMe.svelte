@@ -71,7 +71,7 @@
     @media screen and (min-width: 64em){
         p{
             font-size: 18rem;
-            line-height: 21px;
+            line-height: 23px;
         }
     }
 

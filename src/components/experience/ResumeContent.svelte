@@ -7,7 +7,12 @@ import Education from './Education.svelte';
 </script>
 
 <style>
-
+@media (min-width: 1366px) {
+    .resume-content {
+        padding-right: 200px;
+        margin-left: -100px;
+    }
+}
 </style>
 
 <div class="resume-content">

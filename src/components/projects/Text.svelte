@@ -46,16 +46,13 @@ export let projectName, url, projectText, projectYear;
         content: '2019';
         position: absolute;
         font-weight: 900;
-        /* was .6 opacity */
         opacity: .5;
         z-index: -5;
-        /* z-index: -1; */
         left: -60px;
         top: 30px;
         transform: rotate(-90deg);
         color: #e6e7e8;
         font-size: 45px;
-
     }
 
     @media screen and (min-width: 40em) {
@@ -70,7 +67,7 @@ export let projectName, url, projectText, projectYear;
     }
     p{
         font-size: 18rem;
-        line-height: 21px;
+        line-height: 23px;
     }
     a{
         font-size: 14rem;

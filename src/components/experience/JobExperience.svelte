@@ -10,6 +10,12 @@ div.job-listing {
 li {
     margin: 5rem 0;
 }
+
+@media (min-width: 64em) {
+    li {
+        margin: 8rem 0;
+    }
+}
 li::before {
     content: '';
     position: absolute;
@@ -20,6 +26,12 @@ li::before {
     background: gray;
     top: 7px;
     left: -10px;
+}
+
+@media (min-width: 64em) {
+    li::before {
+        top: 10px;
+    }
 }
 
 li.detail {
@@ -41,19 +53,21 @@ li.detail {
             <li class="detail">
                 Developed the entire Front End for a high traffic, 99% up time website
                 <div class="detail-web-links">
-                    uptexas.org
+                    <a href="https://www.uptexas.org" target="blank">uptexas.org</a> 
                 </div>
             </li>
             <li class="detail">
                 Made web enhancements and landing page’s for multiple businesses
                 <div class="detail-web-links">
-                    webuyuglyhouses.com, homevestors.com, advancial.org, etc....
+                    <a href="https://www.webuyuglyhouses.com" target="blank">webuyuglyhouses.com</a>, 
+                    <a href="https://www.homevestors.com" target="blank">homevestors.com</a>, 
+                    <a href="https://www.advancial.org" target="blank">advancial.org</a>, etc....
                 </div>
             </li>
             <li class="detail">
                 Maintained 10 React based themes responsible for over 50 established malls
                 <div class="detail-web-links">
-                    visithalcyon.com
+                    <a href="https://www.visithalcyon.com" target="blank">visithalcyon.com</a>
                 </div>
             </li>
             <li class="detail">
@@ -64,7 +78,9 @@ li.detail {
     <div class="job-listing">
         <p class="date-location detail-preface">Carrollton, Texas (2017 - 2018)</p>
         <h3 class="job-title detail-title">Freelance Web Development and Marketing at Creative Revolt</h3>
-        <div class="detail-web-links">creativerevolt.com</div>
+        <div class="detail-web-links">
+            <a href="https://www.creativerevolt.com" target="blank">creativerevolt.com</a>
+        </div>
         <ul class="job-details">
             <li class="detail">
                 Revamped the design with a bolder color palette / layout

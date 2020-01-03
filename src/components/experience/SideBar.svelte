@@ -10,6 +10,18 @@ import Contact from './Contact.svelte';
         padding-top: 165px;
     }
 }
+
+@media (min-width: 64em) {
+    aside {
+        padding-top: 165px;
+    }
+}
+
+@media (min-width: 1366px) {
+    aside {
+        padding-top: 140px;
+    }
+}
 </style>
 
 <aside>
