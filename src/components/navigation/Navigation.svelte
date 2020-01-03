@@ -12,6 +12,12 @@ let toggle = false;
 
 let reduceNavSize = false;
 
+let activeNavigation = {
+    home: false,
+    about: false,
+    experience: false
+}
+
 $: headerClass = navSize(windowY);
 
 function navSize(y){
@@ -23,14 +29,49 @@ function navSize(y){
 }
 
 function togglerOff(){
+    setActiveNavOnClick(this)
+
     if(window.innerWidth < 1023){
         hamburger ? hamburger.$$.ctx.hamburger.click() : null;
     }
 }
 
+function resetActiveNav() {
+    let activeNavObj = Object.entries(activeNavigation);
+    
+    for(let [key, value] of activeNavObj){
+        activeNavigation[key] = false;
+    }
+}
+
+function setActiveNavOnClick(el) {
+    let activeNavObj = Object.entries(activeNavigation);
+    let elText = `${el.innerHTML.toLowerCase()}`;
+    
+    for(let [key, value] of activeNavObj){
+        if(key === elText){
+            activeNavigation[key] = true;
+        } else {
+            activeNavigation[key] = false;
+        }
+    }
+}
+
+function setActiveNav() {
+    let path = window.location.pathname;
+
+    if(path === '/') activeNavigation.home = true;
+    else if (path === '/about') activeNavigation.about = true;
+    else if (path === '/experience') activeNavigation.experience = true;
+}
+
 function openModal(){
     showModal = true;
 }
+
+onMount(() => {
+    setActiveNav();
+})
 
 </script>
 
@@ -143,6 +184,14 @@ li:not(.close-container):hover::after, .active::after {
     transform: translateX(0);
 }
 
+.selected::after {
+   transform: translateX(0) !important;
+}
+
+.modal-active .selected:not(.open-modal)::after {
+   transform: translateX(100%) !important; 
+}
+
 .close-container {
     position: absolute;
     top: 50rem;
@@ -211,7 +260,6 @@ p{
 
 .logo:hover .logo-hover {
     color: black;
-    
 }
 
 </style>
@@ -220,18 +268,18 @@ p{
 
 <header>
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
-        <a href='/' class="logo">
+        <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
             <p>
                 <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
             </p>
         </a>
         <Hamburger on:click={togglerOff} toggle={toggle} bind:this={hamburger} />
-        <ul class="navigation">
+        <ul class="navigation {showModal ? 'modal-active' : ''}">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li><a class="" on:click={togglerOff} rel=prefetch href="/">Home</a></li>
-            <li><a on:click={togglerOff} rel=prefetch href="/about">About</a></li>
-            <li><a on:click={togglerOff} href="/experience">Experience</a></li>
-            <li><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
+            <li class="{activeNavigation.home ? 'selected' : ''}"><a on:click={togglerOff} rel=prefetch href="/">Home</a></li>
+            <li class="{activeNavigation.about ? 'selected' : ''}"><a on:click={togglerOff} rel=prefetch href="/about">About</a></li>
+            <li class="{activeNavigation.experience ? 'selected' : ''}"><a on:click={togglerOff} href="/experience">Experience</a></li>
+            <li class="{showModal ? 'selected' : ''} open-modal"><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>
 </header>
