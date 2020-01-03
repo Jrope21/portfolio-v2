@@ -29,8 +29,6 @@ function navSize(y){
 }
 
 function togglerOff(){
-    setActiveNavOnClick(this)
-
     if(window.innerWidth < 1023){
         hamburger ? hamburger.$$.ctx.hamburger.click() : null;
     }
@@ -44,9 +42,10 @@ function resetActiveNav() {
     }
 }
 
-function setActiveNavOnClick(el) {
+function setActiveNavOnClick() {
+    
     let activeNavObj = Object.entries(activeNavigation);
-    let elText = `${el.innerHTML.toLowerCase()}`;
+    let elText = `${this.innerHTML.toLowerCase()}`;
     
     for(let [key, value] of activeNavObj){
         if(key === elText){
@@ -55,6 +54,7 @@ function setActiveNavOnClick(el) {
             activeNavigation[key] = false;
         }
     }
+    togglerOff();
 }
 
 function setActiveNav() {
@@ -151,7 +151,7 @@ ul.navigation {
 li {
     position: relative;
     text-align: right;
-    padding: 5rem 0rem;
+    margin: 5rem 0rem;
     width: auto;
     overflow-x: hidden;
     font-size: 14rem;
@@ -276,9 +276,9 @@ p{
         <Hamburger on:click={togglerOff} toggle={toggle} bind:this={hamburger} />
         <ul class="navigation {showModal ? 'modal-active' : ''}">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li class="{activeNavigation.home ? 'selected' : ''}"><a on:click={togglerOff} rel=prefetch href="/">Home</a></li>
-            <li class="{activeNavigation.about ? 'selected' : ''}"><a on:click={togglerOff} rel=prefetch href="/about">About</a></li>
-            <li class="{activeNavigation.experience ? 'selected' : ''}"><a on:click={togglerOff} href="/experience">Experience</a></li>
+            <li class="{activeNavigation.home ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>
+            <li class="{activeNavigation.about ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a></li>
+            <li class="{activeNavigation.experience ? 'selected' : ''}"><a on:click={setActiveNavOnClick} href="/experience">Experience</a></li>
             <li class="{showModal ? 'selected' : ''} open-modal"><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>

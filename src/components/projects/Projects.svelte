@@ -6,7 +6,7 @@
 
     let portfolioCards = [
         {
-            url: '/projects/halcyon',
+            url: 'https://www.visithalcyon.com',
             imgSrc: 'images/halcyon-5.jpg',
             alt: 'Thumbnail for the Halcyon mall website rebuild',
             projectName: 'Halcyon',
@@ -14,7 +14,7 @@
             projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`
         },
         {
-            url: '/projects/university-park',
+            url: 'https://www.uptexas.org',
             imgSrc: 'images/uptexas-thumb.jpg',
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'University Park',
@@ -22,7 +22,7 @@
             projectText: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
         },
         {
-            url: '/projects/creative-revolt',
+            url: 'https://www.creativerevolt.com',
             imgSrc: 'images/Jorden-Background-Gray.jpg',
             alt: 'Thumbnail for the Creative Revolt redesigned website',
             projectName: 'Creative Revolt',
