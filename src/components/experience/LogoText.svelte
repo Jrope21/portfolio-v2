@@ -11,6 +11,7 @@ section.titles {
 @media screen and (min-width: 40em) {
     section.titles {
         margin-bottom: 60rem;
+        position: -webkit-sticky;
         position: sticky;
     }
 }
