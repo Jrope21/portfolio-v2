@@ -5,11 +5,19 @@ export let addClass;
 <style>
 section.titles {
     margin-bottom: 20rem;
+    top: 230px;
 }
 
 @media screen and (min-width: 40em) {
     section.titles {
         margin-bottom: 60rem;
+        position: sticky;
+    }
+}
+
+@media (min-width: 64em) {
+    section.titles {
+        top: 250px;
     }
 }
 
