@@ -10,6 +10,12 @@
         color: #58595b;
         text-transform: lowercase;
     }
+
+    @media screen and (min-width: 64em) {
+        a {
+            font-size: 18rem;
+        }
+    }
 </style>
 
 <section class="contact">

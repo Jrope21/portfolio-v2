@@ -31,6 +31,12 @@ h3 {
     margin-bottom: 8rem;
 } 
 
+@media screen and (min-width: 64em) {
+    h3 {
+        font-size: 21rem;
+    }
+}
+
 .design-section h3 {
     margin-top: 12rem;
 }

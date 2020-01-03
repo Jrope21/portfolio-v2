@@ -1,12 +1,16 @@
 :global(.experience) {
 
     .headline {
-        font-size: 22px;
+        font-size: 22rem;
         text-transform: uppercase;
         display: block;
         margin-bottom: 12px;
         font-weight: 600;
         width: fit-content;
+
+        @media screen and (min-width: 64em) {
+            font-size: 28rem;
+        }
 
         &::after {
             content: '';
@@ -34,11 +38,19 @@
         color: #989898;
         font-weight: 300;
         font-style: italic;
+
+        @media screen and (min-width: 64em) {
+            font-size: 15rem;
+        }
     }
 
     .detail-title {
         font-size: 14rem;
         font-weight: 600;
+
+        @media screen and (min-width: 64em) {
+            font-size: 18rem;
+        }
     }
 
     .detail-preface {
@@ -46,6 +58,11 @@
         margin-bottom: 2px;
         font-size: 14rem;
         line-height: 21px;
+
+        @media screen and (min-width: 64em) {
+            font-size: 18rem;
+            line-height: 25px;
+        }
     }
 
     section {

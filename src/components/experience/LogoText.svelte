@@ -45,7 +45,21 @@ h3::before {
     opacity: .8;
 }
 
-/* @media screen and (min-width: 40em){
+ @media screen and (min-width: 40em) and (max-width: 64em){
+    h1 {
+        font-size: 21px;
+        
+    }
+    h2 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 64em) {
     h1 {
         font-size: 28px;
     }
@@ -58,31 +72,6 @@ h3::before {
     }
 }
 
-@media screen and (min-width: 64em) {
-    h1 {
-        font-size: 38px;
-    }
-    h2 {
-        font-size: 28px;
-        margin-bottom: 9px;
-        margin-top: -5px;
-    }
-    h3 {
-        font-size: 18px;
-    }
-} */
-
- /* @media screen and (min-width: 1366px){
-    h1 {
-        font-size: 45px;
-    }
-    h2 {
-        font-size: 38px;
-    }
-    h3 {
-        font-size: 23px;
-    }
- } */
 </style>
 
 <section class="titles {addClass}">
