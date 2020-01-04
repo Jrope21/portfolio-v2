@@ -4,19 +4,33 @@ let STATE = {
         {
             src: 'images/halcyon-5.jpg',
             visible: true,
-            key: 0,
+            key: 'desktop',
         },
         {
             src: 'images/uptexas-thumb.jpg',
             visible: false,
-            key: 0,
+            key: 'tablet',
         },
         {
             src: 'images/Jorden-Background-Gray.jpg',
             visible: false,
-            key: 0,
+            key: 'mobile',
         },
     ]
+}
+
+function switchSlides(key) {
+    
+    STATE.images.forEach(img => {
+        if(key === img.key) {
+            img.visible = true;
+            
+        } else {
+            img.visible = false;
+        }
+    })
+    STATE = {...STATE};
+    console.log(STATE.images);
 }
 
 </script>
@@ -92,7 +106,14 @@ img {
         </div> -->
     <div class="circles">
         {#each STATE.images as img, i}
-            <span class="circle">circle {i}</span>
+            <span 
+                on:click={() => {
+                    switchSlides(img.key)
+                }} 
+                class="circle"
+            >
+                circle {i}
+            </span>
         {/each}
     </div>
 </div>
