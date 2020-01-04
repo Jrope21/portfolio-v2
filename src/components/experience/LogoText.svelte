@@ -5,7 +5,7 @@ export let addClass;
 <style>
 section.titles {
     margin-bottom: 20rem;
-    top: 230px;
+    top: 180px;
 }
 
 @media screen and (min-width: 40em) {
