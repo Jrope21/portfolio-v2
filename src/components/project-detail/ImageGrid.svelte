@@ -2,6 +2,7 @@
 import Image from './Image.svelte';
 import TopBar from './TopBar.svelte';
 import Description from './Description.svelte';
+import Carousel from './Carousel.svelte';
 </script>
 
 <style>
@@ -60,21 +61,11 @@ import Description from './Description.svelte';
 
 <div class="inner-container">
     <TopBar />
-    <div class="grid-x">
+    <!-- <div class="grid-x"> -->
         <div class="project-description">
             <Description />
         </div>
         
-        <div class="image-grid">
-            <div class="grid-element-container full-width"> <!-- this should be a cool designer image (logo shiz) -->
-                <Image width={'full-width'} imgSrc={'images/Jorden-Background-Gray.jpg'} url={''} alt={''} />
-            </div>
-            <div class="grid-element-container full-width"> <!-- this should be a cool designer image (logo shiz) -->
-                <Image width={'full-width'} imgSrc={'images/Jorden-Background-Gray.jpg'} url={''} alt={''} />
-            </div>
-            <div class="grid-element-container full-width"> <!-- this should be a cool designer image (logo shiz) -->
-                <Image width={'full-width'} imgSrc={'images/Jorden-Background-Gray.jpg'} url={''} alt={''} />
-            </div>
-        </div>
-    </div>
+        <Carousel />
+    <!-- </div> -->
 </div>
