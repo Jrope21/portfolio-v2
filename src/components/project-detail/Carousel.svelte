@@ -1,4 +1,6 @@
 <script>
+import { fade, fly } from 'svelte/transition'
+
 let STATE = {
     images: [
         {
@@ -29,8 +31,8 @@ function switchSlides(key) {
             img.visible = false;
         }
     })
+
     STATE = {...STATE};
-    console.log(STATE.images);
 }
 
 </script>
@@ -63,22 +65,15 @@ function switchSlides(key) {
 
 @media screen and (min-width: 64em) {
     .box {
-        width: 355px;
+        width: 400px;
         height: 616px;
     }
 }
 
-/* @media screen and (min-width: 1366px){
-    .box {
-        width: 497px;
-        height: 862.4px;
-    }
-} */
-
 .slide {
     position: absolute;
-    width: 95%;
-    height: 80%;
+    width: 88%;
+    height: 82%;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -90,30 +85,63 @@ img {
     object-fit: cover;  
 }
 
+div.circles-container {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+span.circle {
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #3B3B3B;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+    /* transition: opacity .3s ease; */
+}
+
+span.circle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    background: #3B3B3B;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+span.circle.active::before {
+    opacity: 1;
+}
+
 </style>
 
+<!-- notes to come back to -->
+<!-- TODO -  -->
 <div class="carousel-container">
-    <div class="box"></div>
+    <div class="box">CREATIVE REVOLT</div> <!-- TODO style text to appear nice on fade out-->
+    <!-- TODO - make top of box longer then bottom -->
         {#each STATE.images as img}
             {#if img.visible}
-                <div class="slide">
+                <div transition:fly="{{ x: -70, duration: 650 }}" class="slide">
                     <img src="{img.src}" alt="wassup">
                 </div>
             {/if}
         {/each}
-        <!-- <div class="slide">
-            <img src="images/Jorden-Background-Gray.jpg" alt="wassup">
-        </div> -->
-    <div class="circles">
+    <div class="circles-container">
         {#each STATE.images as img, i}
             <span 
                 on:click={() => {
                     switchSlides(img.key)
                 }} 
-                class="circle"
-            >
-                circle {i}
-            </span>
+                class="circle {img.visible ? 'active' : ''}"
+            ></span>
         {/each}
     </div>
 </div>
