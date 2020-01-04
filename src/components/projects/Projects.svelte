@@ -22,7 +22,7 @@
             projectText: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
         },
         {
-            url: 'https://www.creativerevolt.com',
+            url: 'projects/creative-revolt',
             imgSrc: 'images/Jorden-Background-Gray.jpg',
             alt: 'Thumbnail for the Creative Revolt redesigned website',
             projectName: 'Creative Revolt',
@@ -41,7 +41,7 @@
         position: relative;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: 40em){ 
         section {
             padding: 10% 0 10% 0;
         }

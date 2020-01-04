@@ -2,18 +2,24 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.ea622f39.js"
+    "main": "client.cce1e884.js"
   },
   "css": {
     "main": "main.2395527405.css",
     "chunks": {
       "index.svelte": [
-        "index.278a77d9.css",
+        "index.943c357f.css",
         "TextAnimation.1c14e923.css"
       ],
       "experience.svelte": [
         "experience.bc67f38e.css"
       ],
+      "projects/creative-revolt.svelte": [
+        "creative-revolt.30e1f868.css",
+        "TextAnimation.1c14e923.css"
+      ],
+      "projects/university-park.svelte": [],
+      "projects/halcyon.svelte": [],
       "about.svelte": [
         "about.d8b681d6.css"
       ],
