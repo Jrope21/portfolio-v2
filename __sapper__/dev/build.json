@@ -2,7 +2,7 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.e284af91.js"
+    "main": "client.07d75e0c.js"
   },
   "css": {
     "main": "main.2395527405.css",
@@ -15,7 +15,7 @@
         "experience.98085cd4.css"
       ],
       "projects/creative-revolt.svelte": [
-        "creative-revolt.3b892a8a.css",
+        "creative-revolt.b2b00116.css",
         "TextAnimation.11321dbd.css"
       ],
       "projects/university-park.svelte": [],

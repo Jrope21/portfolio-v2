@@ -60,11 +60,11 @@ import Carousel from './Carousel.svelte';
 </style>
 
 <div class="inner-container">
-    <TopBar />
+    <!-- <TopBar /> -->
     <!-- <div class="grid-x"> -->
-        <div class="project-description">
+        <!-- <div class="project-description">
             <Description />
-        </div>
+        </div> -->
         
         <Carousel />
     <!-- </div> -->

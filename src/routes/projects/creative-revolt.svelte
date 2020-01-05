@@ -12,6 +12,7 @@ import Description from '../../components/project-detail/Description.svelte'
 	<title>Creative Revolt | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
+
 <div 
     in:fly="{{ x: -80, duration: 500, delay: 200, }}"
 >
@@ -19,8 +20,5 @@ import Description from '../../components/project-detail/Description.svelte'
 </div>
 
 <section class="container">
-   <!-- <div class="container">
-        <Description />
-   </div>  -->
     <ImageGrid />
 </section>

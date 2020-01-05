@@ -42,32 +42,58 @@ function switchSlides(key) {
     position: relative;
     display: flex;
     align-items: flex-end;
-    /* height: 700px; */
+    margin: 40rem 0;
 }
 
 @media screen and (min-width: 40em){
     .box {
-        /* position: absolute;
-        top: 0;
-        left: 0; */
+        position: relative;
         display: inline-block;
-        background: url("../images/drawing.jpg");
         z-index: -1;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         width: 237px;
         border: 3px solid black;
+        border-right: none;
         height: 411px;
         background: transparent;
+    }
+
+    .box::after {
+        content: '';
+        position: absolute;
+        background: url('../images/so-white.png');
+        background-position-x: 1%;
+        border-left: 3px solid black;
+        height: 9%;
+        width: 150px;
+        right: -5px;
+        bottom: -3px;
+    }
+
+    .box::before {
+        content: '';
+        position: absolute;
+        border-right: 3px solid black;
+        height: 9%;
+        right: 0;
+        top: -3px;
     }
 }
 
 @media screen and (min-width: 64em) {
     .box {
-        width: 400px;
+        width: 500px;
         height: 616px;
     }
+}
+
+.title {
+    font-size: 40px;
+    color: #58595b;
+    transform: rotate(-90deg);
+    margin-right: -15px;
 }
 
 .slide {
@@ -77,6 +103,7 @@ function switchSlides(key) {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    box-shadow: 3px 3px 3px lightgrey;
 }
 
 img {
@@ -87,8 +114,8 @@ img {
 
 div.circles-container {
     display: flex;
-    margin-left: 30px;
-    margin-bottom: 25px;
+    margin-left: -70px;
+    margin-bottom: 20px;
 }
 
 span.circle {
@@ -98,8 +125,9 @@ span.circle {
     height: 15px;
     border: 1px solid #3B3B3B;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 25px;
     overflow: hidden;
+    cursor: pointer;
     /* transition: opacity .3s ease; */
 }
 
@@ -119,17 +147,16 @@ span.circle::before {
 span.circle.active::before {
     opacity: 1;
 }
-
 </style>
 
 <!-- notes to come back to -->
 <!-- TODO -  -->
 <div class="carousel-container">
-    <div class="box">CREATIVE REVOLT</div> <!-- TODO style text to appear nice on fade out-->
+    <div class="box"><span class="title">CREATIVE REVOLT</span></div> <!-- TODO style text to appear nice on fade out-->
     <!-- TODO - make top of box longer then bottom -->
         {#each STATE.images as img}
             {#if img.visible}
-                <div transition:fly="{{ x: -70, duration: 650 }}" class="slide">
+                <div transition:fly="{{ x: -80, duration: 1050 }}" class="slide">
                     <img src="{img.src}" alt="wassup">
                 </div>
             {/if}
