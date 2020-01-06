@@ -5,7 +5,9 @@ export let projectName, url, projectText, projectYear;
 </script>
 
 <style>
-
+    div.grid-x > div {
+        margin-right: 150px;
+    }
     a{
         display: flex;
         align-items: center;
@@ -63,22 +65,23 @@ export let projectName, url, projectText, projectYear;
 </style>
 
 <div class="grid-x">
-    <div class="gridx-50">
-        <h2>Project</h2>
+    <div>
+        <h2>Task</h2>
         <p>
             Complete Front End Rebuild
         </p>
-        <!-- <a target="blank" href="{url}">
-            <TextAnimation text={`View Website`} />
-        </a> -->
+        
     </div>
-    <div class="gridx-50">
+    <div>
         <h2>Role</h2>
         <p>
             Front End Developer
         </p>
         <!-- <a target="blank" href="{url}">
-            <TextAnimation text={`View Code`} />
+            <TextAnimation text={`View Website`} />
         </a> -->
     </div>
 </div>
+<a target="blank" href="{url}">
+    <TextAnimation text={`creativerevolt.com`} />
+</a>

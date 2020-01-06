@@ -1,4 +1,6 @@
 <script>
+import PageTransition from '../PageTransition.svelte';
+
 import PageTitle from '../../components/project-detail/PageTitle.svelte';
 import ImageGrid from '../../components/project-detail/ImageGrid.svelte';
 import Description from '../../components/project-detail/Description.svelte'
@@ -12,13 +14,13 @@ import Description from '../../components/project-detail/Description.svelte'
 	<title>Creative Revolt | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
-
-<div 
-    in:fly="{{ x: -80, duration: 500, delay: 200, }}"
->
+<PageTransition>
+<div>
     <PageTitle title={'Creative Revolt'} />
 </div>
 
-<section class="container">
-    <ImageGrid />
-</section>
+
+    <section class="container">
+        <ImageGrid />
+    </section>
+</PageTransition>

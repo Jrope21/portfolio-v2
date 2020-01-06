@@ -1,4 +1,5 @@
 <script>
+	import { fade, fly } from 'svelte/transition'
 	import Navigation from '../components/navigation/Navigation.svelte';
 	import Footer from '../components/footer/Footer.svelte';
 	import { onMount } from 'svelte'
@@ -19,6 +20,8 @@
 
 <Navigation />
 <div class="background"></div>
-<slot></slot>
 
+<main in:fly="{{ x: -80, duration: 500, delay: 200, }}" >
+	<slot ></slot>
+</main>
 <Footer />

@@ -115,14 +115,14 @@ function findCurrentSlide() {
         justify-content: flex-end;
         width: 300px;
         border: 3px solid black;
-        border-right: none;
+        /* border-right: none; */
         height: 380px;
-        opacity: 0;
+        /* opacity: 0; */
         background: transparent;
     }
 
     .box::after {
-        content: '';
+        /* content: ''; */
         position: absolute;
         background: url('../images/so-white.png');
         background-position-x: 1%;
@@ -134,7 +134,7 @@ function findCurrentSlide() {
     }
 
     .box::before {
-        content: '';
+        /* content: ''; */
         position: absolute;
         border-right: 3px solid black;
         height: 9%;
@@ -240,8 +240,11 @@ div.circles-container {
 
 @media (min-width: 40em) {
     div.circles-container {
+        position: absolute;
+        right:0;
         height: auto;
         width: auto;
+        justify-content: flex-end;
         /* position: static;
         margin-left: -10px;
         margin-bottom: 10px; */
@@ -279,7 +282,7 @@ span.circle {
 @media (min-width: 40em) {
     span.circle {
         margin: 0;
-        margin-right: 15px;
+        margin-left: 15px;
         /* border: 1px solid #3B3B3B; */
     }
 }
@@ -427,7 +430,7 @@ button.next:hover, button.back:hover {
     <!-- TODO - make top of box longer then bottom -->
         {#each STATE.images as img}
             {#if img.visible}
-                <div transition:fly="{{ x: -40, duration: 550 }}" class="slide">
+                <div transition:fly|local="{{ x: -40, duration: 850 }}" class="slide">
                     <button on:click={() => viewPreviousSlide()} class="back">
                         <span class="arrow-left"></span>
                     </button>

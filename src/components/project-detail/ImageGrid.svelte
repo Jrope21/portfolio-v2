@@ -3,6 +3,7 @@ import Image from './Image.svelte';
 import TopBar from './TopBar.svelte';
 import Description from './Description.svelte';
 import Carousel from './Carousel.svelte';
+// import Summary from './Summary.svelte';
 </script>
 
 <style>
@@ -60,8 +61,9 @@ import Carousel from './Carousel.svelte';
 </style>
 
 <div class="inner-container">
-    <!-- <TopBar /> -->
+    <TopBar />
     <!-- <div class="grid-x"> -->
+    <!-- <Summary /> -->
         <!-- <div class="project-description">
             <Description />
         </div> -->

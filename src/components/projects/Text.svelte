@@ -81,7 +81,7 @@ export let projectName, url, projectText, projectYear;
         <span class='year'>{projectYear}</span>
         {@html projectText}
     </p>
-    <a target="blank" href="{url}">
+    <a  href="{url}">
         <TextAnimation text={`View Website`} />
     </a>
 </div>
