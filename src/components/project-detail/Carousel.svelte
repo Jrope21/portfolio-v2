@@ -6,27 +6,27 @@ let STATE = {
         {
             src: 'images/creative-revolt/home.png',
             visible: true,
-            key: 'home',
+            key: 0,
         },
         {
             src: 'images/creative-revolt/home-ctas.png',
             visible: false,
-            key: 'home-ctas',
+            key: 1,
         },
         {
             src: 'images/creative-revolt/about.png',
             visible: false,
-            key: 'about',
+            key: 2,
         },
         {
             src: 'images/creative-revolt/about-cta.png',
             visible: false,
-            key: 'about-ctas',
+            key: 3,
         },
         {
             src: 'images/creative-revolt/writing-class.png',
             visible: false,
-            key: 'writing-class',
+            key: 4,
         },
     ]
 }
@@ -43,6 +43,48 @@ function switchSlides(key) {
     })
 
     STATE = {...STATE};
+}
+
+function viewNextSlide() {
+    let currentSlide = findCurrentSlide();
+    let nextSlide = currentSlide !== null ? currentSlide + 1 : null;
+    
+    if(nextSlide !== null) STATE.images[currentSlide].visible = false;
+
+    if(nextSlide < STATE.images.length) {
+        STATE.images[nextSlide].visible = true;
+    } else {
+        STATE.images[0].visible = true;
+    }
+
+    STATE = {...STATE};
+}
+
+function viewPreviousSlide() {
+    let currentSlide = findCurrentSlide();
+    let prevSlide = currentSlide !== null ? currentSlide - 1 : null;
+    
+    if(prevSlide !== null) STATE.images[currentSlide].visible = false;
+
+    if(prevSlide > -1) {
+        STATE.images[prevSlide].visible = true;
+    } else {
+        STATE.images[STATE.images.length - 1].visible = true;
+    }
+
+    STATE = {...STATE};
+}
+
+function findCurrentSlide() {
+    if(!STATE.images.length) return null;
+
+    let currentSlideIndex;
+
+    STATE.images.forEach((img, i) => {
+        if(img.visible) currentSlideIndex = i;
+    })
+    
+    return currentSlideIndex;
 }
 
 </script>
@@ -276,9 +318,8 @@ span.circle.active::before {
 
 button.next, button.back {
     position: absolute;
-    width: 150px;
+    width: 30%;
     height: 100%;
-    
     opacity: .3;
     transition: all .3s ease-out;
 }
@@ -330,10 +371,20 @@ button.next:hover, button.back:hover {
     transition: transform .15s ease-out;
 }
 
+.arrow-left::before, .arrow-left::after {
+    right: auto;
+    left: 0;
+}
+
+
 .arrow-left::before {
     top: -50%;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.back:hover .arrow-left::before {
+    transform: rotate(30deg)
 }
 
 .arrow-left::after {
@@ -342,10 +393,19 @@ button.next:hover, button.back:hover {
     transform: rotate(135deg);
 }
 
+.back:hover .arrow-left::after {
+    transform: rotate(150deg)
+}
+
+
 .arrow-right::before {
     top: -50%;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+.next:hover .arrow-right::before {
+    transform: rotate(-30deg);
 }
 
 .arrow-right::after {
@@ -353,22 +413,26 @@ button.next:hover, button.back:hover {
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
+
+.next:hover .arrow-right::after {
+    transform: rotate(-150deg);
+}
 </style>
 
 <!-- notes to come back to -->
 <!-- TODO -  -->
 <div class="carousel-container">
-<span class="title">CREATIVE REVOLT</span>
+<!-- <span class="title">CREATIVE REVOLT</span> -->
     <div class="box"></div> <!-- <span class="title">CREATIVE REVOLT</span> TODO style text to appear nice on fade out-->
     <!-- TODO - make top of box longer then bottom -->
         {#each STATE.images as img}
             {#if img.visible}
                 <div transition:fly="{{ x: -40, duration: 550 }}" class="slide">
-                    <button class="back">
+                    <button on:click={() => viewPreviousSlide()} class="back">
                         <span class="arrow-left"></span>
                     </button>
                     <img src="{img.src}" alt="wassup">
-                    <button class="next">
+                    <button on:click={() => viewNextSlide()} class="next">
                         <span class="arrow-right"></span>
                     </button>
                 </div>
