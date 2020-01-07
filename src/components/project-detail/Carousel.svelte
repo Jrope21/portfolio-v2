@@ -94,7 +94,7 @@ function findCurrentSlide() {
     position: relative;
     display: flex;
     align-items: flex-end;
-    margin: 40rem 0;
+    margin: 20rem 0 60rem 0;
     width: 100%;
     min-height: 250px;
 }
@@ -102,6 +102,7 @@ function findCurrentSlide() {
 @media (min-width: 40em) {
     .carousel-container {
         width: auto;
+        margin-top: 40rem;
     }
 }
 
@@ -195,8 +196,8 @@ function findCurrentSlide() {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 450px;
-    max-width: 85vw;
+    width: 100%;
+    /* max-width: 85vw; */
     height: 250px;
     box-shadow: 3px 3px 3px lightgrey;
     margin: 0 auto;
@@ -223,11 +224,11 @@ function findCurrentSlide() {
 }
 
 div.circles-container {
-    width: 450px;
+    width: 100%;
     /* height: 250px; */
     bottom: -30px;
     margin: 0 auto;
-    max-width: 85vw;
+    /* max-width: 85vw; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -353,13 +354,24 @@ button.next:hover, button.back:hover {
 }
 
 .arrow-left {
-    left: 30px;
+    left: 20px;
+}
+
+@media (min-width: 40em) {
+    .arrow-left {
+        right: 30px;
+    }
 }
 
 .arrow-right {
-    right: 30px;
+    right: 20px;
 }
 
+@media (min-width: 40em) {
+    .arrow-right {
+        right: 30px;
+    }
+}
 .arrow-left::before, .arrow-right::before, .arrow-left::after, .arrow-right::after {
     content: " ";
     position: absolute;

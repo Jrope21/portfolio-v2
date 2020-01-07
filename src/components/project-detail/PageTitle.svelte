@@ -86,15 +86,14 @@ export let title, sidePage;
     }
 
     div.page-header{
-        margin-top: 90px;
+        margin-top: 100px;
         position: relative;
-        width: 100vw;
-        height: 125px;
+        width: 100%;
+        /* height: 125px; */
         display: flex;
         justify-content: center;
         align-items: flex-end;
         box-sizing: border-box;
-        padding-left:20rem;
     }
 
     @media screen and (min-width: 40em){
@@ -107,7 +106,7 @@ export let title, sidePage;
 
     @media screen and (min-width: 64em){
         div.page-header {
-            height: 250px;
+            height: 180px;
         }
     }
 
@@ -136,7 +135,7 @@ export let title, sidePage;
     }
     
 </style>
-<div class="page-header container">
+<div class="page-header">
     <div class='title-container {sidePage}'>
         <h1>{title}</h1>
         <span>{title}</span>

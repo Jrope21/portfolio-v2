@@ -60,6 +60,13 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
 .text-container {
     position: sticky;
     top: 130px;
+    width: 90%;
+}
+
+@media (min-width: 40em) {
+    .text-container {
+        width: 100%;
+    }
 }
 </style>
 

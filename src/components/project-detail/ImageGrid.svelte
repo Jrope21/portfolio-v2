@@ -9,7 +9,7 @@ import Carousel from './Carousel.svelte';
 <style>
 @media screen and (min-width: 40em){
     .inner-container {
-        width: 90%;
+        /* width: 90%; */
         margin: 0 auto;
     }
 }
@@ -31,7 +31,15 @@ import Carousel from './Carousel.svelte';
         margin: 0 auto;
     }
     .project-description {
-        padding-top: 8%;
+        /* padding-top: 8%; */
+        padding-left: 12%;
+        width: 60%;
+        margin: 60rem 0;
+    }
+}
+
+@media (min-width: 64em) {
+    .project-description {
         width: 50%;
     }
 }
@@ -61,13 +69,14 @@ import Carousel from './Carousel.svelte';
 </style>
 
 <div class="inner-container">
-    <TopBar />
+    <!-- <TopBar /> -->
     <!-- <div class="grid-x"> -->
     <!-- <Summary /> -->
-        <!-- <div class="project-description">
-            <Description />
-        </div> -->
+        
         
         <Carousel />
+        <div class="project-description">
+            <Description />
+        </div>
     <!-- </div> -->
 </div>
