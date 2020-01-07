@@ -3,13 +3,14 @@ import Image from './Image.svelte';
 import TopBar from './TopBar.svelte';
 import Description from './Description.svelte';
 import Carousel from './Carousel.svelte';
+import Skills from './Skills.svelte';
 // import Summary from './Summary.svelte';
 </script>
 
 <style>
 @media screen and (min-width: 40em){
     .inner-container {
-        /* width: 90%; */
+        width: 90%;
         margin: 0 auto;
     }
 }
@@ -34,7 +35,7 @@ import Carousel from './Carousel.svelte';
         /* padding-top: 8%; */
         padding-left: 12%;
         width: 60%;
-        margin: 60rem 0;
+        margin: 40rem 0;
     }
 }
 
@@ -66,6 +67,36 @@ import Carousel from './Carousel.svelte';
         width: 40%;
     }
 }
+
+.cta {
+    margin: 50rem 0;
+}
+
+@media (min-width: 40em) {
+    .cta {
+        margin: 65rem 0;
+    }
+}
+
+.cta p {
+    color: #58595b;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media (min-width: 64em) {
+    .cta p {
+        font-size: 26px;
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 40em) {
+    section {
+        padding-left: 12%;
+    }
+}
 </style>
 
 <div class="inner-container">
@@ -75,8 +106,14 @@ import Carousel from './Carousel.svelte';
         
         
         <Carousel />
-        <div class="project-description">
+        <section class="project-description">
             <Description />
-        </div>
+        </section>
+        <section class="skills">
+            <Skills />
+        </section>
+        <section class="cta">
+            <p>Check The Site!</p>
+        </section>
     <!-- </div> -->
 </div>

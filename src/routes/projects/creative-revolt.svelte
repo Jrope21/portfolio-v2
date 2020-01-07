@@ -6,7 +6,7 @@ import ImageGrid from '../../components/project-detail/ImageGrid.svelte';
 import Description from '../../components/project-detail/Description.svelte'
 </script>
 
-<style lang="scss">
+<style>
 div.title-container {
     padding-bottom: 0;
 }
@@ -76,13 +76,17 @@ h1.title {
         
     }
 .container {
-    // padding-top: 0;
+    /* padding-top: 0; */
 }
     .inner-container {
         width: 90%;
         margin: 60px auto;
         font-weight: 300;
         color: #58595b;
+    }
+
+    .project-detail {
+        margin-bottom: 60px
     }
 </style>
 

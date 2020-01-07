@@ -163,6 +163,11 @@ li {
         margin: 0rem 20rem;
         padding: 2.5rem 0;
     }
+
+    li:last-of-type {
+        margin-right: 0;
+    }
+    
     p{
         font-size: 18rem;
     }

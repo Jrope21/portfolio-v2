@@ -100,15 +100,15 @@ export let title, sidePage;
         div.page-header {
             padding: 0;
             box-sizing: content-box;
-            height: 220px;
+            height: 120px;
         }
     }
 
-    @media screen and (min-width: 64em){
+    /* @media screen and (min-width: 64em){
         div.page-header {
             height: 180px;
         }
-    }
+    } */
 
     span{
         position: absolute;

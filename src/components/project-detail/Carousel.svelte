@@ -94,7 +94,7 @@ function findCurrentSlide() {
     position: relative;
     display: flex;
     align-items: flex-end;
-    margin: 20rem 0 60rem 0;
+    margin: 25rem 0 70rem 0;
     width: 100%;
     min-height: 250px;
 }
@@ -102,7 +102,8 @@ function findCurrentSlide() {
 @media (min-width: 40em) {
     .carousel-container {
         width: auto;
-        margin-top: 40rem;
+        margin-top: 65rem;
+        margin-bottom: 80rem;
     }
 }
 
