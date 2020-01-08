@@ -4,6 +4,8 @@ import ContactModal from '../modals/ContactModal.svelte';
 
 import { onMount } from 'svelte';
 
+export let segment;
+
 let showModal;
 
 let windowY;
@@ -41,6 +43,8 @@ function resetActiveNav() {
         activeNavigation[key] = false;
     }
 }
+
+// TODO -- these functions need to be cleaned up - not using all of this anymore (using segment prop instead)
 
 function setActiveNavOnClick() {
     
@@ -281,9 +285,9 @@ p{
         <Hamburger on:click={togglerOff} toggle={toggle} bind:this={hamburger} />
         <ul class="navigation {showModal ? 'modal-active' : ''}">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li class="{activeNavigation.home ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>
-            <li class="{activeNavigation.about ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a></li>
-            <li class="{activeNavigation.experience ? 'selected' : ''}"><a on:click={setActiveNavOnClick} href="/experience">Experience</a></li>
+            <li class="{segment === undefined ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>
+            <li class="{segment === 'about' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a></li>
+            <li class="{segment === 'experience' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} href="/experience">Experience</a></li>
             <li class="{showModal ? 'selected' : ''} open-modal"><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>

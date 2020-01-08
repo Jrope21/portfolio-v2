@@ -3,6 +3,9 @@
 	import Navigation from '../components/navigation/Navigation.svelte';
 	import Footer from '../components/footer/Footer.svelte';
 	import { onMount } from 'svelte'
+
+	export let segment;
+	console.log(segment);
 </script>
 
 <style>
@@ -18,10 +21,7 @@
 
 </style>
 
-<Navigation />
+<Navigation segment={segment} />
 <div class="background"></div>
-
-<main in:fly="{{ x: -80, duration: 500, delay: 200, }}" >
-	<slot ></slot>
-</main>
+<slot ></slot>
 <Footer />
