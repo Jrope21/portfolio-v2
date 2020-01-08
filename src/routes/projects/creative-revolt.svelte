@@ -6,10 +6,9 @@ import Carousel from '../../components/project-detail/Carousel.svelte';
 import Skills from '../../components/project-detail/Skills.svelte';
 
 
-
 let STATE = {
     title: `Creative Revolt`,
-    url: 'https://www.creativerevolt.com',
+    url: 'https://www.creativerevolt.com/',
     description: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
     skills: ['JavaScript', 'CSS', 'HTML', 'PHP', 'DiviBuilder', 'WordPress', 'SEO', 'Googe Analytics', 'Canva', 'Adobe XD', 'MailChimp'],
     images: [
@@ -81,15 +80,21 @@ let STATE = {
         }
     }
 
-    .cta p {
+    .cta a {
         color: #58595b;
         font-size: 18px;
         font-weight: 600;
         font-style: italic;
+        opacity: 1;
+        transition: all .3s ease;
+    }
+
+    .cta a:hover {
+        opacity: .75;
     }
 
     @media (min-width: 64em) {
-        .cta p {
+        .cta a {
             font-size: 26px;
             font-weight: 800;
         }
@@ -128,7 +133,7 @@ let STATE = {
                     <Skills skills={STATE.skills}/>
                 </section>
                 <section class="cta">
-                    <p>Check The Site!</p>
+                    <a href={STATE.url} target="_blank">Check The Site!</a>
                 </section>
             </div>
         </div>

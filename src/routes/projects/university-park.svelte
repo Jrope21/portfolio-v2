@@ -5,11 +5,12 @@ import Description from '../../components/project-detail/Description.svelte';
 import Carousel from '../../components/project-detail/Carousel.svelte';
 import Skills from '../../components/project-detail/Skills.svelte';
 
+
 let STATE = {
     title: `University Park`,
-    url: 'https://www.uptexas.org',
+    url: 'https://www.uptexas.org/',
     description: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
-    skills: ['Javascript (ES6+)', 'jQuery', 'API Integration', 'AJAX / JSON', 'SASS / SCSS', 'CSS', 'Foundation', 'HTML (WCAG 2.1)', 'Adobe Illustrator', 'SEO', 'Kentico (CMS)', 'BitBucket'],
+    skills: ['JavaScript (ES6+)', 'jQuery', 'API Integration', 'AJAX / JSON', 'SASS / SCSS', 'CSS', 'Foundation', 'HTML (WCAG 2.1)', 'Adobe Illustrator', 'SEO', 'Kentico (CMS)', 'BitBucket'],
     images: [
         {
             src: 'images/university-park/home.png',
@@ -40,14 +41,6 @@ let STATE = {
     ]
 }
 
-// {
-//     url: 'https://www.uptexas.org',
-//     imgSrc: 'images/uptexas-thumb.jpg',
-//     alt: 'Thumbnail for the City of University Park complete Front End website redesign',
-//     projectName: 'University Park',
-//     projectYear: '2019',
-//     projectText: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
-// },
 </script>
 
 <style>
@@ -93,6 +86,12 @@ let STATE = {
         font-size: 18px;
         font-weight: 600;
         font-style: italic;
+        opacity: 1;
+        transition: all .3s ease;
+    }
+
+    .cta a:hover {
+        opacity: .75;
     }
 
     @media (min-width: 64em) {
@@ -135,7 +134,7 @@ let STATE = {
                     <Skills skills={STATE.skills}/>
                 </section>
                 <section class="cta">
-                    <a href={STATE.url} target="blank">Check The Site!</a>
+                    <a href={STATE.url} target="_blank">Check The Site!</a>
                 </section>
             </div>
         </div>
