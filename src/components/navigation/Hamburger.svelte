@@ -1,7 +1,7 @@
 <script>
 import { onMount, afterUpdate, tick  } from 'svelte';
 
-export let toggle;
+export let toggle, hamburger;
 
 </script>
 
@@ -125,7 +125,7 @@ span.middle {
 <div class="background" on:click></div>
 <label id="nav-label" for="toggle" class="hide-for-xlg">
     <span class="show-for-sr">Navigation</span>
-    <span class="hamburger" title="Navigation">
+    <span class="hamburger" bind:this={hamburger} title="Navigation">
       <span class="middle"></span>
     </span>
 </label>

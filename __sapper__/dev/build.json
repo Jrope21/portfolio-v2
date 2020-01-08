@@ -2,36 +2,36 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.afbeed6d.js"
+    "main": "client.d8f7dfa9.js"
   },
   "css": {
-    "main": "main.3885151883.css",
+    "main": "main.4023001569.css",
     "chunks": {
       "index.svelte": [
-        "index.76a4db18.css",
-        "TextAnimation.439d5202.css"
+        "index.a96eba03.css",
+        "TextAnimation.ed24c4c5.css"
       ],
       "PageTransition.svelte": [],
       "experience.svelte": [
-        "experience.b65d721e.css"
+        "experience.835fc555.css"
       ],
       "projects/creative-revolt.svelte": [
-        "creative-revolt.56ef1070.css",
-        "TextAnimation.439d5202.css",
-        "Skills.cbc7645f.css"
+        "creative-revolt.0fb1d97d.css",
+        "TextAnimation.ed24c4c5.css",
+        "Skills.f9889215.css"
       ],
       "projects/university-park.svelte": [
-        "university-park.e5528a32.css",
-        "TextAnimation.439d5202.css",
-        "Skills.cbc7645f.css"
+        "university-park.aadcf603.css",
+        "TextAnimation.ed24c4c5.css",
+        "Skills.f9889215.css"
       ],
       "projects/halcyon.svelte": [
-        "halcyon.89ffaf54.css",
-        "TextAnimation.439d5202.css",
-        "Skills.cbc7645f.css"
+        "halcyon.e150bc41.css",
+        "TextAnimation.ed24c4c5.css",
+        "Skills.f9889215.css"
       ],
       "about.svelte": [
-        "about.8e3af12b.css"
+        "about.1e3afa23.css"
       ]
     }
   }
