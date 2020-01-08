@@ -37,7 +37,7 @@
             <p class="detail-preface skills-listing">Svelte, Sapper, JavaScript, Rollup, SASS, HTML</p>
             <h3 class="detail-title">Personal Portfolio</h3>
             <div class="detail-web-links">
-                <a href="https://www.joshuaroper.com/" target="blank">joshuaroper.com</a>
+                <a href="https://www.joshuaroper.com/" target="_blank">joshuaroper.com</a>
             </div>
             <p>
                 I created a personal portfolio website to showcase all of my recent works. I utilized advanced CSS animations, Svelte, and a static Sapper build.
@@ -47,7 +47,7 @@
             <p class="detail-preface skills-listing">React, React Static, JavaScript, WebPack, SASS, JSX, WordPress</p>
             <h3 class="detail-title">Halcyon</h3>
             <div class="detail-web-links">
-                <a href="https://www.visithalcyon.com/" target="blank">visithalcyon.com</a>
+                <a href="https://www.visithalcyon.com/" target="_blank">visithalcyon.com</a>
             </div>
             <p>
                 As one of the Front End Developers on the project I was tasked with creating the movies, and events directory. I worked with multiple API’s, React Static, and developed clean code.
@@ -57,7 +57,7 @@
             <p class="detail-preface skills-listing">JavaScript, jQuery, SASS, Foundation, HTML, Kentico (CMS)</p>
             <h3 class="detail-title">University Park</h3>
             <div class="detail-web-links">
-                <a href="https://www.uptexas.org/" target="blank">uptexas.org</a>
+                <a href="https://www.uptexas.org/" target="_blank">uptexas.org</a>
             </div>
             <p>
                 I was the sole Front End Developer on the project, I implemented a dynamically generated content slider, filtered search, form verification, and multiple third party integrations.
@@ -67,7 +67,7 @@
             <p class="detail-preface skills-listing">HTML, CSS, JavaScript, Jquery, WordPress, DiviBuilder</p>
             <h3 class="detail-title">Creative Revolt</h3>
             <div class="detail-web-links">
-                <a href="https://www.creativerevolt.com/" target="blank">creativerevolt.com</a>
+                <a href="https://www.creativerevolt.com/" target="_blank">creativerevolt.com</a>
             </div>
             <p>
                 This was a freelance project to completely rework the website layout and tailor the feel of the website to her personal writing style.

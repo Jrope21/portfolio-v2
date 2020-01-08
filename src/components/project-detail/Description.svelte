@@ -104,7 +104,7 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
     </h3>
     <p>
         {@html text}
-        <a target="blank" href="{url}">
+        <a target="_blank" href="{url}">
             <TextAnimation text={`View Website`} />
         </a>
     </p>

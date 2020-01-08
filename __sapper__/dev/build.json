@@ -2,7 +2,7 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.d8f7dfa9.js"
+    "main": "client.145f84e2.js"
   },
   "css": {
     "main": "main.4023001569.css",
@@ -13,22 +13,22 @@
       ],
       "PageTransition.svelte": [],
       "experience.svelte": [
-        "experience.835fc555.css"
+        "experience.6b4c8397.css"
       ],
       "projects/creative-revolt.svelte": [
-        "creative-revolt.0fb1d97d.css",
+        "creative-revolt.a32c6e61.css",
         "TextAnimation.ed24c4c5.css",
-        "Skills.f9889215.css"
+        "Skills.4c5c0aaa.css"
       ],
       "projects/university-park.svelte": [
-        "university-park.aadcf603.css",
+        "university-park.f52e93d0.css",
         "TextAnimation.ed24c4c5.css",
-        "Skills.f9889215.css"
+        "Skills.4c5c0aaa.css"
       ],
       "projects/halcyon.svelte": [
-        "halcyon.e150bc41.css",
+        "halcyon.5ffc97f1.css",
         "TextAnimation.ed24c4c5.css",
-        "Skills.f9889215.css"
+        "Skills.4c5c0aaa.css"
       ],
       "about.svelte": [
         "about.1e3afa23.css"

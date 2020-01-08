@@ -14,27 +14,32 @@ let STATE = {
     images: [
         {
             src: 'images/university-park/home.png',
+            alt: `The home page for the City of University Park website`,
             visible: true,
             key: 0,
         },
         
         {
             src: 'images/university-park/library.png',
+            alt: `The library page for the City of University Park website`,
             visible: false,
             key: 1,
         },
         {
             src: 'images/university-park/home-video.png',
+            alt: `The video modal on the City of University Park website`,
             visible: false,
             key: 2,
         },
         {
             src: 'images/university-park/form.png',
+            alt: `The direct alarm monitoring form for the City of University Park website`,
             visible: false,
             key: 3,
         },
         {
             src: 'images/university-park/newsletter.png',
+            alt: `The newsletter page for the City of University Park website`,
             visible: false,
             key: 4,
         },

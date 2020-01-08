@@ -31,6 +31,4 @@ aside {
 
 <aside>
     <LogoText addClass="show-for-small" />
-    <!-- <Skills />
-    <Contact /> -->
 </aside>

@@ -423,11 +423,11 @@ button.next:hover, button.back:hover {
         {#each STATE.images as img}
             {#if img.visible}
                 <div transition:fly|local="{{ x: -40, duration: 850 }}" class="slide">
-                    <button on:click={() => viewPreviousSlide()} class="back">
+                    <button aria-label="a button that shows the previous image in the carousel" on:click={() => viewPreviousSlide()} class="back">
                         <span class="arrow-left"></span>
                     </button>
-                    <img src="{img.src}" alt="wassup">
-                    <button on:click={() => viewNextSlide()} class="next">
+                    <img src="{img.src}" alt="{img.alt}">
+                    <button aria-label="a button that shows the next image in the carousel" on:click={() => viewNextSlide()} class="next">
                         <span class="arrow-right"></span>
                     </button>
                 </div>
@@ -440,6 +440,7 @@ button.next:hover, button.back:hover {
                     switchSlides(img.key)
                 }} 
                 class="circle {img.visible ? 'active' : ''}"
+                aria-label="a button to go to a specific image in the carousel"
             ></span>
         {/each}
     </div>

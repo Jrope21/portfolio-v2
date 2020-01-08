@@ -14,26 +14,31 @@ let STATE = {
     images: [
         {
             src: 'images/halcyon/home-cta.png',
+            alt: `A call to action on the home page of the Halcyon Center Mall website`,
             visible: true,
             key: 0,
         },
         {
             src: 'images/halcyon/home.png',
+            alt: `The home page for Halcyon Center Mall website`,
             visible: false,
             key: 1,
         },
         {
             src: 'images/halcyon/dining.png',
+            alt: `The dining directory page of the Halcyon Center Mall website`,
             visible: false,
             key: 2,
         },
         {
             src: 'images/halcyon/events.png',
+            alt: `The events directory page of the Halcyon Center Mall website`,
             visible: false,
             key: 3,
         },
         {
             src: 'images/halcyon/spotlight.png',
+            alt: `A spotlight for businesses on the home page of the Halcyon Center Mall website`,
             visible: false,
             key: 4,
         }, 

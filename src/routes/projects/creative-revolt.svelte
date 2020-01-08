@@ -14,26 +14,31 @@ let STATE = {
     images: [
         {
             src: 'images/creative-revolt/home.png',
+            alt: `The landing page for Creative Revolt`,
             visible: true,
             key: 0,
         },
         {
             src: 'images/creative-revolt/home-ctas.png',
+            alt: `A call to action setup for Creative Revolt`,
             visible: false,
             key: 1,
         },
         {
             src: 'images/creative-revolt/about.png',
+            alt: `The about page for Creative Revolt`,
             visible: false,
             key: 2,
         },
         {
             src: 'images/creative-revolt/about-cta.png',
+            alt: `A call to action exculusively design for Creative Revolt`,
             visible: false,
             key: 3,
         },
         {
             src: 'images/creative-revolt/writing-class.png',
+            alt: `A page from creative revolt that introduces customers to her their courses`,
             visible: false,
             key: 4,
         },
