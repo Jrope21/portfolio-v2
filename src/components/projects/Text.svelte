@@ -24,7 +24,7 @@ export let projectName, url, projectText, projectYear;
         align-items: center;
         margin: 15rem 0rem 5rem 0rem;
         font-size: 13rem;
-        font-weight: 900;
+        font-weight: 600;
         text-transform: capitalize;
         transition: all .2s ease-in-out;
         color: #3B3B3B;
@@ -81,7 +81,7 @@ export let projectName, url, projectText, projectYear;
         <span class='year'>{projectYear}</span>
         {@html projectText}
     </p>
-    <a  href="{url}">
-        <TextAnimation text={`View Website`} />
+    <a href="{url}">
+        <TextAnimation text={`Project Details`} />
     </a>
 </div>

@@ -1,5 +1,5 @@
 <script>
-
+export let skills;
 </script>
 
 <style>
@@ -7,27 +7,19 @@
     div {
         display: flex;
         flex-direction: column;
-        margin: 40rem 0;
     }
     
     @media screen and (min-width: 40em){
         div{
-            margin: 50rem 0;
+            flex-direction: row;
         }
     }
 
     h3 {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0rem 0rem 15rem 0rem;
-
-        font-size: 13rem;
-        font-weight: 900;
-        text-transform: capitalize;
-        transition: all .2s ease-in-out;
-        color: #3B3B3B;
-        z-index: 2;
+        width: fit-content;
+        margin-bottom: 15rem;
+        width: 100%;
+        text-transform: uppercase;
         
     }
 
@@ -45,7 +37,6 @@
     }
 
     ul.skills{
-        padding-left: 10px;
         position: relative;
         top: 10rem;
         width: 100%;
@@ -92,6 +83,7 @@
     @media screen and (min-width: 64em){
         li {
             font-size: 18rem;
+            margin: 0rem 0rem 35rem 0rem;
         }
     }
 
@@ -117,24 +109,11 @@
 
 <div>
     <h3>
-        Technology
+        The Tech
     </h3>
         <ul class="skills">
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>CSS</li> 
-            <li>HTML (WCAG 2.1)</li>
-            <li>WordPress</li>
-            <li>Divi Builder</li>
-            <li>Adobe Suite</li>
-            <li>SEO</li>
-            <li>Usability Testing</li> 
-            <li>HTML (WCAG 2.1)</li>
-            <li>HTML Emails</li>
-            <li>GitHub / BitBucket</li>
-            <li>WordPress / Kentico</li>
-            <li>Adobe Suite</li>
-            <li>SEO</li>
-            <li>Usability Testing</li> 
+            {#each skills as skill}
+                <li>{skill}</li>
+            {/each}
         </ul>
 </div>

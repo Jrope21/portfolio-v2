@@ -576,7 +576,7 @@ a:hover .circleIcon{
   h3 {
     margin-bottom: 5rem;
     font-size: 13rem;
-    font-weight: 900;
+    font-weight: 600;
     color: #414042;
   }
   
@@ -586,6 +586,11 @@ a:hover .circleIcon{
     /* left: 0; */
 }
 
+strong {
+  font-weight: 600 !important;
+}
+
+button:focus {outline:0;}
 /* @media screen and (min-width: 64em){
   h3 {
     font-size:

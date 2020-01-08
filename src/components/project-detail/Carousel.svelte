@@ -1,34 +1,10 @@
 <script>
 import { fade, fly } from 'svelte/transition'
+export let images;
+
 
 let STATE = {
-    images: [
-        {
-            src: 'images/creative-revolt/home.png',
-            visible: true,
-            key: 0,
-        },
-        {
-            src: 'images/creative-revolt/home-ctas.png',
-            visible: false,
-            key: 1,
-        },
-        {
-            src: 'images/creative-revolt/about.png',
-            visible: false,
-            key: 2,
-        },
-        {
-            src: 'images/creative-revolt/about-cta.png',
-            visible: false,
-            key: 3,
-        },
-        {
-            src: 'images/creative-revolt/writing-class.png',
-            visible: false,
-            key: 4,
-        },
-    ]
+    images: images
 }
 
 function switchSlides(key) {
@@ -104,6 +80,13 @@ function findCurrentSlide() {
         width: auto;
         margin-top: 65rem;
         margin-bottom: 80rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .carousel-container {
+        margin-bottom: 120rem;
+        margin-top: 75rem;
     }
 }
 
@@ -435,12 +418,8 @@ button.next:hover, button.back:hover {
 }
 </style>
 
-<!-- notes to come back to -->
-<!-- TODO -  -->
 <div class="carousel-container">
-<!-- <span class="title">CREATIVE REVOLT</span> -->
-    <div class="box"></div> <!-- <span class="title">CREATIVE REVOLT</span> TODO style text to appear nice on fade out-->
-    <!-- TODO - make top of box longer then bottom -->
+    <div class="box"></div> 
         {#each STATE.images as img}
             {#if img.visible}
                 <div transition:fly|local="{{ x: -40, duration: 850 }}" class="slide">

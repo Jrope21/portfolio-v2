@@ -96,7 +96,7 @@ footer {
 .left p:last-child {
     color: #58595b;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     margin-top: 25rem;
 }
 

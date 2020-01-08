@@ -2,13 +2,13 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.b32e503f.js"
+    "main": "client.103e89a4.js"
   },
   "css": {
-    "main": "main.2660615302.css",
+    "main": "main.1727931565.css",
     "chunks": {
       "index.svelte": [
-        "index.f8f3ec27.css",
+        "index.d05e32de.css",
         "TextAnimation.11321dbd.css"
       ],
       "PageTransition.svelte": [],
@@ -16,15 +16,22 @@
         "experience.835fc555.css"
       ],
       "projects/creative-revolt.svelte": [
-        "creative-revolt.cf63eba4.css",
+        "creative-revolt.994a536c.css",
         "TextAnimation.11321dbd.css",
-        "AboutMe.caae3f75.css"
+        "Skills.73137b0a.css"
       ],
-      "projects/university-park.svelte": [],
-      "projects/halcyon.svelte": [],
+      "projects/university-park.svelte": [
+        "university-park.a3d633e1.css",
+        "TextAnimation.11321dbd.css",
+        "Skills.73137b0a.css"
+      ],
+      "projects/halcyon.svelte": [
+        "halcyon.8ab6d18e.css",
+        "TextAnimation.11321dbd.css",
+        "Skills.73137b0a.css"
+      ],
       "about.svelte": [
-        "about.351198a8.css",
-        "AboutMe.caae3f75.css"
+        "about.0b438e00.css"
       ],
       "blog/index.svelte": [
         "index.a6d909aa.css"

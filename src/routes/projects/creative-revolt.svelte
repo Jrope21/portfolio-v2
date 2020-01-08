@@ -1,90 +1,110 @@
 <script>
 import PageTransition from '../PageTransition.svelte';
-import AboutMe from '../../components/about/AboutMe.svelte'
 import PageTitle from '../../components/project-detail/PageTitle.svelte';
-import ImageGrid from '../../components/project-detail/ImageGrid.svelte';
-import Description from '../../components/project-detail/Description.svelte'
+import Description from '../../components/project-detail/Description.svelte';
+import Carousel from '../../components/project-detail/Carousel.svelte';
+import Skills from '../../components/project-detail/Skills.svelte';
+
+
+
+let STATE = {
+    title: `Creative Revolt`,
+    url: 'https://www.creativerevolt.com',
+    description: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
+    skills: ['JavaScript', 'CSS', 'HTML', 'PHP', 'DiviBuilder', 'WordPress', 'SEO', 'Googe Analytics', 'Canva', 'Adobe XD', 'MailChimp'],
+    images: [
+        {
+            src: 'images/creative-revolt/home.png',
+            visible: true,
+            key: 0,
+        },
+        {
+            src: 'images/creative-revolt/home-ctas.png',
+            visible: false,
+            key: 1,
+        },
+        {
+            src: 'images/creative-revolt/about.png',
+            visible: false,
+            key: 2,
+        },
+        {
+            src: 'images/creative-revolt/about-cta.png',
+            visible: false,
+            key: 3,
+        },
+        {
+            src: 'images/creative-revolt/writing-class.png',
+            visible: false,
+            key: 4,
+        },
+    ]
+}
+
 </script>
 
 <style>
-div.title-container {
-    padding-bottom: 0;
-}
-
-h1 {
-    width: fit-content;
-    font-weight: 700;
-}
-h1.title {
-        margin-top: 100px;
-        color: #3B3B3B;
-        font-size: 58px;
-        font-weight: 700;
-        padding-bottom: 0;
-        
-        margin-left: 0;
-        margin-bottom: 60px;
-        /* position: relative;
-        width: 100%;
-        top: 0; */
-        /* left: -100%; */
-        /* right: 0px;
-        display: flex;
-        font-size: 32px;
-        align-items: center;
-        margin: 0px;
-        color: #3B3B3B;
-        font-weight: 700; */
-        /* animation: 1s ease-out 0s 1 slideInRight forwards; */
-    }
-
-    h1::after {
-        content: '';
-        margin-top: 1px;
-        display: block;
-        width: calc(100% + 35px);
-        height: 1px;
-        border-bottom: 8px solid lightgray;
+    @media screen and (min-width: 40em){
+        .inner-container {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 
     @media screen and (min-width: 40em){
-        h1 {
-            font-size: 38px;
+        .project-description {
+            padding-left: 12%;
+            margin: 50rem 0;
         }
     }
 
-    @media screen and (min-width: 64em){
-        h1 {
-            font-size: 48px;
+    @media (min-width: 64em) {
+        .project-description {
+            margin: 60rem 0;
+        }
+    }
+    .cta {
+        margin: 60rem 0;
+    }
+
+    @media (min-width: 40em) {
+        .cta {
+            margin: 75rem 0;
+            margin-left: 15%;
         }
     }
 
-    p {
-        font-size: 18rem;
-        line-height: 23px;
-        width: 700px;
+    @media (min-width: 64em) {
+        .cta {
+            margin: 85rem 0;
+            margin-left: 17%;
+        }
     }
 
-    h1.headline {
-        font-size: 28rem;
-        text-transform: uppercase;
-        display: block;
-        margin-bottom: 12px;
+    .cta p {
+        color: #58595b;
+        font-size: 18px;
         font-weight: 600;
-        width: fit-content;
+        font-style: italic;
+    }
 
+    @media (min-width: 64em) {
+        .cta p {
+            font-size: 26px;
+            font-weight: 800;
+        }
         
     }
-.container {
-    /* padding-top: 0; */
-}
-    .inner-container {
-        width: 90%;
-        margin: 60px auto;
-        font-weight: 300;
-        color: #58595b;
+
+    .skills-container {
+        margin: 40rem 0;
     }
 
+    @media (min-width: 40em) {
+        section {
+            padding-left: 12%;
+        }
+    }
     .project-detail {
         margin-bottom: 60px
     }
@@ -97,21 +117,20 @@ h1.title {
 
 <div class="project-detail">
     <PageTransition>
-    <div class="container">
-        <PageTitle title={'Creative Revolt'} />
-        
-            <!-- <h1 class="title">Creative Revolt</h1> -->
-        <!-- <section class="inner-container">
-            <h1 class="headline">Summary</h1>
-            <p>Hi There! I’m Josh, a Dallas-based Front End Developer with a knack for programing and design. My passion comes from bringing together each aspect of the customer journey across both development and design processes. I focus on creating production ready applications utilizing UX principals with scalable clean code.</p>
-        </section> -->
-
-<!-- <AboutMe /> -->
-        <section class="">
-            <ImageGrid />
-        </section>
-        
-        
+        <div class="container">
+            <PageTitle title={'Creative Revolt'} />
+            <div class="inner-container">
+                <Carousel images={STATE.images}/>
+                <section class="project-description">
+                    <Description text={STATE.description} url={STATE.url} />  
+                </section>
+                <section class="skills-container">
+                    <Skills skills={STATE.skills}/>
+                </section>
+                <section class="cta">
+                    <p>Check The Site!</p>
+                </section>
+            </div>
         </div>
     </PageTransition>
 </div>

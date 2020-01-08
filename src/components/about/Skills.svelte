@@ -83,6 +83,7 @@
     @media screen and (min-width: 64em){
         li {
             font-size: 18rem;
+            margin: 0rem 0rem 35rem 0rem;
         }
     }
 

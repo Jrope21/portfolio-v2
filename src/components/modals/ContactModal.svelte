@@ -118,7 +118,7 @@
         width: 100%;
         border-radius: 4px;
         padding: 15rem 20rem 40rem 20rem;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
         box-shadow: 5px 5px 5px lightgray;
     }
 

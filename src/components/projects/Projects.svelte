@@ -6,7 +6,7 @@
 
     let portfolioCards = [
         {
-            url: 'https://www.visithalcyon.com',
+            url: '/projects/halcyon',
             imgSrc: 'images/halcyon-5.jpg',
             alt: 'Thumbnail for the Halcyon mall website rebuild',
             projectName: 'Halcyon',
@@ -14,7 +14,7 @@
             projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`
         },
         {
-            url: 'https://www.uptexas.org',
+            url: '/projects/university-park',
             imgSrc: 'images/uptexas-thumb.jpg',
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'University Park',

@@ -79,7 +79,7 @@
 
 <div>
     <h3>
-        About Me
+        Details
     </h3>
     <p>
         Hi There! I’m Josh, a Dallas-based <strong>Front End Developer</strong> with a knack for programing and design.
