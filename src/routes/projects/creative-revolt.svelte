@@ -24,3 +24,4 @@ import Description from '../../components/project-detail/Description.svelte'
    </div>  -->
     <ImageGrid />
 </section>
+
