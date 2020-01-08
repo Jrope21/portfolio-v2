@@ -309,6 +309,7 @@ button.next, button.back {
     width: 30%;
     height: 100%;
     opacity: .3;
+    top: 0;
     transition: all .3s ease-out;
 }
 
