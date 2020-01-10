@@ -4,21 +4,14 @@ export let addClass;
 
 <style>
 section.titles {
-<<<<<<< HEAD
-    margin-bottom: 20rem;
-=======
     margin-bottom: 40rem;
->>>>>>> v2Design
     top: 180px;
 }
 
 @media screen and (min-width: 40em) {
     section.titles {
         margin-bottom: 60rem;
-<<<<<<< HEAD
-=======
         position: -webkit-sticky;
->>>>>>> v2Design
         position: sticky;
     }
 }

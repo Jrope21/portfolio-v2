@@ -47,7 +47,7 @@ let STATE = {
 
 </script>
 
-<style>
+<style lang="scss">
     @media screen and (min-width: 40em){
         .inner-container {
             width: 90%;
@@ -59,6 +59,10 @@ let STATE = {
         .project-description {
             padding-left: 12%;
             margin: 50rem 0;
+
+            &::before {
+                content: 'wassup';
+            }
         }
     }
 
@@ -124,21 +128,6 @@ let STATE = {
 	<title>Creative Revolt | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
-<<<<<<< HEAD
-<div 
-    in:fly="{{ x: -80, duration: 500, delay: 200, }}"
->
-    <PageTitle title={'Creative Revolt'} />
-</div>
-
-<section class="container">
-   <!-- <div class="container">
-        <Description />
-   </div>  -->
-    <ImageGrid />
-</section>
-
-=======
 
 <div class="project-detail">
     <PageTransition>
@@ -159,4 +148,3 @@ let STATE = {
         </div>
     </PageTransition>
 </div>
->>>>>>> v2Design

@@ -62,14 +62,14 @@ import Skills from './Skills.svelte';
 </style>
 
 <div class="inner-container">
-        <Carousel />
-        <section class="project-description">
-            <Description />    
-        </section>
-        <section class="skills-container">
-            <Skills />
-        </section>
-        <section class="cta">
-            <p>Check The Site!</p>
-        </section>
+    <Carousel />
+    <section class="project-description">
+        <Description />    
+    </section>
+    <section class="skills-container">
+        <Skills />
+    </section>
+    <section class="cta">
+        <p>Check The Site!</p>
+    </section>
 </div>
