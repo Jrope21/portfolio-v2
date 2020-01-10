@@ -2927,7 +2927,7 @@ const components = [
 	},
 	{
 		js: () => import('./university-park.85aa56ff.js'),
-		css: ["university-park.85aa56ff.css","TextAnimation.ed24c4c5.css","ProjectDetailTemplate.0932a0d7.css"]
+		css: ["TextAnimation.ed24c4c5.css","ProjectDetailTemplate.0932a0d7.css"]
 	},
 	{
 		js: () => import('./halcyon.707400fb.js'),

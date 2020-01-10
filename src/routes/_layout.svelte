@@ -8,8 +8,8 @@
 	console.log(segment);
 </script>
 
-<style>
-
+<style global lang="scss">
+	@import '../styles/global.styles.scss';
 	.background {
 		background: url('../images/so-white.png');
 		position: fixed;
@@ -23,5 +23,7 @@
 
 <Navigation segment={segment} />
 <div class="background"></div>
-<slot ></slot>
+<main>
+	<slot ></slot>
+</main>
 <Footer />

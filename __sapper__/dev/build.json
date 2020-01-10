@@ -1,36 +1,9 @@
 {
   "bundler": "rollup",
   "shimport": "1.0.1",
-  "assets": {
-    "main": "client.41d634a0.js"
-  },
+  "assets": {},
   "css": {
-    "main": "main.1890858845.css",
-    "chunks": {
-      "index.svelte": [
-        "index.a96eba03.css",
-        "TextAnimation.ed24c4c5.css"
-      ],
-      "PageTransition.svelte": [],
-      "experience.svelte": [
-        "experience.5f152902.css"
-      ],
-      "projects/creative-revolt.svelte": [
-        "TextAnimation.ed24c4c5.css",
-        "ProjectDetailTemplate.0932a0d7.css"
-      ],
-      "projects/university-park.svelte": [
-        "university-park.85aa56ff.css",
-        "TextAnimation.ed24c4c5.css",
-        "ProjectDetailTemplate.0932a0d7.css"
-      ],
-      "projects/halcyon.svelte": [
-        "TextAnimation.ed24c4c5.css",
-        "ProjectDetailTemplate.0932a0d7.css"
-      ],
-      "about.svelte": [
-        "about.84100e4c.css"
-      ]
-    }
+    "main": "main.125207967.css",
+    "chunks": {}
   }
 }

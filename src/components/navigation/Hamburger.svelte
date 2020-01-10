@@ -5,13 +5,10 @@ export let toggle, hamburger;
 
 </script>
 
-<style>
+<style lang="scss">
+@import '../../styles/global.variables.scss';
 
-@keyframes leaveScreen {
-  100%{
-    transform: translateX(9999px)
-  }
-}
+
 
 #toggle {
   display: none;
@@ -76,6 +73,10 @@ span.middle {
   z-index: 1;
   transition: opacity .35s ease-in;
   animation: .01s ease-in .35s 1 leaveScreen forwards;
+
+  @media (min-width: breakpoint(md)) {
+    display: none;
+  }
 }
 
 #toggle:hover + .background + label > .hamburger::after {

@@ -2,7 +2,8 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     div {
         display: flex;
@@ -30,7 +31,7 @@
 
     @media screen and (min-width: 64em){
         h3 {
-            font-size: 23rem;
+            /* font-size: 23rem; */
             width: 20%;
         }
     }
@@ -38,11 +39,6 @@
     P:nth-child(2)::before{
         content: '';
         display: block;
-    }
-    p {
-        font-weight: 300;
-        font-size: 13rem;
-        color: #58595b;
     }
 
     .social-container {
@@ -54,7 +50,7 @@
 
     i {
         margin: 05rem 0;
-        color: gray;
+        color: color(accent);
         display: flex;
         align-items: center;
         transition: all .3s ease;
@@ -62,20 +58,10 @@
 
     i > span {
         margin-left: 10rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-size: 13rem;
-        color: #58595b;
-    }
-
-    @media screen and (min-width: 64em){
-        i > span{
-            font-size: 18rem;
-        }
     }
 
     a:hover i {
-        color: #3B3B3B;
+        color: color(primary);
     }
 
 

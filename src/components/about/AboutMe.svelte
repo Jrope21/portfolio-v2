@@ -2,15 +2,14 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     div {
         display: flex;
         flex-direction: column;
-    }
-    
-    @media screen and (min-width: 40em){
-        div{
+
+        @media (min-width: breakpoint(sm)) {
             flex-direction: row;
         }
     }
@@ -19,12 +18,10 @@
         width: fit-content;
         margin-bottom: 15rem;
         width: 100%
-    }
 
-    @media screen and (min-width: 40em){
-        p:nth-child(1) {
-            width: 20%;
-        }
+       @media (min-width: breakpoint(sm)) {
+            width: 20%;;
+        } 
     }
 
     h3{
@@ -41,7 +38,6 @@
     }
     @media screen and (min-width: 64em){
         h3 {
-            font-size: 23rem;
             width: 20%;
         }
     }
@@ -59,19 +55,6 @@
     @media screen and (min-width: 64em){
         p:nth-child(2) {
             width: 50%;
-        }
-    }
-
-    p {
-        font-weight: 300;
-        font-size: 13rem;
-        color: #58595b;
-    }
-
-    @media screen and (min-width: 64em){
-        p{
-            font-size: 18rem;
-            line-height: 23px;
         }
     }
 

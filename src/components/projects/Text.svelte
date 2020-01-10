@@ -33,11 +33,7 @@ export let projectName, url, projectText, projectYear;
 
     p{
         position: relative;
-        line-height: 16px;
-        font-weight: 300;
-        font-size: 13rem;
         z-index: 1;
-        color: #58595b;
         text-indent: 10px;
     }
 
