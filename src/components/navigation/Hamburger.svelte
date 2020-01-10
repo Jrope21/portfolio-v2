@@ -1,8 +1,8 @@
 <script>
 import { onMount, afterUpdate, tick  } from 'svelte';
 
-export let toggle;
-export let hamburger;
+export let toggle, hamburger;
+
 </script>
 
 <style>
@@ -18,30 +18,51 @@ export let hamburger;
 }
 
 .hamburger {
-  display: flex;
+  position: relative;
+  display: block;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
-  border-bottom: 2.2px solid black;
+  /* border-bottom: 2.2px solid black; */
   cursor: pointer;
-  width: 24px;
-  height: 22px;
-  transition: width .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+  overflow: hidden;
+  width: 32px;
+  height: 18px;
+  transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 .hamburger::before {
   content: '';
   display: block;
-  border-bottom: 2.5px solid black;
-  width: 18px;
-  transition: width .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+  border-bottom: 2px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  transform: translateX(14px);
+  transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 .hamburger::after {
   content: '';
   display: block;
-  border-bottom: 2.2px solid black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid black;
   width: 32px;
+  transform: translateX(8px);
+  transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+}
+
+span.middle {
+  display: block;
+  border-bottom: 2px solid black;
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .background {
@@ -57,20 +78,20 @@ export let hamburger;
   animation: .01s ease-in .35s 1 leaveScreen forwards;
 }
 
-#toggle:hover + .background + label > .hamburger {
-  width: 32px;
+#toggle:hover + .background + label > .hamburger::after {
+  transform: translateX(0);
 }
 
-#toggle:checked + .background + label > .hamburger {
-  width: 32px;
+#toggle:checked + .background + label > .hamburger::after {
+  transform: translateX(0);
 }
 
 #toggle:hover + .background + label > .hamburger::before {
-  width: 32px;
+  transform: translateX(0);
 }
 
 #toggle:checked + .background + label > .hamburger::before {
-  width: 32px;
+  transform: translateX(0);
 }
 
 #toggle:checked + .background {
@@ -102,7 +123,9 @@ export let hamburger;
 
 <input id="toggle" type="checkbox" class="hide subnav-toggle hide-for-xlg">
 <div class="background" on:click></div>
-<label id="nav-label" bind:this={hamburger} for="toggle" class="hide-for-xlg">
+<label id="nav-label" for="toggle" class="hide-for-xlg">
     <span class="show-for-sr">Navigation</span>
-    <span class="hamburger" title="Navigation"> </span>
+    <span class="hamburger" bind:this={hamburger} title="Navigation">
+      <span class="middle"></span>
+    </span>
 </label>

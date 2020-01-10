@@ -81,10 +81,6 @@
 
 </style>
 
-<!-- <svelte:head>
-    <script src="https://kit.fontawesome.com/1309990c29.js"></script>
-</svelte:head> this script is being added via the footer -->
-
 <div>
     <h3>
         Contact

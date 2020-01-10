@@ -5,7 +5,10 @@ import Contact from './Contact.svelte';
 </script>
 
 <style>
+<<<<<<< HEAD
 
+=======
+>>>>>>> v2Design
 aside {
     height: 78%;
 }
@@ -32,6 +35,9 @@ aside {
 
 <aside>
     <LogoText addClass="show-for-small" />
+<<<<<<< HEAD
     <!-- <Skills /> -->
     <!-- <Contact /> -->
+=======
+>>>>>>> v2Design
 </aside>

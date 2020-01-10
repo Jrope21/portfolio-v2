@@ -1,6 +1,5 @@
 <script>
 export let imgSrc, alt;
-export let projectName;
 export let url;
 export let width;
 </script>
@@ -69,7 +68,7 @@ export let width;
    
 </style>
 
-<a target="blank" class="{width}" href="{url}">
+<a class="{width}" href="{url}">
     <div class="img-container">
       <img src="{imgSrc}" alt="{alt}">
     </div>

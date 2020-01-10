@@ -58,13 +58,6 @@
         opacity: .4;
     }
 
-    p {
-        font-weight: 300;
-        font-size: 13rem;
-        color: #58595b;
-    }
-
-    
     li {
         width: 100%;
         font-weight: 300;
@@ -83,12 +76,8 @@
     @media screen and (min-width: 64em){
         li {
             font-size: 18rem;
+            margin: 0rem 0rem 35rem 0rem;
         }
-    }
-
-    span {
-        color: #414042;
-        font-weight: 500;
     }
 
     ul li:last-child {

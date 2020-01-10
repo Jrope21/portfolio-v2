@@ -1,5 +1,12 @@
 <script>
-import TextAnimation from '../helper-components/TextAnimation.svelte';
+    import ContactModal from '../modals/ContactModal.svelte';
+    import TextAnimation from '../helper-components/TextAnimation.svelte';
+
+    let showModal;
+
+    function openModal(){
+        showModal = true;
+    }
 
 </script>
 
@@ -93,11 +100,17 @@ footer {
     font-weight: 300;
 }
 
-.left p:last-child {
+.left .open-modal {
+    display: block;
     color: #58595b;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     margin-top: 25rem;
+    transition: opacity .45s ease-in-out;
+}
+
+.left .open-modal:hover {
+    opacity: .75;
 }
 
 div.social-icons {
@@ -125,7 +138,7 @@ a:hover > i {
         font-size: 18px;
         margin-right: 10px;
     }
-    .left p:last-child {
+    .left .open-modal {
         margin-top: 60rem;
     }
 
@@ -145,7 +158,7 @@ a:hover > i {
         font-size: 45px;
         max-width: 440px;
     }
-    .left p:last-child {
+    .left .open-modal{
         font-size: 22px;
         margin-top: 70rem;
     }
@@ -166,7 +179,7 @@ a:hover > i {
             <p class="headline">
                 Feel free to shoot me an <a href="mailto:joshua.micah.roper@gmail.com">email</a> & connect through <a href="https://www.linkedin.com/in/jr-dev" target="blank">social.</a>
             </p>
-            <p>Reach out!</p>
+            <a class="open-modal" on:click={openModal} href="javascript:void(0)">Reach out!</a>
         </div>
         <div class="right">
             <div class="text-cta">
@@ -204,4 +217,4 @@ a:hover > i {
     </div>
 </footer>
 
-
+<ContactModal on:click={() => showModal = false} showModal={showModal}/>

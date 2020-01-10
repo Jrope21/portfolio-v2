@@ -1,7 +1,7 @@
 <script>
-import Image from './Image.svelte';
-import TopBar from './TopBar.svelte';
 import Description from './Description.svelte';
+import Carousel from './Carousel.svelte';
+import Skills from './Skills.svelte';
 </script>
 
 <style>
@@ -11,70 +11,65 @@ import Description from './Description.svelte';
         margin: 0 auto;
     }
 }
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 8%;
-}
 
 @media screen and (min-width: 40em){
-    .image-grid {
-        box-sizing: border-box;
-        flex-direction: row;
-        align-items: unset;
-        width: 50%;
-        /* padding-left: 5%; */
-        margin: 0 auto;
-    }
     .project-description {
-        padding-top: 8%;
-        width: 50%;
+        padding-left: 12%;
+        margin: 40rem 0;
+    }
+}
+.cta {
+    margin: 50rem 0;
+}
+
+@media (min-width: 40em) {
+    .cta {
+        margin: 65rem 0;
+        margin-left: 15%;
     }
 }
 
-.grid-element-container {
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8%;
+@media (min-width: 64em) {
+    .cta {
+        margin-left: 17%;
+    }
 }
 
-@media screen and (min-width: 40em){
-    .grid-element-container {
-        width: 50%;
+.cta p {
+    color: #58595b;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media (min-width: 64em) {
+    .cta p {
+        font-size: 26px;
+        font-weight: 800;
     }
-    .grid-element-container.full-width {
-        width: 100%;
-    }
-    .grid-60 {
-        width: 60%;
-    }
-    .grid-40 {
-        width: 40%;
+    
+}
+
+.skills-container {
+    margin: 40rem 0;
+}
+
+@media (min-width: 40em) {
+    section {
+        padding-left: 12%;
     }
 }
 </style>
 
 <div class="inner-container">
-    <TopBar />
-    <div class="grid-x">
-        <div class="project-description">
-            <Description />
-        </div>
-        
-        <div class="image-grid">
-            <div class="grid-element-container full-width"> <!-- this should be a cool designer image (logo shiz) -->
-                <Image width={'full-width'} imgSrc={'images/Jorden-Background-Gray.jpg'} url={''} alt={''} />
-            </div>
-            <div class="grid-element-container full-width"> <!-- this should be a cool designer image (logo shiz) -->
-                <Image width={'full-width'} imgSrc={'images/Jorden-Background-Gray.jpg'} url={''} alt={''} />
-            </div>
-            <div class="grid-element-container full-width"> <!-- this should be a cool designer image (logo shiz) -->
-                <Image width={'full-width'} imgSrc={'images/Jorden-Background-Gray.jpg'} url={''} alt={''} />
-            </div>
-        </div>
-    </div>
+        <Carousel />
+        <section class="project-description">
+            <Description />    
+        </section>
+        <section class="skills-container">
+            <Skills />
+        </section>
+        <section class="cta">
+            <p>Check The Site!</p>
+        </section>
 </div>

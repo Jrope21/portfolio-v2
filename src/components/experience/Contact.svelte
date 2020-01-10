@@ -20,6 +20,6 @@
 
 <section class="contact">
     <h2 class="headline alt">Contact</h2>
-        <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="blank" >linkedin.com/in/JR-dev</a>
-        <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="blank" >Joshua.Micah.Roper@gmail.com</a>
+        <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" >linkedin.com/in/JR-dev</a>
+        <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="_blank" >Joshua.Micah.Roper@gmail.com</a>
 </section>

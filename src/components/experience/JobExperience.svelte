@@ -53,21 +53,21 @@ li.detail {
             <li class="detail">
                 Developed the entire Front End for a high traffic, 99% up time website
                 <div class="detail-web-links">
-                    <a href="https://www.uptexas.org" target="blank">uptexas.org</a> 
+                    <a href="https://www.uptexas.org" target="_blank">uptexas.org</a> 
                 </div>
             </li>
             <li class="detail">
                 Made web enhancements and landing page’s for multiple businesses
                 <div class="detail-web-links">
-                    <a href="https://www.webuyuglyhouses.com" target="blank">webuyuglyhouses.com</a>, 
-                    <a href="https://www.homevestors.com" target="blank">homevestors.com</a>, 
-                    <a href="https://www.advancial.org" target="blank">advancial.org</a>, etc....
+                    <a href="https://www.webuyuglyhouses.com" target="_blank">webuyuglyhouses.com</a>, 
+                    <a href="https://www.homevestors.com" target="_blank">homevestors.com</a>, 
+                    <a href="https://www.advancial.org" target="_blank">advancial.org</a>, etc....
                 </div>
             </li>
             <li class="detail">
                 Maintained 10 React based themes responsible for over 50 established malls
                 <div class="detail-web-links">
-                    <a href="https://www.visithalcyon.com" target="blank">visithalcyon.com</a>
+                    <a href="https://www.visithalcyon.com" target="_blank">visithalcyon.com</a>
                 </div>
             </li>
             <li class="detail">
@@ -79,7 +79,7 @@ li.detail {
         <p class="date-location detail-preface">Carrollton, Texas (2017 - 2018)</p>
         <h3 class="job-title detail-title">Freelance Web Development and Marketing at Creative Revolt</h3>
         <div class="detail-web-links">
-            <a href="https://www.creativerevolt.com" target="blank">creativerevolt.com</a>
+            <a href="https://www.creativerevolt.com" target="_blank">creativerevolt.com</a>
         </div>
         <ul class="job-details">
             <li class="detail">

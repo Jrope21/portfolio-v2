@@ -4,6 +4,8 @@ import ContactModal from '../modals/ContactModal.svelte';
 
 import { onMount } from 'svelte';
 
+export let segment;
+
 let showModal;
 
 let windowY;
@@ -29,8 +31,6 @@ function navSize(y){
 }
 
 function togglerOff(){
-    setActiveNavOnClick(this)
-
     if(window.innerWidth < 1023){
         hamburger ? hamburger.$$.ctx.hamburger.click() : null;
     }
@@ -44,9 +44,12 @@ function resetActiveNav() {
     }
 }
 
-function setActiveNavOnClick(el) {
+// TODO -- these functions need to be cleaned up - not using all of this anymore (using segment prop instead)
+
+function setActiveNavOnClick() {
+    
     let activeNavObj = Object.entries(activeNavigation);
-    let elText = `${el.innerHTML.toLowerCase()}`;
+    let elText = `${this.innerHTML.toLowerCase()}`;
     
     for(let [key, value] of activeNavObj){
         if(key === elText){
@@ -55,6 +58,7 @@ function setActiveNavOnClick(el) {
             activeNavigation[key] = false;
         }
     }
+    togglerOff();
 }
 
 function setActiveNav() {
@@ -151,7 +155,7 @@ ul.navigation {
 li {
     position: relative;
     text-align: right;
-    padding: 5rem 0rem;
+    margin: 5rem 0rem;
     width: auto;
     overflow-x: hidden;
     font-size: 14rem;
@@ -163,6 +167,11 @@ li {
         margin: 0rem 20rem;
         padding: 2.5rem 0;
     }
+
+    li:last-of-type {
+        margin-right: 0;
+    }
+    
     p{
         font-size: 18rem;
     }
@@ -276,9 +285,9 @@ p{
         <Hamburger on:click={togglerOff} toggle={toggle} bind:this={hamburger} />
         <ul class="navigation {showModal ? 'modal-active' : ''}">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
-            <li class="{activeNavigation.home ? 'selected' : ''}"><a on:click={togglerOff} rel=prefetch href="/">Home</a></li>
-            <li class="{activeNavigation.about ? 'selected' : ''}"><a on:click={togglerOff} rel=prefetch href="/about">About</a></li>
-            <li class="{activeNavigation.experience ? 'selected' : ''}"><a on:click={togglerOff} href="/experience">Experience</a></li>
+            <li class="{segment === undefined ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>
+            <li class="{segment === 'about' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a></li>
+            <li class="{segment === 'experience' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} href="/experience">Experience</a></li>
             <li class="{showModal ? 'selected' : ''} open-modal"><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>
