@@ -3,7 +3,8 @@ import { onMount } from 'svelte';
 let heroImg;
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     .hero-image{
         width: 250px;
@@ -18,33 +19,27 @@ let heroImg;
         position: relative;
         z-index: 2;
         transition: top .01s ease-in;
-    }
 
-    @media screen and (min-width: 40em){
-        .hero-image {
+        @media (min-width: breakpoint(sm)) {
             margin-right: -70px;
             width: 220px;
             background-position: 45% 25%;
             height: 320px;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        .hero-image {
+        @media (min-width: breakpoint(md)) {
             margin-right: -90px;
             width: 320px;
             height: 520px;
         }
-    }
 
-    @media screen and (min-width: 1366px){
-        .hero-image {
+        @media (min-width: breakpoint(lg)) {
             width: 420px;
             height: 620px;
         }
     }
 
-    @media screen and (min-width: 40em){
+    @media (min-width: breakpoint(sm)) {
         .box {
             display: inline-block;
             background: url("../images/drawing.jpg");
@@ -56,20 +51,16 @@ let heroImg;
             border: 3px solid black;
             height: 411px;
             background: transparent;
-        }
-    }
 
-    @media screen and (min-width: 64em) {
-        .box {
-            width: 355px;
-            height: 616px;
-        }
-    }
+            @media (min-width: breakpoint(md)) {
+                width: 355px;
+                height: 616px; 
+            }
 
-    @media screen and (min-width: 1366px){
-        .box {
-            width: 497px;
-            height: 862.4px;
+            @media (min-width: breakpoint(lg)) {
+                width: 497px;
+                height: 862.4px;
+            }
         }
     }
 

@@ -65,357 +65,360 @@ function findCurrentSlide() {
 
 </script>
 
-<style>
-.carousel-container {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    margin: 25rem 0 70rem 0;
-    width: 100%;
-    min-height: 250px;
-}
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
-@media (min-width: 40em) {
     .carousel-container {
-        width: auto;
-        margin-top: 65rem;
-        margin-bottom: 80rem;
-    }
-}
-
-@media (min-width: 64em) {
-    .carousel-container {
-        margin-bottom: 120rem;
-        margin-top: 75rem;
-    }
-}
-
-@media screen and (min-width: 40em){
-    .box {
         position: relative;
-        display: inline-block;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 300px;
-        border: 3px solid black;
-        /* border-right: none; */
-        height: 380px;
-        /* opacity: 0; */
-        background: transparent;
+        align-items: flex-end;
+        margin: 25rem 0 70rem 0;
+        width: 100%;
+        min-height: 250px;
     }
 
-    .box::after {
-        /* content: ''; */
-        position: absolute;
-        background: url('../images/so-white.png');
-        background-position-x: 1%;
-        border-left: 3px solid black;
-        height: 9%;
-        width: 120px;
-        right: -5px;
-        bottom: -3px;
+    @media (min-width: breakpoint(sm)) {
+        .carousel-container {
+            width: auto;
+            margin-top: 65rem;
+            margin-bottom: 80rem;
+        }
     }
 
-    .box::before {
-        /* content: ''; */
-        position: absolute;
-        border-right: 3px solid black;
-        height: 9%;
-        right: 0;
-        top: -3px;
+    @media (min-width: breakpoint(md)) {
+        .carousel-container {
+            margin-bottom: 120rem;
+            margin-top: 75rem;
+        }
     }
-}
 
-@media (min-width: 64em) {
-    .box {
-        width: 400px;
-        height: 516px;
+    @media screen and (min-width: breakpoint(sm)){
+        .box {
+            position: relative;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 300px;
+            border: 3px solid black;
+            /* border-right: none; */
+            height: 380px;
+            /* opacity: 0; */
+            background: transparent;
+        }
+
+        .box::after {
+            /* content: ''; */
+            position: absolute;
+            background: url('../images/so-white.png');
+            background-position-x: 1%;
+            border-left: 3px solid black;
+            height: 9%;
+            width: 120px;
+            right: -5px;
+            bottom: -3px;
+        }
+
+        .box::before {
+            /* content: ''; */
+            position: absolute;
+            border-right: 3px solid black;
+            height: 9%;
+            right: 0;
+            top: -3px;
+        }
     }
-    .box::after {
-        width: 150px;
+
+    @media (min-width: breakpoint(md)) {
+        .box {
+            width: 400px;
+            height: 516px;
+        }
+        .box::after {
+            width: 150px;
+        }
     }
-}
 
-@media (min-width: 1366px) {
-    .box {
-        width: 500px;
-        height: 616px;
+    @media (min-width: breakpoint(lg)) {
+        .box {
+            width: 500px;
+            height: 616px;
+        }
     }
-}
 
-.title {
-    display: none;
-    font-size: 40px;
-    position: absolute;
-    color: #58595b;
-    transform: rotate(-90deg);
-    margin-right: -15px;
-    top: 50%;
-    left: -20%;
-}
-
-@media (min-width: 40em) {
     .title {
-        display: inline;
-        left: -25%
-    }
-}
-
-@media (min-width: 64em) {
-    .title {
-        font-size: 55px;
-    }
-}
-
-@media (min-width: 1366px) {
-    .title {
-        font-size: 67px;
-    }
-}
-
-
-.slide {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    /* max-width: 85vw; */
-    height: 250px;
-    box-shadow: 3px 3px 3px lightgrey;
-    margin: 0 auto;
-}
-
-@media (min-width: 40em){
-    .slide {
-        left: auto;
+        display: none;
+        font-size: 40px;
         position: absolute;
-        width: 88%;
-        height: 82%;
-        right: 0;
+        color: #58595b;
+        transform: rotate(-90deg);
+        margin-right: -15px;
         top: 50%;
-        transform: translateY(-50%);
-        margin: 0;
+        left: -20%;
     }
-}
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;  
-}
+    @media (min-width: breakpoint(sm)) {
+        .title {
+            display: inline;
+            left: -25%
+        }
+    }
 
-div.circles-container {
-    width: 100%;
-    /* height: 250px; */
-    bottom: -30px;
-    margin: 0 auto;
-    /* max-width: 85vw; */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* flex-direction: column; */
-    /* background: rgba(0,0,0,0.3); */
-}
+    @media (min-width: breakpoint(md)) {
+        .title {
+            font-size: 55px;
+        }
+    }
 
-@media (min-width: 40em) {
-    div.circles-container {
+    @media (min-width: breakpoint(lg)) {
+        .title {
+            font-size: 67px;
+        }
+    }
+
+
+    .slide {
         position: absolute;
-        right:0;
-        height: auto;
-        width: auto;
-        justify-content: flex-end;
-        /* position: static;
-        margin-left: -10px;
-        margin-bottom: 10px; */
-        transform: none;
-        left: 12%;
-        bottom: 0;
-        /* top: 9%; */
-        /* justify-content: flex-start; */
-        /* flex-direction: column; */
-        
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        /* max-width: 85vw; */
+        height: 250px;
+        box-shadow: 3px 3px 3px lightgrey;
+        margin: 0 auto;
     }
-}
 
-@media (min-width: 64em) {
+    @media (min-width: breakpoint(sm)){
+        .slide {
+            left: auto;
+            position: absolute;
+            width: 88%;
+            height: 82%;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+        }
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;  
+    }
 
     div.circles-container {
-        /* margin-left: -30px;
-        margin-bottom: 20px; */
-        
+        width: 100%;
+        /* height: 250px; */
+        bottom: -30px;
+        margin: 0 auto;
+        /* max-width: 85vw; */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* flex-direction: column; */
+        /* background: rgba(0,0,0,0.3); */
     }
-}
 
-span.circle {
-    position: relative;
-    display: block;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #3B3B3B;
-    border-radius: 50%;
-    margin: 0px 20px 0 0px;
-    overflow: hidden;
-    cursor: pointer;
-}
+    @media (min-width: breakpoint(sm)) {
+        div.circles-container {
+            position: absolute;
+            right:0;
+            height: auto;
+            width: auto;
+            justify-content: flex-end;
+            /* position: static;
+            margin-left: -10px;
+            margin-bottom: 10px; */
+            transform: none;
+            left: 12%;
+            bottom: 0;
+            /* top: 9%; */
+            /* justify-content: flex-start; */
+            /* flex-direction: column; */
+            
+        }
+    }
 
-@media (min-width: 40em) {
+    @media (min-width: breakpoint(md)) {
+
+        div.circles-container {
+            /* margin-left: -30px;
+            margin-bottom: 20px; */
+            
+        }
+    }
+
     span.circle {
-        margin: 0;
-        margin-left: 15px;
-        /* border: 1px solid #3B3B3B; */
+        position: relative;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #3B3B3B;
+        border-radius: 50%;
+        margin: 0px 20px 0 0px;
+        overflow: hidden;
+        cursor: pointer;
     }
-}
 
-@media (min-width: 64em) {
-    span.circle {
-        width: 15px;
-        height: 15px;
+    @media (min-width: breakpoint(sm)) {
+        span.circle {
+            margin: 0;
+            margin-left: 15px;
+            /* border: 1px solid #3B3B3B; */
+        }
     }
-}
 
-@media (min-width: 1366px) {
-    span.circle {
-        width: 18px;
-        height: 18px;
-        margin-right: 20px;
+    @media (min-width: breakpoint(md)) {
+        span.circle {
+            width: 15px;
+            height: 15px;
+        }
     }
-}
 
-span.circle::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 110%;
-    height: 110%;
-    border-radius: 50%;
-    background: #3B3B3B;
-    opacity: 0;
-    transition: opacity .3s ease;
-}
+    @media (min-width: breakpoint(lg)) {
+        span.circle {
+            width: 18px;
+            height: 18px;
+            margin-right: 20px;
+        }
+    }
 
-span.circle.active::before {
-    opacity: 1;
-}
+    span.circle::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 110%;
+        height: 110%;
+        border-radius: 50%;
+        background: #3B3B3B;
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
 
-button.next, button.back {
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    opacity: .3;
-    top: 0;
-    transition: all .3s ease-out;
-}
+    span.circle.active::before {
+        opacity: 1;
+    }
 
-button.next {
-    right: 0;
-    background: linear-gradient(to left,rgba(0,0,0,.65) 0,rgba(0,0,0,0) 100%) rgba(0,0,0,0);
-}
+    button.next, button.back {
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        opacity: .3;
+        top: 0;
+        transition: all .3s ease-out;
+    }
 
-button.back {
-    left: 0;
-    background: linear-gradient(to right,rgba(0,0,0,.65) 0,rgba(0,0,0,0) 100%) rgba(0,0,0,0)
-}
+    button.next {
+        right: 0;
+        background: linear-gradient(to left,rgba(0,0,0,.65) 0,rgba(0,0,0,0) 100%) rgba(0,0,0,0);
+    }
 
-button.next:hover, button.back:hover {
-    opacity: 1;
-}
+    button.back {
+        left: 0;
+        background: linear-gradient(to right,rgba(0,0,0,.65) 0,rgba(0,0,0,0) 100%) rgba(0,0,0,0)
+    }
 
-.arrow-left, .arrow-right {
-    display: block;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: calc(50% - 10px);
-    -webkit-transition: -webkit-transform .2s ease-out;
-    -webkit-transition-delay: .2s;
-    transition: transform .2s ease-out .2s;
-}
+    button.next:hover, button.back:hover {
+        opacity: 1;
+    }
 
-.arrow-left {
-    left: 20px;
-}
+    .arrow-left, .arrow-right {
+        display: block;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: calc(50% - 10px);
+        -webkit-transition: -webkit-transform .2s ease-out;
+        -webkit-transition-delay: .2s;
+        transition: transform .2s ease-out .2s;
+    }
 
-@media (min-width: 40em) {
     .arrow-left {
-        right: 30px;
+        left: 20px;
     }
-}
 
-.arrow-right {
-    right: 20px;
-}
+    @media (min-width: breakpoint(sm)) {
+        .arrow-left {
+            right: 30px;
+        }
+    }
 
-@media (min-width: 40em) {
     .arrow-right {
-        right: 30px;
+        right: 20px;
     }
-}
-.arrow-left::before, .arrow-right::before, .arrow-left::after, .arrow-right::after {
-    content: " ";
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 2px;
-    background-color: white;
-    opacity: .7;
-    -webkit-transform-origin: 50% 100% 0;
-    transform-origin: 50% 100% 0;
-    -webkit-transition: -webkit-transform .15s ease-out;
-    transition: transform .15s ease-out;
-}
 
-.arrow-left::before, .arrow-left::after {
-    right: auto;
-    left: 0;
-}
+    @media (min-width: breakpoint(sm)) {
+        .arrow-right {
+            right: 30px;
+        }
+    }
+    .arrow-left::before, .arrow-right::before, .arrow-left::after, .arrow-right::after {
+        content: " ";
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 2px;
+        background-color: white;
+        opacity: .7;
+        -webkit-transform-origin: 50% 100% 0;
+        transform-origin: 50% 100% 0;
+        -webkit-transition: -webkit-transform .15s ease-out;
+        transition: transform .15s ease-out;
+    }
 
-
-.arrow-left::before {
-    top: -50%;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.back:hover .arrow-left::before {
-    transform: rotate(30deg)
-}
-
-.arrow-left::after {
-    top: calc(-50% + -1px);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-
-.back:hover .arrow-left::after {
-    transform: rotate(150deg)
-}
+    .arrow-left::before, .arrow-left::after {
+        right: auto;
+        left: 0;
+    }
 
 
-.arrow-right::before {
-    top: -50%;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
+    .arrow-left::before {
+        top: -50%;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
 
-.next:hover .arrow-right::before {
-    transform: rotate(-30deg);
-}
+    .back:hover .arrow-left::before {
+        transform: rotate(30deg)
+    }
 
-.arrow-right::after {
-    top: calc(-50% + -1px);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-}
+    .arrow-left::after {
+        top: calc(-50% + -1px);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
 
-.next:hover .arrow-right::after {
-    transform: rotate(-150deg);
-}
+    .back:hover .arrow-left::after {
+        transform: rotate(150deg)
+    }
+
+
+    .arrow-right::before {
+        top: -50%;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .next:hover .arrow-right::before {
+        transform: rotate(-30deg);
+    }
+
+    .arrow-right::after {
+        top: calc(-50% + -1px);
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    .next:hover .arrow-right::after {
+        transform: rotate(-150deg);
+    }
+
 </style>
 
 <div class="carousel-container">

@@ -2,46 +2,46 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
-div.job-listing {
-    margin-bottom: 20rem;
-}
-li {
-    margin: 5rem 0;
-}
-
-@media (min-width: 64em) {
+    div.job-listing {
+        margin-bottom: 20rem;
+    }
+    
     li {
-        margin: 8rem 0;
-    }
-}
-li::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 3px;
-    height: 3px;
-    border-radius: 100%;
-    background: gray;
-    top: 7px;
-    left: -10px;
-}
+        margin: 5rem 0;
 
-@media (min-width: 64em) {
+        @media (min-width: breakpoint(md)) {
+            margin: 8rem 0;
+        }
+    }
+
     li::before {
-        top: 10px;
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        border-radius: 100%;
+        background: gray;
+        top: 7px;
+        left: -10px;
+
+        @media (min-width: breakpoint(md)) {
+           top: 10px;
+        }
     }
-}
 
-li.detail {
-    position: relative;
-    margin-left: 15rem;
-}
+    li.detail {
+        position: relative;
+        margin-left: 15rem;
+    }
 
-.detail-title {
-    margin-bottom: 0px;
-}
+    .detail-title {
+        margin-bottom: 0px;
+    }
+
 </style>
 
 <section>

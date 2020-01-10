@@ -3,9 +3,9 @@
 </script>
 
 <style>
-.detail-title {
-    margin-bottom: 3px;
-}
+    .detail-title {
+        margin-bottom: 3px;
+    }
 </style>
 
 <section>

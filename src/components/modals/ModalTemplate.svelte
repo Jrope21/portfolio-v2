@@ -8,7 +8,8 @@
     
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     .modal-container{
         position: fixed;
@@ -41,19 +42,15 @@
 		overflow: auto;
 		border-radius: 10rem;
         background: white;
-        z-index: 50;
-    }
-    
-	@media screen and (min-width: 40em){
-		.modal {
+		z-index: 50;
+		
+		@media (min-width: breakpoint(sm)) {
 			max-height: 450px;
 			max-width: 600px;
 			width: 85%;
 		}
-    }
 
-	@media screen and (min-width: 64em){
-		.modal {
+		@media (min-width: breakpoint(md)) {
 			width: 70%;
 			max-width: 750px;
 		}

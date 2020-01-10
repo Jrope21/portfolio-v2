@@ -2,12 +2,13 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../../styles/global.variables.scss';
     a {
         display: block;
         font-size: 14rem;
         margin: 3rem 0;
-        color: #58595b;
+        color: color(secondary);
         text-transform: lowercase;
     }
 

@@ -2,14 +2,15 @@
 export let skills;
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     div {
         display: flex;
         flex-direction: column;
     }
     
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         div{
             flex-direction: row;
         }
@@ -23,13 +24,13 @@ export let skills;
         
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         h3 {
             width: 18%;
         }
     }
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         h3 {
             font-size: 23rem;
             width: 20%;
@@ -44,7 +45,7 @@ export let skills;
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         ul.skills{
             width: 60%;
         }
@@ -80,7 +81,7 @@ export let skills;
     }
 
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         li {
             font-size: 18rem;
             margin: 0rem 0rem 35rem 0rem;

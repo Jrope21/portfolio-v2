@@ -1,32 +1,27 @@
 <script>
-import LogoText from './LogoText.svelte';
-import Skills from './Skills.svelte';
-import Contact from './Contact.svelte';
+    import LogoText from './LogoText.svelte';
 </script>
 
-<style>
-aside {
-    height: 78%;
-}
-
-@media screen and (min-width: 40em) {
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
+    
     aside {
-        padding-top: 165px;
-    }
-}
+        height: 78%;
 
-@media (min-width: 64em) {
-    aside {
-        padding-top: 165px;
-        height: 80%;
-    }
-}
+        @media (min-width: breakpoint(sm)) {
+            padding-top: 165px;
+        }
 
-@media (min-width: 1366px) {
-    aside {
-        padding-top: 140px;
+        @media (min-width: breakpoint(md)) {
+            padding-top: 165px;
+            height: 80%;
+        }
+
+        @media (min-width: breakpoint(lg)) {
+            padding-top: 140px;
+        }
     }
-}
+
 </style>
 
 <aside>

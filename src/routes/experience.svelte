@@ -5,7 +5,8 @@ import SideBar from '../components/experience/SideBar.svelte';
 import ResumeContent from '../components/experience/ResumeContent.svelte';
 </script>
 
-<style type="text/scss">
+<style lang="scss">
+    @import '../styles/global.variables.scss';
     @import '../components/experience/experience-fonts.styles.scss';
 
     .container {
@@ -18,14 +19,14 @@ import ResumeContent from '../components/experience/ResumeContent.svelte';
         flex-direction: column-reverse;
     }
 
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: breakpoint(sm)) {
         .experience {
             padding-top: 50px;
             flex-direction: row;
         }
     }
 
-    @media (min-width: 64em) {
+    @media (min-width: breakpoint(md)) {
         .experience {
             padding-top: 80px;
         }
@@ -35,7 +36,7 @@ import ResumeContent from '../components/experience/ResumeContent.svelte';
         width: 100%;
     }
 
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: breakpoint(sm)) {
         .left {
             width: 60%;
         }

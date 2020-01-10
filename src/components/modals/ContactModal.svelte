@@ -72,7 +72,8 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
    .text-container h2{
         font-size: 30rem;
@@ -103,7 +104,7 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 13rem;
-        color: #58595b
+        color: color(secondary)
     }
 
     @media screen and (min-width: 64em){
@@ -147,10 +148,8 @@
 
     div.text-container {
         position: relative;
-    }
 
-    @media screen and (min-width: 40em){
-        div.text-container {
+        @media (min-width: breakpoint(sm)) {
             top: -20px;
             padding-right: 30rem;
         }
@@ -175,11 +174,9 @@
         font-size: 13rem;
         margin-bottom: 5rem;
         font-weight: 500;
-    }
 
-    @media screen and (min-width: 64em){
-        span {
-            font-size: 14rem;
+        @media (min-width: breakpoint(lg)) {
+            font-size: 14px;
         }
     }
 
@@ -192,31 +189,27 @@
         box-shadow: 1px 1px 3px lightgrey;
         font-style: italic;
         background: rgba(88, 89, 91, 0.1);
-        color: #58595B;
+        color: color(secondary);
         font-weight: 700;
         transition: all .3s ease-in;
         cursor: pointer;
+
+        @media (min-width: breakpoint(sm)) {
+            max-width: unset;
+            padding: 7rem 15rem 7rem 15rem;
+        }
+
+        @media (min-width: breakpoint(md)) {
+            font-size: 13rem;
+            box-shadow: 1;
+            width: fit-content;
+        }
     }
 
     input[type="submit"]:hover {
         position: relative;
         transform: translateY(-1px);
         box-shadow: 2px 2px 3px lightgrey;
-    }
-
-    @media screen and (min-width: 40em){
-        input[type="submit"]{
-            max-width: unset;
-            padding: 7rem 15rem 7rem 15rem;
-        }
-    }
-
-    @media screen and (min-width: 64em){
-        input[type="submit"]{
-            font-size: 13rem;
-            box-shadow: 1;
-            width: fit-content;
-        }
     }
 
     div.contact-row{
@@ -233,7 +226,7 @@
 
     .success-message {
         font-size: 50rem;
-        color: #58595b;
+        color: color(secondary);
         text-transform: uppercase;
         position: absolute;
         top: 50%;
@@ -247,6 +240,7 @@
     .hide-content{
         opacity: 0;
     }
+    
 </style>
 
 {#if showModal && hideModal === false}

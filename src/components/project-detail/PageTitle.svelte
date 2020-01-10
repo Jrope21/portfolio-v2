@@ -3,7 +3,8 @@ export let title, sidePage;
 // sidePage should be set to 'side-page' to toggle class
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     @keyframes slideInRight {
         100% {
@@ -42,7 +43,7 @@ export let title, sidePage;
         width: 100%;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         div.title-container:not(.side-page){
             margin-bottom: 20px;
             width: 100%;
@@ -73,13 +74,13 @@ export let title, sidePage;
         /* animation: 1s ease-out 0s 1 slideInRight forwards; */
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         h1 {
             font-size: 55px;
         }
     }
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         h1 {
             font-size: 64px;
         }
@@ -96,7 +97,7 @@ export let title, sidePage;
         box-sizing: border-box;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         div.page-header {
             padding: 0;
             box-sizing: content-box;
@@ -104,7 +105,7 @@ export let title, sidePage;
         }
     }
 
-    /* @media screen and (min-width: 64em){
+    /* @media screen and (min-width: breakpoint(md)){
         div.page-header {
             height: 180px;
         }
@@ -120,7 +121,7 @@ export let title, sidePage;
         font-size: 32px;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         span {
             left: 5px;
             bottom: -55px;
@@ -128,7 +129,7 @@ export let title, sidePage;
         }
     }
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         span {
             font-size: 64px;
         }

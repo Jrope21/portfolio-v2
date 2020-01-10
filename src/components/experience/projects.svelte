@@ -2,31 +2,33 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
-.project-listing {
-    margin-bottom: 20rem;
-}
-.detail-title {
-    margin: 0;
-}
-
-.detail-web-links {
-    margin: 3rem 0;
-}
-
-
-@media screen and (min-width: 40em){
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .project-listing {
-        box-sizing: border-box;
-        width: 50%;
-        padding-right: 30rem;
+        margin-bottom: 20rem;
+
+        @media (min-width: breakpoint(sm)) {
+            box-sizing: border-box;
+            width: 50%;
+            padding-right: 30rem;
+        }
     }
-}
+    
+    .detail-title {
+        margin: 0;
+    }
+
+    .detail-web-links {
+        margin: 3rem 0;
+    }
+
+    @media (min-width: breakpoint(sm)){
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 
 </style>
 

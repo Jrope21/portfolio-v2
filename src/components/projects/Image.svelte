@@ -4,7 +4,9 @@ export let url;
 export let width;
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
+    
     a, div{
         max-width: 100%;
     }
@@ -23,7 +25,7 @@ export let width;
         transition: all .3s ease-in;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         .img-container{
             max-width:100%; 
             width: 25vw;

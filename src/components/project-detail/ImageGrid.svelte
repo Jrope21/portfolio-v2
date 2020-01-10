@@ -4,61 +4,64 @@ import Carousel from './Carousel.svelte';
 import Skills from './Skills.svelte';
 </script>
 
-<style>
-@media screen and (min-width: 40em){
-    .inner-container {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
-@media screen and (min-width: 40em){
-    .project-description {
-        padding-left: 12%;
+    @media screen and (min-width: breakpoint(sm)){
+        .inner-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (min-width: breakpoint(sm)){
+        .project-description {
+            padding-left: 12%;
+            margin: 40rem 0;
+        }
+    }
+    .cta {
+        margin: 50rem 0;
+    }
+
+    @media (min-width: breakpoint(sm)) {
+        .cta {
+            margin: 65rem 0;
+            margin-left: 15%;
+        }
+    }
+
+    @media (min-width: breakpoint(md)) {
+        .cta {
+            margin-left: 17%;
+        }
+    }
+
+    .cta p {
+        color: #58595b;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    @media (min-width: breakpoint(md)) {
+        .cta p {
+            font-size: 26px;
+            font-weight: 800;
+        }
+        
+    }
+
+    .skills-container {
         margin: 40rem 0;
     }
-}
-.cta {
-    margin: 50rem 0;
-}
 
-@media (min-width: 40em) {
-    .cta {
-        margin: 65rem 0;
-        margin-left: 15%;
-    }
-}
-
-@media (min-width: 64em) {
-    .cta {
-        margin-left: 17%;
-    }
-}
-
-.cta p {
-    color: #58595b;
-    font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-}
-
-@media (min-width: 64em) {
-    .cta p {
-        font-size: 26px;
-        font-weight: 800;
+    @media (min-width: breakpoint(sm)) {
+        section {
+            padding-left: 12%;
+        }
     }
     
-}
-
-.skills-container {
-    margin: 40rem 0;
-}
-
-@media (min-width: 40em) {
-    section {
-        padding-left: 12%;
-    }
-}
 </style>
 
 <div class="inner-container">

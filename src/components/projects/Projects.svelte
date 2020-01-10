@@ -32,7 +32,9 @@
     ]
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
+    
     section {
         display: flex;
         flex-direction: column;
@@ -41,7 +43,7 @@
         position: relative;
     }
 
-    @media screen and (min-width: 40em){ 
+    @media screen and (min-width: breakpoint(sm)){ 
         section {
             padding: 10% 0 10% 0;
         }
@@ -59,7 +61,7 @@
        display: flex;
        justify-content: center;
     }
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         div.card-container {
             flex-direction: row;
             justify-content: space-around;
@@ -83,7 +85,7 @@
         
     }
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         div.card-container{
             width: 85%;
         }
@@ -120,7 +122,7 @@
     }
 
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         h2 {
             font-size: 23rem;
         }

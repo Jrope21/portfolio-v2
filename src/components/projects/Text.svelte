@@ -4,7 +4,8 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
 export let projectName, url, projectText, projectYear;
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     a{
         display: flex;
@@ -51,13 +52,13 @@ export let projectName, url, projectText, projectYear;
         font-size: 45px;
     }
 
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: breakpoint(sm)) {
         h2 {
             margin-top: 0rem;
         }
     }
 
-@media screen and (min-width: 64em){
+@media screen and (min-width: breakpoint(md)){
     h2 {
         font-size: 23rem;
     }

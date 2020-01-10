@@ -24,17 +24,18 @@ import Contact from '../components/about/Contact.svelte';
     // })
 </script>
 
-<style>
+<style lang="scss">
+    @import '../styles/global.variables.scss';
 
- section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5% 0 0% 0;
-    position: relative;
-    color: gray;
-    margin-bottom: 50px;
-}
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 0 0% 0;
+        position: relative;
+        color: gray;
+        margin-bottom: 50px;
+    }
 
 	section::before {
         content: '';
@@ -45,13 +46,13 @@ import Contact from '../components/about/Contact.svelte';
         z-index: -1;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         section{
             margin-bottom: 80px;
         }
     }
 
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: breakpoint(md)) {
         section{
             flex: 1;
         }
@@ -64,14 +65,14 @@ import Contact from '../components/about/Contact.svelte';
         max-width: 900px;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         .content-container {
             width: 75%;
             margin-bottom: 50rem;
             margin-left: 100rem;
         }
     }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: breakpoint(md)) {
         .content-container {
             width: 100%;
         }

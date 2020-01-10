@@ -1,3 +1,5 @@
+@import '../../styles/global.variables.scss';
+
 :global(.experience) {
 
     .headline {
@@ -28,23 +30,28 @@
         }
     }
 
-    .detail-web-links {
+    .detail-web-links a, .detail-web-links {
         text-transform: lowercase;
         font-size: 12rem;
-        margin-top: 2px;
-        margin-bottom: 5px;
-        margin-left: 5px;
         width: fit-content;
-        color: #989898;
+        color: color(accent);
         font-weight: 300;
         font-style: italic;
 
         @media screen and (min-width: 64em) {
             font-size: 18rem;
+        } 
+    }
+
+    .detail-web-links {
+        margin-top: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+
+        @media screen and (min-width: 64em) {
             margin-top: 1px;
             margin-bottom: 8px;
         }
-
     }
 
     a {
@@ -63,7 +70,7 @@
     }
 
     .detail-preface {
-        color: #818181;
+        color: color(accentTertiary);
         margin-bottom: 2px;
         font-size: 14rem;
         line-height: 21px;
@@ -78,16 +85,4 @@
         margin-bottom: 40rem;
     }
 
-    p, li {
-        font-weight: 300;
-        font-size: 13rem;
-        color: #58595b;
-    }
-
-    @media screen and (min-width: 64em){
-        p, li{
-            font-size: 18rem;
-            line-height: 23px;
-        }
-    }
 } 

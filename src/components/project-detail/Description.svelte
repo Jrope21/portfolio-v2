@@ -3,14 +3,15 @@ export let text, url;
 import TextAnimation from '../helper-components/TextAnimation.svelte';
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     div {
         display: flex;
         flex-direction: column;
     }
     
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         div{
             flex-direction: row;
         }
@@ -22,7 +23,7 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
         width: 100%
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         p:nth-child(1) {
             width: 20%;
         }
@@ -36,12 +37,12 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
         text-transform: uppercase;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
        h3 {
             width: 18%;
         }
     }
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         h3 {
             font-size: 23rem;
             width: 20%;
@@ -52,13 +53,13 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
         width: 100%;
     }
 
-    @media screen and (min-width: 40em){
+    @media screen and (min-width: breakpoint(sm)){
         p:nth-child(2) {
             width: 65%;
         }
     }
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         p:nth-child(2) {
             width: 50%;
             min-width: 450px;
@@ -71,7 +72,7 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
         color: #58595b;
     }
 
-    @media screen and (min-width: 64em){
+    @media screen and (min-width: breakpoint(md)){
         p{
             font-size: 18rem;
             line-height: 23px;
@@ -90,7 +91,7 @@ import TextAnimation from '../helper-components/TextAnimation.svelte';
         font-style: italic;
     }
     
-    @media (min-width: 64em) {
+    @media (min-width: breakpoint(md)) {
         a {
             font-size: 14rem;
         }
