@@ -8,11 +8,9 @@
     div {
         display: flex;
         flex-direction: column;
-    }
-    
-    @media screen and (min-width: 40em){
-        div{
-            flex-direction: row;
+
+        @media (min-width: breakpoint(sm)) {
+           flex-direction: row;
         }
     }
 
@@ -21,18 +19,13 @@
         margin-bottom: 15rem;
         width: 100%;
         text-transform: uppercase;
-    }
 
-    @media screen and (min-width: 40em){
-        h3 {
-            width: 18%;
+        @media (min-width: breakpoint(sm)) {
+           width: 18%;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        h3 {
-            /* font-size: 23rem; */
-            width: 20%;
+        @media (min-width: breakpoint(md)) {
+           width: 20%;
         }
     }
 

@@ -2,7 +2,8 @@
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     div {
         display: flex;
@@ -21,18 +22,12 @@
         width: 100%;
         text-transform: uppercase;
         
-    }
-
-    @media screen and (min-width: 40em){
-        h3 {
+        @media (min-width: breakpoint(sm)) {
             width: 18%;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        h3 {
-            font-size: 23rem;
-            width: 20%;
+        @media (min-width: breakpoint(md)) {
+            width: 20%;            
         }
     }
 
@@ -42,11 +37,9 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-    }
 
-    @media screen and (min-width: 40em){
-        ul.skills{
-            width: 60%;
+        @media (min-width: breakpoint(sm)) {
+            width: 60%;    
         }
     }
 
@@ -60,22 +53,15 @@
 
     li {
         width: 100%;
-        font-weight: 300;
-        font-size: 13rem;
-        color: #58595b;
         margin: 0rem 0rem 25rem 0rem;
-        padding: 0rem 0rem 0rem 0rem;
+        padding: 0;
         display: flex;
         align-items: center;
         margin-left: -2px;
         height: 0;
         z-index: 2;
-    }
 
-
-    @media screen and (min-width: 64em){
-        li {
-            font-size: 18rem;
+        @media (min-width: breakpoint(md)) {
             margin: 0rem 0rem 35rem 0rem;
         }
     }

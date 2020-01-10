@@ -1,24 +1,9 @@
 <script>
-export let title, sidePage;
-// sidePage should be set to 'side-page' to toggle class
+export let title;
 </script>
 
-<style>
-
-    @keyframes slideInRight {
-        100% {
-            transform: translateX(100%);
-        }
-    }
-
-    @keyframes badSlideInRight {
-        0% {
-            left: -100%;
-        }
-        100% {
-            left: 5px;
-        }
-    }
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
     div:not(.page-header) {
         display: flex;
@@ -27,60 +12,41 @@ export let title, sidePage;
         margin: -05px 0px 20px 0;
         font-size: 16rem;
         text-transform: uppercase;
-        color: #58595b;
+        color: color(secondary);
         max-width: 900px;
-    }
 
-    div.side-page {
-        font-size: 12rem;
-        max-width: 1705px;
-    }
-
-    div.title-container:not(.side-page){
-        position: relative;
-        /* animation: .9s ease-out 0s 1 fadeIn forwards; */
-        width: 100%;
-    }
-
-    @media screen and (min-width: 40em){
-        div.title-container:not(.side-page){
-            margin-bottom: 20px;
-            width: 75%;
-        }
-
-        div:not(.page-header) {
+        @media (min-width: breakpoint(sm)) {
             font-size: 28rem;
-            width: 75%;
+            width: 75%; 
         }
+    }
 
-        div.side-page {
-            font-size: 24rem;
-            width: 85%
+    div.title-container{
+        position: relative;
+        width: 100%;
+
+        @media (min-width: breakpoint(sm)) {
+            margin-bottom: 20px;
+            width: 75%; 
         }
     }
 
     h1 {
-        color: #3B3B3B;
+        color: color(primary);
         position: relative;
         width: 100%;
         top: 0;
-        /* left: -100%; */
         right: 0px;
         display: flex;
         font-size: 32px;
         align-items: center;
         margin: 0px;
-        /* animation: 1s ease-out 0s 1 slideInRight forwards; */
-    }
 
-    @media screen and (min-width: 40em){
-        h1 {
+        @media (min-width: breakpoint(sm)) {
             font-size: 55px;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        h1 {
+        @media (min-width: breakpoint(md)) {
             font-size: 64px;
         }
     }
@@ -94,51 +60,41 @@ export let title, sidePage;
         justify-content: center;
         align-items: flex-end;
         box-sizing: border-box;
-        padding-left:20rem;
-    }
+        padding-left: 20rem;
 
-    @media screen and (min-width: 40em){
-        div.page-header {
+        @media (min-width: breakpoint(sm)) {
             padding: 0;
             box-sizing: content-box;
             height: 220px;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        div.page-header {
+        @media (min-width: breakpoint(md)) {
             height: 250px;
         }
     }
 
     span{
         position: absolute;
-        transform: scaleX(-1);
         transform: scaleX(-1) rotate(180deg) skew(-10deg, 0deg);
         opacity: .03;
         left: 3px;
         bottom: -25px;
         font-size: 32px;
-         /* animation: 1s ease-out 0s 1 badSlideInRight; */
-    }
 
-    @media screen and (min-width: 40em){
-        span {
+        @media (min-width: breakpoint(sm)) {
             left: 5px;
             bottom: -55px;
             font-size: 55px;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        span {
+        @media (min-width: breakpoint(md)) {
             font-size: 64px;
         }
     }
     
 </style>
 <div class="page-header">
-    <div class='title-container {sidePage}'>
+    <div class='title-container'>
         <h1>{title}</h1>
         <span>{title}</span>
     </div>

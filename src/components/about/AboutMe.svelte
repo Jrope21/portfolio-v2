@@ -17,11 +17,11 @@
     p:nth-child(1){
         width: fit-content;
         margin-bottom: 15rem;
-        width: 100%
+        width: 100%;
 
        @media (min-width: breakpoint(sm)) {
-            width: 20%;;
-        } 
+            width: 20%;
+        }
     }
 
     h3{
@@ -29,35 +29,28 @@
         margin-bottom: 15rem;
         width: 100%;
         text-transform: uppercase;
-    }
 
-    @media screen and (min-width: 40em){
-       h3 {
+        @media (min-width: breakpoint(sm)) {
             width: 18%;
         }
-    }
-    @media screen and (min-width: 64em){
-        h3 {
-            width: 20%;
+
+        @media (min-width: breakpoint(md)) {
+            width: 20%
         }
     }
 
     p:nth-child(2){
         width: 100%;
-    }
 
-    @media screen and (min-width: 40em){
-        p:nth-child(2) {
+        @media (min-width: breakpoint(sm)) {
             width: 65%;
         }
-    }
 
-    @media screen and (min-width: 64em){
-        p:nth-child(2) {
-            width: 50%;
+        @media (min-width: breakpoint(md)) {
+           width: 50%; 
         }
     }
-
+    
 </style>
 
 <div>

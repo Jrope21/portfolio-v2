@@ -1,9 +1,35 @@
 {
   "bundler": "rollup",
   "shimport": "1.0.1",
-  "assets": {},
+  "assets": {
+    "main": "client.1e219ba6.js"
+  },
   "css": {
-    "main": "main.125207967.css",
-    "chunks": {}
+    "main": "main.662933449.css",
+    "chunks": {
+      "index.svelte": [
+        "index.1a632984.css",
+        "TextAnimation.ed24c4c5.css"
+      ],
+      "PageTransition.svelte": [],
+      "experience.svelte": [
+        "experience.5f152902.css"
+      ],
+      "projects/creative-revolt.svelte": [
+        "TextAnimation.ed24c4c5.css",
+        "ProjectDetailTemplate.0932a0d7.css"
+      ],
+      "projects/university-park.svelte": [
+        "TextAnimation.ed24c4c5.css",
+        "ProjectDetailTemplate.0932a0d7.css"
+      ],
+      "projects/halcyon.svelte": [
+        "TextAnimation.ed24c4c5.css",
+        "ProjectDetailTemplate.0932a0d7.css"
+      ],
+      "about.svelte": [
+        "about.d704e5a0.css"
+      ]
+    }
   }
 }
