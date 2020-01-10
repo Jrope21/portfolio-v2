@@ -1,12 +1,8 @@
 <script>
-import PageTransition from '../PageTransition.svelte';
-import PageTitle from '../../components/project-detail/PageTitle.svelte';
-import Description from '../../components/project-detail/Description.svelte';
-import Carousel from '../../components/project-detail/Carousel.svelte';
-import Skills from '../../components/project-detail/Skills.svelte';
-
+import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
 let STATE = {
+    metaTitle: `University Park | Front End Developer - Joshua Roper`,
     title: `University Park`,
     url: 'https://www.uptexas.org/',
     description: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
@@ -121,27 +117,5 @@ let STATE = {
     }
 </style>
 
-<svelte:head>
-	<title>Creative Revolt | Front End Developer - Joshua Roper</title>
-</svelte:head>
 
-
-<div class="project-detail">
-    <PageTransition>
-        <div class="container">
-            <PageTitle title={STATE.title} />
-            <div class="inner-container">
-                <Carousel images={STATE.images}/>
-                <section class="project-description">
-                    <Description text={STATE.description} url={STATE.url} />    
-                </section>
-                <section class="skills-container">
-                    <Skills skills={STATE.skills}/>
-                </section>
-                <section class="cta">
-                    <a href={STATE.url} target="_blank">Check The Site!</a>
-                </section>
-            </div>
-        </div>
-    </PageTransition>
-</div>
+<ProjectDetailTemplate STATE={STATE} />

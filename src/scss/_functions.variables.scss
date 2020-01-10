@@ -1,0 +1,31 @@
+$base-font-size: 16px;
+
+@function px-to-rem($target, $context: $base-font-size) {
+    @return ($target / $context) * 1rem;
+} 
+
+@function strip-unit($number) { 
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function breakpoint($key) {
+    @if map-has-key($breakpoints, $key) {
+        @return map-get($breakpoints, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $breakpoints.";
+    @return null;
+}
+
+@function color($key) {
+    @if map-has-key($colors, $key) {
+        @return map-get($colors, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $colors.";
+    @return null;
+}
