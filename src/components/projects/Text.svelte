@@ -28,7 +28,7 @@ export let projectName, url, projectText, projectYear;
         font-weight: 600;
         text-transform: capitalize;
         transition: all .2s ease-in-out;
-        color: #3B3B3B;
+        color: color(primary);
         z-index: 2;
     }
 

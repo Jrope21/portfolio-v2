@@ -21,7 +21,7 @@ export let width;
         width: 65vw;
         height: 65vw;
         max-height: 250px;
-        box-shadow: 3px 3px 3px lightgrey;
+        box-shadow: 3px 3px 3px color(accentSecondary);
         transition: all .3s ease-in;
     }
 
@@ -49,7 +49,6 @@ export let width;
             width: calc(50% - 30vw + 60vw);
             height: 30vw;
             margin: 0 auto;
-            /* margin-left: auto; */
             max-width: 1039px;
             max-height: 450px;
         }
@@ -58,7 +57,7 @@ export let width;
     a:hover .img-container {
         position: relative;
         transform: translateY(-3px);
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 5px 5px 5px color(accentSecondary);
     }
 
     img {

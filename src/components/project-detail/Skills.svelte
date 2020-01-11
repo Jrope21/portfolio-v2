@@ -62,7 +62,7 @@ export let skills;
     p {
         font-weight: 300;
         font-size: 13rem;
-        color: #58595b;
+        color: color(secondary);
     }
 
     

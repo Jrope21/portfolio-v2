@@ -38,7 +38,7 @@ import Skills from './Skills.svelte';
     }
 
     .cta p {
-        color: #58595b;
+        color: color(secondary);
         font-size: 18px;
         font-weight: 600;
         font-style: italic;

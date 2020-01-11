@@ -1,8 +1,6 @@
 <script>
-import PageTransition from './PageTransition.svelte';
-
-import Hero from '../components/hero/Hero.svelte';
-import Projects from '../components/projects/Projects.svelte'
+    import Hero from '../components/hero/Hero.svelte';
+    import Projects from '../components/projects/Projects.svelte';
 
 </script>
 
@@ -20,9 +18,7 @@ import Projects from '../components/projects/Projects.svelte'
 </svelte:head>
 
 
-<PageTransition>
-    <div class="container">
-        <Hero />
-        <Projects />
-    </div>
-</PageTransition>
+<div class="container">
+    <Hero />
+    <Projects />
+</div>

@@ -5,7 +5,6 @@
 	import { onMount } from 'svelte'
 
 	export let segment;
-	console.log(segment);
 </script>
 
 <style global lang="scss">

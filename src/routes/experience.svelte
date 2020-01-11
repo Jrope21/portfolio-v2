@@ -1,8 +1,8 @@
 <script>
-import PageTransition from './PageTransition.svelte';
+    import PageTransition from './PageTransition.svelte';
 
-import SideBar from '../components/experience/SideBar.svelte';
-import ResumeContent from '../components/experience/ResumeContent.svelte';
+    import SideBar from '../components/experience/SideBar.svelte';
+    import ResumeContent from '../components/experience/ResumeContent.svelte';
 </script>
 
 <style lang="scss">

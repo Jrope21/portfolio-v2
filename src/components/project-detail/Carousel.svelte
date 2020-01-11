@@ -101,14 +101,11 @@ function findCurrentSlide() {
             justify-content: flex-end;
             width: 300px;
             border: 3px solid black;
-            /* border-right: none; */
             height: 380px;
-            /* opacity: 0; */
             background: transparent;
         }
 
         .box::after {
-            /* content: ''; */
             position: absolute;
             background: url('../images/so-white.png');
             background-position-x: 1%;
@@ -120,7 +117,6 @@ function findCurrentSlide() {
         }
 
         .box::before {
-            /* content: ''; */
             position: absolute;
             border-right: 3px solid black;
             height: 9%;
@@ -150,7 +146,7 @@ function findCurrentSlide() {
         display: none;
         font-size: 40px;
         position: absolute;
-        color: #58595b;
+        color: color(secondary);
         transform: rotate(-90deg);
         margin-right: -15px;
         top: 50%;
@@ -182,7 +178,6 @@ function findCurrentSlide() {
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        /* max-width: 85vw; */
         height: 250px;
         box-shadow: 3px 3px 3px lightgrey;
         margin: 0 auto;
@@ -210,18 +205,14 @@ function findCurrentSlide() {
 
     div.circles-container {
         width: 100%;
-        /* height: 250px; */
         bottom: -30px;
         margin: 0 auto;
-        /* max-width: 85vw; */
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        /* flex-direction: column; */
-        /* background: rgba(0,0,0,0.3); */
     }
 
     @media (min-width: breakpoint(sm)) {
@@ -231,25 +222,9 @@ function findCurrentSlide() {
             height: auto;
             width: auto;
             justify-content: flex-end;
-            /* position: static;
-            margin-left: -10px;
-            margin-bottom: 10px; */
             transform: none;
             left: 12%;
             bottom: 0;
-            /* top: 9%; */
-            /* justify-content: flex-start; */
-            /* flex-direction: column; */
-            
-        }
-    }
-
-    @media (min-width: breakpoint(md)) {
-
-        div.circles-container {
-            /* margin-left: -30px;
-            margin-bottom: 20px; */
-            
         }
     }
 
@@ -258,7 +233,7 @@ function findCurrentSlide() {
         display: block;
         width: 12px;
         height: 12px;
-        border: 2px solid #3B3B3B;
+        border: 2px solid color(primary);
         border-radius: 50%;
         margin: 0px 20px 0 0px;
         overflow: hidden;
@@ -296,7 +271,7 @@ function findCurrentSlide() {
         width: 110%;
         height: 110%;
         border-radius: 50%;
-        background: #3B3B3B;
+        background: color(primary);
         opacity: 0;
         transition: opacity .3s ease;
     }

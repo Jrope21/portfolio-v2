@@ -1,27 +1,13 @@
 <script>
-import { onMount } from 'svelte'
-import { fade, fly } from 'svelte/transition';
+    import { onMount } from 'svelte'
+    import { fade, fly } from 'svelte/transition';
 
-import PageTitle from '../components/about/PageTitle.svelte';
+    import PageTitle from '../components/about/PageTitle.svelte';
 
-import AboutMe from '../components/about/AboutMe.svelte';
-import SkillsSection from '../components/about/Skills.svelte';
-import Contact from '../components/about/Contact.svelte';
+    import AboutMe from '../components/about/AboutMe.svelte';
+    import SkillsSection from '../components/about/Skills.svelte';
+    import Contact from '../components/about/Contact.svelte';
 
-    // let x = .25;
-    // let sections = [];
-
-    // onMount(()=>{
-    //     for(let i = 0; i < sections.length; i++){
-    //         let fadeInOrder = () => {
-                
-    //             sections[i].style.animation = `${'1'}s ease-in ${x}s 1 fadeInLeft forwards`;
-    //             x += .35;
-
-    //         }
-    //         fadeInOrder();
-    //     }
-    // })
 </script>
 
 <style lang="scss">

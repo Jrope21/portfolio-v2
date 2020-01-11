@@ -109,7 +109,7 @@
         text-transform: uppercase;
         width: fit-content;
         margin-bottom: 10%;
-        color: #3B3B3B;
+        color: color(primary);
         font-weight: 800;
     }
 
