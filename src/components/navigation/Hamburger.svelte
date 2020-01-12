@@ -94,7 +94,6 @@ export let toggle, hamburger;
 
     #toggle:checked + .background {
       opacity: 1;
-      z-index: 1;
       animation: unset;
     }
 
