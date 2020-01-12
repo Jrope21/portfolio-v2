@@ -96,7 +96,7 @@ onMount(() => {
         justify-content: space-between;
         align-items: center;
         padding: 30rem 20rem;
-        transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+        transition: padding .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 
         @media (min-width: breakpoint(sm)) {
             padding: 35rem 40rem;
@@ -127,7 +127,7 @@ onMount(() => {
         bottom: 0;
         height: 100%;
         padding: 0rem 20rem;
-        transition: transform 1s $custom_animation;
+        transition: transform .7s $custom_animation;
 
         @media (min-width: breakpoint(sm)) {
             padding: 0rem 40rem;
@@ -191,11 +191,11 @@ onMount(() => {
     }
 
     .selected::after {
-    transform: translateX(0) !important;
+        transform: translateX(0) !important;
     }
 
     .modal-active .selected:not(.open-modal)::after {
-    transform: translateX(100%) !important; 
+        transform: translateX(100%) !important; 
     }
 
     .close-container {

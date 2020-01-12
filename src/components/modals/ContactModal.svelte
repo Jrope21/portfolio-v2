@@ -1,5 +1,5 @@
 <script>
-    import { fade, fly } from 'svelte/transition';
+    import { fade } from 'svelte/transition';
 
 	import ModalTemplate from './ModalTemplate.svelte';
     import BoxLoader from '../loaders/BoxLoader.svelte';

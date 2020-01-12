@@ -114,13 +114,13 @@
     }
 
     div.social-icons {
-        margin-top: 8px;
+        margin-top: 12px;
         min-width: 206px;
     }
 
     i {
-        font-size: 14px;
-        margin-right: 8px;
+        font-size: 18px;
+        margin-right:10px;
         color: #808080;
         transition: all .3s ease;
     }

@@ -20,11 +20,11 @@ span.hover-animation::before {
     width: 20px;
     transform: translate(-100%);
     display: block;
-    transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+    transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 span.hover-animation > span.text-animation {
-    transition: all .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+    transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 a:hover > span.hover-animation::before {

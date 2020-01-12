@@ -1,6 +1,4 @@
 <script>
-    import PageTransition from './PageTransition.svelte';
-
     import SideBar from '../components/experience/SideBar.svelte';
     import ResumeContent from '../components/experience/ResumeContent.svelte';
 </script>
@@ -54,13 +52,11 @@
 </svelte:head>
 
 
-<PageTransition>
-    <div class="experience container">
-        <div class="left">
-            <SideBar />
-        </div>
-        <div class="right">
-            <ResumeContent />
-        </div>
+<div class="experience container">
+    <div class="left">
+        <SideBar />
     </div>
-</PageTransition>
+    <div class="right">
+        <ResumeContent />
+    </div>
+</div>
