@@ -202,7 +202,7 @@
     </div>
     <div class="bottom-row container">
         
-        <p class="copyright">@ 2019 Joshua Roper Development</p>
+        <p class="copyright">@ {new Date().getFullYear()} Joshua Roper Development</p>
         <div class="social-icons">
             <a href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="blank" >
                 <i class="fab fa-github"></i>

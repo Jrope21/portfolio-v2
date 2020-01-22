@@ -2,13 +2,13 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.5ab1ec1d.js"
+    "main": "client.07019120.js"
   },
   "css": {
     "main": "main.1697481216.css",
     "chunks": {
       "index.svelte": [
-        "index.2bc2669c.css",
+        "index.5db6e61b.css",
         "TextAnimation.d7718a5d.css"
       ],
       "experience.svelte": [
@@ -19,6 +19,10 @@
         "ProjectDetailTemplate.a0b03e83.css"
       ],
       "projects/university-park.svelte": [
+        "TextAnimation.d7718a5d.css",
+        "ProjectDetailTemplate.a0b03e83.css"
+      ],
+      "projects/stallion.svelte": [
         "TextAnimation.d7718a5d.css",
         "ProjectDetailTemplate.a0b03e83.css"
       ],

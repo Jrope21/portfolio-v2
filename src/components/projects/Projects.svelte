@@ -14,6 +14,14 @@
             projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`
         },
         {
+            url: 'projects/stallion',
+            imgSrc: 'images/stallion/stallion-thumb.jpg',
+            alt: 'Thumbnail for the Creative Revolt redesigned website',
+            projectName: 'Stallion',
+            projectYear: '2019',
+            projectText: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
+        },
+        {
             url: '/projects/university-park',
             imgSrc: 'images/uptexas-thumb.jpg',
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
@@ -29,6 +37,7 @@
             projectYear: '2018',
             projectText: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
         },
+        
     ]
 </script>
 
