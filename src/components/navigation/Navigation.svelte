@@ -127,7 +127,7 @@ onMount(() => {
         bottom: 0;
         height: 100%;
         padding: 0rem 20rem;
-        transition: transform .65s $custom_animation;
+        transition: transform .85s $custom_animation;
 
         @media (min-width: breakpoint(sm)) {
             padding: 0rem 40rem;
