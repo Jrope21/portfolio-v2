@@ -15,11 +15,11 @@
         },
         {
             url: 'projects/stallion',
-            imgSrc: 'images/stallion/stallion-thumb-a1.jpg',
-            alt: 'Thumbnail for the Creative Revolt redesigned website',
+            imgSrc: 'images/stallion/stallion-thumb-a.jpg',
+            alt: 'Thumbnail for the Stallion complete website rebuild',
             projectName: 'Stallion',
             projectYear: '2019',
-            projectText: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
+            projectText: `As the <strong>Lead Front End Developer</strong> on a <strong>complete website rebuild</strong>, I worked towards envisioning a website that would match their innovative Stallion attitude. The project was built with an <strong>emphasis</strong> on <strong>clean code</strong>, and <strong>modularity.</strong> The website includes multiple API’s, form verification, and other advanced modules.`,
         },
         {
             url: '/projects/university-park',
