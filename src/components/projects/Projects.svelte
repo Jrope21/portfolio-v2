@@ -15,7 +15,7 @@
         },
         {
             url: 'projects/stallion',
-            imgSrc: 'images/stallion/stallion-thumb.jpg',
+            imgSrc: 'images/stallion/stallion-thumb-a1.jpg',
             alt: 'Thumbnail for the Creative Revolt redesigned website',
             projectName: 'Stallion',
             projectYear: '2019',
