@@ -51,9 +51,10 @@
         <h3 class="job-title detail-title">Front End Developer at Imaginuity</h3>
         <ul class="job-details">
             <li class="detail">
-                Developed the entire Front End for a high traffic, 99% up time website
+                Developed the entire Front End for multiple high traffic, 99% up time websites
                 <div class="detail-web-links">
-                    <a href="https://www.uptexas.org" target="_blank">uptexas.org</a> 
+                    <a href="https://www.stallionoilfield.com/" target="_blank">stallionoilfield.com</a>,
+                    <a href="https://www.uptexas.org" target="_blank">uptexas.org</a>
                 </div>
             </li>
             <li class="detail">
@@ -65,7 +66,7 @@
                 </div>
             </li>
             <li class="detail">
-                Maintained 10 React based themes responsible for over 50 established malls
+                Maintained 10 React based themes responsible for over 90 established malls
                 <div class="detail-web-links">
                     <a href="https://www.visithalcyon.com" target="_blank">visithalcyon.com</a>
                 </div>
