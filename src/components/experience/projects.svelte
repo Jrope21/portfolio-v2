@@ -47,7 +47,7 @@
         </div> 
         <div class="project-listing">
             <p class="detail-preface skills-listing">JavaScript, jQuery, WebPack, SASS, Foundation, HTML, WordPress</p>
-            <h3 class="detail-title">Stallion Oilfield</h3>
+            <h3 class="detail-title">Stallion</h3>
             <div class="detail-web-links">
                 <a href="https://www.stallionoilfield.com/" target="_blank">stallionoilfield.com</a>
             </div>

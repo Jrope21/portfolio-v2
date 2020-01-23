@@ -2,7 +2,7 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.d7f8622e.js"
+    "main": "client.c13b165e.js"
   },
   "css": {
     "main": "main.1697481216.css",
@@ -12,7 +12,7 @@
         "TextAnimation.d7718a5d.css"
       ],
       "experience.svelte": [
-        "experience.0fe2e3a2.css"
+        "experience.f6dd5374.css"
       ],
       "projects/creative-revolt.svelte": [
         "TextAnimation.d7718a5d.css",
