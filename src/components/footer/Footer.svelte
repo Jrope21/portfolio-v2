@@ -206,7 +206,7 @@
             <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="_blank" rel="noopener" >
+            <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" >
                 <i class="fas fa-envelope"></i>
             </a>
         </div>

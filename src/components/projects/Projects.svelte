@@ -15,7 +15,7 @@
         },
         {
             url: 'projects/stallion',
-            imgSrc: 'thumbnails/stallion/stallion-thumb-a.jpg',
+            imgSrc: 'thumbnails/stallion-thumb-a.jpg',
             alt: 'Thumbnail for the Stallion complete website rebuild',
             projectName: 'Stallion',
             projectYear: '2019',
