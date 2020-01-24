@@ -78,7 +78,7 @@ export let projectName, url, projectText, projectYear;
         <span class='year'>{projectYear}</span>
         {@html projectText}
     </p>
-    <a href="{url}">
+    <a rel=prefetch href="{url}">
         <TextAnimation text={`Project Details`} />
     </a>
 </div>

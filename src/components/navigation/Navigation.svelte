@@ -280,7 +280,7 @@ onMount(() => {
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
             <li class="{segment === undefined ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>
             <li class="{segment === 'about' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a></li>
-            <li class="{segment === 'experience' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} href="/experience">Experience</a></li>
+            <li class="{segment === 'experience' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a></li>
             <li class="{showModal ? 'selected' : ''} open-modal"><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
         </ul>
     </nav>

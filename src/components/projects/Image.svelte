@@ -69,7 +69,7 @@ export let width;
    
 </style>
 
-<a class="{width}" href="{url}">
+<a rel=prefetch class="{width}" href="{url}">
     <div class="img-container">
       <img src="{imgSrc}" alt="{alt}">
     </div>
