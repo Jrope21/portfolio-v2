@@ -7,7 +7,7 @@
     let portfolioCards = [
         {
             url: '/projects/halcyon',
-            imgSrc: 'images/halcyon-5.jpg',
+            imgSrc: 'thumbnails/halcyon-5.jpg',
             alt: 'Thumbnail for the Halcyon mall website rebuild',
             projectName: 'Halcyon',
             projectYear: '2019',
@@ -15,7 +15,7 @@
         },
         {
             url: 'projects/stallion',
-            imgSrc: 'images/stallion/stallion-thumb-a.jpg',
+            imgSrc: 'thumbnails/stallion/stallion-thumb-a.jpg',
             alt: 'Thumbnail for the Stallion complete website rebuild',
             projectName: 'Stallion',
             projectYear: '2019',
@@ -23,7 +23,7 @@
         },
         {
             url: '/projects/university-park',
-            imgSrc: 'images/uptexas-thumb.jpg',
+            imgSrc: 'thumbnails/uptexas-thumb.jpg',
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'University Park',
             projectYear: '2019',
@@ -31,7 +31,7 @@
         },
         {
             url: 'projects/creative-revolt',
-            imgSrc: 'images/Jorden-Background-Gray.jpg',
+            imgSrc: 'thumbnails/Jorden-Background-Gray.jpg',
             alt: 'Thumbnail for the Creative Revolt redesigned website',
             projectName: 'Creative Revolt',
             projectYear: '2018',

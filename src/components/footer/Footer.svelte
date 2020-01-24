@@ -169,10 +169,6 @@
 
 </style>
 
-<svelte:head>
-    <script src="https://kit.fontawesome.com/1309990c29.js"></script>
-</svelte:head>
-
 <footer>
     <div class="container footer-container">
         <div class="left">
@@ -194,7 +190,7 @@
                 <p class="title">
                     View Resume
                 </p>
-                <a href="./images/resume-joshua-roper.pdf" download>
+                <a href="./pdfs/resume-joshua-roper.pdf" download>
                     <TextAnimation text={`Download PDF`} />
                 </a>
             </div>
@@ -204,13 +200,13 @@
         
         <p class="copyright">@ {new Date().getFullYear()} Joshua Roper Development</p>
         <div class="social-icons">
-            <a href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="blank" >
+            <a href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="_blank" rel="noopener" >
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="blank" >
+            <a href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="blank" >
+            <a href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" target="_blank" rel="noopener" >
                 <i class="fas fa-envelope"></i>
             </a>
         </div>

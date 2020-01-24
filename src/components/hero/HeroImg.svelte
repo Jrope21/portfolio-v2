@@ -9,7 +9,7 @@ let heroImg;
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("../images/hero-doe.png");
+        background-image: url("../thumbnails/hero-doe.png");
         background-size: cover;
          -o-background-size: cover;
         -moz-background-size: cover;
@@ -42,7 +42,6 @@ let heroImg;
     @media (min-width: breakpoint(sm)) {
         .box {
             display: inline-block;
-            background: url("../images/drawing.jpg");
             z-index: -1;
             display: flex;
             align-items: center;
@@ -70,7 +69,7 @@ let heroImg;
 
 </style>
 
-<img width="1px" height="1px" src="images/hero-doe.png" alt="A picture of Joshua Roper leaning against a wall." >
+<img width="1px" height="1px" src="thumbnails/hero-doe.png" alt="A picture of Joshua Roper leaning against a wall." >
 <div class="box">
     <div class="hero-image" ></div>
 </div>
