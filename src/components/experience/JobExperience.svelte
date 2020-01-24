@@ -53,22 +53,22 @@
             <li class="detail">
                 Developed the entire Front End for multiple high traffic, 99% up time websites
                 <div class="detail-web-links">
-                    <a href="https://www.stallionoilfield.com/" target="_blank">stallionoilfield.com</a>,
-                    <a href="https://www.uptexas.org" target="_blank">uptexas.org</a>
+                    <a href="https://www.stallionoilfield.com/" rel="noopener" target="_blank">stallionoilfield.com</a>,
+                    <a href="https://www.uptexas.org" rel="noopener" target="_blank">uptexas.org</a>
                 </div>
             </li>
             <li class="detail">
                 Made web enhancements and landing page’s for multiple businesses
                 <div class="detail-web-links">
-                    <a href="https://www.webuyuglyhouses.com" target="_blank">webuyuglyhouses.com</a>, 
-                    <a href="https://www.homevestors.com" target="_blank">homevestors.com</a>, 
-                    <a href="https://www.advancial.org" target="_blank">advancial.org</a>, etc....
+                    <a href="https://www.webuyuglyhouses.com" rel="noopener" target="_blank">webuyuglyhouses.com</a>, 
+                    <a href="https://www.homevestors.com" rel="noopener" target="_blank">homevestors.com</a>, 
+                    <a href="https://www.advancial.org" rel="noopener" target="_blank">advancial.org</a>, etc....
                 </div>
             </li>
             <li class="detail">
                 Maintained 10 React based themes responsible for over 90 established malls
                 <div class="detail-web-links">
-                    <a href="https://www.visithalcyon.com" target="_blank">visithalcyon.com</a>
+                    <a href="https://www.visithalcyon.com" rel="noopener" target="_blank">visithalcyon.com</a>
                 </div>
             </li>
             <li class="detail">
@@ -80,7 +80,7 @@
         <p class="date-location detail-preface">Carrollton, Texas (2017 - 2018)</p>
         <h3 class="job-title detail-title">Freelance Web Development and Marketing at Creative Revolt</h3>
         <div class="detail-web-links">
-            <a href="https://www.creativerevolt.com" target="_blank">creativerevolt.com</a>
+            <a href="https://www.creativerevolt.com" rel="noopener" target="_blank">creativerevolt.com</a>
         </div>
         <ul class="job-details">
             <li class="detail">

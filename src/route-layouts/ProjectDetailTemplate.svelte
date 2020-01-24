@@ -100,7 +100,7 @@ export let STATE;
                 <Skills skills={STATE.skills}/>
             </section>
             <section class="cta">
-                <a href={STATE.url} target="_blank">Check The Site!</a>
+                <a href={STATE.url} rel="noopener" target="_blank">Check The Site!</a>
             </section>
         </div>
     </div>
