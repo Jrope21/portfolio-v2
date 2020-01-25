@@ -9,7 +9,7 @@ let heroImg;
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("../thumbnails/hero-doe.png");
+        background-image: url("../thumbnails/hero-doe-min.png");
         background-size: cover;
          -o-background-size: cover;
         -moz-background-size: cover;
@@ -69,7 +69,7 @@ let heroImg;
 
 </style>
 
-<img width="1px" height="1px" src="thumbnails/hero-doe.png" alt="A picture of Joshua Roper leaning against a wall." >
+<img width="1px" height="1px" src="thumbnails/hero-doe-min.png" alt="A picture of Joshua Roper leaning against a wall." >
 <div class="box">
     <div class="hero-image" ></div>
 </div>
