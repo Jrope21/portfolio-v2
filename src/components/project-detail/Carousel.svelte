@@ -260,6 +260,10 @@ function findCurrentSlide() {
             width: 18px;
             height: 18px;
             margin-right: 20px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
         }
     }
 
