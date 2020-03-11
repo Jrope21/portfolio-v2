@@ -68,7 +68,10 @@
             <li class="detail">
                 Maintained 10 React based themes responsible for over 90 established malls
                 <div class="detail-web-links">
-                    <a href="https://www.visithalcyon.com" rel="noopener" target="_blank">visithalcyon.com</a>
+                    <a href="https://www.visithalcyon.com" rel="noopener" target="_blank">visithalcyon.com</a>,
+                    <a href="https://www.liberty-center.com/" rel="noopener" target="_blank">liberty-center.com</a>,
+                    <a href="https://www.windwardcity.com/" rel="noopener" target="_blank">windwardcity.com</a>,
+                    etc....
                 </div>
             </li>
             <li class="detail">

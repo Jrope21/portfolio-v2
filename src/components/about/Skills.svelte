@@ -87,6 +87,8 @@
     </h3>
         <ul class="skills">
             <li>React</li>
+            <li>Redux</li>
+            <li>Gatsby Js</li>
             <li>Svelte 3</li>
             <li>Sapper</li>
             <li>JavaScript (ES6+)</li>
