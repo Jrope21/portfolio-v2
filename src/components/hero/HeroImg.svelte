@@ -9,12 +9,12 @@ let heroImg;
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("../thumbnails/hero-doe-min.png");
+        background-image: url("../thumbnails/professional-hero-min.jpg");
         background-size: cover;
          -o-background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
-        background-position: 45% 65%;
+        background-position: 45% 25%;
         box-shadow: 3px 3px 3px lightgrey;
         position: relative;
         z-index: 2;
@@ -23,7 +23,7 @@ let heroImg;
         @media (min-width: breakpoint(sm)) {
             margin-right: -70px;
             width: 220px;
-            background-position: 45% 25%;
+            background-position: 45% 10%;
             height: 320px;
         }
 
