@@ -250,8 +250,8 @@
                     <div class="text-container {formState.hideFields ? 'hide-content' : ''} {formState.hideFields ? 'hide-content' : ''}">
                         <h2>Get In Touch</h2>
                         <p>
-                            Hi There! I’m Josh, 
-                            I bring projects to life by innovating across every aspect of the customer journey. 
+                            Hi there! I’m Josh, 
+                            I bring projects to life by innovating across each aspect of the customer journey. 
                             Send me a message if you are looking to hire a developer, collaborate on a project, or have a potential business opportunity.
                         </p>
                     </div>
