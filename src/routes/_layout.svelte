@@ -1,4 +1,5 @@
 <script>
+	import { stores } from "@sapper/app"
 	import { fade, fly } from 'svelte/transition'
 	import GoogleAnalytics from '../components/helper-components/GoogleAnalytics.svelte';
 	import Navigation from '../components/navigation/Navigation.svelte';
