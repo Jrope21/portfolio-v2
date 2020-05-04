@@ -107,7 +107,7 @@ function findCurrentSlide() {
 
         .box::after {
             position: absolute;
-            background: url('../images/so-white.png');
+            background: url('../background-images/so-white.png');
             background-position-x: 1%;
             border-left: 3px solid black;
             height: 9%;
