@@ -7,6 +7,7 @@
 	import { onMount } from 'svelte'
 
 	export let segment;
+	let ga_id = 'UA-89058156-2';
 </script>
 
 <style global lang="scss">
@@ -23,7 +24,7 @@
 
 </style>
 
-<GoogleAnalytics />
+<GoogleAnalytics {stores} id={ga_id} />
 <Navigation segment={segment} />
 <div class="background"></div>
 <main>
