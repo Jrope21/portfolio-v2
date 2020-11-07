@@ -22,7 +22,8 @@ export let width;
         height: 65vw;
         max-height: 250px;
         box-shadow: 3px 3px 3px color(accentSecondary);
-        transition: all .3s ease-in;
+        transform: translateY(0px);
+        transition: box-shadow .3s ease, transform .3s ease;
     }
 
     @media screen and (min-width: breakpoint(sm)){
@@ -55,8 +56,7 @@ export let width;
     }
 
     a:hover .img-container {
-        position: relative;
-        transform: translateY(-3px);
+        transform: translateY(-4px);
         box-shadow: 5px 5px 5px color(accentSecondary);
     }
 

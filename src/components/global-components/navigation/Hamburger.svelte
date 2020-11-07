@@ -22,7 +22,7 @@ export let hamburger;
       overflow: hidden;
       width: 32px;
       height: 18px;
-      transition: transform .45s $custom_animation;
+      transition: transform .3s $custom_animation;
     }
 
     .hamburger::before {
@@ -34,7 +34,7 @@ export let hamburger;
       right: 0;
       width: 32px;
       transform: translateX(14px);
-      transition: transform .45s $custom_animation;
+      transition: transform .3s $custom_animation;
     }
 
     .hamburger::after {
@@ -46,7 +46,7 @@ export let hamburger;
       border-bottom: 2px solid black;
       width: 32px;
       transform: translateX(8px);
-      transition: transform .45s $custom_animation;
+      transition: transform .3s $custom_animation;
     }
 
     span.middle {
