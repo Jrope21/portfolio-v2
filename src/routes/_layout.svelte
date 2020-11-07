@@ -1,13 +1,13 @@
 <script>
 	import { stores } from "@sapper/app"
 	import { fade, fly } from 'svelte/transition'
-	import GoogleAnalytics from '../components/helper-components/GoogleAnalytics.svelte';
+	// import GoogleAnalytics from '../components/helper-components/GoogleAnalytics.svelte';
 	import Navigation from '../components/navigation/Navigation.svelte';
 	import Footer from '../components/footer/Footer.svelte';
 	import { onMount } from 'svelte'
 
 	export let segment;
-	let ga_id = 'UA-89058156-2';
+	// let ga_id = 'UA-89058156-2';
 </script>
 
 <style global lang="scss">
@@ -24,7 +24,7 @@
 
 </style>
 
-<GoogleAnalytics {stores} id={ga_id} />
+<!-- <GoogleAnalytics {stores} id={ga_id} /> -->
 <Navigation segment={segment} />
 <div class="background"></div>
 <main>

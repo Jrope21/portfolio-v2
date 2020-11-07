@@ -1,6 +1,6 @@
 @import '../../styles/global.variables.scss';
 
-:global(.experience) {
+:global{.experience {
 
     .headline {
         font-size: 22rem;
@@ -85,4 +85,4 @@
         margin-bottom: 40rem;
     }
 
-} 
+} }

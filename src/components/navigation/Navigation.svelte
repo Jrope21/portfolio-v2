@@ -32,7 +32,9 @@ function navSize(y){
 
 function togglerOff(){
     if(window.innerWidth < 1023){
-        hamburger ? hamburger.$$.ctx.hamburger.click() : null;
+        // toggle = true;
+        document.getElementById('toggle').click();
+        // hamburger ? hamburger.$$.ctx.hamburger.click() : null;
     }
 }
 
@@ -143,7 +145,7 @@ onMount(() => {
         }
     }
 
-    #toggle:checked ~ ul.navigation{
+    :global(#toggle:checked ~ ul.navigation){
         display: flex;
         transform: translateX(0);
     }
@@ -167,28 +169,27 @@ onMount(() => {
         }
     }
 
-    @media screen and (min-width: breakpoint(md)){
-        
+    @media screen and (min-width: breakpoint(md)){       
         p{
             font-size: 18rem;
         }
     }
 
-    li:not(.close-container)::after, .active::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        transform: translateX(100%);
-        bottom: 0;
-        width: 100%;
-        opacity: 1;
-        border-bottom: 2px solid #3B3B3B;
-        transition: transform .45s $custom_animation;
-    }
+    // li:not(.close-container)::after, .active::after {
+    //     content: '';
+    //     position: absolute;
+    //     left: 0;
+    //     transform: translateX(100%);
+    //     bottom: 0;
+    //     width: 100%;
+    //     opacity: 1;
+    //     border-bottom: 2px solid #3B3B3B;
+    //     transition: transform .45s $custom_animation;
+    // }
 
-    li:not(.close-container):hover::after, .active::after {
-        transform: translateX(0);
-    }
+    // li:not(.close-container):hover::after, .active::after {
+    //     transform: translateX(0);
+    // }
 
     .selected::after {
         transform: translateX(0) !important;
@@ -223,21 +224,21 @@ onMount(() => {
     }
 
     .close::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-bottom: 2px solid black;
-    width: 32px;
-    transform: rotate(45deg);
+        content: '';
+        display: block;
+        position: absolute;
+        border-bottom: 2px solid black;
+        width: 32px;
+        transform: rotate(45deg);
     }
 
     .close::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-bottom: 2px solid black;
-    width: 32px;
-    transform: rotate(-45deg);
+        content: '';
+        display: block;
+        position: absolute;
+        border-bottom: 2px solid black;
+        width: 32px;
+        transform: rotate(-45deg);
     }
 
     a:not(.logo) {
@@ -264,6 +265,28 @@ onMount(() => {
         color: black;
     }
 
+    .background {
+      background: rgba(0, 0, 0, 0.319);
+      opacity: 0;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      transition: opacity .35s ease-in;
+      animation: .01s ease-in .35s 1 leaveScreen forwards;
+
+      @media (min-width: breakpoint(md)) {
+        display: none;
+      }
+    }
+
+    :global(#toggle:checked ~ .background) {
+      opacity: 1;
+      animation: unset;
+    }
+
 </style>
 
 <svelte:window bind:scrollY={windowY}/>
@@ -275,7 +298,8 @@ onMount(() => {
                 <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
             </p>
         </a>
-        <Hamburger on:click={togglerOff} toggle={toggle} bind:this={hamburger} />
+        <Hamburger toggle={toggle} bind:this={hamburger} />
+        <div class="background" on:click={togglerOff}></div>
         <ul class="navigation {showModal ? 'modal-active' : ''}">
             <li class="close-container" on:click={togglerOff} ><span class="close"></span></li>
             <li class="{segment === undefined ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>

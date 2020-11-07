@@ -3,38 +3,33 @@ export let text;
 
 </script>
 
-<style>
+<style lang="scss">
+    @import '../../styles/global.variables.scss';
 
 span.hover-animation {
     display: flex;
     align-items: center;
     overflow: hidden;
     position: relative;
-    padding-right: 30px;
+    padding-right: 30px;   
 }
 
-span.hover-animation::before {
+span.text-animation::before {
     content: '';
     position: absolute;
     border-bottom: 2px solid;
     width: 20px;
-    transform: translate(-100%);
+    top: 50%;
+    left: 0;
+    transform: translate(-30px,-50%);
     display: block;
-    transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 }
 
 span.hover-animation > span.text-animation {
-    transition: transform .45s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+    transition: transform .3s $custom_animation;
 }
 
-a:hover > span.hover-animation::before {
-    content: '';
-    transform: translate(0);
-    width: 20px;
-    margin-right: 5px;
-}
-
-a:hover > span.hover-animation > span.text-animation {
+:global(a:hover) > span.hover-animation > span.text-animation {
     transform: translate(30px);
 }
 

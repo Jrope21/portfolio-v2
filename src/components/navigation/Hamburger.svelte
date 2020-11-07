@@ -1,7 +1,7 @@
 <script>
 import { onMount, afterUpdate, tick  } from 'svelte';
 
-export let toggle, hamburger;
+export let toggle, hamburger, togglerOff;
 
 </script>
 
@@ -59,43 +59,25 @@ export let toggle, hamburger;
       transform: translateY(-50%);
     }
 
-    .background {
-      background: rgba(0, 0, 0, 0.319);
-      opacity: 0;
-      width: 100vw;
-      height: 100vh;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      transition: opacity .35s ease-in;
-      animation: .01s ease-in .35s 1 leaveScreen forwards;
+  
 
-      @media (min-width: breakpoint(md)) {
-        display: none;
-      }
-    }
-
-    #toggle:hover + .background + label > .hamburger::after {
+    #toggle:hover + label > .hamburger::after {
       transform: translateX(0);
     }
 
-    #toggle:checked + .background + label > .hamburger::after {
+    #toggle:checked + label > .hamburger::after {
       transform: translateX(0);
     }
 
-    #toggle:hover + .background + label > .hamburger::before {
+    #toggle:hover + label > .hamburger::before {
       transform: translateX(0);
     }
 
-    #toggle:checked + .background + label > .hamburger::before {
+    #toggle:checked + label > .hamburger::before {
       transform: translateX(0);
     }
 
-    #toggle:checked + .background {
-      opacity: 1;
-      animation: unset;
-    }
+    
 
     @media screen and (min-width: breakpoint(md)){
       label {
@@ -119,7 +101,6 @@ export let toggle, hamburger;
 </style>
 
 <input id="toggle" type="checkbox" class="hide subnav-toggle hide-for-xlg">
-<div class="background" on:click></div>
 <label id="nav-label" for="toggle" class="hide-for-xlg">
     <span class="show-for-sr">Navigation</span>
     <span class="hamburger" bind:this={hamburger} title="Navigation">
