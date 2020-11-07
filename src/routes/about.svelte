@@ -2,11 +2,10 @@
     import { onMount } from 'svelte'
     import { fade, fly } from 'svelte/transition';
 
-    import PageTitle from '../components/about/PageTitle.svelte';
-
-    import AboutMe from '../components/about/AboutMe.svelte';
-    import SkillsSection from '../components/about/Skills.svelte';
-    import Contact from '../components/about/Contact.svelte';
+    import PageTitle from '../components/about-components/PageTitle.svelte';
+    import AboutMe from '../components/about-components/AboutMe.svelte';
+    import SkillsSection from '../components/about-components/Skills.svelte';
+    import Contact from '../components/about-components/Contact.svelte';
 
 </script>
 
@@ -47,7 +46,6 @@
 	.content-container {
         width: 90%;
         margin-bottom: 40rem;		
-        /* opacity: 0; */
         max-width: 900px;
     }
 

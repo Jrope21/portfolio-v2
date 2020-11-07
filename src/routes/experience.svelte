@@ -1,11 +1,11 @@
 <script>
-    import SideBar from '../components/experience/SideBar.svelte';
-    import ResumeContent from '../components/experience/ResumeContent.svelte';
+    import SideBar from '../components/experience-components/SideBar.svelte';
+    import ResumeContent from '../components/experience-components/ResumeContent.svelte';
 </script>
 
 <style lang="scss">
     @import '../styles/global.variables.scss';
-    @import '../components/experience/experience-fonts.styles.scss';
+    @import '../components/experience-components/experience-fonts.styles.scss';
 
     .container {
         position: relative;

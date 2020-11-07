@@ -1,6 +1,6 @@
 <script>
-    import Hero from '../components/hero/Hero.svelte';
-    import Projects from '../components/projects/Projects.svelte';
+    import Hero from '../components/home-components/hero/Hero.svelte';
+    import Projects from '../components/home-components/projects/Projects.svelte';
 
 </script>
 

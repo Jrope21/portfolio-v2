@@ -1,0 +1,89 @@
+@import '../../styles/global.variables.scss';
+
+// this file gets imported into the "experience" route component
+:global{.experience {
+
+    .headline {
+        font-size: 22rem;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 12px;
+        font-weight: 600;
+        width: fit-content;
+
+        @media screen and (min-width: 64em) {
+            font-size: 28rem;
+        }
+
+        &::after {
+            content: '';
+            margin-top: 1px;
+            display: block;
+            width: calc(100% + 15px);
+            height: 1px;
+            border-bottom: 5px solid lightgray;
+        }
+
+        &.alt {
+            &::after {
+                width: 150px;
+            }
+        }
+    }
+
+    .detail-web-links a, .detail-web-links {
+        text-transform: lowercase;
+        font-size: 12rem;
+        width: fit-content;
+        color: color(accent);
+        font-weight: 300;
+        font-style: italic;
+
+        @media screen and (min-width: 64em) {
+            font-size: 18rem;
+        } 
+    }
+
+    .detail-web-links {
+        margin-top: 2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+
+        @media screen and (min-width: 64em) {
+            margin-top: 1px;
+            margin-bottom: 8px;
+        }
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .detail-title {
+        font-size: 14rem;
+        font-weight: 600;
+
+        @media screen and (min-width: 64em) {
+            font-size: 18rem;
+        }
+    }
+
+    .detail-preface {
+        color: color(accentTertiary);
+        margin-bottom: 2px;
+        font-size: 14rem;
+        line-height: 21px;
+
+        @media screen and (min-width: 64em) {
+            font-size: 18rem;
+            line-height: 25px;
+        }
+    }
+
+    section {
+        margin-bottom: 40rem;
+    }
+
+} }

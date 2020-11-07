@@ -1,8 +1,8 @@
 <script>
-import PageTitle from '../components/project-detail/PageTitle.svelte';
-import Description from '../components/project-detail/Description.svelte';
-import Carousel from '../components/project-detail/Carousel.svelte';
-import Skills from '../components/project-detail/Skills.svelte';
+import PageTitle from '../components/project-detail-components/PageTitle.svelte';
+import Description from '../components/project-detail-components/Description.svelte';
+import Carousel from '../components/project-detail-components/Carousel.svelte';
+import Skills from '../components/project-detail-components/Skills.svelte';
 
 export let STATE;
 

@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "Portfolio",
+  "description": "Personal Portfolio for Joshua Roper",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
