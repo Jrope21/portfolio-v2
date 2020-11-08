@@ -149,8 +149,6 @@ onMount(() => {
             position: relative;
             max-width: unset;
             min-width: unset;
-            // display: flex;
-            // flex-direction: row;
             width: unset;
             padding: 0;
         }
@@ -214,7 +212,6 @@ onMount(() => {
         background: #c0bdbd;
         z-index: -1;
         opacity: .5;
-        // border-bottom: 2px solid #3B3B3B;
         transition: transform .45s $custom_animation;
     }
 
@@ -222,25 +219,14 @@ onMount(() => {
         transform: translate(0, -50%);
     }
 
-    // .selected::after {
-    //     transform: translateX(0) !important;
-    // }
-
     .modal-active .selected:not(.open-modal) .nav-item::after {
         transform: translate(100%, -50%) !important; 
     }
 
     .close-container {
-        // position: absolute;
-        // top: 50rem;
-        // right: 50rem;
-        // overflow: unset;
         cursor: pointer;
         width: 32px;
         height: 32px;
-        // @media (min-width: breakpoint(sm)) {
-        //     right: 70rem;
-        // }
 
         @media (min-width: breakpoint(md)) {
             display: none;
@@ -252,8 +238,6 @@ onMount(() => {
         width:32px;
         height:32px;
         position: relative;
-        // align-items: center;
-        // justify-content: center;
     }
 
     .close::before {
@@ -311,7 +295,6 @@ onMount(() => {
       z-index: 1;
       transition: opacity .15s ease-in, visibility .15s linear;
       visibility: hidden;
-    //   animation: .01s ease-in .35s 1 leaveScreen forwards;
 
       @media (min-width: breakpoint(md)) {
         display: none;
@@ -363,15 +346,18 @@ onMount(() => {
     }
 
     i {
-        font-size: 14px;
-        margin-right:10px;
+        font-size: 16px;
+        margin-right:12px;
         color: #5A5A5A;
         transition: all .3s ease;
     }
 
+    .social-icon:last-of-type i {
+        margin-right: 0;
+    }
+
     .social-icon:hover > i {
         transform: translateY(-3px);
-        // color: color(secondary);
     }
 
 </style>

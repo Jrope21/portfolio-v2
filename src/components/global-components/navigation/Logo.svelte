@@ -17,11 +17,11 @@ span {
 
 .text {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .text:last-of-type {
-    margin-left: -5px;
+    margin-left: -7px;
 }
 
 .line {

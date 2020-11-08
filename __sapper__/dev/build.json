@@ -2,38 +2,38 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.9a25fdb0.js"
+    "main": "client.ea0b0c65.js"
   },
   "css": {
-    "main": "main.3095543356.css",
+    "main": "main.1705402440.css",
     "chunks": {
       "index.svelte": [
-        "index.46cd2bd5.css",
-        "client.9a25fdb0.css"
+        "index.7a3a6300.css",
+        "client.ea0b0c65.css"
       ],
       "experience.svelte": [
-        "experience.b377453a.css",
-        "client.9a25fdb0.css"
+        "experience.956c53ae.css",
+        "client.ea0b0c65.css"
       ],
       "projects/creative-revolt.svelte": [
-        "client.9a25fdb0.css",
-        "ProjectDetailTemplate.8b6402cb.css"
+        "client.ea0b0c65.css",
+        "ProjectDetailTemplate.52e11f99.css"
       ],
       "projects/university-park.svelte": [
-        "client.9a25fdb0.css",
-        "ProjectDetailTemplate.8b6402cb.css"
+        "client.ea0b0c65.css",
+        "ProjectDetailTemplate.52e11f99.css"
       ],
       "projects/stallion.svelte": [
-        "client.9a25fdb0.css",
-        "ProjectDetailTemplate.8b6402cb.css"
+        "client.ea0b0c65.css",
+        "ProjectDetailTemplate.52e11f99.css"
       ],
       "projects/halcyon.svelte": [
-        "client.9a25fdb0.css",
-        "ProjectDetailTemplate.8b6402cb.css"
+        "client.ea0b0c65.css",
+        "ProjectDetailTemplate.52e11f99.css"
       ],
       "about.svelte": [
-        "about.a19183c8.css",
-        "client.9a25fdb0.css"
+        "about.5af44a0d.css",
+        "client.ea0b0c65.css"
       ]
     }
   }
