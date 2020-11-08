@@ -29,11 +29,6 @@
         background: rgba(0,0,0,0.3);
 	}
 
-	.container{
-		width: 100%;
-		height: 100%;
-	}
-
 	.modal {
         width: calc(100vw - 4em);
         width: 80%;
@@ -54,11 +49,7 @@
 			width: 70%;
 			max-width: 750px;
 		}
-    }
-    
-	button {
-		display: block;
-    }   
+    } 
     
 </style>
 

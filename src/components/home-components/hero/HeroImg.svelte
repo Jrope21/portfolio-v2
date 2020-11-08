@@ -63,10 +63,6 @@ let heroImg;
         }
     }
 
-    img {
-        display: none;
-    }
-
 </style>
 
 <div class="box">

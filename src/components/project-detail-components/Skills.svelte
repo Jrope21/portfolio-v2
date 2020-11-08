@@ -58,13 +58,6 @@ export let skills;
         border-left: 3px solid #e6e7e8;
         opacity: .4;
     }
-
-    p {
-        font-weight: 300;
-        font-size: 13rem;
-        color: color(secondary);
-    }
-
     
     li {
         width: 100%;
@@ -86,11 +79,6 @@ export let skills;
             font-size: 18rem;
             margin: 0rem 0rem 35rem 0rem;
         }
-    }
-
-    span {
-        color: #414042;
-        font-weight: 500;
     }
 
     ul li:last-child {

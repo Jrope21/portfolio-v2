@@ -212,10 +212,6 @@
         box-shadow: 2px 2px 3px lightgrey;
     }
 
-    div.contact-row{
-        display: flex;
-        justify-content: space-between;
-    }
     input, textarea{
         border: 1px solid lightgray;
         border-radius: 2px;

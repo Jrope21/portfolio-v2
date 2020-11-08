@@ -142,37 +142,6 @@ function findCurrentSlide() {
         }
     }
 
-    .title {
-        display: none;
-        font-size: 40px;
-        position: absolute;
-        color: color(secondary);
-        transform: rotate(-90deg);
-        margin-right: -15px;
-        top: 50%;
-        left: -20%;
-    }
-
-    @media (min-width: breakpoint(sm)) {
-        .title {
-            display: inline;
-            left: -25%
-        }
-    }
-
-    @media (min-width: breakpoint(md)) {
-        .title {
-            font-size: 55px;
-        }
-    }
-
-    @media (min-width: breakpoint(lg)) {
-        .title {
-            font-size: 67px;
-        }
-    }
-
-
     .slide {
         position: absolute;
         left: 50%;
