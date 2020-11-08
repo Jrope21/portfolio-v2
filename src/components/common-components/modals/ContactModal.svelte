@@ -38,8 +38,7 @@
         formState.formSuccess = false;
         const formFieldNames = ['name', 'email', 'message']; // TODO - generate field names based on inputs
         const formTextObj = buildFormSubmissionTextObj(e.target, formFieldNames);
-
-        const API_URL = `https://script.google.com/macros/s/AKfycbyfIRXEeqnLPVq4s2hG_b35lmcm2FCn768QWC9Wfg/exec`;
+        const API_URL = `https://script.google.com/macros/s/AKfycbydbaWHTARcBeJS1auLdnBSNhDZ0yO-SYbGH0AllA/exec`;
         const settings = { 
             method: 'POST',
             body: formTextObj,
@@ -55,7 +54,7 @@
         } catch (e) {
             formState.submittingForm = false;
             formState.formError = true;
-
+            console.log('error submitting form', e)
             resetForm(1600);       
         }
     }
