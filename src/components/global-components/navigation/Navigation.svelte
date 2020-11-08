@@ -127,16 +127,16 @@ onMount(() => {
         z-index: 2;
         min-width: 250px;
         width: 85%;
-        max-width: 280px;
+        max-width: 300px;
         right: 0;
         transform: translateX(100%);
         bottom: 0;
         height: 100%;
-        padding: 35rem 20rem;
+        padding: 45rem 30rem;
         transition: transform .45s $custom_animation;
 
         @media (min-width: breakpoint(sm)) {
-            padding: 0rem 40rem;
+            padding: 80rem 40rem;
         }
 
         @media (min-width: breakpoint(md)) {
@@ -173,14 +173,17 @@ onMount(() => {
         position: relative;
         text-align: right;
         margin: 5rem 0rem;
+        padding: 5rem 6rem;
         width: auto;
         overflow-x: hidden;
-        font-size: 14rem;
+        font-size: 16rem;
+        font-weight: 700;
 
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
-            margin: 0rem 20rem;
-            padding: 2.5rem 0;
+            margin: 0rem 14rem;
+            padding: 2.5rem 6rem;
+            font-weight: 500;
 
             &:last-of-type {
                 margin-right: 0;
@@ -194,40 +197,46 @@ onMount(() => {
         }
     }
 
-    li:not(.close-container)::after, .active::after {
+    .nav-item::after, .selected .nav-item::after {
         content: '';
         position: absolute;
         left: 0;
-        transform: translateX(100%);
-        bottom: 0;
-        width: 100%;
+        transform: translate(100%, -50%);
+        top: 50%;
+        width: calc(100% + 12px);
+        margin-left: -10%;
         opacity: 1;
-        border-bottom: 2px solid #3B3B3B;
-        transition: transform .3s $custom_animation;
+        height: 8px;
+        background: #c0bdbd;
+        z-index: -1;
+        opacity: .5;
+        // border-bottom: 2px solid #3B3B3B;
+        transition: transform .45s $custom_animation;
     }
 
-    li:not(.close-container):hover::after, .active::after {
-        transform: translateX(0);
+    li:hover .nav-item::after, .selected .nav-item::after {
+        transform: translate(0, -50%);
     }
 
-    .selected::after {
-        transform: translateX(0) !important;
-    }
+    // .selected::after {
+    //     transform: translateX(0) !important;
+    // }
 
-    .modal-active .selected:not(.open-modal)::after {
-        transform: translateX(100%) !important; 
+    .modal-active .selected:not(.open-modal) .nav-item::after {
+        transform: translate(100%, -50%) !important; 
     }
 
     .close-container {
-        position: absolute;
-        top: 50rem;
-        right: 50rem;
-        overflow: unset;
+        // position: absolute;
+        // top: 50rem;
+        // right: 50rem;
+        // overflow: unset;
         cursor: pointer;
-
-        @media (min-width: breakpoint(sm)) {
-            right: 70rem;
-        }
+        width: 32px;
+        height: 32px;
+        // @media (min-width: breakpoint(sm)) {
+        //     right: 70rem;
+        // }
 
         @media (min-width: breakpoint(md)) {
             display: none;
@@ -235,19 +244,22 @@ onMount(() => {
     }
 
     .close {
+        display: block;
         width:32px;
         height:32px;
         position: relative;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
     }
 
     .close::before {
         content: '';
         display: block;
         position: absolute;
-        border-bottom: 2px solid black;
-        width: 32px;
+        border-bottom: 1px solid black;
+        width: 24px;
+        top: 16px;
+        right: 0;
         transform: rotate(45deg);
     }
 
@@ -255,18 +267,22 @@ onMount(() => {
         content: '';
         display: block;
         position: absolute;
-        border-bottom: 2px solid black;
-        width: 32px;
+        border-bottom: 1px solid black;
+        width: 24px;
+        top: 16px;
+        right: 0;
         transform: rotate(-45deg);
     }
 
-    a:not(.logo) {
-        display: block;
-        padding: 5rem 0rem;
+    .nav-item {
+        // position: relative;
+        display: inline;
+        // padding: 5rem 0rem;
+        padding: 0;
         text-transform: uppercase;
     }
 
-    p{
+    .logo-text {
         font-weight: 700;
         font-style: italic;
     }
@@ -307,7 +323,7 @@ onMount(() => {
 
     .text-cta {
         text-align: end;
-        margin-bottom: 10px
+        margin-bottom: 15px;
     }
 
     .text-cta a {
@@ -321,6 +337,39 @@ onMount(() => {
         text-transform: none;
     }
 
+    
+
+    .mobile-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-top, .mobile-bottom {
+
+        @media (min-width: breakpoint(md)) {
+            display: none;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: flex-end
+    }
+
+    i {
+        font-size: 14px;
+        margin-right:10px;
+        color: color(primary);
+        transition: all .3s ease;
+    }
+
+    .social-icon:hover > i {
+        transform: translateY(-3px);
+        color: color(secondary);
+    }
+
 </style>
 
 <svelte:window bind:scrollY={windowY}/>
@@ -329,7 +378,7 @@ onMount(() => {
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
         <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
             <!-- <Logo /> -->
-            <p>
+            <p class="logo-text">
                 <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
             </p>
         </a>
@@ -337,6 +386,7 @@ onMount(() => {
         <div class="background" on:click={togglerOff}></div>
         <div class="navigation">
             <div class="mobile-top">
+                <Logo />
                 <div on:click={togglerOff} class="close-container">
                     <span class="close"></span>
                 </div>
@@ -344,11 +394,21 @@ onMount(() => {
 
             <ul class="navigation-list {showModal ? 'modal-active' : ''}">
                 <!-- <li class="close-container" on:click={togglerOff} ><span class="close"></span></li> -->
-                <li class="{segment === undefined ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a></li>
-                <li class="{segment === 'about' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a></li>
-                <li class="{segment === 'experience' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a></li>
-                <li class="{segment === 'works' ? 'selected' : ''}"><a on:click={setActiveNavOnClick} rel=prefetch href="/works">Works</a></li>
-                <li class="{showModal ? 'selected' : ''} open-modal"><a on:click={openModal} href="javascript:void(0)">Contact</a></li>
+                <li class="{segment === undefined ? 'selected' : ''}">
+                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a>
+                </li>
+                <li class="{segment === 'about' ? 'selected' : ''}">
+                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a>
+                </li>
+                <li class="{segment === 'experience' ? 'selected' : ''}">
+                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a>
+                </li>
+                <!-- <li class="{segment === 'works' ? 'selected' : ''}">
+                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/works">Works</a>
+                </li> -->
+                <li class="{showModal ? 'selected' : ''} open-modal">
+                    <a class="nav-item" on:click={openModal} href="javascript:void(0)">Contact</a>
+                </li>
             </ul>
 
             <div class="mobile-bottom">
@@ -368,6 +428,18 @@ onMount(() => {
                     <a href="./pdfs/resume-joshua-roper.pdf" download>
                         Download PDF
                         <!-- <TextAnimation text={`Download PDF`} /> -->
+                    </a>
+                </div>
+
+                 <div class="social-icons">
+                    <a class="social-icon" href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="_blank" rel="noopener" >
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social-icon" href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" >
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>

@@ -73,7 +73,7 @@
 
     .headline a {
         color: color(secondary);
-        transition: all .45s ease-in-out;
+        transition: all .3s ease-in-out;
         opacity: .75;
     }
 
@@ -106,7 +106,7 @@
         font-size: 18px;
         font-weight: 800;
         margin-top: 25rem;
-        transition: opacity .45s ease-in-out;
+        transition: opacity .3s ease-in-out;
     }
 
     .left .open-modal:hover {
