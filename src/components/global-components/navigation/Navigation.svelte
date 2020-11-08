@@ -186,7 +186,7 @@ onMount(() => {
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
             margin: 0rem 14rem;
-            padding: 2.5rem 6rem;
+            padding: 7rem 6rem;
             font-weight: 500;
 
             &:last-of-type {
