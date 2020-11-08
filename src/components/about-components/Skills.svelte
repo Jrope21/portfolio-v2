@@ -86,25 +86,27 @@
         Skills
     </h3>
         <ul class="skills">
-            <li>React</li>
-            <li>Redux</li>
-            <li>Gatsby Js</li>
-            <li>Svelte 3</li>
-            <li>Sapper</li>
-            <li>JavaScript (ES6+)</li>
+            <li>React | Redux</li>
+            <li>Gatsby Js | React Static</li>
+            <li>Svelte 3 | Sapper</li>
+            <li>Node Js | Express</li>
+            <li>JavaScript (ES8+)</li>
+            <li>jQuery</li> 
+            <li>Asynchronous JavaScript</li> 
             <li>WebPack</li>
             <li>Git (Version Control)</li>
-            <li>jQuery</li> 
+            <li>Command Line</li>
             <li>SASS / SCSS</li>
             <li>CSS</li>
-            <li>Foundation</li>
-            <li>Bootstrap</li>
-            <li>HTML (WCAG 2.1)</li>
+            <li>Foundation | Bootstrap</li>
+            <li>HTML (WCAG compliant)</li>
             <li>HTML Emails</li>
             <li>GitHub / BitBucket</li>
             <li>WordPress / Kentico</li>
             <li>Adobe Suite</li>
+            <li>Figma</li>
             <li>SEO</li>
             <li>Usability Testing</li> 
+            <li>Agile | Waterfall</li> 
         </ul>
 </div>

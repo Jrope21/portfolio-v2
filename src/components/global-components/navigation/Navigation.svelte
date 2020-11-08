@@ -131,6 +131,8 @@ onMount(() => {
         right: 0;
         transform: translateX(100%);
         bottom: 0;
+        min-height: 500px;
+        overflow-y: scroll;
         height: 100%;
         padding: 45rem 30rem;
         transition: transform .45s $custom_animation;
@@ -140,6 +142,8 @@ onMount(() => {
         }
 
         @media (min-width: breakpoint(md)) {
+            overflow-y: auto;
+            min-height: unset;
             transition: none;
             transform: unset;   
             position: relative;
@@ -361,13 +365,13 @@ onMount(() => {
     i {
         font-size: 14px;
         margin-right:10px;
-        color: color(primary);
+        color: #5A5A5A;
         transition: all .3s ease;
     }
 
     .social-icon:hover > i {
         transform: translateY(-3px);
-        color: color(secondary);
+        // color: color(secondary);
     }
 
 </style>

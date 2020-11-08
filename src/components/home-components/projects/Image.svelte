@@ -18,6 +18,7 @@ export let width;
     .img-container{
         position: relative;
         overflow: hidden;
+        min-width: 250px;
         width: 65vw;
         height: 65vw;
         max-height: 250px;
