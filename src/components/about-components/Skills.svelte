@@ -96,13 +96,13 @@
             <li>WebPack</li>
             <li>Git (Version Control)</li>
             <li>Command Line</li>
-            <li>SASS / SCSS</li>
+            <li>SASS | SCSS</li>
             <li>CSS</li>
             <li>Foundation | Bootstrap</li>
             <li>HTML (WCAG compliant)</li>
             <li>HTML Emails</li>
-            <li>GitHub / BitBucket</li>
-            <li>WordPress / Kentico</li>
+            <li>GitHub | BitBucket</li>
+            <li>WordPress | Kentico</li>
             <li>Adobe Suite</li>
             <li>Figma</li>
             <li>SEO</li>

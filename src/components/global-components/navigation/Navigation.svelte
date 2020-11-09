@@ -142,7 +142,7 @@ onMount(() => {
         }
 
         @media (min-width: breakpoint(md)) {
-            overflow-y: auto;
+            // overflow-y: auto;
             min-height: unset;
             transition: none;
             transform: unset;   
@@ -151,6 +151,7 @@ onMount(() => {
             min-width: unset;
             width: unset;
             padding: 0;
+            overflow-y: visible;
         }
     }
 
@@ -184,8 +185,9 @@ onMount(() => {
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
             margin: 0rem 14rem;
-            padding: 7rem 6rem;
+            padding: 10rem 6rem;
             font-weight: 500;
+            // vo
 
             &:last-of-type {
                 margin-right: 0;
@@ -213,6 +215,14 @@ onMount(() => {
         z-index: -1;
         opacity: .5;
         transition: transform .45s $custom_animation;
+
+        @media (min-width: breakpoint(sm)) {
+            top: 90%;
+            height: 6px;
+        }
+        @media (min-width: breakpoint(md)) {
+            background: #797777;
+        }
     }
 
     li:hover .nav-item::after, .selected .nav-item::after {
@@ -245,7 +255,7 @@ onMount(() => {
         display: block;
         position: absolute;
         border-bottom: 1px solid black;
-        width: 24px;
+        width: 26px;
         top: 16px;
         right: 0;
         transform: rotate(45deg);
@@ -256,7 +266,7 @@ onMount(() => {
         display: block;
         position: absolute;
         border-bottom: 1px solid black;
-        width: 24px;
+        width: 26px;
         top: 16px;
         right: 0;
         transform: rotate(-45deg);

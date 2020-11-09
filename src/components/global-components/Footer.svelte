@@ -73,7 +73,7 @@
 
     .headline a {
         // color: color(accent);
-        color: #696969;
+        color: #4b4b4b;
         position: relative;
         z-index: 1;
         overflow: hidden;
