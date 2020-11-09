@@ -2,42 +2,54 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.3212359a.js"
+    "main": "client.4db3d07b.js"
   },
   "css": {
-    "main": "main.1513898007.css",
+    "main": "main.4065751020.css",
     "chunks": {
       "index.svelte": [
-        "index.09b53d03.css",
-        "client.3212359a.css"
+        "index.f9163e42.css",
+        "client.4db3d07b.css",
+        "Projects.c05d4a4e.css"
       ],
       "experience.svelte": [
-        "experience.8d47c216.css",
-        "client.3212359a.css"
+        "experience.9eaf0138.css",
+        "client.4db3d07b.css"
       ],
       "projects/creative-revolt.svelte": [
-        "client.3212359a.css",
-        "ProjectDetailTemplate.706e3bce.css"
+        "client.4db3d07b.css",
+        "PageTitle.528e9cc9.css",
+        "ProjectDetailTemplate.4f78a7cc.css"
       ],
       "projects/university-park.svelte": [
-        "client.3212359a.css",
-        "ProjectDetailTemplate.706e3bce.css"
+        "client.4db3d07b.css",
+        "PageTitle.528e9cc9.css",
+        "ProjectDetailTemplate.4f78a7cc.css"
       ],
       "projects/di-repairs.svelte": [
-        "client.3212359a.css",
-        "ProjectDetailTemplate.706e3bce.css"
+        "client.4db3d07b.css",
+        "PageTitle.528e9cc9.css",
+        "ProjectDetailTemplate.4f78a7cc.css"
       ],
       "projects/stallion.svelte": [
-        "client.3212359a.css",
-        "ProjectDetailTemplate.706e3bce.css"
+        "client.4db3d07b.css",
+        "PageTitle.528e9cc9.css",
+        "ProjectDetailTemplate.4f78a7cc.css"
       ],
       "projects/halcyon.svelte": [
-        "client.3212359a.css",
-        "ProjectDetailTemplate.706e3bce.css"
+        "client.4db3d07b.css",
+        "PageTitle.528e9cc9.css",
+        "ProjectDetailTemplate.4f78a7cc.css"
+      ],
+      "projects.svelte": [
+        "projects.6a1c491c.css",
+        "client.4db3d07b.css",
+        "Projects.c05d4a4e.css",
+        "PageTitle.528e9cc9.css"
       ],
       "about.svelte": [
-        "about.c3b2030e.css",
-        "client.3212359a.css"
+        "about.3b67aeaf.css",
+        "client.4db3d07b.css"
       ]
     }
   }

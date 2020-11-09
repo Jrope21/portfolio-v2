@@ -109,7 +109,7 @@
 
     .headline a:hover::after {
         
-        transform: translate(100%, -50%);
+        transform: translate(100.5%, -50%);
     }
 
     .headline a:hover {

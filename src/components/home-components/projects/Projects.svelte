@@ -4,49 +4,8 @@
     import Image from './Image.svelte';
     import Text from './Text.svelte';  
 
-    let portfolioCards = [
-        {
-            url: '/projects/halcyon',
-            imgSrc: 'thumbnails/halcyon-5-min.jpg',
-            alt: 'Thumbnail for the Halcyon mall website rebuild',
-            projectName: 'Halcyon',
-            projectYear: '2019',
-            projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`
-        },
-        {
-            url: '/projects/di-repairs',
-            imgSrc: 'thumbnails/di-thumb.jpg',
-            alt: 'Thumbnail for the City of University Park complete Front End website redesign',
-            projectName: 'DI Repairs',
-            projectYear: '2020',
-            projectText: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
-        },
-        // {
-        //     url: 'projects/stallion',
-        //     imgSrc: 'thumbnails/stallion-thumb-a-min.jpg',
-        //     alt: 'Thumbnail for the Stallion complete website rebuild',
-        //     projectName: 'Stallion',
-        //     projectYear: '2019',
-        //     projectText: `As the <strong>Lead Front End Developer</strong> on a <strong>complete website rebuild</strong>, I worked towards envisioning a website that would match their innovative Stallion attitude. The project was built with an <strong>emphasis</strong> on <strong>clean code</strong>, and <strong>modularity.</strong> The website includes multiple API’s, form verification, and other advanced modules.`,
-        // },
-        // {
-        //     url: '/projects/university-park',
-        //     imgSrc: 'thumbnails/uptexas-thumb-min.jpg',
-        //     alt: 'Thumbnail for the City of University Park complete Front End website redesign',
-        //     projectName: 'University Park',
-        //     projectYear: '2019',
-        //     projectText: `I was tasked with being the <strong>sole developer</strong> on a <strong>complete Front-End redesign</strong>. Keeping their current users in mind, the goal was to make the website feel more modern, and offer a better user experience when navigating to each individual page. Across the entire project I implemented several dynamically generated content pages / sliders, <strong>form verification</strong>, and several <strong>third party integrations</strong>.`,
-        // },
-        // {
-        //     url: 'projects/creative-revolt',
-        //     imgSrc: 'thumbnails/Jorden-Background-Gray-min.jpg',
-        //     alt: 'Thumbnail for the Creative Revolt redesigned website',
-        //     projectName: 'Creative Revolt',
-        //     projectYear: '2018',
-        //     projectText: `This was a freelance project to <strong>rework the website layout</strong> and tailor the feel of the website to her personal writing style. I <strong>revamped the color palette</strong> to better match her personality, adjusted her website for <strong>SEO</strong>, and created the landing page as well as multiple pages across the platform.`,
-        // },
-        
-    ]
+    export let portfolioCards, title;
+    
 </script>
 
 <style lang="scss">
@@ -56,15 +15,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10% 0 10% 0;
+        margin: 10% 0 10% 0;
         position: relative;
     }
 
-    @media screen and (min-width: breakpoint(sm)){ 
-        section {
-            padding: 10% 0 10% 0;
-        }
-    }
+    // @media screen and (min-width: breakpoint(sm)){ 
+    //     section {
+    //         padding: 10% 0 10% 0;
+    //     }
+    // }
 
     div.card-container {
         display: flex;
@@ -147,7 +106,10 @@
 </style>
 
 <section>
-    <h2>Selected Works</h2>
+    {#if title}
+        <h2>{title}</h2>
+    {/if}
+    
     <div class="projects-container">
         {#each portfolioCards as card, index}
             <div class="card-container" {index}>

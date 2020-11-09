@@ -1,7 +1,26 @@
 <script>
     import Hero from '../components/home-components/hero/Hero.svelte';
     import Projects from '../components/home-components/projects/Projects.svelte';
+    import TextWithImageCta from '../components/home-components/text-with-image-cta/TextWithImageCta.svelte';
 
+    let portfolioCards = [
+        {
+            url: '/projects/halcyon',
+            imgSrc: 'thumbnails/halcyon-5-min.jpg',
+            alt: 'Thumbnail for the Halcyon mall website rebuild',
+            projectName: 'Halcyon',
+            projectYear: '2019',
+            projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`
+        },
+        {
+            url: '/projects/di-repairs',
+            imgSrc: 'thumbnails/di-thumb.jpg',
+            alt: 'Thumbnail for the City of University Park complete Front End website redesign',
+            projectName: 'DI Repairs',
+            projectYear: '2020',
+            projectText: `As the <strong>only developer & designer</strong> on this freelance project. I completely re-envisioned the site design & built the project from the ground up as an extremely performant <strong>SSG website</strong>. I utilized development & design best practices with a focus on the <strong>user experience.</strong>`,
+        },        
+    ]
 </script>
 
 <style>
@@ -20,5 +39,6 @@
 
 <div class="container">
     <Hero />
-    <Projects />
+    <!-- <TextWithImageCta /> -->
+    <Projects portfolioCards={portfolioCards} title={'Selected Works'} />
 </div>

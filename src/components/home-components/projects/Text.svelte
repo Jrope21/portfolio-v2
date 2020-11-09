@@ -27,7 +27,7 @@ export let projectName, url, projectText, projectYear;
         font-size: 13rem;
         font-weight: 600;
         text-transform: capitalize;
-        transition: all .2s ease-in-out;
+        // transition: all .2s ease-in-out;
         color: color(primary);
         z-index: 2;
     }
@@ -38,9 +38,8 @@ export let projectName, url, projectText, projectYear;
         text-indent: 10px;
     }
 
-    .year{
-        
-        content: '2019';
+    .year{  
+        // content: '2019';
         position: absolute;
         font-weight: 900;
         opacity: .5;

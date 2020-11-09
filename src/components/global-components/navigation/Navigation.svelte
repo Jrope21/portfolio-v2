@@ -378,6 +378,8 @@ onMount(() => {
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
         <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
             <!-- <Logo /> -->
+            <!-- <img src="images/logo.svg" alt=""> -->
+            
             <p class="logo-text">
                 <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
             </p>
@@ -399,6 +401,9 @@ onMount(() => {
                 </li>
                 <li class="{segment === 'about' ? 'selected' : ''}">
                     <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a>
+                </li>
+                <li class="{segment === 'projects' ? 'selected' : ''}">
+                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/projects">Projects</a>
                 </li>
                 <li class="{segment === 'experience' ? 'selected' : ''}">
                     <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a>

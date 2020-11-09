@@ -29,7 +29,8 @@ export let width;
 
     @media screen and (min-width: breakpoint(sm)){
         .img-container{
-            max-width:100%; 
+            min-width: unset;
+            // max-width:100%; 
             width: 25vw;
             height: 25vw;
             max-width: 350px;
@@ -63,7 +64,7 @@ export let width;
 
     img {
         object-fit: cover;
-        transition: all .3s ease-in;
+        // transition: all .3s ease-in;
         width: 100%;
         height: 100%;
     }
