@@ -2,54 +2,54 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.fb547b35.js"
+    "main": "client.9d85c91e.js"
   },
   "css": {
-    "main": "main.4013169240.css",
+    "main": "main.1129111751.css",
     "chunks": {
       "index.svelte": [
-        "index.060a1495.css",
-        "client.fb547b35.css",
-        "Projects.aab2154b.css"
+        "index.fc4f29ee.css",
+        "client.9d85c91e.css",
+        "Projects.bb4024c0.css"
       ],
       "experience.svelte": [
-        "experience.0923e970.css",
-        "client.fb547b35.css"
+        "experience.4e96eaeb.css",
+        "client.9d85c91e.css"
       ],
       "projects/creative-revolt.svelte": [
-        "client.fb547b35.css",
-        "PageTitle.8928a5b4.css",
-        "ProjectDetailTemplate.c97b9557.css"
+        "client.9d85c91e.css",
+        "PageTitle.2790702b.css",
+        "ProjectDetailTemplate.4e2a4613.css"
       ],
       "projects/university-park.svelte": [
-        "client.fb547b35.css",
-        "PageTitle.8928a5b4.css",
-        "ProjectDetailTemplate.c97b9557.css"
+        "client.9d85c91e.css",
+        "PageTitle.2790702b.css",
+        "ProjectDetailTemplate.4e2a4613.css"
       ],
       "projects/di-repairs.svelte": [
-        "client.fb547b35.css",
-        "PageTitle.8928a5b4.css",
-        "ProjectDetailTemplate.c97b9557.css"
+        "client.9d85c91e.css",
+        "PageTitle.2790702b.css",
+        "ProjectDetailTemplate.4e2a4613.css"
       ],
       "projects/stallion.svelte": [
-        "client.fb547b35.css",
-        "PageTitle.8928a5b4.css",
-        "ProjectDetailTemplate.c97b9557.css"
+        "client.9d85c91e.css",
+        "PageTitle.2790702b.css",
+        "ProjectDetailTemplate.4e2a4613.css"
       ],
       "projects/halcyon.svelte": [
-        "client.fb547b35.css",
-        "PageTitle.8928a5b4.css",
-        "ProjectDetailTemplate.c97b9557.css"
+        "client.9d85c91e.css",
+        "PageTitle.2790702b.css",
+        "ProjectDetailTemplate.4e2a4613.css"
       ],
       "projects.svelte": [
-        "projects.33ba12b4.css",
-        "client.fb547b35.css",
-        "Projects.aab2154b.css",
-        "PageTitle.8928a5b4.css"
+        "projects.6b45adfb.css",
+        "client.9d85c91e.css",
+        "Projects.bb4024c0.css",
+        "PageTitle.2790702b.css"
       ],
       "about.svelte": [
-        "about.91731df2.css",
-        "client.fb547b35.css"
+        "about.feeb79c7.css",
+        "client.9d85c91e.css"
       ]
     }
   }

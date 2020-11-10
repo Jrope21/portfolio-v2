@@ -99,7 +99,8 @@ onMount(() => {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30rem 20rem;
+        // padding: 30rem 20rem;
+        padding: 13.5rem 20rem;
         transition: padding .3s cubic-bezier(0.85, 0.08, 0.08, 0.99);
 
         @media (min-width: breakpoint(sm)) {
@@ -108,7 +109,8 @@ onMount(() => {
     }
 
     nav.scrolled {
-        padding: 20rem 20rem;
+        // padding: 20rem 20rem;
+        padding: 3.5rem 20rem;
 
         @media (min-width: breakpoint(sm)) {
             padding: 20rem 40rem;
@@ -375,18 +377,22 @@ onMount(() => {
 <header>
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
         <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
-            <!-- <Logo /> -->
-            <!-- <img src="images/logo.svg" alt=""> -->
+            <Logo 
+                isBoxVisible={reduceNavSize ? true : false}
+            />
+            <!-- <img width="25" src="images/logo.svg" alt=""> -->
             
-            <p class="logo-text">
+            <!-- <p class="logo-text">
                 <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
-            </p>
+            </p> -->
         </a>
         <Hamburger toggle={toggle} bind:this={hamburger} />
         <div class="background" on:click={togglerOff}></div>
         <div class="navigation">
             <div class="mobile-top">
-                <Logo />
+                <Logo 
+                    isBoxVisible={true}
+                />
                 <div on:click={togglerOff} class="close-container">
                     <span class="close"></span>
                 </div>
