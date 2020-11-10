@@ -39,6 +39,7 @@
 
 <div class="container">
     <Hero />
-    <!-- <TextWithImageCta /> -->
+    <TextWithImageCta />
     <Projects portfolioCards={portfolioCards} title={'Selected Works'} />
+    
 </div>

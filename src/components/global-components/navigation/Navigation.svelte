@@ -216,12 +216,10 @@ onMount(() => {
         opacity: .5;
         transition: transform .45s $custom_animation;
 
-        @media (min-width: breakpoint(sm)) {
-            top: 90%;
-            height: 6px;
-        }
         @media (min-width: breakpoint(md)) {
             background: #797777;
+            top: 90%;
+            height: 6px;
         }
     }
 
