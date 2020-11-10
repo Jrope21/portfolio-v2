@@ -4,6 +4,7 @@
 	// import GoogleAnalytics from '../components/helper-components/GoogleAnalytics.svelte';
 	import Navigation from '../components/global-components/navigation/Navigation.svelte';
 	import Footer from '../components/global-components/Footer.svelte';
+	import FirstLoadPageAnimation from '../components/global-components/FirstLoadPageAnimation.svelte';
 
 	export let segment;
 	// let ga_id = 'UA-89058156-2';
@@ -26,6 +27,7 @@
 <!-- <GoogleAnalytics {stores} id={ga_id} /> -->
 <Navigation segment={segment} />
 <div class="background"></div>
+<FirstLoadPageAnimation />
 <main>
 	<slot></slot>
 </main>
