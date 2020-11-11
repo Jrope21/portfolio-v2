@@ -125,7 +125,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
         display: flex;
         align-items: center;
         font-size: 12rem;
-        font-weight: 100;
+        font-weight: 300;
         font-style: italic;
         margin-top: 10rem;
         margin-bottom: 10rem;
