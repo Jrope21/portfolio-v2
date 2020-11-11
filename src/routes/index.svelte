@@ -2,6 +2,7 @@
     import Hero from '../components/home-components/hero/Hero.svelte';
     import Projects from '../components/home-components/projects/Projects.svelte';
     import TextWithImageCta from '../components/home-components/text-with-image-cta/TextWithImageCta.svelte';
+    import FirstLoadPageAnimation from '../components/global-components/FirstLoadPageAnimation.svelte';
 
     let portfolioCards = [
         {
@@ -37,6 +38,7 @@
 </svelte:head>
 
     <!-- in:fly="{{ y: 20, duration: 500, delay: 500, }}"  -->
+<FirstLoadPageAnimation />
 
 <div 
     class="container"
