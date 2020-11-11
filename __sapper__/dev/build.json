@@ -2,54 +2,54 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.4bfb9504.js"
+    "main": "client.c00339c2.js"
   },
   "css": {
     "main": "main.2510153165.css",
     "chunks": {
       "index.svelte": [
-        "index.ce358cf7.css",
-        "client.4bfb9504.css",
-        "Projects.f352683d.css"
+        "index.36a07aac.css",
+        "client.c00339c2.css",
+        "Projects.94cc0bea.css"
       ],
       "experience.svelte": [
-        "experience.6f421ec3.css",
-        "client.4bfb9504.css"
+        "experience.ba52da4c.css",
+        "client.c00339c2.css"
       ],
       "projects/creative-revolt.svelte": [
-        "client.4bfb9504.css",
-        "PageTitle.24504539.css",
-        "ProjectDetailTemplate.44abeeed.css"
+        "client.c00339c2.css",
+        "PageTitle.110a873d.css",
+        "ProjectDetailTemplate.d832deaf.css"
       ],
       "projects/university-park.svelte": [
-        "client.4bfb9504.css",
-        "PageTitle.24504539.css",
-        "ProjectDetailTemplate.44abeeed.css"
+        "client.c00339c2.css",
+        "PageTitle.110a873d.css",
+        "ProjectDetailTemplate.d832deaf.css"
       ],
       "projects/di-repairs.svelte": [
-        "client.4bfb9504.css",
-        "PageTitle.24504539.css",
-        "ProjectDetailTemplate.44abeeed.css"
+        "client.c00339c2.css",
+        "PageTitle.110a873d.css",
+        "ProjectDetailTemplate.d832deaf.css"
       ],
       "projects/stallion.svelte": [
-        "client.4bfb9504.css",
-        "PageTitle.24504539.css",
-        "ProjectDetailTemplate.44abeeed.css"
+        "client.c00339c2.css",
+        "PageTitle.110a873d.css",
+        "ProjectDetailTemplate.d832deaf.css"
       ],
       "projects/halcyon.svelte": [
-        "client.4bfb9504.css",
-        "PageTitle.24504539.css",
-        "ProjectDetailTemplate.44abeeed.css"
+        "client.c00339c2.css",
+        "PageTitle.110a873d.css",
+        "ProjectDetailTemplate.d832deaf.css"
       ],
       "projects.svelte": [
-        "projects.3801d0ad.css",
-        "client.4bfb9504.css",
-        "Projects.f352683d.css",
-        "PageTitle.24504539.css"
+        "projects.a92b8783.css",
+        "client.c00339c2.css",
+        "Projects.94cc0bea.css",
+        "PageTitle.110a873d.css"
       ],
       "about.svelte": [
-        "about.9aeb587e.css",
-        "client.4bfb9504.css"
+        "about.63ab1267.css",
+        "client.c00339c2.css"
       ]
     }
   }
