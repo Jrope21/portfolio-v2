@@ -2,7 +2,7 @@
     import LogoText from './LogoText.svelte';
     import Summary from './Summary.svelte';
     import JobExperience from './JobExperience.svelte';
-    import Projects from './Projects.svelte';
+    import ResumeProjects from './ResumeProjects';
     import Education from './Education.svelte';
 </script>
 
@@ -22,6 +22,6 @@
     <LogoText addClass="hide-for-small" />
     <Summary />
     <JobExperience />
-    <Projects />
+    <ResumeProjects />
     <Education />
 </div>
