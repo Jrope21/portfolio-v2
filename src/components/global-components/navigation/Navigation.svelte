@@ -6,7 +6,10 @@ import TextAnimation from '../../common-components/TextAnimation.svelte';
 
 import { onMount } from 'svelte';
 
-export let segment;
+import { draw, fade, blur, slide, scale, fly } from 'svelte/transition';
+import { quintOut, quartInOut } from 'svelte/easing';
+
+export let segment, loadComponents;
 
 let showModal;
 
@@ -376,85 +379,99 @@ onMount(() => {
 
 <header>
     <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
-        <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
-            <Logo 
-                isBoxVisible={reduceNavSize ? true : false}
-            />
-            <!-- <img width="25" src="images/logo.svg" alt=""> -->
+        {#if loadComponents}
+            <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
+                <!-- <Logo 
+                    isBoxVisible={reduceNavSize ? true : false}
+                /> -->
+                <Logo />
+                <!-- <img width="25" src="images/logo.svg" alt=""> -->
+                
+                <!-- <p class="logo-text">
+                    <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
+                </p> -->
+            </a>
+            <Hamburger toggle={toggle} bind:this={hamburger} />
+            <div class="background" on:click={togglerOff}></div>
+            <div class="navigation">
+                <div class="mobile-top">
+                    <Logo 
+                        isBoxVisible={true}
+                    />
+                    <div on:click={togglerOff} class="close-container">
+                        <span class="close"></span>
+                    </div>
+                </div>
+                
+                <ul class="navigation-list {showModal ? 'modal-active' : ''}">
+                    <li 
+                        in:fly="{{ y: -15, duration: 500, delay: 100, }}"
+                        class="{segment === undefined ? 'selected' : ''}"
+                    >
+                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a>
+                    </li>
+                    <li 
+                        in:fly="{{ y: -15, duration: 500, delay: 200, }}"
+                        class="{segment === 'about' ? 'selected' : ''}"
+                    >
+                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a>
+                    </li>
+                    <li 
+                        in:fly="{{ y: -15, duration: 500, delay: 300, }}"
+                        class="{segment === 'projects' ? 'selected' : ''}"
+                    >
+                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/projects">Projects</a>
+                    </li>
+                    <li 
+                        in:fly="{{ y: -15, duration: 500, delay: 400, }}"
+                        class="{segment === 'experience' ? 'selected' : ''}"
+                    >
+                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a>
+                    </li>
+                    <li 
+                        in:fly="{{ y: -15, duration: 500, delay: 500, }}"
+                        class="{showModal ? 'selected' : ''} open-modal"
+                    >
+                        <a class="nav-item" on:click={openModal} href="javascript:void(0)">Contact</a>
+                    </li>
+                </ul>
             
-            <!-- <p class="logo-text">
-                <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
-            </p> -->
-        </a>
-        <Hamburger toggle={toggle} bind:this={hamburger} />
-        <div class="background" on:click={togglerOff}></div>
-        <div class="navigation">
-            <div class="mobile-top">
-                <Logo 
-                    isBoxVisible={true}
-                />
-                <div on:click={togglerOff} class="close-container">
-                    <span class="close"></span>
+
+                <div class="mobile-bottom">
+                    <div class="text-cta">
+                        <p class="title">
+                            Get In Touch!
+                        </p>
+                        <a href="mailto:joshua.micah.roper@gmail.com">
+                            Joshua.micah.roper@gmail.com
+                            <!-- <TextAnimation text={`Joshua.micah.roper@gmail.com`} /> -->
+                        </a>
+                    </div>
+                    <div class="text-cta">
+                        <p class="title">
+                            View Resume
+                        </p>
+                        <a href="./pdfs/resume-joshua-roper.pdf" download>
+                            Download PDF
+                            <!-- <TextAnimation text={`Download PDF`} /> -->
+                        </a>
+                    </div>
+
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="_blank" rel="noopener" >
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="social-icon" href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" >
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
-
-            <ul class="navigation-list {showModal ? 'modal-active' : ''}">
-                <!-- <li class="close-container" on:click={togglerOff} ><span class="close"></span></li> -->
-                <li class="{segment === undefined ? 'selected' : ''}">
-                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a>
-                </li>
-                <li class="{segment === 'about' ? 'selected' : ''}">
-                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a>
-                </li>
-                <li class="{segment === 'projects' ? 'selected' : ''}">
-                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/projects">Projects</a>
-                </li>
-                <li class="{segment === 'experience' ? 'selected' : ''}">
-                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a>
-                </li>
-                <!-- <li class="{segment === 'works' ? 'selected' : ''}">
-                    <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/works">Works</a>
-                </li> -->
-                <li class="{showModal ? 'selected' : ''} open-modal">
-                    <a class="nav-item" on:click={openModal} href="javascript:void(0)">Contact</a>
-                </li>
-            </ul>
-
-            <div class="mobile-bottom">
-                <div class="text-cta">
-                    <p class="title">
-                        Get In Touch!
-                    </p>
-                    <a href="mailto:joshua.micah.roper@gmail.com">
-                        Joshua.micah.roper@gmail.com
-                        <!-- <TextAnimation text={`Joshua.micah.roper@gmail.com`} /> -->
-                    </a>
-                </div>
-                <div class="text-cta">
-                    <p class="title">
-                        View Resume
-                    </p>
-                    <a href="./pdfs/resume-joshua-roper.pdf" download>
-                        Download PDF
-                        <!-- <TextAnimation text={`Download PDF`} /> -->
-                    </a>
-                </div>
-
-                 <div class="social-icons">
-                    <a class="social-icon" href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="_blank" rel="noopener" >
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="social-icon" href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a class="social-icon" href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" >
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-        
+          {/if}
     </nav>
 </header>
 
