@@ -41,8 +41,8 @@ onMount(() => {
 	}
 </style>
 
-<svelte:body class={'overflow'} />
-<svelte:head>
+<!-- <svelte:body class={'overflow'} /> -->
+<!-- <svelte:head>
     {#if visible}
         <style>
             body {
@@ -50,7 +50,7 @@ onMount(() => {
             }
         </style>
     {/if}
-</svelte:head>
+</svelte:head> -->
 
 {#if visible}
     <section out:fade="{{duration: 500, delay: 250, easing: quartInOut}}">
