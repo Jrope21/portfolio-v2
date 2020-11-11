@@ -2,7 +2,6 @@
     import Projects from '../components/home-components/projects/Projects.svelte';
     import PageTitle from '../components/project-detail-components/PageTitle.svelte';
 
-
     let portfolioCards = [
         {
             url: '/projects/halcyon',
@@ -52,7 +51,6 @@
 
     .container {
         position: relative;
-        /* margin-top: 60px; */
     }
 
 </style>
@@ -63,7 +61,9 @@
 
 
 
-<div class="container">
+<div 
+    class="container" 
+>
     <PageTitle title={'Projects'} />
     <Projects portfolioCards={portfolioCards} />
 </div>

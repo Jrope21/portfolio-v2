@@ -5,7 +5,7 @@ let STATE = {
     metaTitle: `DI Repairs | Front End Developer - Joshua Roper`,
     title: `DI Repairs`,
     url: 'https://www.direpairs.com/',
-    description: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`,
+    description: `As the <strong>only developer & designer</strong> on this freelance project. I completely re-envisioned the site design & built the project from the ground up as an extremely performant <strong>SSG website</strong>. I utilized development & design best practices with a focus on the <strong>user experience.</strong>`,
     skills: ['React', 'Gatsby Js', 'Node JS', 'JavaScript (ES8)', 'WordPress API', 'Gravity Forms API', 'AJAX / JSON', 'SCSS / SCSS', 'JSX (HTML WCAG compliant)', 'PHP', 'Figma'],
     images: [
         {

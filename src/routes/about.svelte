@@ -1,5 +1,4 @@
 <script>
-    import { onMount } from 'svelte'
     import { fade, fly } from 'svelte/transition';
 
     import PageTitle from '../components/about-components/PageTitle.svelte';

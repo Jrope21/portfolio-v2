@@ -36,8 +36,11 @@
 	<title>Home | Front End Developer - Joshua Roper</title>
 </svelte:head>
 
+    <!-- in:fly="{{ y: 20, duration: 500, delay: 500, }}"  -->
 
-<div class="container">
+<div 
+    class="container"
+>
     <Hero />
     <TextWithImageCta />
     <Projects portfolioCards={portfolioCards} title={'Selected Works'} />

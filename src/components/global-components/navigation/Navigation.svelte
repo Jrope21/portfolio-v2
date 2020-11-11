@@ -2,6 +2,7 @@
 import Hamburger from './Hamburger.svelte';
 import ContactModal from '../../common-components/modals/ContactModal.svelte';
 import Logo from './Logo.svelte';
+import LongLogo from './LongLogo.svelte';
 import TextAnimation from '../../common-components/TextAnimation.svelte';
 
 import { onMount } from 'svelte';
@@ -103,20 +104,33 @@ onMount(() => {
         justify-content: space-between;
         align-items: center;
         // padding: 30rem 20rem;
-        padding: 13.5rem 20rem;
-        transition: padding .3s cubic-bezier(0.85, 0.08, 0.08, 0.99);
-
+        // padding: 13.5rem 20rem;
+        padding: 0rem 20rem;
+        transition: .3s cubic-bezier(0.85, 0.08, 0.08, 0.99);
+        height: 80px;
+        // padding
         @media (min-width: breakpoint(sm)) {
-            padding: 35rem 40rem;
+            // padding: 35rem 40rem;
+            padding: 0rem 40rem;
+            height: 90px;
+        }
+
+        @media (min-width: breakpoint(md)) {
+            height: 105px;
         }
     }
 
     nav.scrolled {
         // padding: 20rem 20rem;
-        padding: 3.5rem 20rem;
+        // padding: 3.5rem 20rem;
+        height: 60px;
 
-        @media (min-width: breakpoint(sm)) {
-            padding: 20rem 40rem;
+        // @media (min-width: breakpoint(sm)) {
+        //     padding: 20rem 40rem;
+        // }
+
+        @media (min-width: breakpoint(md)) {
+            height: 75px;
         }
     }
 
@@ -174,6 +188,8 @@ onMount(() => {
 
         @media (min-width: breakpoint(md)) {
             flex-direction: row;
+            align-items: center;
+            height: 100%;
         }
     }
 
@@ -227,6 +243,12 @@ onMount(() => {
             height: 6px;
         }
     }
+
+    // .selected .nav-item::after {
+    //      @media (min-width: breakpoint(md)) {
+    //         transition-delay: .1s;
+    //     }
+    // }
 
     li:hover .nav-item::after, .selected .nav-item::after {
         transform: translate(0, -50%);
@@ -377,102 +399,105 @@ onMount(() => {
 
 <svelte:window bind:scrollY={windowY}/>
 
-<header>
-    <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
-        {#if loadComponents}
-            <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
-                <!-- <Logo 
-                    isBoxVisible={reduceNavSize ? true : false}
-                /> -->
-                <Logo />
-                <!-- <img width="25" src="images/logo.svg" alt=""> -->
-                
-                <!-- <p class="logo-text">
-                    <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
-                </p> -->
-            </a>
-            <Hamburger toggle={toggle} bind:this={hamburger} />
-            <div class="background" on:click={togglerOff}></div>
-            <div class="navigation">
-                <div class="mobile-top">
-                    <Logo 
-                        isBoxVisible={true}
-                    />
-                    <div on:click={togglerOff} class="close-container">
-                        <span class="close"></span>
-                    </div>
-                </div>
-                
-                <ul class="navigation-list {showModal ? 'modal-active' : ''}">
-                    <li 
-                        in:fly="{{ y: -15, duration: 500, delay: 100, }}"
-                        class="{segment === undefined ? 'selected' : ''}"
-                    >
-                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a>
-                    </li>
-                    <li 
-                        in:fly="{{ y: -15, duration: 500, delay: 200, }}"
-                        class="{segment === 'about' ? 'selected' : ''}"
-                    >
-                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a>
-                    </li>
-                    <li 
-                        in:fly="{{ y: -15, duration: 500, delay: 300, }}"
-                        class="{segment === 'projects' ? 'selected' : ''}"
-                    >
-                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/projects">Projects</a>
-                    </li>
-                    <li 
-                        in:fly="{{ y: -15, duration: 500, delay: 400, }}"
-                        class="{segment === 'experience' ? 'selected' : ''}"
-                    >
-                        <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a>
-                    </li>
-                    <li 
-                        in:fly="{{ y: -15, duration: 500, delay: 500, }}"
-                        class="{showModal ? 'selected' : ''} open-modal"
-                    >
-                        <a class="nav-item" on:click={openModal} href="javascript:void(0)">Contact</a>
-                    </li>
-                </ul>
+{#if loadComponents}
+    <header in:fly="{{ y: -15, duration: 200, delay: 0, }}">
+        <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
             
-
-                <div class="mobile-bottom">
-                    <div class="text-cta">
-                        <p class="title">
-                            Get In Touch!
-                        </p>
-                        <a href="mailto:joshua.micah.roper@gmail.com">
-                            Joshua.micah.roper@gmail.com
-                            <!-- <TextAnimation text={`Joshua.micah.roper@gmail.com`} /> -->
-                        </a>
+                <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
+                    <!-- <Logo 
+                        isBoxVisible={reduceNavSize ? true : false}
+                    /> -->
+                    <!-- <Logo /> -->
+                    <LongLogo />
+                    <!-- <img width="25" src="images/logo.svg" alt=""> -->
+                    
+                    <!-- <p class="logo-text">
+                        <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
+                    </p> -->
+                </a>
+                <Hamburger toggle={toggle} bind:this={hamburger} />
+                <div class="background" on:click={togglerOff}></div>
+                <div class="navigation">
+                    <div class="mobile-top">
+                        <Logo 
+                            isBoxVisible={true}
+                        />
+                        <div on:click={togglerOff} class="close-container">
+                            <span class="close"></span>
+                        </div>
                     </div>
-                    <div class="text-cta">
-                        <p class="title">
-                            View Resume
-                        </p>
-                        <a href="./pdfs/resume-joshua-roper.pdf" download>
-                            Download PDF
-                            <!-- <TextAnimation text={`Download PDF`} /> -->
-                        </a>
-                    </div>
-
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="_blank" rel="noopener" >
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a class="social-icon" href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" >
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
+                    
+                    <ul class="navigation-list {showModal ? 'modal-active' : ''}">
+                        <li 
+                            in:fly="{{ y: -15, duration: 500, delay: 200, }}"
+                            class="{segment === undefined ? 'selected' : ''}"
+                        >
+                            <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/">Home</a>
+                        </li>
+                        <li 
+                            in:fly="{{ y: -15, duration: 500, delay: 300, }}"
+                            class="{segment === 'about' ? 'selected' : ''}"
+                        >
+                            <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/about">About</a>
+                        </li>
+                        <li 
+                            in:fly="{{ y: -15, duration: 500, delay: 400, }}"
+                            class="{segment === 'projects' ? 'selected' : ''}"
+                        >
+                            <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/projects">Projects</a>
+                        </li>
+                        <li 
+                            in:fly="{{ y: -15, duration: 500, delay: 500, }}"
+                            class="{segment === 'experience' ? 'selected' : ''}"
+                        >
+                            <a class="nav-item" on:click={setActiveNavOnClick} rel=prefetch href="/experience">Experience</a>
+                        </li>
+                        <li 
+                            in:fly="{{ y: -15, duration: 500, delay: 600, }}"
+                            class="{showModal ? 'selected' : ''} open-modal"
+                        >
+                            <a class="nav-item" on:click={openModal} href="javascript:void(0)">Contact</a>
+                        </li>
+                    </ul>
                 
-            </div>
-          {/if}
-    </nav>
-</header>
+
+                    <div class="mobile-bottom">
+                        <div class="text-cta">
+                            <p class="title">
+                                Get In Touch!
+                            </p>
+                            <a href="mailto:joshua.micah.roper@gmail.com">
+                                Joshua.micah.roper@gmail.com
+                                <!-- <TextAnimation text={`Joshua.micah.roper@gmail.com`} /> -->
+                            </a>
+                        </div>
+                        <div class="text-cta">
+                            <p class="title">
+                                View Resume
+                            </p>
+                            <a href="./pdfs/resume-joshua-roper.pdf" download>
+                                Download PDF
+                                <!-- <TextAnimation text={`Download PDF`} /> -->
+                            </a>
+                        </div>
+
+                        <div class="social-icons">
+                            <a class="social-icon" href="https://www.github.com/Jrope21" aria-label="link to Joshua Roper's GitHub account" target="_blank" rel="noopener" >
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="social-icon" href="https://www.linkedin.com/in/JR-dev" aria-label="link to Joshua Roper's LinkedIn account" target="_blank" rel="noopener" >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a class="social-icon" href="mailto:joshua.micah.roper@gmail.com" aria-label="link to send Joshua Roper an email" >
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+        </nav>
+    </header>
+{/if}
 
 <ContactModal on:click={() => showModal = false} showModal={showModal}/>

@@ -17,7 +17,12 @@
                   polygon.style.fill = '#797777';
                   polygon.style.stroke = 'white';
               })
-          }, duration)
+
+              document.querySelectorAll('path').forEach(path => {
+                  path.style.fill = '#797777';
+                  path.style.stroke = 'white';
+              })
+          }, 2600)
         }
     })
     
@@ -25,7 +30,7 @@
 <style lang="scss">
     @import '../../../styles/global.variables.scss';
     svg {
-        width: 50px;
+        width: 40px;
         padding: 2px;
     }
 
@@ -43,12 +48,16 @@
       @media (min-width: breakpoint(md)) {
         width: 125px;
       }
+
+      @media (min-width: breakpoint(lg)) {
+        width: 150px;
+      }
       // path {
 
       // }
-      polygon {
+      path, polygon {
         fill: transparent;
-        transition: 2s;
+        transition: 2s ease;
       }
     }
 </style>
@@ -61,17 +70,18 @@
     viewBox="0 0 139.7 125.7"
   >
     <defs>
-      <style>
+      <!-- <style>
         .cls-1 {
           fill: #231f20;
         }
-      </style>
+      </style> -->
     </defs>
     {#if toggleFullAnimation}
       <g>
         <path 
-            in:fade="{{duration: duration, delay: 2000, easing: quartInOut}}"
+            in:draw="{{duration: 3250, delay: 1500, easing: quartInOut}}"
             id="R" 
+            style="stroke: #797777; stroke-width: 1"
             class="cls-1" 
             d="M84.8,30.7h45.4V25.1H71.6V46H84a4.2,4.2,0,1,1,0,8.4H71.6V74.3h6.7l12.3,25.8h26.1L100.9,69.4a22.8,22.8,0,0,0,10.3-18.8H114V39.3H102.8V50.6h2.7a17.3,17.3,0,0,1-9.7,15.2l-2.5,1.3.4.8,13.7,26.5H94.1L81.9,68.6H77.2V60H84a9.8,9.8,0,1,0,0-19.6H77.2V30.7Z"
         />
@@ -83,8 +93,9 @@
             points="128.5 43.4 128.5 54.6 128.8 54.6 131.2 54.6 131.2 120.1 15.2 120.1 15.2 95 9.5 95 9.5 125.7 9.9 125.7 15.2 125.7 131.2 125.7 136.9 125.7 136.9 120.1 136.9 54.6 139.3 54.6 139.7 54.6 139.7 43.4 128.5 43.4"
         />
         <path 
-            in:fade="{{duration: duration, delay: 2000, easing: quartInOut}}"
+            in:draw="{{duration: 3250, delay: 1500, easing: quartInOut}}"
             id="J" 
+            style="stroke: #797777; stroke-width: 1"
             class="cls-1" 
             d="M43.3,25.1v48c0,4.6-2,6.7-6.2,6.7H34.7V77H23.5V88.2H34.7V85.5h2.4c7.3,0,11.9-4.8,11.9-12.4V30.7H60.3V73.5C60.3,88.3,48.6,95,37.1,95H9.5v5.7H37.1a31.3,31.3,0,0,0,19.6-6.6c6-4.9,9.2-12.1,9.2-20.6V25.1Z"
         />

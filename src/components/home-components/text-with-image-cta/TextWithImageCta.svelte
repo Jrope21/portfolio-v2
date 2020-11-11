@@ -1,6 +1,12 @@
 <script>
 import TextAnimation from '../../common-components/TextAnimation.svelte';
+import ContactModal from '../../common-components/modals/ContactModal.svelte';
 
+    let showModal;
+
+    function openModal(){
+        showModal = true;
+    }
 </script>
 
 <style lang="scss">
@@ -123,6 +129,7 @@ import TextAnimation from '../../common-components/TextAnimation.svelte';
         font-style: italic;
         margin-top: 10rem;
         margin-bottom: 10rem;
+        color:#58595b;
 
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
@@ -134,7 +141,7 @@ import TextAnimation from '../../common-components/TextAnimation.svelte';
             width: 20px;
             margin-right: 10rem;
             height: 2px;
-            background: black;
+            background: #58595b;
         }
     }
 
@@ -161,20 +168,20 @@ import TextAnimation from '../../common-components/TextAnimation.svelte';
 </style>
 
 <section class="text-with-image-cta">
-    <div class="image-container">
-        <img src="thumbnails/halcyon-5-min.jpg" alt="testing">
-    </div>
+    <a on:click={openModal} href="javascript:void(0)" class="image-container">
+        <img src="images/desk-photo.jpeg" alt="A programming desk setup">
+    </a>
     <div class="text-content">
         <h2 class="heading">Let's Create Something Awesome Together.</h2>
         <h3 class="subheading">Front End Developer | Desk Enthusiast</h3>
         <p>
-            Lorem ipsum orem ipsum dolor sit amet, consectetur adipiscing elit. Sem purus libero proin elit, consectetur vitae ut purus. Eu diam aliquam justo nam eget. Sollicitudin pharetra, quisque placerat vulputate. Vitae vestibulum tristique commodo aliquet suspendisse leo morbi velit tellus.
-            <!-- <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem purus libero proin elit, consectetur vitae ut purus. Eu diam aliquam justo nam eget. Sollicitudin pharetra, quisque placerat vulputate. Vitae vestibulum tristique commodo. -->
+            I have a real passion for development, and innovation. I love seeing projects come to life as I leverage my knowledge of design patterns to render aesthetically pleasing, and extremely viable digital experiences. I'm driven by seeing solutions come together across development & design processes.
         </p>
 
-        <a class="button" rel=prefetch href="">
+        <a class="button" on:click={openModal} href="javascript:void(0)">
             <TextAnimation text={`Get In Touch`} />
         </a>
     </div>
 </section>
+
+<ContactModal on:click={() => showModal = false} showModal={showModal}/>

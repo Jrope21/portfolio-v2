@@ -52,7 +52,9 @@
 </svelte:head>
 
 
-<div class="experience container">
+<div 
+    class="experience container"
+>
     <div class="left">
         <SideBar />
     </div>
