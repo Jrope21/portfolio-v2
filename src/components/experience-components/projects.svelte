@@ -32,6 +32,7 @@
 
 </style>
 
+
 <section>
     <h2 class="headline">Projects</h2>
     <div class="projects-container">
