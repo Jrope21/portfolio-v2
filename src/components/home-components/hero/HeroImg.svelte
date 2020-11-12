@@ -1,6 +1,9 @@
 <script>
 import { onMount } from 'svelte';
-let heroImg;
+
+import HeroImage from '../../../images/professional-hero-min.jpg';
+
+
 </script>
 
 <style lang="scss">
@@ -14,7 +17,7 @@ let heroImg;
          -o-background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
-        background-position: 45% 25%;
+        // background-position: 45% 25%;
         box-shadow: 3px 3px 3px lightgrey;
         position: relative;
         z-index: 2;
@@ -23,7 +26,7 @@ let heroImg;
         @media (min-width: breakpoint(sm)) {
             margin-right: -70px;
             width: 220px;
-            background-position: 45% 10%;
+            // background-position: 45% 10%;
             height: 320px;
         }
 
@@ -36,6 +39,17 @@ let heroImg;
         @media (min-width: breakpoint(lg)) {
             width: 420px;
             height: 620px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 45% 25%;
+
+        @media (min-width: breakpoint(sm)) {
+            object-position: 45% 10%;
         }
     }
 
@@ -66,5 +80,7 @@ let heroImg;
 </style>
 
 <div class="box">
-    <div class="hero-image" ></div>
+    <div class="hero-image" >
+        <img src={HeroImage} alt={'Joshua Roper - Front End Developer'}>
+    </div>
 </div>

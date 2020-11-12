@@ -1,6 +1,12 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
+import Image1 from '../../images/stallion/stallion-4-min.png';
+import Image2 from '../../images/stallion/stallion-2-min.png';
+import Image3 from '../../images/stallion/stallion-6-min.png';
+import Image4 from '../../images/stallion/stallion-11-min.png';
+import Image5 from '../../images/stallion/stallion-5-min.png';
+
 let STATE = {
     metaTitle: `Stallion | Front End Developer - Joshua Roper`,
     title: `Stallion`,
@@ -9,31 +15,31 @@ let STATE = {
     skills: ['JavaScript (ES6)', 'jQuery', 'API Integration', 'WebPack', 'AJAX / JSON', 'SASS / SCSS', 'PostCSS', 'Foundation', 'PurgeCSS', 'CSS', 'HTML (WCAG 2.1)', 'PHP', 'WordPress', 'Adobe XD'],
     images: [
         {
-            src: 'images/stallion/stallion-4-min.png',
+            src: Image1,
             alt: `A call to action on the home page of the Halcyon Center Mall website`,
             visible: true,
             key: 0,
         },
         {
-            src: 'images/stallion/stallion-2-min.png',
+            src: Image2,
             alt: `The home page for Halcyon Center Mall website`,
             visible: false,
             key: 1,
         },
         {
-            src: 'images/stallion/stallion-6-min.png',
+            src: Image3,
             alt: `The dining directory page of the Halcyon Center Mall website`,
             visible: false,
             key: 2,
         },
         {
-            src: 'images/stallion/stallion-11-min.png',
+            src: Image4,
             alt: `The events directory page of the Halcyon Center Mall website`,
             visible: false,
             key: 3,
         },
         {
-            src: 'images/stallion/stallion-5-min.png',
+            src: Image5,
             alt: `A spotlight for businesses on the home page of the Halcyon Center Mall website`,
             visible: false,
             key: 4,

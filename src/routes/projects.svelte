@@ -2,10 +2,15 @@
     import Projects from '../components/home-components/projects/Projects.svelte';
     import PageTitle from '../components/project-detail-components/PageTitle.svelte';
 
+    import DiRepairsThumb from '../images/thumbnails/di-thumb.jpg';
+    import HalcyonThumb from '../images/thumbnails/halcyon-5-min.jpg';
+    import StallionThumb from '../images/thumbnails/stallion-thumb-a-min.jpg';
+    import UniversityParkThumb from '../images/thumbnails/uptexas-thumb-min.jpg';
+    import CreativeRevoltThumb from '../images/thumbnails/Jorden-Background-Gray-min.jpg';
     let portfolioCards = [
         {
             url: '/projects/halcyon',
-            imgSrc: 'thumbnails/halcyon-5-min.jpg',
+            imgSrc: HalcyonThumb,
             alt: 'Thumbnail for the Halcyon mall website rebuild',
             projectName: 'Halcyon',
             projectYear: '2019',
@@ -13,7 +18,7 @@
         },
         {
             url: '/projects/di-repairs',
-            imgSrc: 'thumbnails/di-thumb.jpg',
+            imgSrc: DiRepairsThumb,
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'DI Repairs',
             projectYear: '2020',
@@ -21,7 +26,7 @@
         },
         {
             url: 'projects/stallion',
-            imgSrc: 'thumbnails/stallion-thumb-a-min.jpg',
+            imgSrc: StallionThumb,
             alt: 'Thumbnail for the Stallion complete website rebuild',
             projectName: 'Stallion',
             projectYear: '2019',
@@ -29,7 +34,7 @@
         },
         {
             url: '/projects/university-park',
-            imgSrc: 'thumbnails/uptexas-thumb-min.jpg',
+            imgSrc: UniversityParkThumb,
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'University Park',
             projectYear: '2019',
@@ -37,7 +42,7 @@
         },
         {
             url: 'projects/creative-revolt',
-            imgSrc: 'thumbnails/Jorden-Background-Gray-min.jpg',
+            imgSrc: CreativeRevoltThumb,
             alt: 'Thumbnail for the Creative Revolt redesigned website',
             projectName: 'Creative Revolt',
             projectYear: '2018',

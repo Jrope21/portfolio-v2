@@ -1,6 +1,12 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
+import Image1 from '../../images/creative-revolt/home-min.png';
+import Image2 from '../../images/creative-revolt/home-ctas-min.png';
+import Image3 from '../../images/creative-revolt/about-min.png';
+import Image4 from '../../images/creative-revolt/about-cta-min.png';
+import Image5 from '../../images/creative-revolt/writing-class-min.png';
+
 let STATE = {
     metaTitle: `Creative Revolt | Front End Developer - Joshua Roper`,
     title: `Creative Revolt`,
@@ -9,31 +15,31 @@ let STATE = {
     skills: ['JavaScript', 'CSS', 'HTML', 'PHP', 'DiviBuilder', 'WordPress', 'SEO', 'Googe Analytics', 'Canva', 'Adobe XD', 'MailChimp'],
     images: [
         {
-            src: 'images/creative-revolt/home-min.png',
+            src: Image1,
             alt: `The landing page for Creative Revolt`,
             visible: true,
             key: 0,
         },
         {
-            src: 'images/creative-revolt/home-ctas-min.png',
+            src: Image2,
             alt: `A call to action setup for Creative Revolt`,
             visible: false,
             key: 1,
         },
         {
-            src: 'images/creative-revolt/about-min.png',
+            src: Image3,
             alt: `The about page for Creative Revolt`,
             visible: false,
             key: 2,
         },
         {
-            src: 'images/creative-revolt/about-cta-min.png',
+            src: Image4,
             alt: `A call to action exculusively design for Creative Revolt`,
             visible: false,
             key: 3,
         },
         {
-            src: 'images/creative-revolt/writing-class-min.png',
+            src: Image5,
             alt: `A page from creative revolt that introduces customers to her their courses`,
             visible: false,
             key: 4,

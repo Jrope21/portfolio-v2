@@ -1,6 +1,12 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
+import Image1 from '../../images/university-park/home-min.png';
+import Image2 from '../../images/university-park/library-min.png';
+import Image3 from '../../images/university-park/home-video-min.png';
+import Image4 from '../../images/university-park/form-min.png';
+import Image5 from '../../images/university-park/newsletter-min.png';
+
 let STATE = {
     metaTitle: `University Park | Front End Developer - Joshua Roper`,
     title: `University Park`,
@@ -9,32 +15,32 @@ let STATE = {
     skills: ['JavaScript (ES6+)', 'jQuery', 'API Integration', 'AJAX / JSON', 'SASS / SCSS', 'CSS', 'Foundation', 'HTML (WCAG 2.1)', 'Adobe Illustrator', 'SEO', 'Kentico (CMS)', 'BitBucket'],
     images: [
         {
-            src: 'images/university-park/home-min.png',
+            src: Image1,
             alt: `The home page for the City of University Park website`,
             visible: true,
             key: 0,
         },
         
         {
-            src: 'images/university-park/library-min.png',
+            src: Image2,
             alt: `The library page for the City of University Park website`,
             visible: false,
             key: 1,
         },
         {
-            src: 'images/university-park/home-video-min.png',
+            src: Image3,
             alt: `The video modal on the City of University Park website`,
             visible: false,
             key: 2,
         },
         {
-            src: 'images/university-park/form-min.png',
+            src: Image4,
             alt: `The direct alarm monitoring form for the City of University Park website`,
             visible: false,
             key: 3,
         },
         {
-            src: 'images/university-park/newsletter-min.png',
+            src: Image5,
             alt: `The newsletter page for the City of University Park website`,
             visible: false,
             key: 4,
