@@ -43,7 +43,7 @@
 
     #logo-full-animation {
       width: 100px;
-      // padding: 20px;
+      padding: 20px;
 
       @media (min-width: breakpoint(md)) {
         width: 125px;
