@@ -83,12 +83,12 @@ import LazyImage from '../../common-components/LazyImage.svelte';
 
 <div class="box">
     <div class="hero-image" >
-        <LazyImage 
+        <!-- <LazyImage 
             lazy={false}
             imgSrc={HeroImage}
             imgSrcSmall={HeroImageSmall}
             imgAlt={'Joshua Roper - Front End Developer'}
-        />
-        <!-- <img src={HeroImage} alt={'Joshua Roper - Front End Developer'}> -->
+        /> -->
+        <img src={HeroImage} alt={'Joshua Roper - Front End Developer'}>
     </div>
 </div>

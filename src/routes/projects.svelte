@@ -36,6 +36,7 @@
             url: 'projects/stallion',
             imgSrc: StallionThumb,
             imgSrcSmall: StallionThumbSmall,
+            lazy: true,
             alt: 'Thumbnail for the Stallion complete website rebuild',
             projectName: 'Stallion',
             projectYear: '2019',

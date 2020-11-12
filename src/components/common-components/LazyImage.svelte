@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+//   import { onMount } from 'svelte';
   import LazyLoader from "./LazyLoader.svelte";
   import { fade } from "svelte/transition";
 
@@ -11,7 +11,7 @@
   let isAbsolute = false;
   let isStatic = false;
   let loaded = false;
-  let largeImage;
+//   let largeImage;
 
   function setPosToAbsolute() {
     isAbsolute = true;
@@ -22,13 +22,13 @@
     isStatic = true;
   }
 
-  onMount(() => {
-      if(!lazy) {
-          largeImage.onload = () => {
-              loaded = true;
-          }
-      }
-  })
+//   onMount(() => {
+//       if(!lazy) {
+//           largeImage.onload = () => {
+//               loaded = true;
+//           }
+//       }
+//   })
 
 </script>
 
@@ -89,7 +89,12 @@
         {/if}
     </LazyLoader>
 {:else}
-    <div class="progressive-image">
+
+        <img    
+            src={imgSrc} 
+            alt={imgAlt}
+        >   
+    <!-- <div class="progressive-image">
         <img 
             bind:this={largeImage}
             src={imgSrc} 
@@ -101,5 +106,5 @@
             src={imgSrcSmall} 
             alt={imgAlt}
         >
-    </div>
+    </div> -->
 {/if}
