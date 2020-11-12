@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte'
 	import Navigation from '../components/global-components/navigation/Navigation.svelte';
 	import Footer from '../components/global-components/Footer.svelte';
-	// import FirstLoadPageAnimation from '../components/global-components/FirstLoadPageAnimation.svelte';
+	import FirstLoadPageAnimation from '../components/global-components/FirstLoadPageAnimation.svelte';
 
 	export let segment;
 	let visible = false;
@@ -10,10 +10,9 @@
 
 	onMount(() => {
 		visible = true;
-		finishedLoadPage = true;
-		// setTimeout(() => {
-			
-		// }, 4250)
+		setTimeout(() => {
+			finishedLoadPage = true;
+		}, 4250)
 	})
 	
 </script>
@@ -33,6 +32,8 @@
 </style>
 
 <Navigation segment={segment} loadComponents={finishedLoadPage} />
+
+<FirstLoadPageAnimation />
 
 <div class="background"></div>
 
