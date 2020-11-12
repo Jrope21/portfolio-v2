@@ -78,7 +78,6 @@
             />
         {:else}
             <img
-                bind:this={largeImage}
                 class="isAbsolute"
                 out:fade|local
                 on:outrostart={setPosToAbsolute}
