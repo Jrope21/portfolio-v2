@@ -2,6 +2,9 @@
 export let imgSrc, alt;
 export let url;
 export let width;
+
+// import Favicon from '../hero/favicon.png';
+
 </script>
 
 <style lang="scss">
