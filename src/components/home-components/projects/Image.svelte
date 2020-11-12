@@ -1,5 +1,6 @@
 <script>
-export let imgSrc, alt;
+import LazyImage from '../../common-components/LazyImage.svelte';
+export let imgSrc, imgSrcSmall, imgAlt;
 export let url;
 export let width;
 
@@ -76,6 +77,11 @@ export let width;
 
 <a rel=prefetch class="{width}" href="{url}">
     <div class="img-container">
-      <img src="{imgSrc}" alt="{alt}">
+        <LazyImage 
+            imgSrc={imgSrc}
+            imgSrcSmall={imgSrcSmall}
+            imgAlt={imgAlt}
+        />
+      <!-- <img src="{imgSrc}" alt="{alt}"> -->
     </div>
 </a>

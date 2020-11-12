@@ -4,11 +4,15 @@
     import TextWithImageCta from '../components/home-components/text-with-image-cta/TextWithImageCta.svelte';
 
     import DiRepairsThumb from '../images/thumbnails/di-thumb.jpg';
+    import DiRepairsThumbSmall from '../images/thumbnails/di-thumb-small.jpg';
     import HalcyonThumb from '../images/thumbnails/halcyon-5-min.jpg';
+    import HalcyonThumbSmall from '../images/thumbnails/halcyon-5-small.jpg';
+
     let portfolioCards = [
         {
             url: '/projects/halcyon',
             imgSrc: HalcyonThumb,
+            imgSrcSmall: HalcyonThumbSmall,
             alt: 'Thumbnail for the Halcyon mall website rebuild',
             projectName: 'Halcyon',
             projectYear: '2019',
@@ -17,6 +21,7 @@
         {
             url: '/projects/di-repairs',
             imgSrc: DiRepairsThumb,
+            imgSrcSmall: DiRepairsThumbSmall,
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'DI Repairs',
             projectYear: '2020',

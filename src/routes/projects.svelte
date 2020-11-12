@@ -3,14 +3,21 @@
     import PageTitle from '../components/project-detail-components/PageTitle.svelte';
 
     import DiRepairsThumb from '../images/thumbnails/di-thumb.jpg';
+    import DiRepairsThumbSmall from '../images/thumbnails/di-thumb-small.jpg';
     import HalcyonThumb from '../images/thumbnails/halcyon-5-min.jpg';
+    import HalcyonThumbSmall from '../images/thumbnails/halcyon-5-small.jpg';
     import StallionThumb from '../images/thumbnails/stallion-thumb-a-min.jpg';
+    import StallionThumbSmall from '../images/thumbnails/stallion-thumb-a-min-small.jpg';
     import UniversityParkThumb from '../images/thumbnails/uptexas-thumb-min.jpg';
+    import UniversityParkThumbSmall from '../images/thumbnails/uptexas-thumb-min-small.jpg';
     import CreativeRevoltThumb from '../images/thumbnails/Jorden-Background-Gray-min.jpg';
+    import CreativeRevoltThumbSmall from '../images/thumbnails/Jorden-Background-Gray-min-small.jpg';
+
     let portfolioCards = [
         {
             url: '/projects/halcyon',
             imgSrc: HalcyonThumb,
+            imgSrcSmall: HalcyonThumbSmall,
             alt: 'Thumbnail for the Halcyon mall website rebuild',
             projectName: 'Halcyon',
             projectYear: '2019',
@@ -19,6 +26,7 @@
         {
             url: '/projects/di-repairs',
             imgSrc: DiRepairsThumb,
+            imgSrcSmall: DiRepairsThumbSmall,
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'DI Repairs',
             projectYear: '2020',
@@ -27,6 +35,7 @@
         {
             url: 'projects/stallion',
             imgSrc: StallionThumb,
+            imgSrcSmall: StallionThumbSmall,
             alt: 'Thumbnail for the Stallion complete website rebuild',
             projectName: 'Stallion',
             projectYear: '2019',
@@ -35,6 +44,7 @@
         {
             url: '/projects/university-park',
             imgSrc: UniversityParkThumb,
+            imgSrcSmall: UniversityParkThumbSmall,
             alt: 'Thumbnail for the City of University Park complete Front End website redesign',
             projectName: 'University Park',
             projectYear: '2019',
@@ -43,6 +53,7 @@
         {
             url: 'projects/creative-revolt',
             imgSrc: CreativeRevoltThumb,
+            imgSrcSmall: CreativeRevoltThumbSmall,
             alt: 'Thumbnail for the Creative Revolt redesigned website',
             projectName: 'Creative Revolt',
             projectYear: '2018',

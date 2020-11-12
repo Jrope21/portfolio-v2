@@ -33,7 +33,7 @@
 
 <Navigation segment={segment} loadComponents={finishedLoadPage} />
 
-<FirstLoadPageAnimation />
+<!-- <FirstLoadPageAnimation /> -->
 
 <div class="background"></div>
 
