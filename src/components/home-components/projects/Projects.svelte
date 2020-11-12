@@ -119,6 +119,7 @@
                         imgSrcSmall={card.imgSrcSmall}
                         url={card.url} 
                         imgAlt={card.alt} 
+                        lazy={card.lazy ? card.lazy : false}
                     />
                 </div>
                 <div class="text-container">

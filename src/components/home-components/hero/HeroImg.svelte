@@ -2,7 +2,8 @@
 import { onMount } from 'svelte';
 
 import HeroImage from '../../../images/professional-hero-min.jpg';
-
+import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
+import LazyImage from '../../common-components/LazyImage.svelte';
 
 </script>
 
@@ -18,6 +19,7 @@ import HeroImage from '../../../images/professional-hero-min.jpg';
         // -moz-background-size: cover;
         // -webkit-background-size: cover;
         // background-position: 45% 25%;
+        background: white;
         box-shadow: 3px 3px 3px lightgrey;
         position: relative;
         z-index: 2;
@@ -81,6 +83,12 @@ import HeroImage from '../../../images/professional-hero-min.jpg';
 
 <div class="box">
     <div class="hero-image" >
-        <img src={HeroImage} alt={'Joshua Roper - Front End Developer'}>
+        <LazyImage 
+            lazy={false}
+            imgSrc={HeroImage}
+            imgSrcSmall={HeroImageSmall}
+            imgAlt={'Joshua Roper - Front End Developer'}
+        />
+        <!-- <img src={HeroImage} alt={'Joshua Roper - Front End Developer'}> -->
     </div>
 </div>

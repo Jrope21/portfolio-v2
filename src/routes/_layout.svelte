@@ -14,7 +14,6 @@
 			finishedLoadPage = true;
 		}, 4250)
 	})
-	
 </script>
 
 <style global lang="scss">
@@ -31,7 +30,10 @@
 
 </style>
 
-<Navigation segment={segment} loadComponents={finishedLoadPage} />
+<Navigation 
+	segment={segment} 
+	loadComponents={finishedLoadPage} 
+/>
 
 <FirstLoadPageAnimation />
 

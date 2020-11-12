@@ -28,6 +28,14 @@
   }
 </script>
 
+<style>
+    div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
 <div bind:this={el} style="position: relative; width: 100%; height: 100%;">
   <slot {visible} {hasBeenVisible} />
 </div>

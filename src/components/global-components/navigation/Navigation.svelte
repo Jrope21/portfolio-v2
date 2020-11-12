@@ -44,6 +44,7 @@ function togglerOff(){
     }
 }
 
+
 function resetActiveNav() {
     let activeNavObj = Object.entries(activeNavigation);
     

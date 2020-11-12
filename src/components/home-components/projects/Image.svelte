@@ -3,6 +3,7 @@ import LazyImage from '../../common-components/LazyImage.svelte';
 export let imgSrc, imgSrcSmall, imgAlt;
 export let url;
 export let width;
+export let lazy;
 
 // import Favicon from '../hero/favicon.png';
 
@@ -81,6 +82,7 @@ export let width;
             imgSrc={imgSrc}
             imgSrcSmall={imgSrcSmall}
             imgAlt={imgAlt}
+            lazy={lazy}
         />
       <!-- <img src="{imgSrc}" alt="{alt}"> -->
     </div>
