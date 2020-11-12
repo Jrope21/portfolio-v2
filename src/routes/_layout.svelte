@@ -10,10 +10,10 @@
 
 	onMount(() => {
 		visible = true;
-
-		setTimeout(() => {
-			finishedLoadPage = true;
-		}, 4250)
+		finishedLoadPage = true;
+		// setTimeout(() => {
+			
+		// }, 4250)
 	})
 	
 </script>

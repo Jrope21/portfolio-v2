@@ -12,11 +12,11 @@ import HeroImage from '../../../images/professional-hero-min.jpg';
     .hero-image{
         width: 250px;
         height: 420px;
-        background-image: url("../thumbnails/professional-hero-min.jpg");
-        background-size: cover;
-         -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+        // background-image: url("../thumbnails/professional-hero-min.jpg");
+        // background-size: cover;
+        //  -o-background-size: cover;
+        // -moz-background-size: cover;
+        // -webkit-background-size: cover;
         // background-position: 45% 25%;
         box-shadow: 3px 3px 3px lightgrey;
         position: relative;

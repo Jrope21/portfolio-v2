@@ -15,31 +15,31 @@ let STATE = {
     skills: ['React', 'React Static', 'JavaScript (ES6)', 'WordPress REST API', 'iShowtimes API', `Google API's`, 'AJAX / JSON', 'Bootstrap (React Bootstrap)', 'SCSS / SCSS', 'PostCSS', 'JSX (HTML WCAG 2.1)', 'PHP', 'WordPress', 'Adobe XD'],
     images: [
         {
-            src: 'images/halcyon/home-cta-min.png',
+            src: Image1,
             alt: `A call to action on the home page of the Halcyon Center Mall website`,
             visible: true,
             key: 0,
         },
         {
-            src: 'images/halcyon/home-min.png',
+            src: Image2,
             alt: `The home page for Halcyon Center Mall website`,
             visible: false,
             key: 1,
         },
         {
-            src: 'images/halcyon/dining-min.png',
+            src: Image3,
             alt: `The dining directory page of the Halcyon Center Mall website`,
             visible: false,
             key: 2,
         },
         {
-            src: 'images/halcyon/events-min.png',
+            src: Image4,
             alt: `The events directory page of the Halcyon Center Mall website`,
             visible: false,
             key: 3,
         },
         {
-            src: 'images/halcyon/spotlight-min.png',
+            src: Image5,
             alt: `A spotlight for businesses on the home page of the Halcyon Center Mall website`,
             visible: false,
             key: 4,

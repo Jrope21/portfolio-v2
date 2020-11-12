@@ -40,7 +40,7 @@
 </svelte:head>
 
     <!-- in:fly="{{ y: 20, duration: 500, delay: 500, }}"  -->
-<FirstLoadPageAnimation />
+<!-- <FirstLoadPageAnimation /> -->
 
 <div 
     class="container"
