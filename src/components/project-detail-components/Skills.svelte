@@ -55,7 +55,7 @@ export let skills;
         content: '';
         height: 100%;
         position: absolute;
-        border-left: 3px solid #e6e7e8;
+        border-left: 3px solid lighten(color(bodyText), 80%);
         opacity: .4;
     }
     
@@ -63,7 +63,7 @@ export let skills;
         width: 100%;
         font-weight: 300;
         font-size: 13rem;
-        color: #58595b;
+        // color: #58595b;
         margin: 0rem 0rem 25rem 0rem;
         padding: 0rem 0rem 0rem 0rem;
         display: flex;
@@ -89,7 +89,7 @@ export let skills;
         content: '';
         width: 7px;
         height: 7px;
-        background: #58595b;
+        background: color(bodyText);
         margin-right: 10rem;
         border-radius: 100%
     }

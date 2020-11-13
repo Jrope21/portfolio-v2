@@ -31,7 +31,7 @@ onMount(() => {
     }
 
     .background {
-		background: url('../background-images/so-white.png');
+		/* background: url('../background-images/so-white.png'); */
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
@@ -54,7 +54,7 @@ onMount(() => {
 
 {#if visible}
     <section out:fade="{{duration: 500, delay: 250, easing: quartInOut}}">
-        <span class="background"></span>
+        <span class="page-background background"></span>
         <Logo enableFullAnimation={true} />
     </section>
 {/if}

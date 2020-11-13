@@ -100,9 +100,11 @@ function findCurrentSlide() {
             align-items: center;
             justify-content: flex-end;
             width: 300px;
-            border: 3px solid black;
+            border: 3px solid #2f0e4e;
+            // border: none;
             height: 380px;
-            background: transparent;
+            // background: transparent;
+            background: color(boxBackground);
         }
 
         .box::after {
@@ -148,7 +150,7 @@ function findCurrentSlide() {
         transform: translateX(-50%);
         width: 100%;
         height: 250px;
-        box-shadow: 3px 3px 3px lightgrey;
+        box-shadow: 3px 3px 3px 0mm(boxShadow);
         margin: 0 auto;
     }
 

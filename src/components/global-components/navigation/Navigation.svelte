@@ -92,12 +92,12 @@ onMount(() => {
     @import '../../../styles/global.variables.scss';
 
     header {
-        border-bottom: 1px solid #d6d6d6;
+        border-bottom: 1px solid color(accentLight);
         position: fixed;
         width: 100%;
         top: 0;
         z-index: 50;
-        background: white;
+        background: color(globalElementBackground);
     }
 
     nav {
@@ -137,7 +137,8 @@ onMount(() => {
 
     .navigation {
         box-sizing: border-box;
-        background: white;
+        // background: white;
+        background: color(globalElementBackground);
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -203,6 +204,7 @@ onMount(() => {
         overflow-x: hidden;
         font-size: 16rem;
         font-weight: 700;
+        color: color(headerText);
 
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
@@ -233,23 +235,18 @@ onMount(() => {
         margin-left: -10%;
         opacity: 1;
         height: 8px;
-        background: #c0bdbd;
+        // background: #c0bdbd;
+        background: color(accent);
         z-index: -1;
         opacity: .5;
         transition: transform .45s $custom_animation;
 
         @media (min-width: breakpoint(md)) {
-            background: #797777;
+            // background: #797777;
             top: 90%;
-            height: 6px;
+            height: 5px;
         }
     }
-
-    // .selected .nav-item::after {
-    //      @media (min-width: breakpoint(md)) {
-    //         transition-delay: .1s;
-    //     }
-    // }
 
     li:hover .nav-item::after, .selected .nav-item::after {
         transform: translate(0, -50%);
@@ -299,9 +296,7 @@ onMount(() => {
     }
 
     .nav-item {
-        // position: relative;
         display: inline;
-        // padding: 5rem 0rem;
         padding: 0;
         text-transform: uppercase;
     }
@@ -321,7 +316,7 @@ onMount(() => {
     }
 
     .background {
-      background: rgba(0, 0, 0, 0.319);
+      background: color(pageOverlay);
       opacity: 0;
       width: 100vw;
       height: 100vh;
@@ -401,20 +396,11 @@ onMount(() => {
 <svelte:window bind:scrollY={windowY}/>
 
 {#if loadComponents}
-    <header in:fly="{{ y: -15, duration: 200, delay: 0, }}">
+    <header in:fly="{{ y: -15, duration: 250, delay: 0, }}">
         <nav class={reduceNavSize ? 'scrolled container' : 'container'}>
             
                 <a href='/' on:click={() => {resetActiveNav(); activeNavigation.home = true;}} class="logo">
-                    <!-- <Logo 
-                        isBoxVisible={reduceNavSize ? true : false}
-                    /> -->
-                    <!-- <Logo /> -->
                     <LongLogo />
-                    <!-- <img width="25" src="images/logo.svg" alt=""> -->
-                    
-                    <!-- <p class="logo-text">
-                        <span class="code">&lt;h1&gt;</span>Hi There<span class="logo-hover">!</span><span class="code">&lt;/h1&gt;</span>
-                    </p> -->
                 </a>
                 <Hamburger toggle={toggle} bind:this={hamburger} />
                 <div class="background" on:click={togglerOff}></div>

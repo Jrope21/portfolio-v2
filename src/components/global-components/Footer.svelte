@@ -13,9 +13,10 @@
 <style lang="scss">
     @import '../../styles/global.variables.scss';
     footer {
-        border-top: 1px solid #d6d6d6;
-        background: white;
-        color: color(primary);
+        border-top: 1px solid color(accentLight);
+        // background: white;
+        background: color(globalElementBackground);
+        color: color(headerText);
     }
 
     .footer-container {
@@ -73,7 +74,7 @@
 
     .headline a {
         // color: color(accent);
-        color: #4b4b4b;
+        color: lighten(color(headerText), 10%);
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -100,7 +101,7 @@
         margin-top: 4px;
         opacity: 1;
         height: 14px;
-        background: #c0bdbd;
+        background: color(accent);
         z-index: -1;
         opacity: .5;
         // border-bottom: 2px solid #3B3B3B;
@@ -113,7 +114,7 @@
     }
 
     .headline a:hover {
-        color: color(primary);
+        color: color(headerText);
     }
 
     // .headline a:hover {
@@ -141,7 +142,7 @@
 
     .left .open-modal {
         display: block;
-        color: color(secondary);
+        color: color(bodyText);
         font-size: 18px;
         font-weight: 800;
         margin-top: 25rem;

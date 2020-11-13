@@ -1,0 +1,76 @@
+// /*******************************************************
+// ********************************************************
+// **
+// **  Font Styles
+// **
+// ********************************************************
+// ********************************************************/
+
+
+main {
+    h1, h2, h3, h4, h5, h6 {
+        color: color(headerText);
+    }
+
+    // h3 {
+    //     font-size: 13rem;
+    //     font-weight: 600;
+    //     color: color(tertiary);
+
+    //     @media (min-width: breakpoint(md)) {
+    //       font-size: 23rem;
+    //     }
+    // }
+
+    h2, h3 {
+      font-size: 13rem;
+      font-weight: 600;
+    //   color: color(primary);
+
+      @media (min-width: breakpoint(md)) {
+        font-size: 23rem;
+      } 
+    }
+    
+    a {
+        font-size: 12rem;
+        color: color(extraLightText);
+        font-weight: 300;
+        font-style: italic;
+
+        @media (min-width: breakpoint(md)) {
+          font-size: 14rem;
+        } 
+    }
+    
+    p, li {
+        line-height: 16px;
+        font-weight: 300;
+        font-size: 13rem;
+        // color: color(bodyText);
+    
+        @media (min-width: breakpoint(md)) {
+            font-size: 18rem;
+            line-height: 23px;
+        }  
+    }
+
+    i > span {
+        font-family: $font_base;
+        font-weight: 300;
+        font-size: 13rem;
+        color: color(bodyText);
+    
+        @media (min-width: breakpoint(md)) {
+            font-size: 18rem;
+        } 
+    }
+    
+    a:hover span.text-underline::before {
+        transform: translate(100%);
+    }
+    
+    strong {
+        font-weight: 600 !important;
+    }
+}

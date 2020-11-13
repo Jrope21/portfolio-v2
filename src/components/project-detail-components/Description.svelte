@@ -69,7 +69,7 @@ import TextAnimation from '../common-components/TextAnimation.svelte';
     p {
         font-weight: 300;
         font-size: 13rem;
-        color: color(secondary);
+        // color: color(secondary);
     }
 
     @media screen and (min-width: breakpoint(md)){
@@ -86,7 +86,7 @@ import TextAnimation from '../common-components/TextAnimation.svelte';
         font-size: 12rem;
         width: fit-content;
         margin-top: 10rem;
-        color: color(accent);
+        color: color(extraLightText);
         font-weight: 300;
         font-style: italic;
     }

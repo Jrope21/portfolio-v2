@@ -10,24 +10,15 @@
 
 	onMount(() => {
 		visible = true;
+
 		setTimeout(() => {
 			finishedLoadPage = true;
-		}, 4250)
+		}, 4300)
 	})
 </script>
 
 <style global lang="scss">
 	@import '../styles/global.styles.scss';
-	.background {
-		// background: #121212;
-		background: url('../background-images/so-white.png');
-		position: fixed;
-		width: 100vw;
-		height: 100vh;
-		top: 0;
-		left: 0;
-		z-index: -1;
-	}
 
 </style>
 
@@ -37,8 +28,6 @@
 />
 
 <FirstLoadPageAnimation />
-
-<div class="background"></div>
 
 <main>
 	<slot></slot>

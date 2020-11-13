@@ -28,7 +28,8 @@ export let title, sidePage;
         margin: -05px 0px 20px 0;
         font-size: 16rem;
         text-transform: uppercase;
-        color: color(secondary);
+        color: color(headerText);
+        // color: color(secondary);
         max-width: 1320px;
     }
 
@@ -61,7 +62,7 @@ export let title, sidePage;
     }
 
     h1 {
-        color: color(primary);
+        // color: color(primary);
         position: relative;
         width: 100%;
         top: 0;

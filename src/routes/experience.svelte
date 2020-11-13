@@ -42,7 +42,6 @@
 
     .right {
         width: 100%;
-        background: white;
     }
 
 </style>

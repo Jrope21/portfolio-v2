@@ -43,7 +43,7 @@
 
     i {
         margin: 05rem 0;
-        color: color(accent);
+        // color: color(accent);
         display: flex;
         align-items: center;
         transition: all .3s ease;

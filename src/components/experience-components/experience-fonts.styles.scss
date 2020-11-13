@@ -21,7 +21,7 @@
             display: block;
             width: calc(100% + 15px);
             height: 1px;
-            border-bottom: 5px solid lightgray;
+            border-bottom: 5px solid color(accentLight);
         }
 
         &.alt {
@@ -35,7 +35,7 @@
         text-transform: lowercase;
         font-size: 12rem;
         width: fit-content;
-        color: color(accent);
+        color: color(extraLightText);
         font-weight: 300;
         font-style: italic;
 
@@ -71,7 +71,7 @@
     }
 
     .detail-preface {
-        color: color(accentTertiary);
+        color: color(lightText);
         margin-bottom: 2px;
         font-size: 14rem;
         line-height: 21px;

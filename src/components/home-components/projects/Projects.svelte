@@ -85,7 +85,7 @@
         text-transform: uppercase;
         width: fit-content;
         margin-bottom: 10%;
-        color: color(primary);
+        // color: color(primary);
         font-weight: 800;
     }
 
@@ -94,7 +94,7 @@
         display: block;
         margin-left: 10px;
         width: 30px;
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid;
     }
 
 

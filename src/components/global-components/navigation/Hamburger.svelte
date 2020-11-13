@@ -28,7 +28,7 @@ export let hamburger;
     .hamburger::before {
       content: '';
       display: block;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid color(bodyText);
       position: absolute;
       top: 0;
       right: 0;
@@ -43,7 +43,7 @@ export let hamburger;
       position: absolute;
       bottom: 0;
       right: 0;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid color(bodyText);
       width: 32px;
       transform: translateX(8px);
       transition: transform .3s $custom_animation;
@@ -51,7 +51,7 @@ export let hamburger;
 
     span.middle {
       display: block;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid color(bodyText);
       width: 32px;
       position: absolute;
       top: 50%;

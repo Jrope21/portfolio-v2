@@ -2,11 +2,10 @@
     import { onMount } from 'svelte';
     import { draw, fade, blur, slide, scale } from 'svelte/transition';
     import { quintOut, quartInOut } from 'svelte/easing';
-    
+
     export let enableFullAnimation, isBoxVisible, visible = true;
 
     let duration = 2750;
-    
     let toggleFullAnimation = false;
 
     onMount(() => {
@@ -14,12 +13,12 @@
         if(toggleFullAnimation) {
           setTimeout(() => {
               document.querySelectorAll('polygon').forEach(polygon => {
-                  polygon.style.fill = '#797777';
+                  polygon.style.fill = '#58595b';
                   polygon.style.stroke = 'white';
               })
 
               document.querySelectorAll('path').forEach(path => {
-                  path.style.fill = '#797777';
+                  path.style.fill = '#58595b';
                   path.style.stroke = 'white';
               })
           }, 2600)
@@ -35,10 +34,10 @@
     }
 
     path {
-        fill: #797777;
+        fill: #58595b;
     }
     polygon {
-        fill: #797777;
+        fill: #58595b;
     }
 
     #logo-full-animation {
@@ -52,9 +51,6 @@
       @media (min-width: breakpoint(lg)) {
         width: 150px;
       }
-      // path {
-
-      // }
       path, polygon {
         fill: transparent;
         transition: 2s ease;
@@ -70,11 +66,6 @@
     viewBox="0 0 139.7 125.7"
   >
     <defs>
-      <!-- <style>
-        .cls-1 {
-          fill: #231f20;
-        }
-      </style> -->
     </defs>
     {#if toggleFullAnimation}
       <g>

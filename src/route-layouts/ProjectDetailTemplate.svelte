@@ -49,7 +49,7 @@ export let STATE;
     }
 
     .cta a {
-        color: #58595b;
+        color: color(bodyText);
         font-size: 18px;
         font-weight: 600;
         font-style: italic;

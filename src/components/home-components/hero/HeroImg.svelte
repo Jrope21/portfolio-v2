@@ -13,7 +13,7 @@ import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
         width: 250px;
         height: 420px;
         background: white;
-        box-shadow: 3px 3px 3px lightgrey;
+        box-shadow: 3px 3px 3px color(boxShadow);
         position: relative;
         z-index: 2;
         transition: top .01s ease-in;
@@ -49,6 +49,7 @@ import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
 
     @media (min-width: breakpoint(sm)) {
         .box {
+            
             display: inline-block;
             z-index: -1;
             display: flex;
@@ -56,8 +57,10 @@ import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
             justify-content: flex-end;
             width: 237px;
             border: 3px solid black;
+            // border: none;
             height: 411px;
-            background: transparent;
+            // background: transparent;
+            background: color(boxBackground);
 
             @media (min-width: breakpoint(md)) {
                 width: 355px;

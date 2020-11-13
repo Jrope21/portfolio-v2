@@ -17,7 +17,6 @@
         align-items: center;
         padding: 5% 0 0% 0;
         position: relative;
-        color: gray;
         margin-bottom: 50px;
     }
 

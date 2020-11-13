@@ -28,7 +28,7 @@ export let projectName, url, projectText, projectYear;
         font-weight: 600;
         text-transform: capitalize;
         // transition: all .2s ease-in-out;
-        color: color(primary);
+        // color: color(primary);
         z-index: 2;
     }
 
@@ -42,12 +42,14 @@ export let projectName, url, projectText, projectYear;
         // content: '2019';
         position: absolute;
         font-weight: 900;
-        opacity: .5;
+        // opacity: .5;
+        opacity: .3;
         z-index: -5;
         left: -60px;
         top: 30px;
         transform: rotate(-90deg);
-        color: #e6e7e8;
+        // color: #e6e7e8;
+        color: color(accentLight);
         font-size: 45px;
     }
 

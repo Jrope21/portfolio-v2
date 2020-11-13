@@ -12,7 +12,7 @@ export let title;
         margin: -05px 0px 20px 0;
         font-size: 16rem;
         text-transform: uppercase;
-        color: color(secondary);
+        color: color(headerText);
         max-width: 900px;
 
         @media (min-width: breakpoint(sm)) {
@@ -32,7 +32,7 @@ export let title;
     }
 
     h1 {
-        color: color(primary);
+        // color: color(primary);
         position: relative;
         width: 100%;
         top: 0;

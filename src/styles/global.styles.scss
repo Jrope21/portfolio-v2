@@ -1,298 +1,38 @@
-/*******************************************************
-********************************************************
-**
-**  Globals
-**
-********************************************************
-********************************************************/
+// /*******************************************************
+// ********************************************************
+// **
+// **  Globals
+// **
+// ********************************************************
+// ********************************************************/
+
 
 @import './global.variables.scss';
-@import './reset-normalize.styles.scss';
-
-html{ 
-	font-size: 1px;/*for using REM units*/
-}
-  
-body{
-    font-family: $font_base;
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 1.3;
-    color: #222;
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-.grid-x {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
-.container {
-    padding: 20rem 20rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (min-width: 40em){
-  .container {
-    padding: 20rem 40rem;
-  }
-}
-@media screen and (min-width: 64em) {
-  .container {
-    padding: 60rem 40rem;
-  }
-}
-@media (min-width: 576px){
-  .container {
-      max-width: 640px;
-  }
-}
-@media (min-width: 768px){
-  .container {
-      max-width: 720px;
-  }
-}
-@media (min-width: 1023px){
-  .container {
-      /* max-width: 980px; */
-      max-width: 1005px;
-  }
-}
-@media (min-width: 1366px){
-  .container {
-      max-width: 1300px;
-  }
-}
-  
-  
-/*******************************************************
-********************************************************
-**
-**  Font Styles
-**
-********************************************************
-********************************************************/
+// /*******************************************************
+// ********************************************************
+// **
+// **  Vendor
+// **
+// ********************************************************
+// ********************************************************/
 
 
-main {
-
-    h3 {
-        font-size: 13rem;
-        font-weight: 600;
-        color: color(tertiary);
-
-        @media (min-width: breakpoint(md)) {
-          font-size: 23rem;
-        }
-    }
-
-    h2 {
-      font-size: 13rem;
-      font-weight: 600;
-      color: color(primary);
-
-      @media (min-width: breakpoint(md)) {
-        font-size: 23rem;
-      } 
-    }
-    
-    a {
-        font-size: 12rem;
-        color: color(accent);
-        font-weight: 300;
-        font-style: italic;
-
-        @media (min-width: breakpoint(md)) {
-          font-size: 14rem;
-        } 
-    }
-    
-    p, li {
-        line-height: 16px;
-        font-weight: 300;
-        font-size: 13rem;
-        color: color(secondary);
-    
-        @media (min-width: breakpoint(md)) {
-            font-size: 18rem;
-            line-height: 23px;
-        }  
-    }
-
-    i > span {
-        font-family: $font_base;
-        font-weight: 300;
-        font-size: 13rem;
-        color: color(secondary);
-    
-        @media (min-width: breakpoint(md)) {
-            font-size: 18rem;
-        } 
-    }
-    
-    a:hover span.text-underline::before {
-        transform: translate(100%);
-    }
-    
-    strong {
-        font-weight: 600 !important;
-    }
-}
+@import './vendor/reset-normalize.styles.scss';
 
 
-button:focus {
-    outline: 0;
-}
+// /*******************************************************
+// ********************************************************
+// **
+// **  Global Components
+// **
+// ********************************************************
+// ********************************************************/
 
 
-/*******************************************************
-********************************************************
-**
-**  Helpers
-**
-********************************************************
-********************************************************/
-
-
-.justify-center{
-	display: flex;
-	justify-content: center;
-}
-
-.align-center {
-	display: flex;
-	align-items: center;
-}
-
-.center-all {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@media screen and (min-width:40em){
-	.hide-for-medium{
-		/* display: none; */
-	}
-}
-
-a:hover .circleIcon{
-    transform: rotate(90deg);
-}
-  
-@media screen and (min-width: 40em){
-.hide-for-small {
-    display: none !important;
-}
-}
-
-.show-for-small {
-    display: none !important;
-}
-
-@media screen and (min-width: 40em){
-    .show-for-small {
-        display: block !important;
-    }
-}
-
-
-/*******************************************************
-********************************************************
-**
-**  Animations
-**
-********************************************************
-********************************************************/
-
-
-@keyframes fadeInBottom {
-  0% {
-      top:  20px;
-      opacity: 0;
-  }
-  65% {
-      top: 20px;
-      opacity: 0;
-  }
-  100% {
-      top: 0px;
-      opacity: 1;
-  }
-}
-
-@keyframes fadeInTop{
-  0% {
-    transform: translateY(-20px);
-      /* top:  -20px; */
-      opacity: 0;
-  }
-  65% {
-      /* top: -20px; */
-      transform: translateY(-20px);
-      opacity: 0;
-  }
-  100% {
-      /* top: 0px; */
-      transform: translateY(0px);
-      opacity: 1;
-  }
-}
-
-@keyframes fadeIn{
-  0% {
-      opacity: 0;
-  }
-  65% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-
-@keyframes fadeOutTop {
-  0% {
-    opacity: 1;
-  }
-  65% {
-      opacity: 1;
-  }
-  100% {
-      transform: translateY(-10px);
-      opacity: 0;
-  }
-}
-
-@keyframes slightSpin{
-  0%{
-    transform: rotate(0deg)
-  }
-  100%{
-    transform: rotate(45deg)
-  }
-}
-
-@keyframes fadeInLeft{
-  0% {
-      transform: translateX(-20px);
-      opacity: 0;
-  }
-  65% {
-      transform: translateX(-20px);
-      opacity: 0;
-  }
-  100% {
-      transform: translateX(0px);
-      opacity: 1;
-  }
-}
-
-@keyframes leaveScreen {
-  100%{
-    transform: translateX(9999px)
-  }
-}
+@import './global-components/theme.styles';
+@import './global-components/containers.styles';
+@import './global-components/font-styles.styles';
+@import './global-components/helpers.styles';
+@import './global-components/keyframes.styles';

@@ -26,7 +26,7 @@
 		width: 100%;
 		height: 100%;
 		z-index: -1;
-        background: rgba(0,0,0,0.3);
+        background: color(pageOverlay);
 	}
 
 	.modal {
@@ -36,7 +36,7 @@
 		max-height: 90vh;
 		overflow: auto;
 		border-radius: 10rem;
-        background: white;
+        background: color(onOverlayBackground);
 		z-index: 50;
 		
 		@media (min-width: breakpoint(sm)) {

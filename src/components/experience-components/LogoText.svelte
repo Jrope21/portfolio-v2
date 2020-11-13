@@ -29,12 +29,12 @@ export let addClass;
     }
 
     h1 {
-        color: color(primary);
+        // color: color(primary);
         font-weight: 800;
         font-size: 23px;
     }
     h2 {
-        color:color(primary);
+        // color:color(primary);
         font-weight: 800;
         font-size: 18px;
         margin-bottom: 5px;
@@ -55,7 +55,7 @@ export let addClass;
         content: '';
         display: block;
         width: 30px;
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid;
         margin-right: 10px;
         opacity: .8;
     }

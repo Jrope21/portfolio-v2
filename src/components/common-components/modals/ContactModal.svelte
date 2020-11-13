@@ -100,10 +100,10 @@
 
     p{
         margin: 6rem 0rem 10rem 0rem;
-        font-family: 'Open Sans', sans-serif;
+        // font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 13rem;
-        color: color(secondary)
+        // color: color(secondary)
     }
 
     @media screen and (min-width: 64em){
@@ -119,7 +119,7 @@
         border-radius: 4px;
         padding: 15rem 20rem 40rem 20rem;
         /* border: 1px solid gray; */
-        box-shadow: 5px 5px 5px lightgray;
+        box-shadow: 5px 5px 5px color(boxShadow);
     }
 
     @media screen and (min-width: 40em){
@@ -185,10 +185,11 @@
         margin-top: 12rem;
         padding: 6rem;
         font-size: 13rem;
-        box-shadow: 1px 1px 3px lightgrey;
+        box-shadow: 1px 1px 3px color(boxShadow);
         font-style: italic;
         background: rgba(88, 89, 91, 0.1);
-        color: color(secondary);
+        // background: color(lightBackground);
+        color: color(bodyText);
         font-weight: 700;
         transition: all .3s ease-in;
         cursor: pointer;
@@ -208,20 +209,21 @@
     input[type="submit"]:hover {
         position: relative;
         transform: translateY(-1px);
-        box-shadow: 2px 2px 3px lightgrey;
+        box-shadow: 2px 2px 3px color(boxShadow);
     }
 
     input, textarea{
-        border: 1px solid lightgray;
+        // border: 1px solid lightgray;
+        border: 1px solid color(accent);
         border-radius: 2px;
         font-size: 16rem;
         padding: 3rem;
-        box-shadow: .3px .3px .3px gray;
+        box-shadow: .3px .3px .3px color(boxShadow);
     }
 
     .success-message {
         font-size: 50rem;
-        color: color(secondary);
+        color: color(bodyText);
         text-transform: uppercase;
         position: absolute;
         top: 50%;

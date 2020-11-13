@@ -25,7 +25,7 @@ export let lazy;
         width: 65vw;
         height: 65vw;
         max-height: 250px;
-        box-shadow: 3px 3px 3px color(accentSecondary);
+        box-shadow: 3px 3px 3px color(boxShadow);
         transform: translateY(0px);
         transition: box-shadow .3s ease, transform .3s ease;
     }
@@ -62,12 +62,11 @@ export let lazy;
 
     a:hover .img-container {
         transform: translateY(-4px);
-        box-shadow: 5px 5px 5px color(accentSecondary);
+        box-shadow: 5px 5px 5px color(boxShadow);
     }
 
     img {
         object-fit: cover;
-        // transition: all .3s ease-in;
         width: 100%;
         height: 100%;
     }

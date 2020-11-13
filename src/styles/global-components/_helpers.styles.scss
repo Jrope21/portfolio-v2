@@ -1,0 +1,55 @@
+// /*******************************************************
+// ********************************************************
+// **
+// **  Helpers
+// **
+// ********************************************************
+// ********************************************************/
+
+
+.grid-x {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-center{
+	display: flex;
+	justify-content: center;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+.center-all {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width:40em){
+	.hide-for-medium{
+		/* display: none; */
+	}
+}
+
+a:hover .circleIcon{
+    transform: rotate(90deg);
+}
+  
+@media screen and (min-width: 40em){
+.hide-for-small {
+    display: none !important;
+}
+}
+
+.show-for-small {
+    display: none !important;
+}
+
+@media screen and (min-width: 40em){
+    .show-for-small {
+        display: block !important;
+    }
+}

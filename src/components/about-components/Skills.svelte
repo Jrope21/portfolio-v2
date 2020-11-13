@@ -47,7 +47,8 @@
         content: '';
         height: 100%;
         position: absolute;
-        border-left: 3px solid #e6e7e8;
+        // border-left: 3px solid #e6e7e8;
+        border-left: 3px solid lighten(color(bodyText), 80%);
         opacity: .4;
     }
 
@@ -74,7 +75,7 @@
         content: '';
         width: 7px;
         height: 7px;
-        background: #58595b;
+        background: color(bodyText);
         margin-right: 10rem;
         border-radius: 100%
     }

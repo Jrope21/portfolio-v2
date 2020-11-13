@@ -1,0 +1,157 @@
+// /*******************************************************
+// ********************************************************
+// **
+// **  README SONNNNNzzzzz
+// **
+// **  1. This file controls the entire application theme view 
+// **
+// ********************************************************
+// ********************************************************/
+
+
+
+// /*******************************************************
+// ********************************************************
+// **
+// **  Fonts
+// **
+// ********************************************************
+// ********************************************************/
+
+
+$font_primary: -apple-system;
+$font_base: $font_primary, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif' !default;
+
+
+// /*******************************************************
+// ********************************************************
+// **
+// **  Grid
+// **
+// ********************************************************
+// ********************************************************/
+
+
+$breakpoints: (
+    xs: 0,
+    sm: 640px,
+    md: 1024px,
+    lg: 1366px,
+);
+
+:export { 
+    breakpointSm: strip-unit(breakpoint(sm));
+    breakpointMd: strip-unit(breakpoint(md));
+    breakpointLg: strip-unit(breakpoint(lg));
+};
+
+
+// /*******************************************************
+// ********************************************************
+// **
+// **  Colors
+// **
+// ********************************************************
+// ********************************************************/
+
+
+// $colors: ( // light theme
+//     primary: #3B3B3B,
+//     secondary: #58595b,
+//     tertiary: #414042,
+//     accent: #989898,
+//     accentSecondary: lightgray,
+//     accentTertiary: #818181,
+// accentLight: #d6d6d6;
+
+    // font colors
+    // headerText: #3b3b3b,
+    // bodyText: #58595b,
+    // lightText: #818181,
+    // extraLightText: #989898,
+
+    // pageBackground: white, 
+    // lightBackground:  white,
+    // boxBackground: transparent
+    // boxShadow: lightgrey,
+    // globalElementBackground: white,
+    // pageOverlay: rgba(0, 0, 0, 0.33),,
+// );
+
+$colors: ( // testing theme
+
+    // main colors
+    primary: #ba93e9 ,
+    secondary: #ba93e9 ,
+    tertiary:#ba93e9 ,
+
+    // font colors
+    headerText: #3b3b3b,
+    bodyText: #58595b,
+    lightText: #818181,
+    extraLightText: #989898,
+
+    // accent colors
+    accent: #c0bdbd,
+    accentLight: lightgrey,
+    accentSecondary:#BB86FC,
+    accentTertiary: #BB86FC,
+    
+    // teak -- #03DAC5
+
+    // speciality colors
+    // lineSperator: lightgrey,
+    pageBackground: white, 
+    lightBackground:  white,
+    boxBackground: transparent,
+    boxShadow: lightgrey,
+    pageOverlay: rgba(0, 0, 0, 0.33),
+    onOverlayBackground: white,
+    globalElementBackground: white,
+);
+
+// linear-gradient(to right, #bbd2c5, #536976)
+
+// $colors: ( // testing theme
+
+//     // main colors
+//     primary: #ba93e9 ,
+//     secondary: #ba93e9 ,
+//     tertiary:#ba93e9 ,
+
+//     // font colors
+//     headerText: #3b3b3b,
+//     bodyText: #58595b,
+//     lightText: #818181,
+//     extraLightText: #989898,
+
+//     // accent colors
+//     accent: #BB86FC,
+//     accentSecondary:#BB86FC,
+//     accentTertiary: #BB86FC,
+//     accentLight: rgba(255, 255, 255, 0.16),
+
+//     // teak -- #03DAC5
+
+//     // speciality colors
+//     pageBackground: #121212, 
+//     lightBackground:  rgba(255, 255, 255, 0.1),
+//     boxBackground: rgba(255, 255, 255, 0.05),
+//     boxShadow: rgba(245, 233, 233, 0.15),
+//     pageOverlay: rgba(255, 255, 255, 0.15),
+//     onOverlayBackground: rgb(34, 34, 34),
+//     globalElementBackground: rgb(29, 29, 29),
+// );
+
+
+// /*******************************************************
+// ********************************************************
+// **
+// **  Custom Animations
+// **
+// ********************************************************
+// ********************************************************/
+
+
+$custom_animation: cubic-bezier(0.85, 0.08, 0.08, 0.99);
+// $custom_animation: cubic-bezier(1, 0, 0, 1);

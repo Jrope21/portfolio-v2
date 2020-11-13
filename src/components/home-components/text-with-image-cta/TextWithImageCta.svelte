@@ -53,7 +53,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
 
     .image-container {
         
-        box-shadow: 3px 3px 3px color(accentSecondary);
+        box-shadow: 3px 3px 3px color(boxShadow);
         transform: translateY(0px);
         transition: box-shadow .3s ease, transform .3s ease;
         height: 200px;
@@ -72,7 +72,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
         }
         &:hover {
             transform: translateY(-4px);
-            box-shadow: 5px 5px 5px color(accentSecondary);
+            box-shadow: 5px 5px 5px color(boxShadow);
         }
     }
 
@@ -94,8 +94,8 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
 
         @media (min-width: breakpoint(sm)) {
             padding: 25rem 30rem;
-            box-shadow: 3px 3px 3px 3px color(accentSecondary);
-            background: white;
+            box-shadow: 3px 3px 3px 3px color(boxShadow);
+            background: color(lightBackground);
         }
 
         @media (min-width: breakpoint(md)) {
