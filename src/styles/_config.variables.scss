@@ -55,7 +55,7 @@ $breakpoints: (
 ********************************************************/
 
 
-$colors: (
+$colors: ( // light theme
     primary: #3B3B3B,
     secondary: #58595b,
     tertiary: #414042,
@@ -63,6 +63,15 @@ $colors: (
     accentSecondary: lightgray,
     accentTertiary: #818181,
 );
+
+// $colors: ( // dark theme
+//     primary: #3B3B3B,
+//     secondary: #854db9,
+//     tertiary: #854db9,
+//     accent: #989898,
+//     accentSecondary: lightgray,
+//     accentTertiary: #818181,
+// );
 
 
 /*******************************************************

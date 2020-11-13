@@ -19,6 +19,7 @@
 <style global lang="scss">
 	@import '../styles/global.styles.scss';
 	.background {
+		// background: #121212;
 		background: url('../background-images/so-white.png');
 		position: fixed;
 		width: 100vw;
