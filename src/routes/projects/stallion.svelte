@@ -1,11 +1,11 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
-import Image1 from '../../images/stallion/stallion-4-min.png';
-import Image2 from '../../images/stallion/stallion-2-min.png';
-import Image3 from '../../images/stallion/stallion-6-min.png';
-import Image4 from '../../images/stallion/stallion-11-min.png';
-import Image5 from '../../images/stallion/stallion-5-min.png';
+import Image1 from '../../images/stallion/stallion-4-min.jpg';
+import Image2 from '../../images/stallion/stallion-2-min.jpg';
+import Image3 from '../../images/stallion/stallion-6-min.jpg';
+import Image4 from '../../images/stallion/stallion-11-min.jpg';
+import Image5 from '../../images/stallion/stallion-5-min.jpg';
 
 let STATE = {
     metaTitle: `Stallion | Front End Developer - Joshua Roper`,

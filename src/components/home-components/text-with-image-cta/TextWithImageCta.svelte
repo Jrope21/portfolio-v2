@@ -1,7 +1,6 @@
 <script>
 import TextAnimation from '../../common-components/TextAnimation.svelte';
 import ContactModal from '../../common-components/modals/ContactModal.svelte';
-import LazyImage from '../../common-components/LazyImage.svelte';
 
     let showModal;
 
@@ -170,12 +169,6 @@ import LazyImage from '../../common-components/LazyImage.svelte';
 
 <section class="text-with-image-cta">
     <a on:click={openModal} href="javascript:void(0)" class="image-container">
-        <!-- <LazyImage 
-            lazy={false}
-            imgSrc={"images/desk-photo.jpeg"}
-            imgSrcSmall={"images/desk-photo-small.jpg"}
-            imgAlt={'A programming desk setup'}
-        /> -->
         <img src="images/desk-photo.jpeg" alt="A programming desk setup">
     </a>
     <div class="text-content">

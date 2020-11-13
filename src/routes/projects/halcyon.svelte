@@ -1,11 +1,11 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
-import Image1 from '../../images/halcyon/home-cta-min.png';
-import Image2 from '../../images/halcyon/home-min.png';
-import Image3 from '../../images/halcyon/dining-min.png';
-import Image4 from '../../images/halcyon/events-min.png';
-import Image5 from '../../images/halcyon/spotlight-min.png';
+import Image1 from '../../images/halcyon/home-cta-min.jpg';
+import Image2 from '../../images/halcyon/home-min.jpg';
+import Image3 from '../../images/halcyon/dining-min.jpg';
+import Image4 from '../../images/halcyon/events-min.jpg';
+import Image5 from '../../images/halcyon/spotlight-min.jpg';
 
 let STATE = {
     metaTitle: `Halcyon | Front End Developer - Joshua Roper`,

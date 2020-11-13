@@ -3,7 +3,6 @@ import { onMount } from 'svelte';
 
 import HeroImage from '../../../images/professional-hero-min.jpg';
 import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
-import LazyImage from '../../common-components/LazyImage.svelte';
 
 </script>
 
@@ -13,12 +12,6 @@ import LazyImage from '../../common-components/LazyImage.svelte';
     .hero-image{
         width: 250px;
         height: 420px;
-        // background-image: url("../thumbnails/professional-hero-min.jpg");
-        // background-size: cover;
-        //  -o-background-size: cover;
-        // -moz-background-size: cover;
-        // -webkit-background-size: cover;
-        // background-position: 45% 25%;
         background: white;
         box-shadow: 3px 3px 3px lightgrey;
         position: relative;
@@ -28,7 +21,6 @@ import LazyImage from '../../common-components/LazyImage.svelte';
         @media (min-width: breakpoint(sm)) {
             margin-right: -70px;
             width: 220px;
-            // background-position: 45% 10%;
             height: 320px;
         }
 
@@ -83,12 +75,6 @@ import LazyImage from '../../common-components/LazyImage.svelte';
 
 <div class="box">
     <div class="hero-image" >
-        <!-- <LazyImage 
-            lazy={false}
-            imgSrc={HeroImage}
-            imgSrcSmall={HeroImageSmall}
-            imgAlt={'Joshua Roper - Front End Developer'}
-        /> -->
         <img src={HeroImage} alt={'Joshua Roper - Front End Developer'}>
     </div>
 </div>
