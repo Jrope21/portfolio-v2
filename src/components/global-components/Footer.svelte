@@ -167,7 +167,7 @@
 
     a:hover > i {
         transform: translateY(-3px);
-        color: color(secondary);
+        color: color(accent);
     }
 
     @media screen and (min-width: breakpoint(sm)) {

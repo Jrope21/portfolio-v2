@@ -379,7 +379,7 @@ onMount(() => {
     i {
         font-size: 16px;
         margin-right:12px;
-        color: #5A5A5A;
+        color: color(bodyText);
         transition: all .3s ease;
     }
 
@@ -389,6 +389,7 @@ onMount(() => {
 
     .social-icon:hover > i {
         transform: translateY(-3px);
+        color: color(accent);
     }
 
 </style>

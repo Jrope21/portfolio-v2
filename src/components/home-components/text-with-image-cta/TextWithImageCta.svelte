@@ -2,6 +2,8 @@
 import TextAnimation from '../../common-components/TextAnimation.svelte';
 import ContactModal from '../../common-components/modals/ContactModal.svelte';
 
+import DeskPhoto from '../../../images/desk-photo.jpg';
+
     let showModal;
 
     function openModal(){
@@ -129,7 +131,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
         font-style: italic;
         margin-top: 10rem;
         margin-bottom: 10rem;
-        color:#58595b;
+        color: color(bodyText);
 
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
@@ -141,7 +143,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
             width: 20px;
             margin-right: 10rem;
             height: 2px;
-            background: #58595b;
+            background: color(bodyText);
         }
     }
 
@@ -157,7 +159,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
         font-size: 12rem;
         width: fit-content;
         margin-top: 10rem;
-        color: #989898;
+        color: color(extraLightText);
         font-weight: 300;
         font-style: italic;
 
@@ -169,7 +171,7 @@ import ContactModal from '../../common-components/modals/ContactModal.svelte';
 
 <section class="text-with-image-cta">
     <a on:click={openModal} href="javascript:void(0)" class="image-container">
-        <img src="images/desk-photo.jpeg" alt="A programming desk setup">
+        <img src="{DeskPhoto}" alt="A programming desk setup">
     </a>
     <div class="text-content">
         <h2 class="heading">Let's Create Something Awesome Together.</h2>
