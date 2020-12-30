@@ -55,7 +55,8 @@ export let skills;
         content: '';
         height: 100%;
         position: absolute;
-        border-left: 3px solid lighten(color(bodyText), 80%);
+        // border-left: 3px solid lighten(color(bodyText), 80%);
+        border-left: 3px solid lighten(color(accent), 80%);
         opacity: .4;
     }
     

@@ -13,8 +13,9 @@
 <style lang="scss">
     @import '../../styles/global.variables.scss';
     footer {
-        border-top: 1px solid color(accentLight);
+        // border-top: 1px solid color(accentLight);
         // background: white;
+        box-shadow: 3px 10px 12px 12px color(boxShadow);
         background: color(globalElementBackground);
         color: color(headerText);
     }

@@ -22,6 +22,7 @@
             width: calc(100% + 15px);
             height: 1px;
             border-bottom: 5px solid color(accentLight);
+            // border-bottom: 5px solid color(primary);
         }
 
         &.alt {
@@ -36,6 +37,7 @@
         font-size: 12rem;
         width: fit-content;
         color: color(extraLightText);
+        // color: color(accent);
         font-weight: 300;
         font-style: italic;
 
@@ -43,6 +45,10 @@
             font-size: 18rem;
         } 
     }
+
+    // .job-title {
+    //     color: color(accent);
+    // }
 
     .detail-web-links {
         margin-top: 2px;

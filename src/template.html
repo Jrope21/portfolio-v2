@@ -29,14 +29,20 @@
 	%sapper.head%
 </head>
 <body class="page-background">
+	
 
-	<!-- The application will be rendered inside this element,
-	     because `src/client.js` references it -->
-	<div id='sapper'>%sapper.html%</div>
+		<!-- The application will be rendered inside this element,
+			because `src/client.js` references it -->
+		<div id='sapper'>%sapper.html%</div>
 
-	<!-- Sapper creates a <script> tag containing `src/client.js`
-	     and anything else it needs to hydrate the app and
-	     initialise the router -->
-	%sapper.scripts%
+		<!-- Sapper creates a <script> tag containing `src/client.js`
+			and anything else it needs to hydrate the app and
+			initialise the router -->
+		%sapper.scripts%
+
 </body>
 </html>
+
+
+
+

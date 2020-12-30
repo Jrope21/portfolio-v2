@@ -1,9 +1,13 @@
 <script>
 import { onMount } from 'svelte';
 
-import HeroImage from '../../../images/professional-hero-min.jpg';
-import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
+// import HeroImage from '../../../images/professional-hero-min.jpg';
+// import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
 
+import HeroImage from '../../../images/about-me-desktop-img.jpg';
+import HeroImageSmall from '../../../images/about-me-desktop-img.jpg';
+
+// about-me-desktop-img.jpg
 </script>
 
 <style lang="scss">
@@ -12,7 +16,7 @@ import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
     .hero-image{
         width: 250px;
         height: 420px;
-        background: white;
+        // background: white;
         box-shadow: 3px 3px 3px color(boxShadow);
         position: relative;
         z-index: 2;
@@ -56,7 +60,8 @@ import HeroImageSmall from '../../../images/professional-hero-min-small.jpg';
             align-items: center;
             justify-content: flex-end;
             width: 237px;
-            border: 3px solid black;
+            // border: 3px solid black;
+            border: 3px solid color(accent);
             // border: none;
             height: 411px;
             // background: transparent;

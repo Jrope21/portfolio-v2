@@ -92,12 +92,13 @@ onMount(() => {
     @import '../../../styles/global.variables.scss';
 
     header {
-        border-bottom: 1px solid color(accentLight);
+        // border-bottom: 1px solid color(accentLight);
         position: fixed;
         width: 100%;
         top: 0;
         z-index: 50;
         background: color(globalElementBackground);
+        box-shadow: 3px 3px 3px 3px color(boxShadow);
     }
 
     nav {

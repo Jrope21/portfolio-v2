@@ -131,7 +131,8 @@ import DeskPhoto from '../../../images/desk-photo.jpg';
         font-style: italic;
         margin-top: 10rem;
         margin-bottom: 10rem;
-        color: color(bodyText);
+        // color: color(bodyText);
+        color: color(accent);
 
         @media (min-width: breakpoint(md)) {
             font-size: 16rem;
@@ -143,7 +144,8 @@ import DeskPhoto from '../../../images/desk-photo.jpg';
             width: 20px;
             margin-right: 10rem;
             height: 2px;
-            background: color(bodyText);
+            // background: color(bodyText);
+            background: color(accent);
         }
     }
 

@@ -23,7 +23,11 @@ body{
 }
 
 .page-background { // this class also gets added to the <body> tag
-    // background: color(pageBackground);
+    background: color(pageBackground);
+    // background: url('../background-images/so-white.jpg');
+}
+
+.page-texture {
     background: url('../background-images/so-white.jpg');
 }
 

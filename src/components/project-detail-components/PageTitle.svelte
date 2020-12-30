@@ -120,6 +120,7 @@ export let title, sidePage;
         left: 3px;
         bottom: -25px;
         font-size: 32px;
+        color:color(accent);
     }
 
     @media screen and (min-width: breakpoint(sm)){

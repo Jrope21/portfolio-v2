@@ -55,7 +55,7 @@ $breakpoints: (
 // ********************************************************/
 
 
-// $colors: ( // light theme
+// $colors: ( // light theme -- orginal variables (archived)
 //     primary: #3B3B3B,
 //     secondary: #58595b,
 //     tertiary: #414042,
@@ -78,44 +78,10 @@ $breakpoints: (
     // pageOverlay: rgba(0, 0, 0, 0.33),,
 // );
 
-$colors: ( // testing theme
-
-    // main colors
-    primary: #3b3b3b,
-    secondary: #ba93e9 ,
-    tertiary:#ba93e9 ,
-
-    // font colors
-    headerText: #3b3b3b,
-    bodyText: #58595b,
-    lightText: #818181,
-    extraLightText: #989898,
-
-    // accent colors
-    accent: #c0bdbd,
-    accentLight: lightgrey,
-    accentSecondary:#BB86FC,
-    accentTertiary: #BB86FC,
-    
-    // teak -- #03DAC5
-
-    // speciality colors
-    // lineSperator: lightgrey,
-    pageBackground: white, 
-    lightBackground:  white,
-    boxBackground: transparent,
-    boxShadow: lightgrey,
-    pageOverlay: rgba(0, 0, 0, 0.33),
-    onOverlayBackground: white,
-    globalElementBackground: white,
-);
-
-// linear-gradient(to right, #bbd2c5, #536976)
-
-// $colors: ( // testing theme
+// $colors: ( // light theme
 
 //     // main colors
-//     primary: #ba93e9 ,
+//     primary: #3b3b3b,
 //     secondary: #ba93e9 ,
 //     tertiary:#ba93e9 ,
 
@@ -126,21 +92,76 @@ $colors: ( // testing theme
 //     extraLightText: #989898,
 
 //     // accent colors
-//     accent: #BB86FC,
+//     accent: #c0bdbd,
+//     accentLight: lightgrey,
 //     accentSecondary:#BB86FC,
 //     accentTertiary: #BB86FC,
-//     accentLight: rgba(255, 255, 255, 0.16),
-
+    
 //     // teak -- #03DAC5
 
 //     // speciality colors
-//     pageBackground: #121212, 
-//     lightBackground:  rgba(255, 255, 255, 0.1),
-//     boxBackground: rgba(255, 255, 255, 0.05),
-//     boxShadow: rgba(245, 233, 233, 0.15),
-//     pageOverlay: rgba(255, 255, 255, 0.15),
-//     onOverlayBackground: rgb(34, 34, 34),
-//     globalElementBackground: rgb(29, 29, 29),
+//     // lineSperator: lightgrey,
+//     pageBackground: white, 
+//     lightBackground:  white,
+//     boxBackground: transparent,
+//     boxShadow: lightgrey,
+//     pageOverlay: rgba(0, 0, 0, 0.33),
+//     onOverlayBackground: white,
+//     globalElementBackground: white,
+// );
+
+
+$colors: ( // dark theme
+
+    // main colors
+    primary:#D3D3D3,
+    // secondary: #ba93e9 ,
+    // tertiary:#ba93e9 ,
+
+    // font colors
+    headerText:#D3D3D3,
+    bodyText:#C0BDBD,
+    // lightText: #dadada,
+    lightText: rgb(211, 211, 211),
+    // extraLightText: #dddddd,
+    extraLightText: rgb(211, 211, 211),
+
+    // accent colors
+    accent:#F4AE3F,
+    accentLight: #F4AE3F,
+    // accentSecondary:#BB86FC,
+    // accentTertiary: #BB86FC,
+    
+    // teak -- #03DAC5
+
+    // speciality colors
+    // lineSperator: lightgrey,
+    pageBackground: #292D32, 
+    // pageBackground: rgba(0, 0, 0, 0.76), 
+    lightBackground: #2A2D32,
+    boxBackground: transparent,
+    boxShadow:rgba(0, 0, 0, 0.15),
+    pageOverlay: rgba(0, 0, 0, 0.33),
+    onOverlayBackground: white,
+    globalElementBackground: #2A2D32,
+);
+
+
+// $colors: ( v3 colors
+//     // ** main colors
+//     primary: #D3D3D3,
+//     secondary: #C0BDBD,
+//     tertiary: #292D32, // same as page_background
+
+//     // ** accent colors
+//     accent: #F4AE3F,
+//     accent_transparent: rgba(244, 175, 63, 0.3),
+
+//     // ** speciality colors
+//     success: #A4E9B3,
+//     error:#BA5B50,
+//     page_background: #292D32,
+//     background_alt: #2A2D32
 // );
 
 
