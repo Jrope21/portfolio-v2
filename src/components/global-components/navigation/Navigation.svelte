@@ -496,7 +496,7 @@ onMount(() => {
                             <p class="title">
                                 View Resume
                             </p>
-                            <a href="./pdfs/resume-joshua-roper.pdf" download>
+                            <a href="./pdfs/resume-joshua.pdf" download>
                                 Download PDF
                                 <!-- <TextAnimation text={`Download PDF`} /> -->
                             </a>

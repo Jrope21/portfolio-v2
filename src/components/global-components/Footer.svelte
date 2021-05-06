@@ -234,7 +234,7 @@
                 <p class="title">
                     View Resume
                 </p>
-                <a href="./pdfs/resume-joshua-roper.pdf" download>
+                <a href="./pdfs/resume-joshua.pdf" download>
                     <TextAnimation text={`Download PDF`} />
                 </a>
             </div>
