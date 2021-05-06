@@ -55,7 +55,7 @@ export let addClass;
         content: '';
         display: block;
         width: 30px;
-        border-bottom: 3px solid;
+        border-bottom: 3px solid rgba(color(accent), .75);
         margin-right: 10px;
         opacity: .8;
     }

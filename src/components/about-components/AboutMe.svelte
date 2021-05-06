@@ -29,6 +29,7 @@
         margin-bottom: 15rem;
         width: 100%;
         text-transform: uppercase;
+        color: color(accent);
 
         @media (min-width: breakpoint(sm)) {
             width: 18%;

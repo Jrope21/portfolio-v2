@@ -26,11 +26,12 @@ span.text-animation::before {
 }
 
 span.hover-animation > span.text-animation {
-    transition: transform .3s $custom_animation;
+    transition: transform .3s $custom_animation, .3s color $custom_animation;
 }
 
 :global(a:hover) > span.hover-animation > span.text-animation {
     transform: translate(30px);
+    color: color(accent);
 }
 
 </style>

@@ -278,7 +278,7 @@ onMount(() => {
         content: '';
         display: block;
         position: absolute;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid color(primary);
         width: 26px;
         top: 16px;
         right: 0;
@@ -289,7 +289,7 @@ onMount(() => {
         content: '';
         display: block;
         position: absolute;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid color(primary);
         width: 26px;
         top: 16px;
         right: 0;
@@ -312,6 +312,36 @@ onMount(() => {
         opacity: .3;
     }
 
+
+    .logo {
+        position: relative;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        opacity: 1;
+        transition: .3s opacity;
+    }
+    .logo::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 125%;
+        border-bottom: 3px solid color(accent);
+        left: 0px;
+        /* max-width: 125%; */
+        /* transition: .3s max-width; */
+        /* transition-delay: .15s; */
+    }
+
+    .scrolled .logo {
+        opacity: .75;
+    }
+
+    /* .scrolled .logo::after {
+        max-width: 120%;
+        
+    } */
     .logo:hover .logo-hover {
         color: black;
     }
@@ -354,6 +384,7 @@ onMount(() => {
         font-weight: 100;
         font-size: 12rem;
         text-transform: none;
+        color: color(accent);
     }
 
     
@@ -380,7 +411,8 @@ onMount(() => {
     i {
         font-size: 16px;
         margin-right:12px;
-        color: color(bodyText);
+        // color: color(bodyText);
+        
         transition: all .3s ease;
     }
 

@@ -35,6 +35,7 @@ import TextAnimation from '../common-components/TextAnimation.svelte';
         width: 100%;
         font-weight: 600;
         text-transform: uppercase;
+        color: color(accent);
     }
 
     @media screen and (min-width: breakpoint(sm)){

@@ -101,7 +101,7 @@ function findCurrentSlide() {
             justify-content: flex-end;
             width: 300px;
             // border: 3px solid #2f0e4e;
-             border: 3px solid color(accent);
+             border: 3px solid color(boxBorder);
             // border: none;
             height: 380px;
             // background: transparent;
@@ -151,7 +151,7 @@ function findCurrentSlide() {
         transform: translateX(-50%);
         width: 100%;
         height: 250px;
-        box-shadow: 3px 3px 3px 0mm(boxShadow);
+        box-shadow: 3px 3px 3px color(boxShadow);
         margin: 0 auto;
     }
 
@@ -206,7 +206,7 @@ function findCurrentSlide() {
         width: 12px;
         height: 12px;
         // border: 2px solid color(primary);
-        border: 2px solid color(accent);
+        border: 2px solid rgba(244, 174, 63, 0.75);
         border-radius: 50%;
         margin: 0px 20px 0 0px;
         overflow: hidden;
@@ -249,7 +249,7 @@ function findCurrentSlide() {
         height: 110%;
         border-radius: 50%;
         // background: color(primary);
-        background: color(accent);
+        background: rgba(244, 174, 63, 0.75);
         opacity: 0;
         transition: opacity .3s ease;
     }

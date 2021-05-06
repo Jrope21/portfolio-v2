@@ -28,6 +28,17 @@ export let lazy;
         box-shadow: 3px 3px 3px color(boxShadow);
         transform: translateY(0px);
         transition: box-shadow .3s ease, transform .3s ease;
+
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: linear-gradient(180deg, #271C0A -29.6%, rgba(34, 34, 34, .3) 109.97%), rgba(42, 45, 50, 0.87);
+        //     opacity: .1
+        // }
     }
 
     @media screen and (min-width: breakpoint(sm)){
@@ -63,6 +74,8 @@ export let lazy;
     a:hover .img-container {
         transform: translateY(-4px);
         box-shadow: 5px 5px 5px color(boxShadow);
+
+     
     }
 
     img {

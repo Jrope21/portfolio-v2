@@ -6,7 +6,8 @@
     @import '../../../styles/global.variables.scss';
     svg {
         height: 25px;
-        fill: color(bodyText);
+        // fill: color(bodyText);
+        fill: rgba(color(accent), .75);
 
         @media (min-width: breakpoint(md)) {
             height: 35px;
@@ -14,7 +15,8 @@
     }
 
     path, polygon {
-        fill: color(bodyText);
+        // fill: color(bodyText);
+        fill: rgba(color(accent), .75)
     }
 </style>
 

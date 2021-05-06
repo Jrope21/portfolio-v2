@@ -25,6 +25,10 @@
     //     }
     // }
 
+    h2 {
+        color: color(accent);
+    }
+
     div.card-container {
         display: flex;
         justify-content: flex-start;

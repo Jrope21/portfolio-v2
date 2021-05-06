@@ -26,14 +26,14 @@
         font-weight: 400;
         opacity: .8;
         margin-bottom: 15px;
-        // color: color(tertiary);
+        // color: color(accent);
     }
 
     h3::before {
         content: '';
         display: block;
         width: 30px;
-        border-bottom: 3px solid;
+        border-bottom: 3px solid color(accent);
         margin-right: 10px;
         opacity: .8;
     }

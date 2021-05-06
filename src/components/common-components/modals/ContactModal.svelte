@@ -76,7 +76,8 @@
 
    .text-container h2{
         font-size: 30rem;
-        color: #808080;
+        // color: #808080;
+        color: color(headerText);
     }
 
     @media screen and (min-width: 64em){
@@ -89,7 +90,9 @@
         display: block;
         height: 7px;
         margin: 5rem 0px 18rem 0px;
-        background: lightgray;
+        // background: lightgray;
+        background: color(accent);
+        // background: color(primary);
     }
 
     @media screen and (min-width: 40em){
@@ -103,6 +106,7 @@
         // font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 13rem;
+        color: color(bodyText);
         // color: color(secondary)
     }
 
@@ -168,6 +172,7 @@
         display: flex;
         flex-direction: column;
         margin: 4rem 0px;
+        color: color(accent);
     }
     span{
         font-size: 13rem;
@@ -187,9 +192,12 @@
         font-size: 13rem;
         box-shadow: 1px 1px 3px color(boxShadow);
         font-style: italic;
-        background: rgba(88, 89, 91, 0.1);
+        // background: rgba(88, 89, 91, 0.1);
+        background: color(accent);
+        border: none;
         // background: color(lightBackground);
-        color: color(bodyText);
+        // color: color(bodyText);
+        color: color(pageBackground);
         font-weight: 700;
         transition: all .3s ease-in;
         cursor: pointer;
@@ -214,7 +222,9 @@
 
     input, textarea{
         // border: 1px solid lightgray;
-        border: 1px solid color(accent);
+        // border: 1px solid color(primary);
+        background: color(primary);
+        color: color(bodyText);
         border-radius: 2px;
         font-size: 16rem;
         padding: 3rem;

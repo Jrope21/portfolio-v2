@@ -125,6 +125,7 @@
     .title {
         font-weight: 100;
         font-size: 12rem;
+        color: color(accent);
     }
 
     .text-cta a {
@@ -143,7 +144,8 @@
 
     .left .open-modal {
         display: block;
-        color: color(bodyText);
+        color: color(accent);
+        opacity: .75;
         font-size: 18px;
         font-weight: 800;
         margin-top: 25rem;
@@ -151,7 +153,8 @@
     }
 
     .left .open-modal:hover {
-        opacity: .75;
+        opacity: 1;
+        /* color: color(accent); */
     }
 
     div.social-icons {

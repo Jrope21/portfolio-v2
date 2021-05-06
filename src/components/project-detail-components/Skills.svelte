@@ -21,7 +21,7 @@ export let skills;
         margin-bottom: 15rem;
         width: 100%;
         text-transform: uppercase;
-        
+        color: color(accent);
     }
 
     @media screen and (min-width: breakpoint(sm)){
@@ -55,8 +55,11 @@ export let skills;
         content: '';
         height: 100%;
         position: absolute;
+        left: 2px;
+        top: 0;
         // border-left: 3px solid lighten(color(bodyText), 80%);
-        border-left: 3px solid lighten(color(accent), 80%);
+        // border-left: 3px solid lighten(color(accent), 80%);
+        border-left: 3px solid color(accent);
         opacity: .4;
     }
     

@@ -21,8 +21,9 @@
             display: block;
             width: calc(100% + 15px);
             height: 1px;
-            border-bottom: 5px solid color(accentLight);
-            // border-bottom: 5px solid color(primary);
+            // border-bottom: 5px solid color(accentLight);
+            border-bottom: 5px solid color(accent);
+            opacity: .5;
         }
 
         &.alt {
@@ -70,6 +71,8 @@
     .detail-title {
         font-size: 14rem;
         font-weight: 600;
+        color: color(accent);
+        // opacity: .75;
 
         @media screen and (min-width: 64em) {
             font-size: 18rem;

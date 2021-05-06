@@ -1,11 +1,11 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
-import Image1 from '../../images/university-park/home-min.jpg';
-import Image2 from '../../images/university-park/library-min.jpg';
-import Image3 from '../../images/university-park/home-video-min.jpg';
-import Image4 from '../../images/university-park/form-min.jpg';
-import Image5 from '../../images/university-park/newsletter-min.jpg';
+import Image1 from '../../images/university-park/1.jpg';
+import Image2 from '../../images/university-park/2.jpg';
+import Image3 from '../../images/university-park/3.jpg';
+import Image4 from '../../images/university-park/4.jpg';
+import Image5 from '../../images/university-park/5.jpg';
 
 let STATE = {
     metaTitle: `University Park | Front End Developer - Joshua Roper`,

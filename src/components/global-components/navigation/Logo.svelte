@@ -34,10 +34,14 @@
     }
 
     path {
-        fill: #58595b;
+        // fill: #58595b;
+        fill: rgb(244, 174, 63, .75);
+        //fill: rgba(color(accent), .5);
     }
     polygon {
-        fill: #58595b;
+        // fill: #58595b;
+        fill: rgb(244, 174, 63, .75);
+        //fill: rgba(color(accent), .5);
     }
 
     #logo-full-animation {

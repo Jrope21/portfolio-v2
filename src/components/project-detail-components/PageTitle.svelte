@@ -28,7 +28,8 @@ export let title, sidePage;
         margin: -05px 0px 20px 0;
         font-size: 16rem;
         text-transform: uppercase;
-        color: color(headerText);
+        //color: color(headerText);
+        /* color: color(accent); */
         // color: color(secondary);
         max-width: 1320px;
     }
@@ -72,6 +73,7 @@ export let title, sidePage;
         font-size: 32px;
         align-items: center;
         margin: 0px;
+        color: color(accent);
         /* animation: 1s ease-out 0s 1 slideInRight forwards; */
     }
 
@@ -120,7 +122,7 @@ export let title, sidePage;
         left: 3px;
         bottom: -25px;
         font-size: 32px;
-        color:color(accent);
+        color: color(accent);
     }
 
     @media screen and (min-width: breakpoint(sm)){

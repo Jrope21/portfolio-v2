@@ -55,114 +55,30 @@ $breakpoints: (
 // ********************************************************/
 
 
-// $colors: ( // light theme -- orginal variables (archived)
-//     primary: #3B3B3B,
-//     secondary: #58595b,
-//     tertiary: #414042,
-//     accent: #989898,
-//     accentSecondary: lightgray,
-//     accentTertiary: #818181,
-// accentLight: #d6d6d6;
-
-    // font colors
-    // headerText: #3b3b3b,
-    // bodyText: #58595b,
-    // lightText: #818181,
-    // extraLightText: #989898,
-
-    // pageBackground: white, 
-    // lightBackground:  white,
-    // boxBackground: transparent
-    // boxShadow: lightgrey,
-    // globalElementBackground: white,
-    // pageOverlay: rgba(0, 0, 0, 0.33),,
-// );
-
-// $colors: ( // light theme
-
-//     // main colors
-//     primary: #3b3b3b,
-//     secondary: #ba93e9 ,
-//     tertiary:#ba93e9 ,
-
-//     // font colors
-//     headerText: #3b3b3b,
-//     bodyText: #58595b,
-//     lightText: #818181,
-//     extraLightText: #989898,
-
-//     // accent colors
-//     accent: #c0bdbd,
-//     accentLight: lightgrey,
-//     accentSecondary:#BB86FC,
-//     accentTertiary: #BB86FC,
-    
-//     // teak -- #03DAC5
-
-//     // speciality colors
-//     // lineSperator: lightgrey,
-//     pageBackground: white, 
-//     lightBackground:  white,
-//     boxBackground: transparent,
-//     boxShadow: lightgrey,
-//     pageOverlay: rgba(0, 0, 0, 0.33),
-//     onOverlayBackground: white,
-//     globalElementBackground: white,
-// );
-
-
 $colors: ( // dark theme
 
     // main colors
     primary:#D3D3D3,
-    // secondary: #ba93e9 ,
-    // tertiary:#ba93e9 ,
 
     // font colors
     headerText:#D3D3D3,
     bodyText:#C0BDBD,
-    // lightText: #dadada,
     lightText: rgb(211, 211, 211),
-    // extraLightText: #dddddd,
     extraLightText: rgb(211, 211, 211),
 
     // accent colors
     accent:#F4AE3F,
     accentLight: #F4AE3F,
-    // accentSecondary:#BB86FC,
-    // accentTertiary: #BB86FC,
-    
-    // teak -- #03DAC5
 
-    // speciality colors
-    // lineSperator: lightgrey,
     pageBackground: #292D32, 
-    // pageBackground: rgba(0, 0, 0, 0.76), 
     lightBackground: #2A2D32,
     boxBackground: transparent,
+    boxBorder: rgba(244, 174, 63, 0.5),
     boxShadow:rgba(0, 0, 0, 0.15),
-    pageOverlay: rgba(0, 0, 0, 0.33),
-    onOverlayBackground: white,
+    pageOverlay: rgba(19, 9, 9, 0.35),
+    onOverlayBackground:#2A2D32,
     globalElementBackground: #2A2D32,
 );
-
-
-// $colors: ( v3 colors
-//     // ** main colors
-//     primary: #D3D3D3,
-//     secondary: #C0BDBD,
-//     tertiary: #292D32, // same as page_background
-
-//     // ** accent colors
-//     accent: #F4AE3F,
-//     accent_transparent: rgba(244, 175, 63, 0.3),
-
-//     // ** speciality colors
-//     success: #A4E9B3,
-//     error:#BA5B50,
-//     page_background: #292D32,
-//     background_alt: #2A2D32
-// );
 
 
 // /*******************************************************
@@ -175,4 +91,3 @@ $colors: ( // dark theme
 
 
 $custom_animation: cubic-bezier(0.85, 0.08, 0.08, 0.99);
-// $custom_animation: cubic-bezier(1, 0, 0, 1);

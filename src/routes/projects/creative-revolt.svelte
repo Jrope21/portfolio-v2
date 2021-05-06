@@ -1,11 +1,11 @@
 <script>
 import ProjectDetailTemplate from '../../route-layouts/ProjectDetailTemplate.svelte';
 
-import Image1 from '../../images/creative-revolt/home-min.jpg';
-import Image2 from '../../images/creative-revolt/home-ctas-min.jpg';
-import Image3 from '../../images/creative-revolt/about-min.jpg';
-import Image4 from '../../images/creative-revolt/about-cta-min.jpg';
-import Image5 from '../../images/creative-revolt/writing-class-min.jpg';
+import Image1 from '../../images/creative-revolt/1.jpg';
+import Image2 from '../../images/creative-revolt/2.jpg';
+import Image3 from '../../images/creative-revolt/3.jpg';
+import Image4 from '../../images/creative-revolt/4.jpg';
+import Image5 from '../../images/creative-revolt/5.jpg';
 
 let STATE = {
     metaTitle: `Creative Revolt | Front End Developer - Joshua Roper`,

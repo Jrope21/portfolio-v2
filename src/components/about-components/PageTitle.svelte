@@ -41,6 +41,7 @@ export let title;
         font-size: 32px;
         align-items: center;
         margin: 0px;
+        color: color(accent);
 
         @media (min-width: breakpoint(sm)) {
             font-size: 55px;

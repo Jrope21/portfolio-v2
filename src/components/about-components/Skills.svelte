@@ -21,6 +21,7 @@
         margin-bottom: 15rem;
         width: 100%;
         text-transform: uppercase;
+        color: color(accent);
         
         @media (min-width: breakpoint(sm)) {
             width: 18%;
@@ -47,8 +48,11 @@
         content: '';
         height: 100%;
         position: absolute;
+        top: 0;
+        left: 2px;
         // border-left: 3px solid #e6e7e8;
-        border-left: 3px solid lighten(color(bodyText), 80%);
+        // border-left: 3px solid lighten(color(bodyText), 80%);
+        border-left: 3px solid color(accent);
         opacity: .4;
     }
 
@@ -104,6 +108,7 @@
             <li>HTML Emails</li>
             <li>GitHub | BitBucket</li>
             <li>WordPress | Kentico</li>
+            <li>Salesforce</li>
             <li>Adobe Suite</li>
             <li>Figma</li>
             <li>SEO</li>

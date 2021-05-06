@@ -61,7 +61,7 @@ import HeroImageSmall from '../../../images/about-me-desktop-img.jpg';
             justify-content: flex-end;
             width: 237px;
             // border: 3px solid black;
-            border: 3px solid color(accent);
+            border: 3px solid color(boxBorder);
             // border: none;
             height: 411px;
             // background: transparent;
