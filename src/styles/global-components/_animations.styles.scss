@@ -1,0 +1,40 @@
+// ********************************************************
+// ********************************************************
+// **
+// **  Animations -- all global animations go here (not specific / targeted animations)
+// **
+// ********************************************************
+// ********************************************************
+
+
+.h\:text-underline {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+  
+    &::before {
+        content: '';
+        transform: translateX(-101%);
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid;
+        transition: .35s $custom_animation transform;
+    }
+  
+    &:hover {
+      text-decoration: none; // just incase default <a> tag is applied
+      &::before {
+          transform: translateX(0);      
+      }
+    }
+  }
+  
+  a:hover .h\:text-underline { // dont want underline to disappear on hovered links 
+    text-decoration: none;
+    &::before {
+      transform: translateX(0);     
+    }
+  }

@@ -2,78 +2,78 @@
   "bundler": "rollup",
   "shimport": "2.0.4",
   "assets": {
-    "main": "client.5c50cfaa.js"
+    "main": "client.2176c41d.js"
   },
   "css": {
     "main": [
-      "client-edff56d5.css"
+      "client-9d0d26b7.css"
     ]
   },
   "dependencies": {
     "index.svelte": [
-      "index.af0591b2.js",
-      "halcyon-5-min.31a616c8.js",
+      "index.9c7856be.js",
+      "halcyon-5-min.0d1ec280.js",
       "inject_styles.5607aec6.js",
       "halcyon-5-min-9ec22285.css",
       "index-f9894ff4.css"
     ],
     "experience.svelte": [
-      "experience.c7822306.js",
+      "experience.69ae3531.js",
       "inject_styles.5607aec6.js",
-      "experience-7af911e7.css"
+      "experience-cd1fb39e.css"
     ],
     "projects/creative-revolt.svelte": [
-      "creative-revolt.0a2ce017.js",
-      "PageTitle.6c48fc42.js",
-      "ProjectDetailTemplate.762839d0.js",
+      "creative-revolt.4a508785.js",
+      "PageTitle.97834f55.js",
+      "ProjectDetailTemplate.29f94660.js",
       "inject_styles.5607aec6.js",
       "PageTitle-fbf706b4.css",
       "ProjectDetailTemplate-bae8ddb4.css",
       "creative-revolt-387c384c.css"
     ],
     "projects/university-park.svelte": [
-      "university-park.16e2f1f7.js",
-      "PageTitle.6c48fc42.js",
-      "ProjectDetailTemplate.762839d0.js",
+      "university-park.c3e6913c.js",
+      "PageTitle.97834f55.js",
+      "ProjectDetailTemplate.29f94660.js",
       "inject_styles.5607aec6.js",
       "PageTitle-fbf706b4.css",
       "ProjectDetailTemplate-bae8ddb4.css"
     ],
     "projects/di-repairs.svelte": [
-      "di-repairs.a9226da7.js",
-      "PageTitle.6c48fc42.js",
-      "ProjectDetailTemplate.762839d0.js",
+      "di-repairs.4f2468fb.js",
+      "PageTitle.97834f55.js",
+      "ProjectDetailTemplate.29f94660.js",
       "inject_styles.5607aec6.js",
       "PageTitle-fbf706b4.css",
       "ProjectDetailTemplate-bae8ddb4.css"
     ],
     "projects/stallion.svelte": [
-      "stallion.d7892475.js",
-      "PageTitle.6c48fc42.js",
-      "ProjectDetailTemplate.762839d0.js",
+      "stallion.3c9f2b68.js",
+      "PageTitle.97834f55.js",
+      "ProjectDetailTemplate.29f94660.js",
       "inject_styles.5607aec6.js",
       "PageTitle-fbf706b4.css",
       "ProjectDetailTemplate-bae8ddb4.css"
     ],
     "projects/halcyon.svelte": [
-      "halcyon.c180cea0.js",
-      "PageTitle.6c48fc42.js",
-      "ProjectDetailTemplate.762839d0.js",
+      "halcyon.d784cbb6.js",
+      "PageTitle.97834f55.js",
+      "ProjectDetailTemplate.29f94660.js",
       "inject_styles.5607aec6.js",
       "PageTitle-fbf706b4.css",
       "ProjectDetailTemplate-bae8ddb4.css"
     ],
     "projects.svelte": [
-      "projects.80fef0b8.js",
-      "halcyon-5-min.31a616c8.js",
-      "PageTitle.6c48fc42.js",
+      "projects.b12fd84c.js",
+      "halcyon-5-min.0d1ec280.js",
+      "PageTitle.97834f55.js",
       "inject_styles.5607aec6.js",
       "halcyon-5-min-9ec22285.css",
       "PageTitle-fbf706b4.css",
       "projects-61f9fec4.css"
     ],
     "about.svelte": [
-      "about.441fa19f.js",
+      "about.0e872347.js",
       "inject_styles.5607aec6.js",
       "about-3acc9d53.css"
     ]
