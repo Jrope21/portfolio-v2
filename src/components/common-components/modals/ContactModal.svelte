@@ -224,7 +224,8 @@
         // border: 1px solid lightgray;
         // border: 1px solid color(primary);
         background: color(primary);
-        color: color(bodyText);
+        /* color: color(bodyText); */
+        color: color(pageBackground);
         border-radius: 2px;
         font-size: 16rem;
         padding: 3rem;

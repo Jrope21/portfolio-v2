@@ -2,27 +2,28 @@
     import Hero from '../components/home-components/hero/Hero.svelte';
     import Projects from '../components/home-components/projects/Projects.svelte';
     import TextWithImageCta from '../components/home-components/text-with-image-cta/TextWithImageCta.svelte';
-
-    import DiRepairsThumb from '../images/thumbnails/di-thumb.jpg';
+    
+    import GooseheadThumb from '../images/thumbnails/goosehead-thumb-png.png';
     import HalcyonThumb from '../images/thumbnails/halcyon-5-min.jpg';
+    import TrinityThumb from '../images/thumbnails/trinity-thumb.png';
 
     let portfolioCards = [
         {
-            url: '/projects/halcyon',
-            imgSrc: HalcyonThumb,
-            alt: 'Thumbnail for the Halcyon mall website rebuild',
-            projectName: 'Halcyon',
-            projectYear: '2019',
-            projectText: `I was one of the Front End Developers on the project primarily tasked with creating the movies page and events directory. Across the project I worked with <strong>multiple API’s</strong>, <strong>React Static</strong>, and developed <strong>clean code</strong> for other advanced React components.`
+            url: '/projects/goosehead-insurance',
+            imgSrc: GooseheadThumb,
+            alt: 'Thumbnail for the Goosehead Insurance website rebuild',
+            projectName: 'Goosehead Insurance',
+            projectYear: '2021',
+            projectText: `I was tasked with being the <strong>Lead Front End Developer</strong> on a <strong>complete website rebuild</strong> for a multi-billion dollar insurance company. While building the site I placed an <strong>emphasis</strong> on <strong>clean code</strong>, and <strong>modularity.</strong> The website includes multiple API’s, various forms, and other advanced modules.`
         },
         {
-            url: '/projects/di-repairs',
-            imgSrc: DiRepairsThumb,
-            alt: 'Thumbnail for the DI repairs freelance website project',
-            projectName: 'DI Repairs',
+            url: '/projects/trinity-consultants',
+            imgSrc: TrinityThumb,
+            alt: 'Thumbnail for the Trinity Consultants website rebuild',
+            projectName: 'Trinity Consultants',
             projectYear: '2020',
-            projectText: `As the <strong>only developer & designer</strong> on this freelance project. I completely re-envisioned the site design & built the project from the ground up as an extremely performant <strong>SSG website</strong>. I utilized development & design best practices with a focus on the <strong>user experience.</strong>`,
-        },        
+            projectText: `As the <strong>Lead React Developer</strong> on the ecommerce project, I was tasked with creating a multitude of dynamic templates for over 10,000 pages of content. The project included <strong>collaboration across multiple teams</strong>, and working with <strong>various advanced API’s,</strong> React, Redux, Stripe, etc...`
+        },
     ]
 </script>
 
